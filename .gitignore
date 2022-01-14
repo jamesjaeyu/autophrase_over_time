@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 data/dblpv13.json
+data/dblp-v10/dblp-ref-0.json
+data/dblp-v10/dblp-ref-1.json
+data/dblp-v10/dblp-ref-2.json
+data/dblp-v10/dblp-ref-3.json
