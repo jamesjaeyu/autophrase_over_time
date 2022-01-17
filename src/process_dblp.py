@@ -19,6 +19,8 @@ def process_json(inpath):
     When running on the entire dataset
     On local machine (James) it took 1885 seconds (31.4 minutes)
     1,445,201 out of 5,329,485 papers had issues with json.loads() formatting
+        27.1% of papers had issues
+    TODO: look at the content of papers that had issues and try to fix general cases
 
     >>> process_json('../data/dblpv13.json')
     """
