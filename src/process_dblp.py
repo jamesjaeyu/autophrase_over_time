@@ -16,6 +16,10 @@ def process_json(inpath):
     Only care about: title, year, keywords, abstract
     When we encounter one of these tags, we want to keep processing lines until we reach an invalid tag
 
+    When running on the entire dataset
+    On local machine (James) it took 1885 seconds (31.4 minutes)
+    1,445,201 out of 5,329,485 papers had issues with json.loads() formatting
+
     >>> process_json('../data/dblpv13.json')
     """
     start = time.time()
@@ -122,7 +126,7 @@ def process_json(inpath):
                     line = line.replace(': ,', ': null')
                 if line == '"type" : 1,':
                     continue
-                content += line 
+                content += line
 
     end = time.time()
     time_elapsed = end - start
