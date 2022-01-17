@@ -6,6 +6,7 @@ import pandas as pd
 from random import sample
 import sys
 import json
+import time
 
 def process_json(inpath):
     """
@@ -17,7 +18,7 @@ def process_json(inpath):
 
     >>> process_json('../data/dblpv13.json')
     """
-    count = 0
+    start = time.time()
     data = []
     first_line = True
     tags = ['"title"', '"year"', '"keywords"', '"abstract"', '"fos"']
@@ -27,25 +28,35 @@ def process_json(inpath):
                     '"isbn" :', '"doi" :', '"pdf" :', '"url" :', '"references" :']
     valid_tag = True
     num_papers = 0
+    years = set()
+    skip_paper = False
+    num_issues = 0
+
+    content = '{'
+    # Keeps track of the start of processing a block (individual paper)
+    start_ind = False
 
     with open(inpath, 'r', encoding='utf-8') as f:
-        content = '{'
-        # Keeps track of the start of processing a block (individual paper)
-        start_ind = False
         for line in f:
-            # TODO: need to fix issue with paper #3408
-
             # Indicates start of block
             if line == '{ \n':
                 start_ind = True
 
             # Indicates end of block
             if line == '},\n':
-                # Doesn't process the first block (only contains info about structure)
+                # Doesn't process the first paper (only contains info about structure)
                 if first_line:
                     first_line = False
                     content = '{'
+                    start_ind = False
                     continue
+                # If there is an indicator to skip the paper
+                if skip_paper:
+                    content = '{'
+                    skip_paper = False
+                    start_ind = False
+                    continue
+
                 # Cleans up formatting of block
                 content += '}\n'
                 content = content.replace(' :', ':').replace(',', ', ')
@@ -56,33 +67,51 @@ def process_json(inpath):
                 if content[:2] == '{{':
                     content = content[1:]
 
-                # for testing purposes
                 num_papers += 1
-                print(str(num_papers) + ' papers processed')
                 try:
-                    json.loads(content)
+                    formatted = json.loads(content)
+                    # Writing out titles + abstracts to aggregated year .txt file
+                    fp1 = '../data/dblp-v13/content_' + str(formatted['year']) + '.txt'
+                    f1 = open(fp1, 'a')
+                    f1.write(formatted['title'] + ' ' + formatted['abstract'] + ' ')
+                    f1.close()
+                    # Writing out DBLP keywords to aggregated year .txt file
+                    fp2 = '../data/dblp-v13/keywords_' + str(formatted['year']) + '.txt'
+                    f2 = open(fp2, 'a')
+                    keywords = [word.replace(' ', '_') for word in formatted['keywords']]
+                    f2.write(' '.join(keywords) + ' ')
+                    f2.close()
                 except:
-                    print(content)
-                    print('--------------- ISSUE HAS OCCURRED --------------')
-                    break
-                #data.append(json.loads(content))
-                print('----------------------')
+                    # Issue can occur with json.loads() function due to formatting
+                    num_issues += 1
 
+                # For testing purposes - printing info + stopping early
+                # if num_papers == 100000:
+                #     end = time.time()
+                #     time_elapsed = end - start
+                #     print(str(time_elapsed) + ' seconds has elapsed since start of function')
+                #     print(str(num_papers) + ' papers processed')
+                #     print(str(num_issues) + ' number of papers with issues')
+                #     return
+
+                # Reset parameters
                 start_ind = False
                 content = '{'
 
+            # Processes individual lines once we have found the start indicator
             if start_ind:
-                # Cleans up line to prevent issues with json.loads()
                 line = line.strip()
-                print(line)
+
+                # We only care about title, abstract, keywords, year, fos tags
                 if any([tag in line for tag in tags]):
-                    #line = line
                     valid_tag = True
-                #elif any([tag in invalid_tags for tag in tags]):
-                # TODO: fix issue where '"text : text' causes this case to be True
-                #       as it causes scanning to stop too early
                 elif ' : ' in line:
+                    # Catches invalid tags
                     valid_tag = False
+                elif '.fr' in line:
+                    # Had issues with french papers being included
+                    skip_paper = True
+
                 if not valid_tag:
                     continue
 
@@ -93,9 +122,14 @@ def process_json(inpath):
                     line = line.replace(': ,', ': null')
                 if line == '"type" : 1,':
                     continue
-                #print(line)
-                content += line
-    return data
+                content += line 
+
+    end = time.time()
+    time_elapsed = end - start
+    print(str(time_elapsed) + ' seconds has elapsed since start of function')
+    print(str(num_papers) + ' papers processed')
+    print(str(num_issues) + ' number of papers with issues')
+    return
 
 
 # TODO
