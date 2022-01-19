@@ -37,6 +37,8 @@ def process_json(inpath):
     years = set()
     skip_paper = False
     num_issues = 0
+    num_abs = 0
+    num_year = 0
 
     content = '{'
     # Keeps track of the start of processing a block (individual paper)
@@ -76,16 +78,25 @@ def process_json(inpath):
                 num_papers += 1
                 try:
                     formatted = json.loads(content)
+                    keywords = ' '.join([word.replace(' ', '_') for word in formatted['keywords']])
+                    title = formatted['title'].replace(',', '').replace('\n', '').replace('\\', '')
+                    abstract = formatted['abstract'].replace(',', '').replace('\n','').replace('\\', '')
+                    if len(abstract) == 0:
+                        num_abs += 1
+                        continue
+                    if formatted['year'] < 1950 or formatted['year'] > 2022:
+                        num_year += 1
+                        continue
+
                     # Writing out titles + abstracts to aggregated year .txt file
                     fp1 = '../data/dblp-v13/content_' + str(formatted['year']) + '.txt'
                     f1 = open(fp1, 'a')
-                    f1.write(formatted['title'] + ' ' + formatted['abstract'] + ' ')
+                    f1.write(title + ' ' + abstract + ' ')
                     f1.close()
                     # Writing out DBLP keywords to aggregated year .txt file
                     fp2 = '../data/dblp-v13/keywords_' + str(formatted['year']) + '.txt'
                     f2 = open(fp2, 'a')
-                    keywords = [word.replace(' ', '_') for word in formatted['keywords']]
-                    f2.write(' '.join(keywords) + ' ')
+                    f2.write(keywords + ' ')
                     f2.close()
                 except:
                     # Issue can occur with json.loads() function due to formatting
@@ -97,7 +108,9 @@ def process_json(inpath):
                 #     time_elapsed = end - start
                 #     print(str(time_elapsed) + ' seconds has elapsed since start of function')
                 #     print(str(num_papers) + ' papers processed')
-                #     print(str(num_issues) + ' number of papers with issues')
+                #     print(str(num_issues) + ' number of papers with json formatting issues')
+                #     print(str(num_abs) + ' number of papers with empty abstracts')
+                #     print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
                 #     return
 
                 # Reset parameters
@@ -134,7 +147,9 @@ def process_json(inpath):
     time_elapsed = end - start
     print(str(time_elapsed) + ' seconds has elapsed since start of function')
     print(str(num_papers) + ' papers processed')
-    print(str(num_issues) + ' number of papers with issues')
+    print(str(num_issues) + ' number of papers with json formatting issues')
+    print(str(num_abs) + ' number of papers with empty abstracts')
+    print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
     return
 
 
@@ -283,7 +298,7 @@ def process_json_csv(inpath):
     time_elapsed = end - start
     print(str(time_elapsed) + ' seconds has elapsed since start of function')
     print(str(num_papers) + ' papers processed')
-    print(str(num_issues) + ' number of papers with issues')
+    print(str(num_issues) + ' number of papers with json formatting issues')
     print(str(num_abs) + ' number of papers with empty abstracts')
     print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
     return
