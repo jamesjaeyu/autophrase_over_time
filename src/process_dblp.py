@@ -8,7 +8,7 @@ import sys
 import json
 import time
 
-def process_json(inpath):
+def process_json_txt(inpath):
     """
     Process the inpath of DBLP v13 dataset
     Writes out to aggregate files by year
@@ -22,7 +22,7 @@ def process_json(inpath):
         27.1% of papers had issues
     TODO: look at the content of papers that had issues and try to fix general cases
 
-    #>>> process_json('../data/dblpv13.json')
+    >>> process_json_txt('../data/dblpv13.json')
     """
     start = time.time()
     data = []
@@ -176,7 +176,7 @@ def process_json_csv(inpath):
         27.1% of papers had issues
     TODO: look at the content of papers that had issues and try to fix general cases
 
-    >>> process_json_csv('../data/dblpv13.json')
+    #>>> process_json_csv('../data/dblpv13.json')
     """
     start = time.time()
     data = []
