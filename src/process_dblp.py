@@ -8,37 +8,31 @@ import sys
 import json
 import time
 
+def print_stats(time, papers, issues, empty, year):
+    print(str(time) + ' seconds has elapsed since start of function')
+    print(str(papers) + ' papers processed')
+    print(str(issues) + ' number of papers with json formatting issues')
+    print(str(empty) + ' number of papers with empty abstracts')
+    print(str(year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+
+
 def process_json_txt(inpath):
     """
-    Process the inpath of DBLP v13 dataset
-    Writes out to aggregate files by year
+    Writes out content_YEAR.txt and keywords_YEAR.txt files
+    content contains titles + abstracts for that year
+    keywords contains all of the keywords for that year (duplicates allowed)
 
-    Only care about: title, year, keywords, abstract
-    When we encounter one of these tags, we want to keep processing lines until we reach an invalid tag
+    TODO: Fix issues with json.loads() errors
+    TODO: Look into more filters - based on year, title length, number of keywords
 
-    When running on the entire dataset
-    On local machine (James) it took 1885 seconds (31.4 minutes)
-    1,445,201 out of 5,329,485 papers had issues with json.loads() formatting
-        27.1% of papers had issues
-    TODO: look at the content of papers that had issues and try to fix general cases
-
-    >>> process_json_txt('../data/dblpv13.json')
+    #>>> process_json_txt('../data/dblpv13.json')
     """
     start = time.time()
-    data = []
     first_line = True
     tags = ['"title"', '"year"', '"keywords"', '"abstract"', '"fos"']
-    invalid_tags = ['"venue" :', '"_id" :', '"type" :', '"raw" :', '"raw_zh" :',
-                    '"n_citation" :', '"page_start" :', '"page_end" :',
-                    '"lang" :', '"volume" :', '"issue" :', '"issn" :',
-                    '"isbn" :', '"doi" :', '"pdf" :', '"url" :', '"references" :']
     valid_tag = True
-    num_papers = 0
-    years = set()
     skip_paper = False
-    num_issues = 0
-    num_abs = 0
-    num_year = 0
+    num_papers, num_issues, num_abs, num_year = 0, 0, 0, 0
 
     content = '{'
     # Keeps track of the start of processing a block (individual paper)
@@ -81,20 +75,21 @@ def process_json_txt(inpath):
                     keywords = ' '.join([word.replace(' ', '_') for word in formatted['keywords']])
                     title = formatted['title'].replace(',', '').replace('\n', '').replace('\\', '')
                     abstract = formatted['abstract'].replace(',', '').replace('\n','').replace('\\', '')
+                    year = formatted['year']
                     if len(abstract) == 0:
                         num_abs += 1
                         continue
-                    if formatted['year'] < 1950 or formatted['year'] > 2022:
+                    if year < 1950 or year > 2022:
                         num_year += 1
                         continue
 
                     # Writing out titles + abstracts to aggregated year .txt file
-                    fp1 = '../data/dblp-v13/content_' + str(formatted['year']) + '.txt'
+                    fp1 = '../data/dblp-v13/content_' + str(year) + '.txt'
                     f1 = open(fp1, 'a')
                     f1.write(title + ' ' + abstract + ' ')
                     f1.close()
                     # Writing out DBLP keywords to aggregated year .txt file
-                    fp2 = '../data/dblp-v13/keywords_' + str(formatted['year']) + '.txt'
+                    fp2 = '../data/dblp-v13/keywords_' + str(year) + '.txt'
                     f2 = open(fp2, 'a')
                     f2.write(keywords + ' ')
                     f2.close()
@@ -106,11 +101,140 @@ def process_json_txt(inpath):
                 # if num_papers == 100000:
                 #     end = time.time()
                 #     time_elapsed = end - start
-                #     print(str(time_elapsed) + ' seconds has elapsed since start of function')
-                #     print(str(num_papers) + ' papers processed')
-                #     print(str(num_issues) + ' number of papers with json formatting issues')
-                #     print(str(num_abs) + ' number of papers with empty abstracts')
-                #     print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+                #     print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
+                #     return
+
+                # Reset parameters
+                start_ind = False
+                content = '{'
+
+            # Processes individual lines once we have found the start indicator
+            if start_ind:
+                # TODO: Handle issues in line processing that cause issues with json.loads
+
+                line = line.strip()
+
+                # We only care about title, abstract, keywords, year, fos tags
+                if any([tag in line for tag in tags]):
+                    valid_tag = True
+                elif ' : ' in line:
+                    # Catches invalid tags
+                    valid_tag = False
+                elif '.fr' in line:
+                    # Had issues with french papers being included
+                    skip_paper = True
+
+                if not valid_tag:
+                    continue
+
+                if 'NumberInt' in line:
+                    line = line.replace('NumberInt(', '')
+                    line = line.strip()[:-2] + ','
+                if line[-3:] == ': ,':
+                    line = line.replace(': ,', ': null')
+                if line == '"type" : 1,':
+                    continue
+                content += line
+
+    end = time.time()
+    time_elapsed = end - start
+    print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
+    return
+
+
+def process_json_csv(inpath):
+    """
+    Writes out YEAR.csv files
+    Columns are Title, Abstract, Keywords
+    Written to the dblp-v13/csv folder
+
+    TODO: Fix issue where pandas.read_csv has issues
+        (try creating dataframes first, then export to csv)
+
+    #>>> process_json_csv('../data/dblpv13.json')
+    """
+    start = time.time()
+    first_line = True
+    tags = ['"title"', '"year"', '"keywords"', '"abstract"', '"fos"']
+    valid_tag = True
+    num_papers, num_issues, num_abs, num_year = 0, 0, 0, 0
+    years = set()
+    skip_paper = False
+
+    content = '{'
+    # Keeps track of the start of processing a block (individual paper)
+    start_ind = False
+
+    # Dictionary contains year:dataframe key:val pairs
+    out = {}
+
+    with open(inpath, 'r', encoding='utf-8') as f:
+        for line in f:
+            # Indicates start of block
+            if line == '{ \n':
+                start_ind = True
+
+            # Indicates end of block
+            if line == '},\n':
+                # Doesn't process the first paper (only contains info about structure)
+                if first_line:
+                    first_line = False
+                    content = '{'
+                    start_ind = False
+                    continue
+                # If there is an indicator to skip the paper
+                if skip_paper:
+                    content = '{'
+                    skip_paper = False
+                    start_ind = False
+                    continue
+
+                # Cleans up formatting of block
+                content += '}\n'
+                content = content.replace(' :', ':').replace(',', ', ')
+                # Prevents issue with additional comma at end of dict
+                if content[-4:-2] == ', ':
+                    content = content[:-4] + '}\n'
+                # Fix for issue with double beginning brackets
+                if content[:2] == '{{':
+                    content = content[1:]
+
+                num_papers += 1
+                try:
+                    formatted = json.loads(content)
+                    keywords = ' '.join([word.replace(' ', '_') for word in formatted['keywords']])
+                    title = formatted['title'].replace(',', '').replace('\n', '').replace('\\', '')
+                    abstract = formatted['abstract'].replace(',', '').replace('\n','').replace('\\', '')
+                    year = formatted['year']
+                    if len(abstract) == 0:
+                        num_abs += 1
+                        continue
+                    if year < 1950 or year > 2022:
+                        num_year += 1
+                        continue
+
+                    # TODO: (new) Adding information to dictionary dataframe
+                    if year not in out:
+                        out[year] = pd.DataFrame(columns=['Title', 'Abstract', 'Keywords'])
+                    out[year].loc[len(out[year].index)] = [title, abstract, keywords]
+
+                    # Writing out data to csv
+                    # fp1 = '../data/dblp-v13/csv/' + str(year) + '.csv'
+                    # f1 = open(fp1, 'a')
+                    # if year not in years:
+                    #     f1.write('Title,Abstract,Keywords\n')
+                    # f1.write(title + ',' + abstract + ',' + keywords + '\n')
+                    # f1.close()
+                    # years.add(year)
+                except:
+                    # Issue can occur with json.loads() function due to formatting
+                    num_issues += 1
+
+                # For testing purposes - printing info + stopping early
+                # if num_papers == 1000:
+                #     end = time.time()
+                #     time_elapsed = end - start
+                #     print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
                 #     return
 
                 # Reset parameters
@@ -145,54 +269,27 @@ def process_json_txt(inpath):
 
     end = time.time()
     time_elapsed = end - start
-    print(str(time_elapsed) + ' seconds has elapsed since start of function')
-    print(str(num_papers) + ' papers processed')
-    print(str(num_issues) + ' number of papers with json formatting issues')
-    print(str(num_abs) + ' number of papers with empty abstracts')
-    print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+    print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
+    # Writes out DataFrames in dictionary to outpath folder
+    for key, val in out:
+        outpath = '../data/dblp-v13/csv/' + str(key) + '.txt'
+        val.to_csv(outpath)
     return
 
 
-# TODO
-# 1. Obtain the number of papers per year (value counts)
-# 2. Output the title + abstracts to aggregated .txt files by year
-# 3. Output unique keywords to aggregated .txt files by year
-#    (Could also try including duplicates so we can see the most common keywords by year)
-# 4. Implement year cutoff
-# 5. Implement title/abstract length minimum thresholds
-
-
-def process_json_csv(inpath):
+def process_json_txt_agg(inpath):
     """
-    Process the inpath of DBLP v13 dataset
-    Writes out aggregate files (but as csvs)
+    Writes out aggregated content.txt and keywords.txt - all combined together
+    Written to the dblp-v13/agg folder
 
-    Only care about: title, year, keywords, abstract
-    When we encounter one of these tags, we want to keep processing lines until we reach an invalid tag
-
-    When running on the entire dataset
-    On local machine (James) it took 1885 seconds (31.4 minutes)
-    1,445,201 out of 5,329,485 papers had issues with json.loads() formatting
-        27.1% of papers had issues
-    TODO: look at the content of papers that had issues and try to fix general cases
-
-    #>>> process_json_csv('../data/dblpv13.json')
+    >>> process_json_txt_agg('../data/dblpv13.json')
     """
     start = time.time()
-    data = []
     first_line = True
     tags = ['"title"', '"year"', '"keywords"', '"abstract"', '"fos"']
-    invalid_tags = ['"venue" :', '"_id" :', '"type" :', '"raw" :', '"raw_zh" :',
-                    '"n_citation" :', '"page_start" :', '"page_end" :',
-                    '"lang" :', '"volume" :', '"issue" :', '"issn" :',
-                    '"isbn" :', '"doi" :', '"pdf" :', '"url" :', '"references" :']
     valid_tag = True
-    num_papers = 0
-    years = set()
     skip_paper = False
-    num_issues = 0
-    num_abs = 0
-    num_year = 0
+    num_papers, num_issues, num_abs, num_year = 0, 0, 0, 0
 
     content = '{'
     # Keeps track of the start of processing a block (individual paper)
@@ -235,33 +332,33 @@ def process_json_csv(inpath):
                     keywords = ' '.join([word.replace(' ', '_') for word in formatted['keywords']])
                     title = formatted['title'].replace(',', '').replace('\n', '').replace('\\', '')
                     abstract = formatted['abstract'].replace(',', '').replace('\n','').replace('\\', '')
+                    year = formatted['year']
                     if len(abstract) == 0:
                         num_abs += 1
                         continue
-                    if formatted['year'] < 1950 or formatted['year'] > 2022:
+                    if year < 1950 or year > 2022:
                         num_year += 1
                         continue
-                    # Writing out data to csv
-                    fp1 = '../data/dblp-v13/csv/' + str(formatted['year']) + '.csv'
+
+                    # Writing out titles + abstracts to aggregated year .txt file
+                    fp1 = '../data/dblp-v13/agg/content.txt'
                     f1 = open(fp1, 'a')
-                    if formatted['year'] not in years:
-                        f1.write('Title,Abstract,Keywords\n')
-                    f1.write(title + ',' + abstract + ',' + keywords + '\n')
+                    f1.write(title + ' ' + abstract + ' ')
                     f1.close()
-                    years.add(formatted['year'])
+                    # Writing out DBLP keywords to aggregated year .txt file
+                    fp2 = '../data/dblp-v13/agg/keywords.txt'
+                    f2 = open(fp2, 'a')
+                    f2.write(keywords + ' ')
+                    f2.close()
                 except:
                     # Issue can occur with json.loads() function due to formatting
                     num_issues += 1
 
                 # For testing purposes - printing info + stopping early
-                # if num_papers == 1000:
+                # if num_papers == 100000:
                 #     end = time.time()
                 #     time_elapsed = end - start
-                #     print(str(time_elapsed) + ' seconds has elapsed since start of function')
-                #     print(str(num_papers) + ' papers processed')
-                #     print(str(num_issues) + ' number of papers with json formatting issues')
-                #     print(str(num_abs) + ' number of papers with empty abstracts')
-                #     print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+                #     print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
                 #     return
 
                 # Reset parameters
@@ -296,9 +393,5 @@ def process_json_csv(inpath):
 
     end = time.time()
     time_elapsed = end - start
-    print(str(time_elapsed) + ' seconds has elapsed since start of function')
-    print(str(num_papers) + ' papers processed')
-    print(str(num_issues) + ' number of papers with json formatting issues')
-    print(str(num_abs) + ' number of papers with empty abstracts')
-    print(str(num_year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+    print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
     return
