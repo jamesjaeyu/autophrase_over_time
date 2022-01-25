@@ -132,4 +132,6 @@ data/dblp-v10/dblp-ref-0.json
 data/dblp-v10/dblp-ref-1.json
 data/dblp-v10/dblp-ref-2.json
 data/dblp-v10/dblp-ref-3.json
-*.txt
+data/dblp-v13/*.txt
+data/dblp-v13/csv/*.csv
+data/dblp-v13/agg/*.txt
