@@ -11,9 +11,9 @@ import time
 def print_stats(time, papers, issues, empty, year):
     print(str(time) + ' seconds has elapsed since start of function')
     print(str(papers) + ' papers processed')
-    print(str(issues) + ' number of papers with json formatting issues')
-    print(str(empty) + ' number of papers with empty abstracts')
-    print(str(year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+    print(str(issues) + ' number of papers with json formatting issues (' + str(issues/papers) + '%)')
+    print(str(empty) + ' number of papers with empty abstracts (' + str(empty/papers) + '%)')
+    print(str(year) + ' number of papers with invalid/irrelevant years < 1950, > 2022 (' + str(year/papers) + '%)')
 
 
 def process_json_txt(inpath):
@@ -151,7 +151,7 @@ def process_json_csv(inpath):
     TODO: Fix issue where pandas.read_csv has issues
         (try creating dataframes first, then export to csv)
 
-    #>>> process_json_csv('../data/dblpv13.json')
+    >>> process_json_csv('../data/dblpv13.json')
     """
     start = time.time()
     first_line = True
@@ -235,6 +235,9 @@ def process_json_csv(inpath):
                 #     end = time.time()
                 #     time_elapsed = end - start
                 #     print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
+                #     for key, val in out.items():
+                #         outpath = '../data/dblp-v13/testcsv/' + str(key) + '.csv'
+                #         val.to_csv(outpath)
                 #     return
 
                 # Reset parameters
@@ -272,7 +275,7 @@ def process_json_csv(inpath):
     print_stats(time_elapsed, num_papers, num_issues, num_abs, num_year)
     # Writes out DataFrames in dictionary to outpath folder
     for key, val in out:
-        outpath = '../data/dblp-v13/csv/' + str(key) + '.txt'
+        outpath = '../data/dblp-v13/testcsv/' + str(key) + '.csv'
         val.to_csv(outpath)
     return
 
@@ -282,7 +285,7 @@ def process_json_txt_agg(inpath):
     Writes out aggregated content.txt and keywords.txt - all combined together
     Written to the dblp-v13/agg folder
 
-    >>> process_json_txt_agg('../data/dblpv13.json')
+    #>>> process_json_txt_agg('../data/dblpv13.json')
     """
     start = time.time()
     first_line = True
