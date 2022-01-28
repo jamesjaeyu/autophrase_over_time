@@ -218,13 +218,13 @@ def process_json_csv(inpath):
                     out[year].loc[len(out[year].index)] = [title, abstract, keywords]
 
                     # Writing out data to csv
-                    # fp1 = '../data/dblp-v13/csv/' + str(year) + '.csv'
-                    # f1 = open(fp1, 'a')
-                    # if year not in years:
-                    #     f1.write('Title,Abstract,Keywords\n')
-                    # f1.write(title + ',' + abstract + ',' + keywords + '\n')
-                    # f1.close()
-                    # years.add(year)
+                    fp1 = '../data/dblp-v13/csv/' + str(year) + '.csv'
+                    f1 = open(fp1, 'a')
+                    if year not in years:
+                        f1.write('Title,Abstract,Keywords\n')
+                    f1.write(title + ',' + abstract + ',' + keywords + '\n')
+                    f1.close()
+                    years.add(year)
                 except:
                     # Issue can occur with json.loads() function due to formatting
                     num_issues += 1
