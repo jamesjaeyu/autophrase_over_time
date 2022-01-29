@@ -121,11 +121,11 @@ def process_v10_csv(infolder):
             except:
                 num_issues += 1
             # For testing purposes - printing info + stopping early
-            if num_papers >= 100:
-                end = time.time()
-                time_elapsed = end - start
-                print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
-                return
+            # if num_papers >= 1000:
+            #     end = time.time()
+            #     time_elapsed = end - start
+            #     print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
+            #     return
         file.close()
     end = time.time()
     time_elapsed = end - start
