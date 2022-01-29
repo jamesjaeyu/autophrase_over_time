@@ -1,0 +1,174 @@
+0.9742873016	problem solving
+0.9736507937	natural language
+0.9656289683	programming language
+0.9648789683	data structures
+0.9629384921	programming languages
+0.9603865079	context free
+0.9248865079	high level
+0.8997480159	data bases
+0.8758650794	data base
+0.8365730159	data structure
+0.7739146825	paper describes
+0.7729146825	paper presents
+0.5308674603	computer science
+0.5246563492	real time
+0.5026289683	operating system
+0.4327563492	necessary and sufficient
+0.4100059524	well known
+0.3907642857	rather than
+0.3837642857	does not
+0.3802698413	on line
+0.3797563492	this correspondence
+0.3763511905	concerned with
+0.3607642857	at least
+0.3413396825	this paper presents
+0.3283396825	this paper describes
+0.3230178571	based on
+0.2957642857	associated with
+0.2943396825	this paper
+0.2757642857	due to
+0.2727678571	capable of
+0.2713511905	consists of
+0.2692285714	in terms of
+0.2665420635	to solve
+0.2535896825	to determine
+0.2532285714	with respect to
+0.2522285714	in order to
+0.2335142857	as well as
+0.2293714286	by means of
+0.2241845238	applied to
+0.2190142857	amount of
+0.2187146825	the existence
+0.2183095238	aspects of
+0.2130142857	with respect
+0.1996392857	the same
+0.1979369048	the development of
+0.1947007937	an algorithm
+0.1914964286	a variety of
+0.1849726190	such as
+0.1841869048	a set of
+0.1825595238	number of
+0.1708095238	class of
+0.1581869048	the problem of
+0.1548337302	computer systems
+0.1531869048	the number of
+0.1434726190	the use of
+0.1414345238	classes of
+0.1382341270	family of
+0.1373892857	to define
+0.1303436508	the design of
+0.1276849206	an example
+0.1255341270	a number of
+0.1249448413	the set of
+0.1248095238	algorithm for
+0.1243892857	by means
+0.1192980159	a single
+0.1191670635	in addition
+0.1183892857	to obtain
+0.1175976190	the concept of
+0.1158095238	properties of
+0.1142341270	respect to
+0.1102226190	used to
+0.1070698413	the solution of
+0.1041662698	method of
+0.1026369048	obtained by
+0.1011567460	approach to
+0.0990698413	a class of
+0.0981091270	variety of
+0.0980698413	the application of
+0.0966190476	related to
+0.0937087302	the main
+0.0928095238	shown to
+0.0921075397	to provide
+0.0912817460	analysis of
+0.0909345238	method for
+0.0882162698	complexity of
+0.0846924603	evaluation of
+0.0843952381	the model
+0.0828690476	types of
+0.0815674603	model for
+0.0815003968	an optimal
+0.0814230159	a simple
+0.0782162698	set of
+0.0774702381	sets of
+0.0773952381	the paper
+0.0764067460	implementation of
+0.0743591270	effect of
+0.0722047619	the algorithm
+0.0713174603	model of
+0.0699587302	the basic
+0.0696924603	procedure for
+0.0692162698	sequence of
+0.0646924603	algorithms for
+0.0646809524	the problem
+0.0644587302	the output
+0.0636924603	solution to
+0.0618059524	the user
+0.0613591270	existence of
+0.0598174603	distribution of
+0.0598174603	structure of
+0.0594841270	description of
+0.0584448413	the system
+0.0580559524	a large
+0.0574841270	type of
+0.0573059524	the minimum
+0.0564841270	representation of
+0.0558174603	study of
+0.0554841270	proof of
+0.0548174603	performance of
+0.0538174603	theory of
+0.0529587302	the development
+0.0528059524	the network
+0.0523059524	the basis
+0.0518174603	function of
+0.0518174603	design of
+0.0503059524	a finite
+0.0501809524	this problem
+0.0498174603	problem of
+0.0498059524	the concept
+0.0494726190	a new
+0.0488059524	the complexity
+0.0488059524	the optimal
+0.0478059524	the method
+0.0474841270	purpose of
+0.0457226190	a general
+0.0450222222	as well
+0.0443059524	the cost
+0.0438059524	a program
+0.0438059524	the application
+0.0438059524	the performance
+0.0434841270	application of
+0.0430698413	the first
+0.0428059524	the language
+0.0428059524	the design
+0.0428059524	the program
+0.0424726190	in particular
+0.0418059524	the solution
+0.0418059524	a number
+0.0414841270	concept of
+0.0413059524	the present
+0.0408059524	the structure
+0.0408059524	the analysis
+0.0408059524	the information
+0.0398059524	the number
+0.0394841270	solution of
+0.0393059524	a class
+0.0389726190	a sequence
+0.0384841270	means of
+0.0384841270	case of
+0.0383591270	developed for
+0.0373059524	the case
+0.0363059524	a problem
+0.0363059524	a model
+0.0363059524	a method
+0.0324841270	development of
+0.0319726190	a set
+0.0279805556	the computer
+0.0279726190	a function
+0.0254805556	the second
+0.0243555556	a computer
+0.0238793651	part of
+0.0238555556	a system
+0.0213555556	system for
+0.0170222222	use of
+0.0144805556	to use

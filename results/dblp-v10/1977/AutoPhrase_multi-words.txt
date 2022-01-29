@@ -1,0 +1,205 @@
+0.9869177489	problem solving
+0.9828177489	context free
+0.9822677489	natural language
+0.9660606061	linear programming
+0.9499344156	artificial intelligence
+0.9424606061	programming languages
+0.9407677489	data base
+0.9215844156	general purpose
+0.9152621934	programming language
+0.8728788600	high level
+0.8131717172	data structure
+0.6590050505	paper describes
+0.6192288600	real time
+0.5900050505	paper discusses
+0.5770050505	paper presents
+0.5556288600	computer science
+0.5117717172	two dimensional
+0.4563717172	operating system
+0.4428828283	on line
+0.4294399711	well known
+0.3937955267	this paper presents
+0.3704399711	rather than
+0.3624399711	do not
+0.3594399711	does not
+0.3514399711	at least
+0.3365733045	this paper describes
+0.3165733045	this paper discusses
+0.3143733045	based on
+0.3108844156	this paper
+0.3063828283	an interactive
+0.2874399711	associated with
+0.2717733045	with respect to
+0.2669177489	the results of
+0.2659272727	production system
+0.2627733045	as well as
+0.2608904762	consists of
+0.2584177489	in order to
+0.2554177489	in terms of
+0.2499939394	also discussed
+0.2488238095	due to
+0.2446000000	to achieve
+0.2381571429	amount of
+0.2330333333	aspects of
+0.2283177489	number of
+0.2262666667	the existence
+0.2016606061	an application
+0.2001717172	a set of
+0.1995383838	applied to
+0.1983050505	computer systems
+0.1957050505	compared with
+0.1813777778	to determine
+0.1772494949	an example
+0.1767111111	the resulting
+0.1762111111	in addition
+0.1757111111	the original
+0.1751939394	at most
+0.1724904762	the same
+0.1673383838	such as
+0.1633111111	version of
+0.1613777778	to obtain
+0.1601717172	the purpose of
+0.1575050505	the use of
+0.1470383838	obtained by
+0.1435050505	the problem of
+0.1421717172	the concept of
+0.1415050505	the development of
+0.1405050505	the number of
+0.1375050505	a number of
+0.1368111111	designed to
+0.1356717172	used to
+0.1308939394	a new
+0.1303050505	or more
+0.1302000000	written in
+0.1280717172	approach to
+0.1271717172	a variety of
+0.1256161616	computer system
+0.1220050505	a class of
+0.1188888889	the data
+0.1164888889	the total
+0.1158888889	the set
+0.1154888889	the probability
+0.1141717172	an algorithm for
+0.1107272727	the design of
+0.1103111111	related to
+0.1078888889	a language
+0.1063444444	class of
+0.1062000000	family of
+0.1052161616	an optimal
+0.1023444444	properties of
+0.1021777778	analysis of
+0.1018666667	variety of
+0.1017272727	the performance of
+0.0968666667	effect of
+0.0920161616	algorithms for
+0.0916161616	a system
+0.0912888889	applications of
+0.0911333333	to find
+0.0894777778	classes of
+0.0894050505	shown to
+0.0891777778	evaluation of
+0.0877272727	the class of
+0.0867272727	the set of
+0.0850888889	complexity of
+0.0847272727	the design and
+0.0847272727	and implementation of
+0.0808888889	the case
+0.0807444444	the following
+0.0797444444	a single
+0.0788888889	the basic
+0.0781000000	to provide
+0.0778000000	the user
+0.0771272727	algorithm for
+0.0748000000	a program
+0.0746000000	the average
+0.0718888889	the solution
+0.0718000000	the algorithm
+0.0708000000	a simple
+0.0707000000	types of
+0.0697000000	description of
+0.0682000000	existence of
+0.0678000000	the effect
+0.0671272727	method for
+0.0662000000	definition of
+0.0652000000	access to
+0.0625272727	an algorithm
+0.0596000000	the main
+0.0588888889	a computer
+0.0588000000	the minimum
+0.0588000000	a large
+0.0568000000	the concept
+0.0564000000	form of
+0.0552000000	degree of
+0.0544000000	implementation of
+0.0540000000	the program
+0.0528666667	means of
+0.0522000000	required to
+0.0502000000	concept of
+0.0500000000	the problem
+0.0492000000	distribution of
+0.0490000000	the model
+0.0484000000	cost of
+0.0484000000	theory of
+0.0467272727	the system
+0.0466717172	in particular
+0.0464000000	application of
+0.0450000000	the method
+0.0448000000	the basis
+0.0444000000	method of
+0.0441272727	techniques for
+0.0434000000	set of
+0.0425272727	this approach
+0.0424000000	model for
+0.0400000000	a simulation
+0.0396000000	a small
+0.0380000000	the design
+0.0372000000	sequence of
+0.0364000000	problem in
+0.0362000000	construction of
+0.0354000000	model of
+0.0354000000	methods for
+0.0354000000	design of
+0.0352000000	probability of
+0.0350000000	use of
+0.0344000000	representation of
+0.0341333333	need for
+0.0340000000	a general
+0.0334000000	language for
+0.0334000000	structure of
+0.0334000000	control of
+0.0330000000	the input
+0.0330000000	a model
+0.0320000000	a class
+0.0320000000	a graph
+0.0314000000	sets of
+0.0310000000	the first
+0.0310000000	the software
+0.0310000000	the form
+0.0310000000	the performance
+0.0307939394	presented for
+0.0304000000	problem of
+0.0304000000	function of
+0.0304000000	size of
+0.0300000000	a method
+0.0300000000	a linear
+0.0287272727	system for
+0.0284000000	type of
+0.0284000000	study of
+0.0280666667	developed for
+0.0270000000	the class
+0.0268000000	a finite
+0.0267272727	used in
+0.0254000000	level of
+0.0244000000	case of
+0.0244000000	solution of
+0.0244000000	purpose of
+0.0244000000	performance of
+0.0240000000	a function
+0.0230000000	a high
+0.0224000000	development of
+0.0220000000	a number
+0.0218000000	as well
+0.0180000000	the number
+0.0170000000	a set
+0.0168000000	the second
+0.0088000000	part of

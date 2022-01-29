@@ -1,0 +1,262 @@
+0.9901058105	signal processing
+0.9894224771	adaptive control
+0.9834782852	data structures
+0.9825558105	dynamic programming
+0.9804310630	programming language
+0.9764169216	pattern recognition
+0.9752280327	natural language
+0.9727104281	linear programming
+0.9623345686	context free
+0.9594234575	problem solving
+0.9586113660	software engineering
+0.9579976076	database systems
+0.9556919216	artificial intelligence
+0.9544709323	data structure
+0.9342421741	data types
+0.9109199519	data base
+0.9054335883	digital filters
+0.9017937614	data processing
+0.9011123464	high level
+0.8788934409	data type
+0.8338835883	data bases
+0.7919946994	paper discusses
+0.7809169216	sufficient conditions
+0.7165604281	paper presents
+0.7164959323	paper describes
+0.5511728217	computer graphics
+0.5250600573	abstract data
+0.5103853217	polynomial time
+0.4941589328	three dimensional
+0.4919089328	two dimensional
+0.4853827964	real time
+0.4850381875	operating system
+0.4141581508	graph g
+0.3866524393	first order
+0.3822160757	0 1
+0.3142202964	necessary and sufficient
+0.2899618410	on line
+0.2857556256	derived from
+0.2581632806	rather than
+0.2531632806	well known
+0.2531632806	does not
+0.2501632806	less than
+0.2461632806	at least
+0.2441632806	do not
+0.2420064291	based on
+0.2419968550	an interactive
+0.2416378329	2 n
+0.2323120147	this paper presents
+0.2264699095	this paper describes
+0.2244885217	new algorithm
+0.2163290094	only if
+0.2151607287	lead to
+0.2132199095	this paper
+0.2110796982	information system
+0.2046468398	leads to
+0.2023906232	the presence
+0.1881659239	the existence of
+0.1873607287	ability to
+0.1823451743	this note
+0.1821067871	at most
+0.1806742573	the results of
+0.1786742573	the presence of
+0.1781067871	more than
+0.1751910317	notion of
+0.1737901330	subsets of
+0.1721186535	to achieve
+0.1683822899	to solve
+0.1653822899	the authors
+0.1637663625	with respect to
+0.1637243650	overview of
+0.1619242573	in order to
+0.1616607287	applicable to
+0.1615243650	capable of
+0.1615156232	with respect
+0.1610500413	applied to
+0.1609242573	in terms of
+0.1607252741	able to
+0.1590872495	compared with
+0.1579661134	the original
+0.1574429211	computer system
+0.1530491641	number of
+0.1481822899	to implement
+0.1477806786	an efficient
+0.1467663625	as well as
+0.1450492573	by means of
+0.1443822899	to compute
+0.1439798014	this problem
+0.1412492573	the purpose of
+0.1409798014	this approach
+0.1396451571	associated with
+0.1365454876	approach to
+0.1332492573	a series of
+0.1317502741	together with
+0.1308431633	subject to
+0.1307526330	consists of
+0.1279526330	aspects of
+0.1269980013	according to
+0.1262803030	a variety of
+0.1231969697	a class of
+0.1219778855	basis for
+0.1196454876	algorithms for
+0.1194630831	in addition
+0.1178297498	to determine
+0.1164714795	such as
+0.1145458746	defined as
+0.1141002741	due to
+0.1134411134	to improve
+0.1134053030	used to
+0.1082101657	these results
+0.1081047498	an important
+0.1062803030	the concept of
+0.1062803030	an algorithm for
+0.1047744467	to generate
+0.1046454876	shown to
+0.1031640119	this result
+0.1022803030	a set of
+0.1011822899	a wide
+0.1011748552	variety of
+0.1007318513	types of
+0.0997067997	characterization of
+0.0964411134	to produce
+0.0961798014	a single
+0.0947730529	the same
+0.0937762028	an example
+0.0936454876	algorithm for
+0.0925401330	equivalent to
+0.0924866377	amount of
+0.0912803030	the use of
+0.0902803030	the problem of
+0.0895303030	the construction of
+0.0891875929	related to
+0.0878454876	properties of
+0.0852803030	the performance of
+0.0852803030	the development of
+0.0852803030	the number of
+0.0851798014	to provide
+0.0821969697	the structure of
+0.0821182149	classes of
+0.0809875929	designed to
+0.0806875929	bounds for
+0.0805303030	the notion of
+0.0802803030	a number of
+0.0802803030	the complexity of
+0.0788582703	the total
+0.0771269868	extended to
+0.0749798014	an algorithm
+0.0748230013	to find
+0.0747744467	the notion
+0.0743985179	theory of
+0.0741182149	class of
+0.0734411134	to obtain
+0.0732803030	the design of
+0.0729661650	the application
+0.0729328317	the user
+0.0727318513	evaluation of
+0.0724341492	a new
+0.0697219066	an application
+0.0691182149	set of
+0.0688296982	obtained by
+0.0683985179	applications of
+0.0678239565	subset of
+0.0677744467	to develop
+0.0671798014	a simple
+0.0652803030	the set of
+0.0648454876	analysis of
+0.0644818513	sequence of
+0.0635621543	systems with
+0.0633985179	conditions for
+0.0616136364	the analysis of
+0.0613239565	version of
+0.0613239565	range of
+0.0612803030	the study of
+0.0592803030	the class of
+0.0585954876	model for
+0.0581651330	effects of
+0.0576136364	the solution of
+0.0566136364	the implementation of
+0.0544818513	description of
+0.0532249369	the literature
+0.0529328317	the design
+0.0520161650	the maximum
+0.0508582703	the main
+0.0501182149	implementation of
+0.0498636364	a method for
+0.0486572899	degree of
+0.0485691953	a general
+0.0480161650	the problem
+0.0476454876	techniques for
+0.0474818513	distribution of
+0.0466454876	method for
+0.0446454876	methods for
+0.0442161650	a network
+0.0426525286	a graph
+0.0422161650	the network
+0.0416572899	extension of
+0.0400582703	the probability
+0.0398734663	respect to
+0.0396946339	to support
+0.0396525286	a finite
+0.0380582703	the average
+0.0380161650	the basic
+0.0373253257	for example
+0.0368798014	an optimal
+0.0366841492	used as
+0.0366788210	problem for
+0.0366525286	a large
+0.0358151846	representation of
+0.0339788210	presented for
+0.0328151846	model of
+0.0314906232	behavior of
+0.0303916036	the objective
+0.0297454612	to make
+0.0296485179	complexity of
+0.0293151846	cost of
+0.0288151846	function of
+0.0286841492	the system
+0.0285494983	the database
+0.0285205128	part of
+0.0276485179	design of
+0.0271572899	definition of
+0.0262161650	a program
+0.0261788210	developed for
+0.0261568765	the first
+0.0260582703	the basis
+0.0249515482	technique for
+0.0248151846	form of
+0.0246485179	probability of
+0.0242161650	a small
+0.0241568765	use of
+0.0236485179	computation of
+0.0234906232	specification of
+0.0227661650	state of
+0.0226485179	size of
+0.0223916036	the computation
+0.0216485179	required to
+0.0216485179	development of
+0.0206485179	series of
+0.0206485179	solution of
+0.0202848816	procedure for
+0.0202161650	the minimum
+0.0195494983	a high
+0.0195494983	the construction
+0.0195494983	a method
+0.0186841492	a system
+0.0176485179	construction of
+0.0176485179	concept of
+0.0175494983	the development
+0.0166841492	system for
+0.0166485179	performance of
+0.0164906232	existence of
+0.0156485179	study of
+0.0153916036	a variety
+0.0146485179	means of
+0.0146485179	application of
+0.0145494983	an approach
+0.0143626181	the above
+0.0135205128	value of
+0.0123916036	the existence
+0.0116485179	developed to
+0.0113626181	the corresponding
+0.0113626181	the need
+0.0106485179	structure of

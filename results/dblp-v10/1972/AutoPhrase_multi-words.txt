@@ -1,0 +1,103 @@
+0.9641666667	pattern recognition
+0.8661666667	data base
+0.8501666667	programming languages
+0.6205000000	real time
+0.6201666667	computer science
+0.5381666667	two dimensional
+0.4671666667	this paper
+0.3935000000	based on
+0.3885000000	as well as
+0.3801666667	this note
+0.3685000000	in terms of
+0.3155000000	associated with
+0.3021666667	on line
+0.2965000000	the same
+0.2941666667	an algorithm
+0.2735000000	the existence of
+0.2501666667	the data
+0.2321666667	the development
+0.2291666667	a simple
+0.2265000000	class of
+0.2225000000	number of
+0.2181666667	the model
+0.2155000000	applied to
+0.2095000000	in order to
+0.2095000000	a new
+0.2075000000	the development of
+0.2005000000	family of
+0.1995000000	the problem of
+0.1995000000	the number of
+0.1861666667	to determine
+0.1775000000	the use of
+0.1695000000	the use
+0.1665000000	the purpose of
+0.1601666667	the algorithm
+0.1585000000	a set of
+0.1585000000	a number of
+0.1581666667	a single
+0.1565000000	set of
+0.1541666667	the paper
+0.1515000000	a given
+0.1495000000	method for
+0.1451666667	to provide
+0.1451666667	the design
+0.1445000000	approach to
+0.1415000000	used to
+0.1385000000	means of
+0.1331666667	a large
+0.1325000000	analysis of
+0.1271666667	computer systems
+0.1261666667	of data
+0.1261666667	of information
+0.1261666667	the set
+0.1251666667	the method
+0.1251666667	the total
+0.1205000000	classes of
+0.1185000000	properties of
+0.1155000000	a class of
+0.1141666667	the number
+0.1135000000	shown to
+0.1121666667	the case
+0.1115000000	such as
+0.1111666667	the problem
+0.1105000000	functions of
+0.1095000000	model of
+0.1055000000	implementation of
+0.1041666667	the minimum
+0.1035000000	method of
+0.1025000000	application of
+0.1021666667	the existence
+0.1005000000	technique for
+0.1001666667	the optimal
+0.0981666667	a method
+0.0971666667	a class
+0.0971666667	a number
+0.0971666667	a set
+0.0965000000	algorithm for
+0.0961666667	in order
+0.0955000000	algorithms for
+0.0945000000	existence of
+0.0935000000	solution of
+0.0925000000	structure of
+0.0915000000	model for
+0.0915000000	theory of
+0.0905000000	purpose of
+0.0885000000	case of
+0.0885000000	development of
+0.0865000000	terms of
+0.0835000000	function of
+0.0825000000	study of
+0.0815000000	in particular
+0.0815000000	results of
+0.0805000000	problems of
+0.0795000000	problem of
+0.0775000000	design of
+0.0675000000	the system
+0.0665000000	the first
+0.0595000000	the computer
+0.0505000000	use of
+0.0495000000	part of
+0.0415000000	a computer
+0.0355000000	used in
+0.0295000000	as well
+0.0255000000	a system

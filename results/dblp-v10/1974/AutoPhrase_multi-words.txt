@@ -1,0 +1,177 @@
+0.9553333333	context free
+0.9373333333	pattern recognition
+0.6763333333	data base
+0.5143333333	high level
+0.4716666667	with respect to
+0.4356666667	variety of
+0.4023333333	this paper
+0.3796666667	does not
+0.3706666667	as well as
+0.3616666667	in terms of
+0.3233333333	computer science
+0.2973333333	paper presents
+0.2966666667	in order to
+0.2943333333	paper describes
+0.2916666667	based on
+0.2680000000	the number of
+0.2666666667	a set of
+0.2586666667	real time
+0.2516666667	well known
+0.2470000000	the use of
+0.2306666667	the problem of
+0.2196666667	the existence of
+0.2166666667	number of
+0.2136666667	class of
+0.2076666667	set of
+0.2063333333	computer graphics
+0.2046666667	shown to
+0.1976666667	applied to
+0.1963333333	this paper describes
+0.1953333333	this paper presents
+0.1843333333	n 1
+0.1826666667	approach to
+0.1793333333	on line
+0.1736666667	operating system
+0.1723333333	a single
+0.1716666667	the design of
+0.1716666667	method for
+0.1706666667	less than
+0.1673333333	this correspondence
+0.1666666667	the development of
+0.1636666667	application of
+0.1626666667	the results of
+0.1616666667	the same
+0.1586666667	consists of
+0.1550000000	a class of
+0.1506666667	an algorithm for
+0.1493333333	an algorithm
+0.1440000000	the system
+0.1436666667	the algorithm
+0.1410000000	analysis of
+0.1390000000	a number of
+0.1376666667	properties of
+0.1356666667	used to
+0.1356666667	family of
+0.1356666667	a new
+0.1353333333	this note
+0.1303333333	a simple
+0.1296666667	algorithm for
+0.1276666667	at least
+0.1263333333	an interactive
+0.1256666667	the model
+0.1236666667	the paper
+0.1236666667	classes of
+0.1226666667	aspects of
+0.1216666667	evaluation of
+0.1206666667	such as
+0.1186666667	implementation of
+0.1180000000	algorithms for
+0.1170000000	design of
+0.1166666667	the user
+0.1160000000	model of
+0.1156666667	solution of
+0.1143333333	in addition
+0.1140000000	cost of
+0.1136666667	the optimal
+0.1136666667	description of
+0.1126666667	the design
+0.1126666667	the problem
+0.1126666667	the method
+0.1126666667	probability of
+0.1126666667	due to
+0.1120000000	the first
+0.1120000000	structure of
+0.1120000000	method of
+0.1116666667	the set
+0.1116666667	the theory
+0.1116666667	the language
+0.1116666667	the probability
+0.1116666667	the performance
+0.1116666667	the program
+0.1116666667	of data
+0.1106666667	the analysis
+0.1106666667	the class
+0.1106666667	the cost
+0.1106666667	a number
+0.1096666667	the solution
+0.1096666667	the structure
+0.1090000000	problems in
+0.1086666667	theory of
+0.1086666667	study of
+0.1086666667	solution to
+0.1086666667	complexity of
+0.1080000000	terms of
+0.1080000000	model for
+0.1080000000	problems of
+0.1080000000	problem of
+0.1073333333	the original
+0.1073333333	a graph
+0.1070000000	performance of
+0.1066666667	a general
+0.1066666667	types of
+0.1060000000	form of
+0.1056666667	bounds on
+0.1056666667	a class
+0.1050000000	sets of
+0.1046666667	type of
+0.1046666667	a program
+0.1046666667	the number
+0.1040000000	methods for
+0.1040000000	function of
+0.1036666667	the concept
+0.1036666667	representation of
+0.1036666667	a set
+0.1033333333	to provide
+0.1030000000	development of
+0.1023333333	computer systems
+0.1006666667	the general
+0.1006666667	required to
+0.1006666667	the development
+0.0996666667	a large
+0.0996666667	the minimum
+0.0996666667	a finite
+0.0986666667	the present
+0.0986666667	a method
+0.0986666667	the basic
+0.0986666667	the maximum
+0.0976666667	the form
+0.0976666667	related to
+0.0970000000	case of
+0.0970000000	results of
+0.0966666667	the case
+0.0966666667	designed to
+0.0966666667	a model
+0.0946666667	means of
+0.0906666667	concept of
+0.0906666667	equivalent to
+0.0900000000	purpose of
+0.0900000000	order to
+0.0896666667	existence of
+0.0890000000	presented for
+0.0856666667	associated with
+0.0843333333	to determine
+0.0843333333	to obtain
+0.0836666667	a special
+0.0826666667	a high
+0.0826666667	in terms
+0.0823333333	for solving
+0.0750000000	use of
+0.0686666667	amount of
+0.0566666667	more than
+0.0466666667	part of
+0.0430000000	the time
+0.0430000000	the computer
+0.0430000000	system for
+0.0430000000	a system
+0.0376666667	computer system
+0.0370000000	a computer
+0.0330000000	the other
+0.0316666667	the second
+0.0306666667	value of
+0.0306666667	used in
+0.0266666667	an example
+0.0200000000	used for
+0.0166666667	to make
+0.0166666667	as well
+0.0160000000	given for
+0.0160000000	a particular

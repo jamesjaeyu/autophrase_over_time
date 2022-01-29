@@ -1,0 +1,65 @@
+0.9090000000	context free
+0.8960000000	time sharing
+0.5783333333	this paper
+0.5173333333	real time
+0.5080000000	as well as
+0.4613333333	on line
+0.3740000000	in terms of
+0.3713333333	based on
+0.3333333333	paper describes
+0.2100000000	the use of
+0.2090000000	the number of
+0.1916666667	class of
+0.1910000000	the problem of
+0.1880000000	a set of
+0.1813333333	a number of
+0.1776666667	the set
+0.1706666667	number of
+0.1576666667	an algorithm
+0.1516666667	the same
+0.1496666667	set of
+0.1446666667	the system
+0.1426666667	the paper
+0.1396666667	a program
+0.1396666667	a number
+0.1386666667	the development
+0.1376666667	the method
+0.1376666667	the solution
+0.1376666667	the optimal
+0.1356666667	the results
+0.1356666667	a set
+0.1346666667	the model
+0.1346666667	the problem
+0.1346666667	the algorithm
+0.1326666667	the design
+0.1326666667	the program
+0.1156666667	used to
+0.1096666667	a general
+0.1086666667	a simple
+0.1076666667	a large
+0.1046666667	shown to
+0.1046666667	study of
+0.1046666667	in order
+0.0986666667	analysis of
+0.0976666667	solution of
+0.0956666667	method of
+0.0946666667	terms of
+0.0946666667	model of
+0.0906666667	algorithm for
+0.0906666667	design of
+0.0886666667	problem of
+0.0816666667	structure of
+0.0766666667	properties of
+0.0756666667	system for
+0.0736666667	as well
+0.0726666667	the first
+0.0706666667	method for
+0.0696666667	a computer
+0.0656666667	a system
+0.0636666667	the computer
+0.0616666667	development of
+0.0616666667	case of
+0.0606666667	use of
+0.0596666667	application of
+0.0406666667	such as
+0.0316666667	a new
