@@ -4,16 +4,66 @@ Q2 Project
 Processing DBLP v10
 """
 import pandas as pd
-import json
 import time
+import Levenshtein as Lv # Used to calculate string similarity
+from sklearn.model_selection import train_test_split
+
+def obtain_phrases(infolder, unique_by_year=False):
+    """
+    Given the folder path containing AutoPhrase results by year, read in
+    the quality phrases (multi >= 0.6, single >= 0.8) and output a csv.
+    Columns: Phrase Quality, Phrase, Year
+
+    unique_by_year determines if we look at unique phrases overall, or by year.
+    - False means phrases across all years must be unique. So the earliest instance
+        will be the only time the phrase shows up. (takes around 1 minute to run)
+    - True means phrases just have to be unique per year. So there can be duplicates
+        across multiple years. (takes around 20 minutes to run)
+
+    TODO: Can try messing around with score threshold values
+
+    >>> obtain_phrases('../results/dblp-v10', False)
+    >>> obtain_phrases('../results/dblp-v10', True)
+    """
+    start = time.time()
+    df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year'])
+    if not unique_by_year: # Set is maintained across all years
+        phrases = set()
+    for year in range(1960, 2018):
+        filepath = infolder + '/' + str(year) + '/AutoPhrase.txt'
+        if unique_by_year: # Set is reset every year
+            phrases = set()
+        try:
+            file = open(filepath, 'r')
+            for line in file:
+                line = line.strip().split('\t')
+                phrase = line[1]
+                if phrase in phrases:
+                    continue
+                num_words = len(line[1].split())
+                score = float(line[0])
+                if (num_words > 1 and score >= 0.6) or (num_words == 1 and score >= 0.8):
+                    df.loc[len(df.index)] = [score, phrase, year]
+                    phrases.add(phrase)
+            file.close()
+        except:
+            continue
+    if unique_by_year:
+        df.to_csv('../results/dblp-v10-phrases-uniquebyyear.csv')
+    else:
+        df.to_csv('../results/dblp-v10-phrases-unique.csv')
+    end = time.time()
+    return end - start
+
 
 def create_model():
     """
     Idea 1: If we have multiple word2vec models for each year/era, we can
-        look at the similarity of the phrases of an individual paper against each model
+        look at the similarity of the phrases of an individual paper against each model.
+    But this requires obtaining the phrasal segmentation results
 
     Idea 2: Using correlation between phrases of an individual paper and each year/era's phrases
         Classify based on the highest average correlation
-    
+
     """
     return
