@@ -1,0 +1,8 @@
+0.9875000000	neural network
+0.3725000000	this paper
+0.2655000000	number of
+0.2045000000	set of
+0.1995000000	the number
+0.1995000000	the problem
+0.1985000000	based on
+0.1385000000	used to

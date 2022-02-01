@@ -1,0 +1,81 @@
+0.9828052475	neural networks
+0.9814052475	neural network
+0.9731385809	reinforcement learning
+0.9680552475	semantic web
+0.9521663586	image segmentation
+0.9488385809	genetic algorithm
+0.9042774698	data mining
+0.8926580253	machine learning
+0.8441663586	high dimensional
+0.8390108031	face recognition
+0.7309287518	artificial neural
+0.6733088190	experimental results
+0.4888358031	data sets
+0.3260704351	this paper
+0.3083017677	support vector
+0.2873431624	as well as
+0.2844312576	able to
+0.2727871018	this paper presents
+0.2675712121	paper presents
+0.2568759907	an efficient
+0.2341863081	based on
+0.2321423687	in order to
+0.2227974192	notion of
+0.1883709402	due to
+0.1839423687	such as
+0.1761423687	in terms of
+0.1756926407	proposed approach
+0.1636212121	proposed method
+0.1528259907	an important
+0.1393807526	number of
+0.1304704351	in addition
+0.1302085304	to solve
+0.1130979243	the problem of
+0.1067918637	the proposed method
+0.1062090354	the number of
+0.1052090354	a set of
+0.0999423687	a novel
+0.0904363081	the proposed
+0.0893029748	the proposed approach
+0.0859868132	a new
+0.0802090354	the use of
+0.0798820513	this work
+0.0794090354	the performance of
+0.0740383838	results show
+0.0720140859	the art
+0.0712251970	algorithm for
+0.0657140859	applied to
+0.0555363081	set of
+0.0554534799	the same
+0.0538307526	the current
+0.0530251970	analysis of
+0.0525363081	state of
+0.0515209235	problem of
+0.0499918637	the main
+0.0498875902	the problem
+0.0488875902	the number
+0.0468875902	the performance
+0.0453363081	framework for
+0.0349209235	complexity of
+0.0348537685	compared to
+0.0345363081	class of
+0.0303029748	a large
+0.0296251970	application of
+0.0295363081	approach to
+0.0286090354	a given
+0.0281209235	problem in
+0.0271209235	structure of
+0.0269209235	approach for
+0.0265363081	method for
+0.0264090354	the first
+0.0262090354	used to
+0.0255764791	in terms
+0.0251209235	performance of
+0.0248875902	the case
+0.0248875902	a set
+0.0248029748	a simple
+0.0237363081	case of
+0.0228875902	a number
+0.0134825397	as well
+0.0132090354	used for
+0.0111111111	in particular

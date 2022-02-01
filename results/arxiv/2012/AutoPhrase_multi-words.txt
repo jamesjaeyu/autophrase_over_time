@@ -1,0 +1,294 @@
+0.9748816935	gaussian process
+0.9708398078	bayesian network
+0.9703458485	data mining
+0.9665256563	neural networks
+0.9623746762	reinforcement learning
+0.9610481959	belief propagation
+0.9609787088	neural network
+0.9600135319	monte carlo
+0.9599824827	feature extraction
+0.9566028831	mutual information
+0.9556004803	feature selection
+0.9547357863	collaborative filtering
+0.9524311552	latent variable
+0.9514100127	genetic algorithm
+0.9455079718	supervised learning
+0.9453151252	message passing
+0.9380623072	artificial intelligence
+0.9317572622	active learning
+0.9307247326	convex optimization
+0.9222286467	graphical model
+0.9170989738	machine learning
+0.9152516845	natural language
+0.9063587245	maximum likelihood
+0.9016491554	image segmentation
+0.8947742312	graphical models
+0.8844459019	model selection
+0.8816865270	state space
+0.8762586737	latent variables
+0.8753257615	bayesian networks
+0.8730236722	matrix factorization
+0.8715574053	markov decision processes
+0.8687053125	dirichlet process
+0.8668357850	computational complexity
+0.8650545635	sparse coding
+0.8581528955	decision making
+0.8544727927	face recognition
+0.8504040478	data set
+0.8503082707	naive bayes
+0.8500489426	prior knowledge
+0.8498735672	optimization problem
+0.8495014861	random fields
+0.8482580015	lower bounds
+0.8327298967	multi agent
+0.8318829652	semi supervised
+0.8186118633	semi supervised learning
+0.8132585127	support vector
+0.8047871812	low rank
+0.8022969987	mixture models
+0.7992819638	metric learning
+0.7940934133	multi task
+0.7916488354	large scale
+0.7890720390	high dimensional
+0.7815981820	convergence rate
+0.7726003075	objective function
+0.7357523452	data sets
+0.7305540333	topic models
+0.7267709772	low dimensional
+0.7221333679	probabilistic models
+0.7212142772	lower bound
+0.6866669692	rough sets
+0.6770424710	data points
+0.6754744214	em algorithm
+0.6729633177	proposed approach
+0.6422069764	optimization problems
+0.5830543704	online learning
+0.5726129474	markov decision
+0.5691835473	experimental results
+0.5651596415	paper introduces
+0.5646771662	decision processes
+0.5610346415	inthis paper
+0.5540258806	structure learning
+0.5533495016	paper proposes
+0.5518450542	real world
+0.5415174615	empirical results
+0.5301997395	paper presents
+0.5171995960	continuous time
+0.5032100886	hidden markov
+0.4944060419	component analysis
+0.4858466449	learning algorithms
+0.4719194667	time series
+0.4713263132	paper describes
+0.4704999063	existing methods
+0.4622460111	training data
+0.4122071649	k means
+0.4121350948	first order
+0.4093589682	value function
+0.3981706361	computer vision
+0.3830576378	real time
+0.3630536727	learning algorithm
+0.3549314143	model based
+0.3517605689	markov models
+0.3345582789	markov random
+0.3313304526	synthetic and real
+0.3201162925	wide range of
+0.3154725192	novel approach
+0.2992762862	learning methods
+0.2833314921	algorithm based
+0.2713794074	widely used
+0.2624400657	et al
+0.2545520346	a large number
+0.2511406293	proposed method
+0.2510074280	a wide range
+0.2499978345	a new approach
+0.2456612365	previous work
+0.2356877013	an efficient
+0.2297107321	this paper describes
+0.2275805812	the proposed method
+0.2274433175	proposed algorithm
+0.2198867956	this paper proposes
+0.2137119461	large number
+0.2123271942	based on
+0.2115555157	into account
+0.2095970779	real data
+0.2013836812	this paper presents
+0.1893489456	rely on
+0.1842822178	depends on
+0.1814388336	an effective
+0.1775763728	the art
+0.1706354953	thenumber of
+0.1657332451	experiments show
+0.1655133336	to classify
+0.1652822178	focus on
+0.1642919925	this article
+0.1610478643	better than
+0.1606188286	lead to
+0.1589959667	well known
+0.1566741576	rather than
+0.1556033967	algorithm for
+0.1527968682	do not
+0.1525401456	a new
+0.1497053863	in order to
+0.1451833274	the context of
+0.1448537990	derived from
+0.1432602505	the task of
+0.1428675965	does not
+0.1428652317	the proposed algorithm
+0.1422602505	the form of
+0.1403482062	many applications
+0.1392602505	the use of
+0.1392602505	the size of
+0.1384856371	results show
+0.1383241314	the original
+0.1379405523	an extension
+0.1360245561	this paper
+0.1326975955	applied to
+0.1324700671	not only
+0.1319338134	compared to
+0.1297428540	problem of learning
+0.1293250518	these methods
+0.1283225128	a novel
+0.1270900016	by means of
+0.1243559358	leads to
+0.1243107237	this problem
+0.1243017479	number of
+0.1236440571	this approach
+0.1230851939	with respect to
+0.1210833274	in terms of
+0.1200392691	advantage of
+0.1200392691	notion of
+0.1146014270	the problem of
+0.1142325831	an important
+0.1139599711	algorithm based on
+0.1139066225	as well as
+0.1106560774	state of
+0.1101164876	in addition
+0.1095539876	to learn
+0.1074732219	the effectiveness of
+0.1068494076	deal with
+0.1067583348	subset of
+0.1065673022	experiments on
+0.1060371858	compared with
+0.1045759656	able to
+0.1015582952	according to
+0.0995660267	more than
+0.0979458348	version of
+0.0960711579	due to
+0.0954925178	amount of
+0.0932865202	the problem of learning
+0.0925214445	the state of
+0.0925013155	the same
+0.0922332319	these problems
+0.0914739876	to solve
+0.0896234357	family of
+0.0892354240	to identify
+0.0865631351	such as
+0.0865549171	to achieve
+0.0865104254	over time
+0.0857089685	a variety of
+0.0855027254	to deal with
+0.0842189483	a set of
+0.0820687515	shown to
+0.0791969625	in practice
+0.0783880963	each other
+0.0776895366	the number of
+0.0774932713	used to
+0.0766307131	the performance of
+0.0762460977	the quality of
+0.0749818244	the proposed
+0.0727424171	in thispaper
+0.0727233915	this work
+0.0715622620	type of
+0.0711131047	our approach
+0.0696876382	a fast
+0.0685305367	with respect
+0.0677484320	a single
+0.0674743656	new algorithm
+0.0667349639	a large
+0.0656287357	associated with
+0.0641833723	but also
+0.0632193984	to reduce
+0.0623279463	set of
+0.0605441625	analysis of
+0.0595211374	a number of
+0.0590289222	to compute
+0.0589441625	method for
+0.0578846220	a hybrid
+0.0577734775	presence of
+0.0555725499	a wide
+0.0555240730	to improve
+0.0551694031	the presence of
+0.0549337474	a simple
+0.0548526186	also show
+0.0542851967	the main
+0.0540579181	large number of
+0.0536927684	obtained by
+0.0516975499	to detect
+0.0508015352	to estimate
+0.0501210856	approach for
+0.0500441625	approach to
+0.0499577852	to obtain
+0.0497383918	quality of
+0.0490764224	part of
+0.0486210856	class of
+0.0485291769	collection of
+0.0484356759	related to
+0.0478846220	a convex
+0.0475512887	a dynamic
+0.0467360114	to predict
+0.0461721746	a small
+0.0455189634	implementation of
+0.0444444429	the complexity of
+0.0432108291	model for
+0.0431210856	framework for
+0.0426110590	in contrast
+0.0417360114	to handle
+0.0416876861	a class of
+0.0414585968	to find
+0.0401460968	for example
+0.0390723015	a method for
+0.0381954709	to select
+0.0380723015	the set of
+0.0377733741	degree of
+0.0367373920	a general
+0.0328409983	the expected
+0.0327532852	respect to
+0.0312757809	the true
+0.0306207729	to produce
+0.0292536585	new method
+0.0289075376	to evaluate
+0.0287696265	variety of
+0.0287531818	nature of
+0.0272093695	an algorithm
+0.0260166173	development of
+0.0249964250	ability to
+0.0249725714	a finite
+0.0247380847	complexity of
+0.0247380847	performance of
+0.0241728673	range of
+0.0238089250	sequence of
+0.0228328335	extension of
+0.0226757037	a given
+0.0223094318	goal of
+0.0213651750	bound on
+0.0213094318	similar to
+0.0212126412	combination of
+0.0207380847	technique for
+0.0204938239	to construct
+0.0204079347	to address
+0.0199972483	a set
+0.0189576719	new approach
+0.0184079347	to perform
+0.0175850701	as well
+0.0164938239	to deal
+0.0164680886	the aim
+0.0154320309	the effectiveness
+0.0149055886	the presence
+0.0129055886	to represent
+0.0127688912	effectiveness of
+0.0116955284	known as
+0.0114938239	a variety
+0.0092077999	a few
+0.0092077999	to make
+0.0074510431	need to
+0.0061725105	well as

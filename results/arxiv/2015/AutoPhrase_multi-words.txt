@@ -1,0 +1,584 @@
+0.9693411087	stochastic gradient descent
+0.9672480018	optical flow
+0.9656082091	speech recognition
+0.9644075887	latent variable
+0.9636217286	machine translation
+0.9633277474	genetic algorithm
+0.9630307763	gradient descent
+0.9630183072	question answering
+0.9628993026	artificial intelligence
+0.9613929694	support vector machine
+0.9608334116	principal component analysis
+0.9604305910	natural language processing
+0.9581459728	social media
+0.9575940557	feature extraction
+0.9566305995	feature selection
+0.9560175032	evolutionary algorithms
+0.9556197187	sentiment analysis
+0.9553337154	convex optimization
+0.9550980571	natural language
+0.9535991272	big data
+0.9533736726	neural network
+0.9520134609	anomaly detection
+0.9477989702	pattern recognition
+0.9475012755	dimensionality reduction
+0.9468633268	reinforcement learning
+0.9431872151	linear regression
+0.9421564617	neural networks
+0.9421287290	gaussian process
+0.9401888677	data mining
+0.9400494612	social networks
+0.9392356041	maximum likelihood
+0.9387057860	knowledge base
+0.9366481079	active learning
+0.9326962630	monte carlo
+0.9323833653	markov chain
+0.9290027533	deep learning
+0.9222387088	unsupervised learning
+0.9216844388	machine learning
+0.9204321975	edge detection
+0.9182991294	graphical models
+0.9179651276	action recognition
+0.9176984558	open source
+0.9141274336	supervised learning
+0.9113532807	image segmentation
+0.9084182940	random variables
+0.9068236641	vector space
+0.9024978188	short term memory
+0.8973840024	loss function
+0.8969437284	weakly supervised
+0.8945727736	matrix factorization
+0.8925327330	loss functions
+0.8889069834	face recognition
+0.8855725357	image retrieval
+0.8809701994	stochastic gradient
+0.8783061088	dictionary learning
+0.8782939149	sparse coding
+0.8775778059	pascal voc
+0.8769410754	pose estimation
+0.8751369887	activity recognition
+0.8690104195	metric learning
+0.8684935490	image processing
+0.8684371791	gaussian processes
+0.8670834642	data set
+0.8670121261	variational inference
+0.8668926860	topic modeling
+0.8643167059	nearest neighbor
+0.8622042168	boltzmann machines
+0.8620615127	multi armed
+0.8619074877	recurrent neural network
+0.8606806559	matrix completion
+0.8592533159	deep neural networks
+0.8590932755	markov decision
+0.8577360553	recurrent neural networks
+0.8574125420	word embeddings
+0.8573440160	lower bounds
+0.8570025538	semantic segmentation
+0.8568448859	low rank
+0.8565135279	deep convolutional
+0.8556249356	subspace clustering
+0.8525075995	restricted boltzmann
+0.8502800143	domain adaptation
+0.8478196672	upper bounds
+0.8451708335	object detection
+0.8448900045	higher order
+0.8419440860	random fields
+0.8390427237	computational complexity
+0.8378958776	super resolution
+0.8370105588	generative model
+0.8364072177	closed form
+0.8359885307	optimization problem
+0.8350849872	object recognition
+0.8349941825	convolutional neural networks cnns
+0.8340461854	fully connected
+0.8334065265	convolutional neural networks
+0.8325609123	object tracking
+0.8312205616	convolutional neural network
+0.8297371053	deep neural network
+0.8250806928	long short term memory
+0.8237105802	convolutional networks
+0.8219922732	deep networks
+0.8219197123	decision making
+0.8218055737	gaussian mixture
+0.8217322437	data analysis
+0.8181643043	long short term
+0.8179325161	feature space
+0.8175000789	computational cost
+0.8141254105	model selection
+0.8137862130	sample complexity
+0.8110805474	convergence rate
+0.8108219608	lower bound
+0.8100075859	objective function
+0.8083070045	generative models
+0.8080164927	nuclear norm
+0.8057086080	convolutional neural network cnn
+0.8042623581	image classification
+0.7965545189	large scale
+0.7945261553	sample size
+0.7940338147	fine grained
+0.7929184545	high dimensional
+0.7927743163	semi supervised
+0.7897559608	worst case
+0.7887612429	principal component
+0.7876036885	high resolution
+0.7817669026	word representations
+0.7796586578	transfer learning
+0.7794284355	latent variables
+0.7765794047	synthetic data
+0.7764941563	high quality
+0.7703399092	prior knowledge
+0.7679276218	language model
+0.7645914554	sparse representation
+0.7591996039	data driven
+0.7591274468	multi view
+0.7582475581	visual recognition
+0.7575141198	low dimensional
+0.7569737611	online learning
+0.7541304690	data sets
+0.7516457757	cost function
+0.7508813627	long term
+0.7497660999	convolutional network
+0.7495755807	spatio temporal
+0.7492249769	pre trained
+0.7491351883	data points
+0.7471779336	single image
+0.7432871690	multi label
+0.7422340775	network architecture
+0.7406119635	optimization problems
+0.7382639162	black box
+0.7337292671	high order
+0.7330980911	multi task
+0.7318100966	deep convolutional neural networks
+0.7313003882	hand crafted
+0.7305143592	language processing
+0.7299202196	language models
+0.7273767340	support vector
+0.7263445690	recurrent neural
+0.7227283473	feature learning
+0.7218965674	training set
+0.7196409467	bayesian networks
+0.7020662047	multi scale
+0.6981500953	ground truth
+0.6944048670	recent years
+0.6912162497	random field
+0.6890640561	benchmark datasets
+0.6877064648	low level
+0.6849483087	deep convolutional neural
+0.6826311026	training data
+0.6809389338	high level
+0.6749455818	extensive experiments
+0.6730595926	component analysis
+0.6720875970	superior performance
+0.6719181615	classification accuracy
+0.6705549178	real world
+0.6693977740	term memory
+0.6678609263	deep network
+0.6339560638	theoretical analysis
+0.6270563882	inthis paper
+0.6265269321	natural images
+0.6250895928	neural networks cnns
+0.6243873120	numerical experiments
+0.6219706398	existing methods
+0.6215012669	recently proposed
+0.6202559656	deep neural
+0.6048019637	convolutional neural
+0.6042144967	representation learning
+0.5946556750	graph based
+0.5944452909	experimental results
+0.5916981871	short term
+0.5550677584	markov random
+0.5536537676	neural network cnn
+0.5405826377	labeled data
+0.5227509845	efficient algorithm
+0.5217270281	real world datasets
+0.5139252770	based methods
+0.5115439200	theproposed method
+0.5095859217	paper presents
+0.5029874169	end to end
+0.4858814169	high accuracy
+0.4796476952	networks cnns
+0.4765837444	learning algorithms
+0.4705492174	time series
+0.4693784386	rgb d
+0.4676672833	k means
+0.4620672438	vector machine
+0.4561640912	existing approaches
+0.4548510453	classification problems
+0.4546467962	paper proposes
+0.4538966825	classification tasks
+0.4523258373	synthetic and real
+0.4518422630	zero shot
+0.4509985446	network structure
+0.4385948541	based approaches
+0.4347010647	based approach
+0.4299537076	computer vision
+0.4269549378	real world data
+0.4253517182	paper describes
+0.4205929129	empirical results
+0.4137587035	least squares
+0.4075946637	challenging problem
+0.3915751397	method achieves
+0.3842418268	proposed method
+0.3718379335	paper introduces
+0.3710021050	learning framework
+0.3675201291	a small number
+0.3644882955	first order
+0.3626035561	model parameters
+0.3612329743	learning algorithm
+0.3574888966	proposed approach
+0.3555372559	real time
+0.3508491794	non convex
+0.3505538203	current state of
+0.3443715351	model based
+0.3375594701	network cnn
+0.3366143746	paper addresses
+0.3354986055	network models
+0.3327678238	level features
+0.3306860421	polynomial time
+0.3207641162	artificial neural
+0.3199091521	the art methods
+0.3190443450	experimental results show
+0.3174909477	world datasets
+0.3173946499	the proposed method
+0.3157800966	learning tasks
+0.3155633084	co occurrence
+0.3149431318	publicly available
+0.3115731163	this paper proposes
+0.3115440425	learning approach
+0.3112456382	this paper presents
+0.3029776906	world applications
+0.3022631346	real data
+0.3022400586	a wide range
+0.3017800137	experimental results on
+0.3016369957	based method
+0.3011138569	et al
+0.2965336477	based image
+0.2951470256	this paper introduces
+0.2923654229	the art performance
+0.2893041371	the proposed approach
+0.2825509729	relations between
+0.2814583161	faster than
+0.2793339897	relationship between
+0.2784258125	proposed algorithm
+0.2772191910	an adaptive
+0.2746340165	the art results
+0.2738830470	trade off
+0.2706253522	hidden markov
+0.2699259309	commonly used
+0.2689480162	results demonstrate
+0.2684009207	the proposed algorithm
+0.2673480143	a large scale
+0.2658973401	large number of
+0.2626757056	long short
+0.2600507551	the art approaches
+0.2588683740	this paper describes
+0.2548074134	learning methods
+0.2537978378	current state
+0.2502118820	a new approach
+0.2500879838	a unified
+0.2471099718	into account
+0.2453058724	widely used
+0.2436739295	this paper addresses
+0.2396232735	state of
+0.2311946310	art approaches
+0.2281731156	wide range of
+0.2276162560	based on
+0.2231089059	method based on
+0.2219894691	non linear
+0.2186654623	previous work
+0.2156391158	a large number
+0.2141730957	proposed model
+0.2121270095	art performance
+0.2078055682	so far
+0.2036477121	more efficient
+0.2033595565	more accurate
+0.2033370364	information about
+0.2030034969	art algorithms
+0.2021644107	rather than
+0.2017060027	a novel approach
+0.1983587327	a survey
+0.1969521574	the art
+0.1969148684	proposed framework
+0.1965251613	the proposed model
+0.1933984185	different types
+0.1926308928	suffer from
+0.1914634548	network based
+0.1908593403	and real data
+0.1892500126	at least
+0.1886411839	large number
+0.1847663094	ranging from
+0.1831758938	less than
+0.1824723894	this paper
+0.1821418044	the proposed framework
+0.1791885660	the art algorithms
+0.1764541922	world data
+0.1762385664	the other hand
+0.1752581238	does not
+0.1741308829	small number
+0.1734019699	dimensional data
+0.1714786530	very large
+0.1690037789	an efficient
+0.1677442357	thenumber of
+0.1651387319	results indicate
+0.1639537998	art methods
+0.1605587726	do not
+0.1597129269	this article
+0.1597030830	dealing with
+0.1581802346	depend on
+0.1581769666	focuses on
+0.1579415297	convolutional neural networks for
+0.1578674327	a deep
+0.1573301901	focus on
+0.1558947144	recent work
+0.1558118271	algorithm based on
+0.1557986284	bag of
+0.1552919409	tend to
+0.1525915214	motivated by
+0.1513809062	correspond to
+0.1510799796	this problem
+0.1502368289	an important
+0.1493037235	extracted from
+0.1485655676	a lot
+0.1484679535	rely on
+0.1483094012	focused on
+0.1481291569	method based
+0.1480284039	a neural network
+0.1478782457	an extension
+0.1463051172	more robust
+0.1459835960	number of
+0.1410260974	inspired by
+0.1392280019	more specifically
+0.1388639387	relies on
+0.1376639499	well known
+0.1363174163	many applications
+0.1350269553	tasks such as
+0.1349604637	followed by
+0.1336672329	art results
+0.1326110752	the utility
+0.1310933068	depends on
+0.1309108085	able to
+0.1295150577	due to
+0.1284260844	a single
+0.1278163561	thestate of
+0.1269863668	the original
+0.1268328569	notion of
+0.1262621540	better performance
+0.1255776102	both synthetic
+0.1253373999	results show
+0.1240144606	consists of
+0.1239479612	derived from
+0.1236743220	an iterative
+0.1230585875	an end to end
+0.1214946148	a novel
+0.1200209623	an image
+0.1176983244	the same time
+0.1171806703	lead to
+0.1162876591	a generative
+0.1158555410	version of
+0.1156521125	better than
+0.1155222608	such as
+0.1150746698	the use of
+0.1148006778	good performance
+0.1138955994	algorithm for
+0.1137003914	a wide range of
+0.1136705282	capable of
+0.1131864760	an effective
+0.1131794129	a simple
+0.1131788976	leads to
+0.1131644200	small number of
+0.1126134122	theeffectiveness of
+0.1123634909	experiments show
+0.1117905051	obtained by
+0.1111771032	the proposed
+0.1111532445	a probabilistic
+0.1103375532	an unsupervised
+0.1097226745	as well as
+0.1096921675	sum of
+0.1094480097	an alternative
+0.1085444171	a convolutional neural network
+0.1062782664	an object
+0.1060813989	a new
+0.1059954959	the experimental results
+0.1050869944	in addition
+0.1047897605	with respect to
+0.1045157643	refer to
+0.1038186889	in order to
+0.1034772605	by means of
+0.1034290409	a fast
+0.1024178120	advantage of
+0.1014954959	a convolutional neural
+0.1014152926	this study
+0.1006222588	the purpose of
+0.1005918071	an online
+0.0991834107	more than
+0.0990644141	not only
+0.0990008729	the performance of
+0.0975840679	this work
+0.0971245149	the presence of
+0.0970490964	in practice
+0.0966555921	the importance of
+0.0963289448	a discriminative
+0.0961191465	but also
+0.0959448136	set of
+0.0959382175	in terms of
+0.0956601909	variety of
+0.0956555921	the aim of
+0.0954475068	in thispaper
+0.0950749469	the quality of
+0.0948791365	a deep neural
+0.0947102965	compared with
+0.0946358785	applications such as
+0.0940749469	the complexity of
+0.0940565836	the latter
+0.0937416136	the need for
+0.0930749469	the accuracy of
+0.0930749469	the task of
+0.0930531649	trained on
+0.0926555921	the impact of
+0.0923222588	the development of
+0.0920749469	the structure of
+0.0920749469	the design of
+0.0917455701	new approach
+0.0913720318	the entire
+0.0913222588	a series of
+0.0910749469	the context of
+0.0907416136	the efficiency of
+0.0904717609	a variety of
+0.0896555921	the effect of
+0.0893222588	the goal of
+0.0890713399	deal with
+0.0890418942	aims to
+0.0886555921	the concept of
+0.0883665762	easy to
+0.0880749469	the process of
+0.0880749469	the application of
+0.0880749469	the field of
+0.0878912195	a large
+0.0874466803	in computer vision
+0.0867416136	a class of
+0.0861031783	the same
+0.0860749469	the size of
+0.0850749469	a sequence of
+0.0850749469	the case of
+0.0841447948	the state of
+0.0839717609	the effectiveness of
+0.0833212032	method for
+0.0829384276	the problem of
+0.0825507271	framework for
+0.0822582161	the main
+0.0822497868	methods such as
+0.0818898589	much more
+0.0805807271	approach to
+0.0779452742	close to
+0.0779411751	to deal with
+0.0777817296	performance on
+0.0776667870	the number of
+0.0776041695	combined with
+0.0767345910	the desired
+0.0765510818	account for
+0.0756652198	associated with
+0.0756264124	fail to
+0.0742880549	family of
+0.0739490214	an end to
+0.0729880549	nature of
+0.0729384276	a set of
+0.0728327801	obtained from
+0.0721276095	by exploiting
+0.0717681241	represented by
+0.0717372276	generated by
+0.0716948299	an algorithm
+0.0714779983	a number of
+0.0711978893	variant of
+0.0704987827	amount of
+0.0703110272	interpretation of
+0.0702332429	theperformance of
+0.0697526095	by applying
+0.0694544612	the existence of
+0.0693478345	over time
+0.0690090004	lack of
+0.0687108678	applicable to
+0.0678752703	role in
+0.0676449112	a hierarchical
+0.0675150117	used as
+0.0662699688	by combining
+0.0661817296	model for
+0.0647191326	collection of
+0.0644939807	equivalent to
+0.0636908371	a hybrid
+0.0636259529	other methods
+0.0634141700	approach for
+0.0633613316	a method for
+0.0627276553	along with
+0.0626206407	a novel method
+0.0621038223	the problem
+0.0619266279	kind of
+0.0611311330	implementation of
+0.0601957262	each other
+0.0601294691	combination of
+0.0599438458	provided by
+0.0586128659	as well
+0.0582659889	the effectiveness
+0.0581360232	the number
+0.0575317421	a large number of
+0.0574541888	the form of
+0.0569831980	a broad
+0.0555781506	an open
+0.0554702123	a new method
+0.0548573250	part of
+0.0535587847	together with
+0.0535311341	difficult to
+0.0535084068	ability to
+0.0533404262	information from
+0.0532015944	existence of
+0.0525924878	a subset of
+0.0513194746	an optimal
+0.0499531899	a fixed
+0.0498435745	the ability to
+0.0497337472	in contrast to
+0.0495356696	likely to
+0.0490709989	an approach
+0.0484393384	a wide
+0.0482111060	with respect
+0.0481507725	the art on
+0.0479628862	the well known
+0.0478079606	respect to
+0.0474885997	application to
+0.0474479208	a framework
+0.0465613747	in contrast
+0.0456866915	achieved by
+0.0456152249	used for
+0.0455479170	subset of
+0.0453861038	similar to
+0.0446296235	known as
+0.0441280452	the set of
+0.0435061317	suitable for
+0.0432160467	other hand
+0.0421235745	the amount of
+0.0414612013	evaluated on
+0.0405711728	extension of
+0.0395641254	the existence
+0.0393435745	a combination of
+0.0382341390	form of
+0.0382133578	a range of
+0.0371224837	a variety
+0.0366085997	range of
+0.0363648149	in terms
+0.0361235745	in addition to
+0.0354876897	effectiveness of
+0.0345429294	a framework for
+0.0343915561	datasets show
+0.0343451759	a novel approach to
+0.0342351491	end to
+0.0340630019	tool for
+0.0335811570	in particular
+0.0316325162	presence of
+0.0287156162	tasks such
+0.0277794032	the presence
+0.0267435842	comparable to
+0.0234922762	architecture for
+0.0234129268	bound on
+0.0208205972	a set
+0.0177571767	a practical
+0.0164983162	same time
+0.0156635699	an end
+0.0134943708	well as

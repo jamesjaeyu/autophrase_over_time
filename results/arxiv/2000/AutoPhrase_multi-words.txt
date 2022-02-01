@@ -1,0 +1,5 @@
+0.9820000000	logic programming
+0.3580000000	this paper
+0.2990000000	based on
+0.2610000000	number of
+0.2190000000	set of
