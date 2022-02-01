@@ -23,13 +23,13 @@ def process_v10_txt(infolder):
 
     Takes around 8-9 minutes to process all papers
 
-    #>>> process_v10_txt('../data/dblp-v10')
+    >>> process_v10_txt('../data/dblp-v10')
     """
     start = time.time()
     filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
-    outfolder = infolder + '/txt/'
+    outfolder = infolder + '/temp/'
 
-    num_no_abstract, num_no_title, num_papers, num_issues, num_year = 0, 0, 0, 0, 0
+    num_no_abstract, num_papers, num_issues, num_year = 0, 0, 0, 0
 
     for fp in filepaths:
         file = open(fp)
@@ -54,23 +54,13 @@ def process_v10_txt(infolder):
                     num_no_abstract += 1
                     continue
                 if 'title' in data.keys():
-                    # if len(data['title']) == 0:
-                    #     num_no_title += 1
-                    #     continue
                     title = data['title']
                     title = re.sub(r'[^A-Za-z0-9- ]+', '', title)
                     outfile.write(title + '\n')
                 else:
-                    num_no_title += 1
                     continue
             except:
                 num_issues += 1
-            # For testing purposes - printing info + stopping early
-            # if num_papers >= 100:
-            #     end = time.time()
-            #     time_elapsed = end - start
-            #     print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
-            #     return
         file.close()
     end = time.time()
     time_elapsed = end - start
@@ -120,12 +110,6 @@ def process_v10_csv(infolder):
                 years.add(year)
             except:
                 num_issues += 1
-            # For testing purposes - printing info + stopping early
-            # if num_papers >= 1000:
-            #     end = time.time()
-            #     time_elapsed = end - start
-            #     print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
-            #     return
         file.close()
     end = time.time()
     time_elapsed = end - start
@@ -135,13 +119,13 @@ def process_v10_csv(infolder):
 
 def process_v10_txt_agg(infolder):
     """
-    #>>> process_v10_txt_agg('../data/dblp-v10')
+    >>> process_v10_txt_agg('../data/dblp-v10')
     """
     start = time.time()
     filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
     outpath = infolder + '/agg/content_FULL.txt'
 
-    num_no_abstract, num_no_title, num_papers, num_issues, num_year = 0, 0, 0, 0, 0
+    num_no_abstract, num_papers, num_issues, num_year = 0, 0, 0, 0
 
     for fp in filepaths:
         file = open(fp)
@@ -165,23 +149,13 @@ def process_v10_txt_agg(infolder):
                     num_no_abstract += 1
                     continue
                 if 'title' in data.keys():
-                    # if len(data['title']) == 0:
-                    #     num_no_title += 1
-                    #     continue
                     title = data['title']
                     title = re.sub(r'[^A-Za-z0-9- ]+', '', title)
                     outfile.write(title + '\n')
                 else:
-                    num_no_title += 1
                     continue
             except:
                 num_issues += 1
-            # For testing purposes - printing info + stopping early
-            # if num_papers >= 100:
-            #     end = time.time()
-            #     time_elapsed = end - start
-            #     print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
-            #     return
         file.close()
     end = time.time()
     time_elapsed = end - start
