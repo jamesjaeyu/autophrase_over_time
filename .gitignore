@@ -143,3 +143,4 @@ results/dblp-v10/content_FULL/segmentation.txt
 results/dblp-v10-FULL/segmentation.txt
 data/arxiv/txt/*.txt
 data/arxiv/agg/*.txt
+data/arxiv/csv/*.csv
