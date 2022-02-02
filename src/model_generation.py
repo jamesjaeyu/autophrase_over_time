@@ -56,6 +56,26 @@ def obtain_phrases(infolder, unique_by_year=False):
     return end - start
 
 
+def find_similar(input_phrase, fp):
+    """
+    Given an input_phrase, return the most similar phrase from the AutoPhrase
+    results, along with all of the years in which that phrase has appeared.
+
+    Output format: (distance, most similar phrase, [years where the MSP appears])
+
+    >>> find_similar('convolutional neural networks', '../results/dblp-v10-phrases-uniquebyyear.csv')
+    (0.0, 'convolutional neural networks', [2012, 2013, 2014, 2015, 2016, 2017])
+    """
+    df = pd.read_csv(fp)
+    df['Dist'] = df.apply(lambda x: Lv.distance(input_phrase, x['Phrase'])
+                        if isinstance(x['Phrase'], str) else float('inf'), axis=1)
+    df_sorted = df.sort_values('Dist')
+    closest = df_sorted['Phrase'][0]
+    closest_dist = df_sorted['Dist'][0]
+    years = list(df[df['Phrase'] == closest]['Year'])
+    return (closest_dist, closest, years)
+
+
 def create_model():
     """
     Idea 1: If we have multiple word2vec models for each year/era, we can
