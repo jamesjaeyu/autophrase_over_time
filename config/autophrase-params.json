@@ -1,0 +1,7 @@
+{
+    "MIN_SUP": 30,
+    "MODEL": "../model/",
+    "RAW_TRAIN": "../data/dblp-v10/",
+    "TEXT_TO_SEG": "../data/dblp-v10/",
+    "THREAD": 10
+}
