@@ -39,7 +39,7 @@ def main(targets):
         obtain_phrases(model_cfg['infolder'], True)
         obtain_phrases(model_cfg['infolder'], False)
         # TODO: Add any new functions related to the model
-        
+
 
     return
 
