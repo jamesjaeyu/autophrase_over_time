@@ -1,5 +1,5 @@
-# autophrase_over_time
-### Project for DSC180B
+# Utilizing AutoPhrase on Computer Science papers over time
+### DSC 180B Capstone Project
 
 ### Group Members: Cameron Brody, Jason Lin, James Yu
 
