@@ -7,7 +7,9 @@ With that in mind, we utilized AutoPhrase to extract the phrases from a database
 
 # Data
 - [DBLP Citation Network Dataset v10](https://www.aminer.org/citation) (4.08 GB)
+    - Four .json files containing information on 3,097,007 papers
 - [arXiv Computer Science papers 1992-2017](https://www.kaggle.com/neelshah18/arxivdataset) (72 MB)
+    - One .json file containing information on 31,000+ papers
 
 ### Exploring the data
 Include graphs providing more insight into the dataset
