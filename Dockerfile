@@ -19,14 +19,14 @@ LABEL maintainer="James Yu <jjy002@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN apt-get update && apt-get -y install openjdk-8-jdk
+RUN apt-get update && apt-get -y install openjdk-8-jdk chromium-chromedriver
 
 # 3) install packages using notebook user
 USER jovyan
 
 #RUN conda install --yes scikit-learn
 
-RUN pip install --no-cache-dir pandas matplotlib sklearn Levenshtein gensim nltk
+RUN pip install --no-cache-dir pandas matplotlib sklearn Levenshtein gensim nltk altair altair_saver selenium
 
 # Override command to disable running jupyter notebook at launch
 #CMD ["/bin/bash"]

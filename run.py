@@ -7,6 +7,9 @@ Script for running targets
 import sys
 import json
 
+from src.process_dblp_v10 import process_v10_txt
+from src.eda import generate_figures
+
 def main(targets):
     """
     Targets: data, eda, autophrase, model
@@ -23,6 +26,7 @@ def main(targets):
 
     if 'eda' in targets:
         eda_cfg = json.load(open('config/eda-params.json'))
+        generate_figures('../results/figures')
 
     if 'autophrase' in targets:
         autophrase_cfg = json.load(open('config/autophrase-params.json'))
