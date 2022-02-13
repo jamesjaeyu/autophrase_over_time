@@ -1,3 +1,4 @@
 {
-    "infolder": "data/dblp-v10"
+    "infolder": "data/dblp-v10",
+    "outfolder": "results/figures"
 }
