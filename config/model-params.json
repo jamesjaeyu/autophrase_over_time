@@ -1,3 +1,4 @@
 {
-    "infolder": "results/dblp-v10"
+    "infolder": "results/dblp-v10",
+    "fp": "results/dblp-v10-phrases-uniquebyyear.csv"
 }

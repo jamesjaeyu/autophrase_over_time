@@ -68,6 +68,13 @@ def process_v10_txt(infolder):
     return
 
 
+def process_v10_txt_grouped(infolder):
+    """
+    Processes DBLP v10 but with years grouped by 5
+    """
+    return
+
+
 def process_v10_csv(infolder):
     """
     Outputs aggregate .csv files by year (titles + abstracts)

@@ -7,6 +7,14 @@ import pandas as pd
 import time
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
+import numpy as np
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.preprocessing import FunctionTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler
+
 
 def obtain_phrases(infolder, unique_by_year=False):
     """
@@ -76,14 +84,69 @@ def find_similar(input_phrase, fp):
     return (closest_dist, closest, years)
 
 
-def create_model():
+def baseline_model(fp):
     """
-    Idea 1: If we have multiple word2vec models for each year/era, we can
-        look at the similarity of the phrases of an individual paper against each model.
-    But this requires obtaining the phrasal segmentation results
+    Baseline model using DecisionTreeClassifier
 
-    Idea 2: Using correlation between phrases of an individual paper and each year/era's phrases
-        Classify based on the highest average correlation
+    Features (x):
+    -------------
+    Phrase (str)
+        uses OneHotEncoder. Potential issues can arise when a phrase that
+        is not in the training set is passed into the model. Errors resolved by the
+        'handle_unknown' parameter in the ohe_pipe
+    num_years (int)
+        uses StandardScaler. Tells us the number of years a phrase has appeared in
+    Phrase Quality (float)
+        no modification. May need to normalize in the future. Also, the
+        'phrases' dataframe only contains high-quality phrases (multi >= 0.6, single >= 0.8)
 
+    Label (y):
+    ---------------
+    Year (int)
+        THe year the phrase belongs to.
+
+    Returns
+    -------
+    float
+        The mean absolute difference between actual and predicted years on the test set.
+
+    >>> baseline_model('../results/dblp-v10-phrases-uniquebyyear.csv')
     """
+    # Reads in unique by year phrases
+    phrases = pd.read_csv(fp, index_col=0)
+    # Only keeps phrases from 1968+ and drops any null values
+    phrases = phrases[phrases['Year'] >= 1968]
+    phrases = phrases.dropna()
+
+    # Creates num_years column: the number of years a phrase has shown up in
+    counts = phrases.groupby('Phrase').size()
+    phrases['num_years'] = phrases.apply(lambda x: counts[x['Phrase']], axis=1)
+
+    # Creates pipeline
+    std_pipe = Pipeline([('scale', StandardScaler())])
+    ohe_pipe = Pipeline([('one-hot', OneHotEncoder(handle_unknown='ignore'))])
+    ct = ColumnTransformer(transformers=[('ohe', ohe_pipe, ['Phrase']),
+                                        ('scale', std_pipe, ['num_years']),
+                                        ('keep', 'passthrough', ['Phrase Quality'])
+                                        ])
+    pl = Pipeline([('transform', ct), ('classifier', DecisionTreeClassifier())])
+
+    # Train-test split
+    X_train, X_test, y_train, y_test = train_test_split(phrases[['Phrase', 'num_years', 'Phrase Quality']],
+                                                        phrases['Year'],
+                                                        random_state=1)
+    # Trains model
+    pl.fit(X_train, y_train)
+    # Runs predictions on test set
+    X_test['Predicted Year'] = pl.predict(X_test)
+
+    # Creates Abs Year Diff column: the absolute difference between actual and predicted year
+    X_test['Year'] = y_test
+    X_test['Abs Year Diff'] = abs(X_test['Year'] - X_test['Predicted Year'])
+
+    # Returns the average absolute difference - want this metric to be close to 0
+    return X_test['Abs Year Diff'].mean()
+
+
+def refined_model():
     return
