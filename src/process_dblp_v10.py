@@ -80,7 +80,9 @@ def process_v10_txt_grouped(infolder):
     # Creates dictionary mapping for each year's new year-range category
     mapping = {}
     for i in range(1950, 2019, 5):
-        if i == 2015:
+        if i == 1950 or i == 1955:
+            cat = '1950-1959'
+        elif i == 2015:
             cat = '2015-2017'
         else:
             cat = str(i) + '-' + str(i+4)
@@ -106,20 +108,25 @@ def process_v10_txt_grouped(infolder):
                 year = mapping[year]
                 outpath = outfolder + str(year) + '.txt'
                 outfile = open(outpath, 'a')
+                content = ''
                 if 'abstract' in data.keys():
                     if len(data['abstract']) == 0:
                         num_no_abstract += 1
                         continue
                     abstract = data['abstract']
                     abstract = re.sub(r'[^A-Za-z0-9- ]+', '', abstract)
-                    outfile.write(abstract + '\n')
+                    content += abstract + ' '
+                    #outfile.write(abstract + '\n')
                 else:
                     num_no_abstract += 1
                     continue
                 if 'title' in data.keys():
                     title = data['title']
                     title = re.sub(r'[^A-Za-z0-9- ]+', '', title)
-                    outfile.write(title + '\n')
+                    content += title
+                    #outfile.write(title + '\n')
+                if content != '':
+                    outfile.write(content + '\n')
                 else:
                     continue
             except:

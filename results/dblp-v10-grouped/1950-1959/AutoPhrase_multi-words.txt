@@ -1,0 +1,22 @@
+0.9915000000	operations research
+0.6505000000	operations research society of america
+0.5735000000	high speed
+0.5255000000	operations research society
+0.3135000000	the same
+0.2485000000	number of
+0.2125000000	the use of
+0.2035000000	theory of
+0.2015000000	the signal
+0.1975000000	the input
+0.1915000000	this paper
+0.1805000000	problem of
+0.1765000000	digital computer
+0.1745000000	the theory
+0.1745000000	the number
+0.1505000000	the system
+0.1485000000	the problem
+0.1115000000	function of
+0.1115000000	set of
+0.1055000000	the case
+0.0605000000	the use
+0.0605000000	use of

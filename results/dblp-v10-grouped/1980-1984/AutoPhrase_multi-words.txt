@@ -1,0 +1,2458 @@
+0.9804757426	fault tolerance
+0.9793155471	human factors
+0.9791822517	packet switching
+0.9787100284	knowledge base
+0.9774719050	dynamic programming
+0.9767938669	virtual memory
+0.9767760929	turing machines
+0.9765186271	markov chain
+0.9765060487	knowledge representation
+0.9760090122	petri nets
+0.9759905052	resource allocation
+0.9758299664	image processing
+0.9737976138	von neumann
+0.9736452054	petri net
+0.9735831010	user interface
+0.9728335439	linear programming
+0.9728225182	instruction set
+0.9727318773	optical fiber
+0.9710098807	fourier transform
+0.9706921710	natural language
+0.9697421628	relational databases
+0.9691030063	relational algebra
+0.9690158363	integrated circuits
+0.9685383748	signal processing
+0.9679012487	recursively enumerable
+0.9672568468	software development
+0.9670478339	temporal logic
+0.9668997058	relational database
+0.9661383136	turing machine
+0.9659401209	linear prediction
+0.9659368131	information retrieval
+0.9654285727	floating point
+0.9649717259	programming languages
+0.9642706162	spanning tree
+0.9640944287	natural language understanding
+0.9639408358	concurrency control
+0.9639078532	fault tolerant
+0.9635327809	monte carlo
+0.9635285158	local area network
+0.9635222952	frequency domain
+0.9634750017	pattern matching
+0.9626459934	feature extraction
+0.9626009972	pattern recognition
+0.9616502938	integer programming
+0.9614362619	queueing networks
+0.9613937558	digital signal processing
+0.9608325038	mutual exclusion
+0.9607160776	nearest neighbor
+0.9606969010	integrated circuit
+0.9606716255	software engineering
+0.9605910476	random variables
+0.9599541559	vocal tract
+0.9597437107	discrete event simulation
+0.9594967221	gaussian noise
+0.9594084030	denotational semantics
+0.9591651323	white noise
+0.9588608209	decision support systems
+0.9583199425	personal computers
+0.9577065341	programming language
+0.9574289213	shortest path
+0.9567262789	social sciences
+0.9567162725	parameter estimation
+0.9562998938	vector quantization
+0.9553209281	message passing
+0.9545653476	speech recognition
+0.9545473531	parallel processing
+0.9542318774	problem solving
+0.9534889112	discrete fourier transform
+0.9533137947	matrix multiplication
+0.9530073705	question answering
+0.9529810255	covariance matrix
+0.9527415312	optimal control
+0.9525181199	random access
+0.9521041291	attribute grammar
+0.9519634257	artificial intelligence
+0.9515591814	expert systems
+0.9514282921	maximum likelihood
+0.9506194224	predicate calculus
+0.9504867469	nonlinear programming
+0.9490072760	operating systems
+0.9484230032	data structures
+0.9482383371	local area networks
+0.9481217118	image segmentation
+0.9477997006	adaptive control
+0.9475049378	normal form
+0.9470829866	spectral density
+0.9469142511	positive integer
+0.9468310482	error probability
+0.9463801635	probability distribution
+0.9461812727	edge detection
+0.9455304773	steady state
+0.9451855058	impulse response
+0.9436397512	kalman filter
+0.9433932912	propositional dynamic logic
+0.9426954082	distributed systems
+0.9423356023	data base
+0.9421234129	latin squares
+0.9420458385	probability distributions
+0.9416958834	query language
+0.9399298377	fir filters
+0.9398540343	partially ordered
+0.9396908767	context free
+0.9394080810	formal specification
+0.9389898761	bit rate
+0.9388107437	logic programming
+0.9383588545	machine translation
+0.9377418336	projective plane
+0.9371447307	information processing
+0.9366608578	lower bounds
+0.9361209513	life cycle
+0.9359211251	maximum entropy
+0.9348923381	shared memory
+0.9348810105	access control
+0.9348674674	ad hoc
+0.9343156877	database management
+0.9334033350	planar graphs
+0.9332856342	partial correctness
+0.9329742727	decision making
+0.9329554667	finite state
+0.9328330106	probability density
+0.9322596266	natural language processing
+0.9320452234	np complete
+0.9319308893	upper bound
+0.9318068905	entity relationship
+0.9312509257	automorphism group
+0.9312209842	data bases
+0.9311807201	line segments
+0.9308922478	decision makers
+0.9308806966	database management systems
+0.9302864019	differential equations
+0.9302143372	interconnection networks
+0.9301319600	quadratic programming
+0.9300380376	power spectrum
+0.9297564725	programming environment
+0.9296205216	user services
+0.9295013311	database systems
+0.9293788419	abstract data types
+0.9293253092	word processing
+0.9291844059	lower bound
+0.9287410425	chromatic number
+0.9286375763	high level
+0.9284472782	le probleme
+0.9280885109	upper bounds
+0.9272791598	control flow
+0.9272652377	partially ordered set
+0.9269641501	office automation
+0.9268498328	context free grammar
+0.9264914053	data flow
+0.9259162256	public key
+0.9258978037	functional programming
+0.9254811555	fault coverage
+0.9253778490	secondary storage
+0.9253138580	performance measures
+0.9251539978	statistical databases
+0.9251091934	peut etre
+0.9248339523	binary search
+0.9246687764	syntax directed
+0.9246252671	distance measure
+0.9241459521	square root
+0.9239726448	vlsi circuits
+0.9232894269	garbage collection
+0.9231621962	distributed computing
+0.9227847293	input output
+0.9227552127	planar graph
+0.9226426040	data management
+0.9226244309	binary tree
+0.9221965099	distributed processing
+0.9220081381	design automation
+0.9214608407	fixed point
+0.9210604558	nucleic acid
+0.9208557123	vlsi design
+0.9207517784	error detection
+0.9196728164	inference rules
+0.9194026839	error correction
+0.9192958483	data compression
+0.9186266849	maximum degree
+0.9183102967	convex hull
+0.9181386135	abstract data type
+0.9177911147	working set
+0.9177780339	distributed database
+0.9171263889	signal processor
+0.9161838461	spread spectrum
+0.9160458550	speech coding
+0.9159128504	error recovery
+0.9157385799	convolutional codes
+0.9154137799	ramsey numbers
+0.9151863986	state space
+0.9150963377	power series
+0.9138153121	nucleotide sequence
+0.9137994480	database design
+0.9137042130	context free grammars
+0.9134048952	response times
+0.9133611986	church rosser
+0.9133155631	man machine
+0.9125284663	cross correlation
+0.9124169401	line drawings
+0.9123428425	bipartite graphs
+0.9123252294	traveling salesman problem
+0.9119577964	spanning trees
+0.9117994235	structured programming
+0.9111198926	functional dependencies
+0.9098895806	sensitivity analysis
+0.9096764028	multiple access
+0.9096733797	single chip
+0.9093736652	traveling salesman
+0.9092444221	attribute grammars
+0.9091894744	theorem proving
+0.9085819458	expressive power
+0.9085278929	complexity classes
+0.9083962369	spectral estimation
+0.9077755822	high resolution
+0.9077701636	decision tree
+0.9069121496	specification language
+0.9064618802	approximation algorithm
+0.9061927967	service times
+0.9057475172	moving average
+0.9052771798	network flow
+0.9051461795	united states
+0.9044083824	high level language
+0.9038491040	closed loop
+0.9033691961	simulation model
+0.9026696571	prediction error
+0.9024167797	binary trees
+0.9021021945	data types
+0.9015564194	failure rate
+0.9013007940	finite automata
+0.9010357911	speech quality
+0.9007897037	error rates
+0.9004891452	gray level
+0.9001006064	straight line
+0.8995218407	local network
+0.8992259092	frequency response
+0.8986480340	sur les
+0.8982811824	single server
+0.8976090550	test generation
+0.8974889734	data transmission
+0.8974049803	program development
+0.8973176490	np hard
+0.8967161753	reflection coefficients
+0.8965800172	connected graph
+0.8960959874	fuzzy set
+0.8960670958	transfer function
+0.8959430682	query processing
+0.8959398866	data processing
+0.8954407954	long term
+0.8950078885	computational complexity
+0.8948441827	higher level
+0.8934464459	high performance
+0.8934418135	piecewise linear
+0.8933182510	isolated word recognition
+0.8928023093	queueing network models
+0.8927640277	bipartite graph
+0.8924231853	decision maker
+0.8923381051	spectral analysis
+0.8923206139	speech synthesis
+0.8917525511	graph theoretic
+0.8914983507	digital filter
+0.8914978583	information technology
+0.8913729156	relational data base
+0.8906549554	conceptual schema
+0.8900848660	general purpose
+0.8899576379	decision problem
+0.8892603728	design methodology
+0.8888921541	logic simulation
+0.8870500274	software tools
+0.8868499629	real numbers
+0.8867962298	performance evaluation
+0.8865406157	objective function
+0.8864008182	decision support
+0.8862647293	band limited
+0.8862568500	stochastic process
+0.8861280639	universal relation
+0.8854693470	distributed database systems
+0.8851323917	data flow analysis
+0.8846030191	test pattern
+0.8840542915	optimization problem
+0.8840316215	partial match
+0.8836779438	end user
+0.8836037328	distortion measure
+0.8834888683	error correcting codes
+0.8832340694	special purpose
+0.8821442955	speech processing
+0.8818428336	bit rates
+0.8817451673	natural languages
+0.8811245324	short term
+0.8807621190	fault detection
+0.8803426194	memory management
+0.8803049430	image restoration
+0.8800959003	regular graphs
+0.8800887744	predictive coding
+0.8800284426	digital filters
+0.8798594895	random variable
+0.8792773814	pour les
+0.8791034328	set theory
+0.8782100028	speech signals
+0.8780203649	main memory
+0.8777044692	worst case
+0.8776959359	data abstraction
+0.8775988724	sampling rate
+0.8767741493	information science
+0.8763182025	query languages
+0.8760807964	continuous speech
+0.8760598762	database machine
+0.8754396252	user defined
+0.8753384221	isolated word
+0.8752129167	microprocessor based
+0.8743495055	hidden surface
+0.8741023166	communication network
+0.8726816301	additive noise
+0.8725789453	directed graphs
+0.8721343520	high speed
+0.8716714876	parallel computation
+0.8712162384	quasi newton
+0.8709470001	speech understanding
+0.8703300124	difference equations
+0.8701862344	normal forms
+0.8692092238	data base management
+0.8690752162	array processor
+0.8686646293	connected word recognition
+0.8678507471	research project
+0.8677692042	filter bank
+0.8677240069	large scale
+0.8677040622	proof rules
+0.8666047024	directed graph
+0.8666027753	error rate
+0.8661141479	complete graph
+0.8658795431	user interfaces
+0.8658147191	knowledge based
+0.8657547973	control structure
+0.8654673389	low level
+0.8653737134	dynamic time warping
+0.8652436444	optimization problems
+0.8651439456	array processing
+0.8650170242	independent set
+0.8648703351	variable length
+0.8648165040	minimum variance
+0.8638355850	parallel processor
+0.8628519865	software design
+0.8628121286	flow control
+0.8627267209	relational model
+0.8618877795	mathematical models
+0.8617815807	interactive graphics
+0.8616473393	fault simulation
+0.8615560994	approximate solution
+0.8613187117	information flow
+0.8613047887	image analysis
+0.8612625032	knowledge bases
+0.8611409396	real world
+0.8610515354	linear equations
+0.8609024473	communication networks
+0.8606278951	data type
+0.8590085904	decision rule
+0.8582753408	high quality
+0.8581953683	context free languages
+0.8572448811	fixed points
+0.8569272102	fuzzy sets
+0.8564892906	physical design
+0.8558616249	software science
+0.8557924068	rule based
+0.8553175976	adaptive filter
+0.8552121482	simulation models
+0.8551983470	assignment problem
+0.8549105262	dynamic logic
+0.8546894488	recognition accuracy
+0.8537853874	trade offs
+0.8530310232	building block
+0.8519669044	design rules
+0.8519071342	concurrent programs
+0.8512333464	test set
+0.8509012972	processing elements
+0.8508035194	user friendly
+0.8505152493	command language
+0.8504350266	linear complementarity
+0.8503661884	multi level
+0.8502401263	array processors
+0.8501005314	design verification
+0.8498958309	machine architecture
+0.8497233535	positive integers
+0.8495585502	vlsi implementation
+0.8495494182	tree structure
+0.8493198115	semi markov
+0.8492394617	heuristic search
+0.8489220051	delay line
+0.8488570935	high level languages
+0.8488254637	linear inequalities
+0.8480434916	data structure
+0.8480201410	speaker independent
+0.8473405144	distributed databases
+0.8465895417	input signal
+0.8463799850	decision procedure
+0.8462112728	description language
+0.8461415901	error correcting
+0.8460835367	code generation
+0.8456802979	arithmetic operations
+0.8454137706	source code
+0.8450632349	source coding
+0.8447024686	minimum degree
+0.8443896010	rate distortion
+0.8439973028	information systems
+0.8437136826	design considerations
+0.8434820759	low cost
+0.8433222146	mathematical programming
+0.8432452335	random number
+0.8431305878	code generator
+0.8423019310	concurrent programming
+0.8418703317	product form
+0.8415884311	multiple access channel
+0.8414461006	logic design
+0.8412268997	tree search
+0.8407444554	matching problem
+0.8404995774	program verification
+0.8396044911	minimum distance
+0.8395420331	retrieval systems
+0.8393353077	sample size
+0.8389182529	data manipulation
+0.8388928505	engineering design
+0.8361154820	block codes
+0.8357023974	information retrieval systems
+0.8354017430	data model
+0.8351184072	recent developments
+0.8346741515	simulation language
+0.8341164388	search algorithm
+0.8340703750	closed form
+0.8335625647	knapsack problem
+0.8334751577	statistical analysis
+0.8325326649	nonlinear equations
+0.8313875911	word recognition
+0.8311501001	minimum phase
+0.8302328853	linear programs
+0.8301657350	linear predictive
+0.8297646650	parallel algorithms
+0.8293023434	graph grammars
+0.8284768796	computer aided design
+0.8284129628	lower level
+0.8282954829	data driven
+0.8279255167	channel routing
+0.8278361208	register transfer
+0.8277986383	signal to noise ratio
+0.8277309481	divide and conquer
+0.8273556817	technical note
+0.8270120802	vlsi technology
+0.8259678877	approximation algorithms
+0.8255508216	logic programs
+0.8249998227	markov decision
+0.8242069350	allocation problem
+0.8237535139	control structures
+0.8237522968	connected graphs
+0.8237025125	routing problem
+0.8236069398	connected components
+0.8232065517	decision problems
+0.8228364672	design rule
+0.8222952038	boolean functions
+0.8221847800	software reliability
+0.8221220925	multiprocessor systems
+0.8179091232	language understanding
+0.8178390702	language constructs
+0.8176431690	queueing network
+0.8174995977	routing algorithm
+0.8166345972	performance measure
+0.8165013874	object oriented
+0.8155598674	test data
+0.8136828692	fast algorithm
+0.8135660263	type checking
+0.8135269946	dimensional space
+0.8127175167	mathematical model
+0.8120234261	parallel algorithm
+0.8118332786	automatic generation
+0.8117384694	communication systems
+0.8111666830	hierarchical structure
+0.8095082396	information services
+0.8093125905	hardware implementation
+0.8088224535	scene analysis
+0.8086467356	single processor
+0.8065944364	markov processes
+0.8064804319	incomplete information
+0.8048642238	space complexity
+0.8037621592	generating function
+0.8030083045	database schemes
+0.8028906229	computational effort
+0.8026438835	highly parallel
+0.8016353534	differential equation
+0.8015705342	information theory
+0.8007473089	current status
+0.8006388079	speech signal
+0.7997907539	building blocks
+0.7994317867	discrete event
+0.7983761223	database query
+0.7983179549	data rate
+0.7980084119	storage requirements
+0.7970391091	programs written
+0.7954781927	fast fourier
+0.7947608007	cet article
+0.7947459108	data sets
+0.7943476903	vertex set
+0.7920036123	semantic analysis
+0.7916148574	software systems
+0.7915272611	machine independent
+0.7900363034	design tool
+0.7880218658	minimum cost
+0.7876627958	fast algorithms
+0.7857203091	current research
+0.7851156117	utility function
+0.7837521841	closely related
+0.7825269620	data collection
+0.7824899466	sufficient conditions
+0.7821187909	simulation experiments
+0.7815334282	performance characteristics
+0.7802790949	interconnection network
+0.7800528712	randomly generated
+0.7796063696	local area
+0.7791608267	matching algorithm
+0.7777674053	data transfer
+0.7777170940	data analysis
+0.7776939742	design issues
+0.7764737494	design process
+0.7757704301	error criterion
+0.7757191589	software package
+0.7741580984	complex systems
+0.7736765787	filter design
+0.7724170964	years ago
+0.7721560950	data communications
+0.7718420571	information theoretic
+0.7678456285	partial order
+0.7661155571	cost effective
+0.7654574167	cosine transform
+0.7652939778	flow analysis
+0.7649326438	uniformly distributed
+0.7637386235	information requirements
+0.7629912151	iterative algorithm
+0.7605669035	control mechanism
+0.7592429267	application programs
+0.7590509675	data models
+0.7578089349	image data
+0.7553040556	simulation results
+0.7543484940	speech analysis
+0.7543243706	design decisions
+0.7535057506	lms algorithm
+0.7532743061	control systems
+0.7494544338	test problems
+0.7487083772	data set
+0.7480828158	cost function
+0.7463925900	higher order
+0.7459444758	linear systems
+0.7454114329	previously published
+0.7451622394	computationally efficient
+0.7431754327	relational data
+0.7430667098	data base systems
+0.7424390195	computational experience
+0.7407723206	application program
+0.7405549934	simplex method
+0.7398322529	squared error
+0.7396832115	printed circuit
+0.7390613548	complete set
+0.7382416415	row and column
+0.7370298606	ordered set
+0.7369928575	undirected graph
+0.7365574711	discrete cosine
+0.7358184873	ordered sets
+0.7357410726	sufficiently large
+0.7338585711	syntactic and semantic
+0.7334678635	development process
+0.7310212832	flow graph
+0.7309674283	model parameters
+0.7306513454	density function
+0.7286859940	discrete fourier
+0.7268822640	digital systems
+0.7258048674	special cases
+0.7249258114	sequential processes
+0.7166154499	branch and bound
+0.7161830983	design problem
+0.7140735594	programming problem
+0.7134895610	optimal solutions
+0.7121631758	management systems
+0.7107148268	search trees
+0.7106487048	data abstractions
+0.7094624147	multivariable systems
+0.7080553102	x ray
+0.7076916083	network design
+0.7063132040	upper and lower bounds
+0.7062715667	extended abstract
+0.7062300864	starting point
+0.7050756441	efficient algorithms
+0.7008190262	sufficient condition
+0.6985433230	numerical examples
+0.6980191816	optimal solution
+0.6974080687	related problems
+0.6965818237	efficient implementation
+0.6960077113	existing methods
+0.6943313468	equivalence problem
+0.6940776908	network model
+0.6921899888	important role
+0.6896035185	main result
+0.6891698867	network models
+0.6891270216	digital signal
+0.6877281647	basic idea
+0.6862703426	scale integration
+0.6862207757	abstractrnrnthis paper describes
+0.6860200862	input data
+0.6838551961	state university
+0.6824889598	management information
+0.6810354049	experimental results
+0.6810119657	basic concepts
+0.6779964956	problems involving
+0.6741404050	programming problems
+0.6693741681	desirable properties
+0.6691984896	mean square error
+0.6686221406	computing systems
+0.6682110195	sub band
+0.6653317909	future research
+0.6647771386	database management system
+0.6604967712	data objects
+0.6602312745	performance analysis
+0.6596645002	computational results
+0.6551733086	probability of error
+0.6507353662	main features
+0.6475132561	k 1
+0.6472397075	model based
+0.6468307125	flow problem
+0.6466833751	upper and lower
+0.6464916481	large scale integration
+0.6432035187	algorithm for finding
+0.6383430243	fixed number
+0.6343927259	preliminary results
+0.6323778596	voice and data
+0.6322157917	paper summarizes
+0.6312370847	theoretical results
+0.6289192238	self dual
+0.6278624912	signal to noise
+0.6256303411	program design
+0.6250848145	recent results
+0.6249323905	connected word
+0.6229434230	process model
+0.6214638398	application areas
+0.6207716831	finite set
+0.6194301140	paper outlines
+0.6187759610	large numbers
+0.6173837212	unified approach
+0.6153637206	results obtained
+0.6149702769	numerical results
+0.6133578035	problems encountered
+0.6116099650	fifth generation
+0.6112325663	least squares
+0.6077487800	an object oriented
+0.6032567949	briefly discussed
+0.6032192839	m 1
+0.6021063895	b trees
+0.6002995561	recently developed
+0.5998262258	computer graphics
+0.5965305976	three dimensional
+0.5961445237	systems development
+0.5940110087	programming model
+0.5908786132	input and output
+0.5907531096	systems design
+0.5870441160	based systems
+0.5868337900	decision support system
+0.5832008349	recent years
+0.5809794958	open problems
+0.5716215127	design problems
+0.5690694376	language processing
+0.5683638325	experimental data
+0.5683271089	case study
+0.5677978820	an undirected graph
+0.5662365334	paper shows
+0.5649526814	control algorithms
+0.5646431335	square error
+0.5638039672	polynomial time algorithm
+0.5629671659	computer aided
+0.5629083341	time sharing
+0.5612421284	self tuning
+0.5593681305	computer science
+0.5581619839	16 bit
+0.5541202433	design and implementation
+0.5532548825	time varying
+0.5505095654	p 1
+0.5502548857	i 1
+0.5502041131	based approach
+0.5490036162	numerical solution
+0.5464764037	optimal algorithm
+0.5451527815	part ii
+0.5439752069	paper proposes
+0.5417734824	very high level
+0.5413488818	general problem
+0.5401084524	hardware and software
+0.5387178728	mean squared
+0.5373827053	abstractrnrnthis paper
+0.5365642992	mean square
+0.5364020259	paper describes
+0.5348396346	correcting codes
+0.5346211632	time series
+0.5338084166	distributed data
+0.5311120079	number of edges
+0.5291134578	front end
+0.5289540112	paper reviews
+0.5269872677	processing applications
+0.5232076143	sequence data
+0.5219541165	processing systems
+0.5216593834	d 1
+0.5201851505	second order
+0.5190695161	order of magnitude
+0.5188781323	paper examines
+0.5173001284	s 1
+0.5172603597	dimensional objects
+0.5168740358	paper presents
+0.5150360760	speech recognition system
+0.5125725504	control algorithm
+0.5123655102	language based
+0.5115101599	computer algebra
+0.5112509091	x y
+0.5101687463	computer vision
+0.5079119358	distributed operating
+0.5078970933	time dependent
+0.5077955927	recognition systems
+0.5057112734	algorithm for solving
+0.5047382746	analysis techniques
+0.5043466957	t 1
+0.5022728644	support systems
+0.5022341239	point of view
+0.5017362282	special case
+0.5011806970	n dimensional
+0.5011324852	efficient method
+0.5001829615	vax 11780
+0.4995724457	free grammars
+0.4977457535	base management
+0.4971960410	paper explores
+0.4959541754	time domain
+0.4957448739	two dimensional
+0.4945526281	paper considers
+0.4943490084	paper investigates
+0.4906782622	x 1
+0.4861445450	information retrieval system
+0.4835082765	0 1
+0.4819881401	algorithm for computing
+0.4817162659	de la
+0.4794519640	problem of determining
+0.4794484037	waiting time
+0.4787118892	number of processors
+0.4778772633	control problems
+0.4774840986	access channel
+0.4732656535	salesman problem
+0.4730337917	section 3
+0.4727697064	de donnees
+0.4726759664	a priori knowledge
+0.4704245961	reasoning about
+0.4702235052	general case
+0.4695395825	method for solving
+0.4689542225	abstract data
+0.4679815537	paper discusses
+0.4645435747	model of computation
+0.4635679621	singular value
+0.4634240440	set of points
+0.4631853751	linear time algorithm
+0.4615905498	a case study
+0.4605144448	paper develops
+0.4586531814	non stationary
+0.4579029971	problem of finding
+0.4575918668	k 2
+0.4572879848	computer architecture
+0.4553243264	boundary value
+0.4547539243	very large scale
+0.4526372085	computer security
+0.4499671606	section 2
+0.4492756362	n 1
+0.4487792820	paper introduces
+0.4457687440	level language
+0.4457387773	p 2
+0.4450361874	data base system
+0.4437347884	time delay
+0.4427327126	average number of
+0.4417768585	non linear
+0.4412380911	e coli
+0.4407621127	s t
+0.4405217832	number of nodes
+0.4400763799	stuck at
+0.4392698790	a unified approach
+0.4392665191	o n
+0.4372644670	algorithm based
+0.4366944477	lower bounds on
+0.4363284404	personal computer
+0.4361017842	olog n
+0.4359896621	computer center
+0.4351569717	response time
+0.4335228929	simple algorithm
+0.4331347811	number of vertices
+0.4309682826	general method
+0.4309043869	an upper bound
+0.4236271236	bottom up
+0.4235738472	3 connected
+0.4234837097	m n
+0.4232427695	s s
+0.4191218491	original problem
+0.4181176222	in recent years
+0.4170117503	real time
+0.4160271699	expected number
+0.4148513308	arbitrary number
+0.4145582457	two phase
+0.4140629811	et les
+0.4135655932	n 2
+0.4129289849	log 2
+0.4126260302	operating system
+0.4115007955	class of problems
+0.4109337702	n 3
+0.4100216728	lower bound on
+0.4096723776	k d
+0.4048737187	mean value
+0.4047415896	expert system
+0.4044743350	the decision maker
+0.4040633986	one dimensional
+0.4025114526	two stage
+0.4008574401	the present paper
+0.4004290523	a great deal
+0.3959548936	x 2
+0.3952523703	sufficient condition for
+0.3949027910	bit error
+0.3941737886	an optimal solution
+0.3912221697	large amounts of
+0.3909259871	top down
+0.3903279553	a finite set
+0.3900351566	let g
+0.3877272313	human computer
+0.3872349555	main results
+0.3867070378	upper bound on
+0.3864224818	2 3
+0.3861638040	a relational database
+0.3857912731	efficient algorithm
+0.3852865101	does not require
+0.3848387854	order logic
+0.3845573144	time warping
+0.3839997977	discrete time
+0.3836419716	computer based
+0.3804250955	complete problems
+0.3737573671	b c
+0.3731746145	lower bounds for
+0.3731225669	level languages
+0.3720640923	look up
+0.3719510021	paper concludes
+0.3708689945	on line
+0.3706032106	n points
+0.3674607065	paper reports
+0.3670837687	n k
+0.3666448754	this paper describes
+0.3655170232	et al
+0.3646952382	non trivial
+0.3645238448	dans un
+0.3633971135	trade off
+0.3623302708	log n
+0.3621942686	necessary conditions
+0.3611736294	2 d
+0.3602163190	time frequency
+0.3597360708	computer simulation
+0.3596863775	a knowledge based
+0.3588521367	bits per
+0.3585722694	aided design
+0.3585207882	this paper presents
+0.3581964287	to noise ratio
+0.3563709170	than or equal
+0.3560036027	data structure for
+0.3554565943	upper bounds on
+0.3553300537	one pass
+0.3549946803	linear time
+0.3545772103	depth first
+0.3543740185	computer network
+0.3542198975	the proposed method
+0.3526001863	great deal of
+0.3522826540	a recent paper
+0.3517887520	paper addresses
+0.3513506828	x n
+0.3513011606	computer systems
+0.3502306525	high degree of
+0.3486390340	3 d
+0.3482951078	run time
+0.3450777345	performance evaluation of
+0.3436786307	event simulation
+0.3412067229	polynomial time
+0.3401271432	noise ratio
+0.3383395532	this paper discusses
+0.3376096113	the original problem
+0.3367349627	log 2 n
+0.3363363617	a binary tree
+0.3357887855	if g
+0.3354011880	first order
+0.3349778489	minimum number
+0.3345609496	computer networks
+0.3327226273	n vertices
+0.3313006580	x 1 x
+0.3307388908	this paper introduces
+0.3300727967	very fast
+0.3293519444	service time
+0.3292676995	1 2
+0.3286659614	the convex hull
+0.3278620803	the simplex method
+0.3278307057	well suited
+0.3277789558	large data
+0.3275350447	this paper considers
+0.3268967422	a high level
+0.3236906118	level programming
+0.3236726420	general class of
+0.3225737510	the total number
+0.3223289205	cad system
+0.3220184265	two level
+0.3198320208	graph g
+0.3197849829	this paper proposes
+0.3194888908	this paper examines
+0.3176678188	o n log
+0.3171638021	the speech signal
+0.3163808735	the proposed algorithm
+0.3163603820	current state
+0.3140995102	execution time
+0.3140058610	numerical solution of
+0.3118812826	this paper investigates
+0.3117264801	brief description
+0.3116320017	equivalence problem for
+0.3114286008	a distributed database
+0.3112937479	arbitrary number of
+0.3112098982	closely related to
+0.3096592074	the steady state
+0.3091826514	time consuming
+0.3086133900	an iterative
+0.3070855270	computer programs
+0.3056100309	continuous time
+0.3047915792	a general purpose
+0.3044788975	well understood
+0.3042845453	a data structure
+0.3041523790	interactive computer
+0.3031126418	paper concludes with
+0.3029592556	a programming language
+0.3028538978	knowledge about
+0.3023202513	so called
+0.3013903991	performance analysis of
+0.3013167805	the maximum entropy
+0.3012028635	the maximum number
+0.2996715418	relationships among
+0.2993761842	a high speed
+0.2970598357	relationship between
+0.2966127104	the paper describes
+0.2960253471	wide range of
+0.2947161035	time invariant
+0.2942625462	convex hull of
+0.2932083886	per second
+0.2927534286	et de
+0.2923309590	lower bound for
+0.2921756548	few years
+0.2918970871	this paper addresses
+0.2910041198	n m
+0.2905124698	different kinds
+0.2902020473	production system
+0.2897854729	n n
+0.2893201665	a sufficient condition
+0.2890468642	very low
+0.2890368168	paper studies
+0.2888104722	system design
+0.2879811270	there exists
+0.2866959920	the knowledge base
+0.2860308580	wide variety of
+0.2848761822	well defined
+0.2841840747	an interactive
+0.2835401076	computer program
+0.2828474595	expected time
+0.2827287380	1 1
+0.2824753596	k n
+0.2802901952	a polynomial time algorithm
+0.2784580380	a high level language
+0.2778762298	there exist
+0.2775068817	control system
+0.2770064356	computer architectures
+0.2769945374	the maximum likelihood
+0.2768956432	proposed algorithm
+0.2760886544	more accurate
+0.2751096554	the relational model
+0.2747822948	queueing system
+0.2739462704	the design process
+0.2734966508	f n
+0.2734940704	commercially available
+0.2729793764	system identification
+0.2729084772	1 d
+0.2727313596	relationships between
+0.2725794367	method based on
+0.2703986795	efficient algorithms for
+0.2703316483	take into account
+0.2695690806	large number of
+0.2688029099	reason about
+0.2687670539	an experiment
+0.2685481846	1 x
+0.2678017689	a dynamic programming
+0.2677502881	each node
+0.2677237615	a directed graph
+0.2665632622	finitely many
+0.2660923979	o n log n
+0.2654720087	this paper explores
+0.2650416942	a two stage
+0.2640243417	the user interface
+0.2639743119	log n time
+0.2631539132	time complexity
+0.2624715601	a mathematical model
+0.2619299087	this paper reports
+0.2613927144	the frequency domain
+0.2610800541	abstract let
+0.2607742836	this paper reviews
+0.2598197795	two way
+0.2597478235	a natural language
+0.2596584385	brief paper
+0.2585585075	the current state
+0.2581420523	taken into account
+0.2568444073	information system
+0.2559776971	this paper develops
+0.2540672200	n log
+0.2533175307	each vertex
+0.2509387482	compile time
+0.2501308005	average time
+0.2482823170	running time
+0.2482462349	one way
+0.2478080468	cpu time
+0.2474320478	minimum number of
+0.2472340037	retrieval system
+0.2462335255	differences between
+0.2461300697	1 k
+0.2458097160	visual system
+0.2452999703	carried out
+0.2451208848	no longer
+0.2450618901	an office
+0.2443319450	optimal value
+0.2433982502	2 2
+0.2430025748	not necessarily
+0.2429896944	first step
+0.2429421093	an efficient
+0.2427129861	the optimal solution
+0.2421763085	very large
+0.2421119163	different types
+0.2412858292	a simulation model
+0.2405289518	a special case
+0.2400646573	an adaptive
+0.2400585683	model based on
+0.2398874131	file system
+0.2367777118	database system
+0.2357950208	layout system
+0.2352686247	finite set of
+0.2347337714	the main result
+0.2345300392	area networks
+0.2345285770	montre que
+0.2342244684	an algebraic
+0.2341475827	computer system
+0.2332087243	distinction between
+0.2332028594	the equivalence problem
+0.2331725759	sufficient conditions for
+0.2324929997	this paper shows
+0.2323342070	space time
+0.2321126538	paper deals with
+0.2319393236	small number of
+0.2317646323	greater than
+0.2305281264	high degree
+0.2301501627	system development
+0.2297013194	proposed method
+0.2290565630	algorithm based on
+0.2275375486	an automated
+0.2253341239	access time
+0.2250277432	accepted by
+0.2246677359	the general case
+0.2237068014	faster than
+0.2227288859	language l
+0.2210943595	the programming language
+0.2197560598	graphics system
+0.2189848195	a finite number
+0.2181239145	based upon
+0.2175727688	the objective function
+0.2168636008	algorithms based on
+0.2165023585	into account
+0.2164379663	an efficient algorithm
+0.2159100073	new techniques
+0.2155111155	language interface
+0.2154874328	under consideration
+0.2140296407	previously known
+0.2137015783	an automatic
+0.2136800298	time and space
+0.2132312025	an infinite
+0.2128706506	very small
+0.2125542122	efficient algorithm for
+0.2121147882	special case of
+0.2116453447	2 n
+0.2109280916	case performance
+0.2108354749	an extended
+0.2108227081	this paper studies
+0.2098021581	a local area
+0.2092392752	a wide range
+0.2090412189	widely used
+0.2088222459	a special purpose
+0.2078850832	regarded as
+0.2072054705	x and y
+0.2070049889	processing algorithms
+0.2067298284	expected number of
+0.2067057388	time distribution
+0.2063172262	closed under
+0.2055379220	n 1 n
+0.2052626726	decomposed into
+0.2052116753	various kinds
+0.2030777749	n log n
+0.2030289570	prototype system
+0.2017278241	the paper presents
+0.2015303528	processing time
+0.2010365788	maximum number of
+0.2009435209	some aspects of
+0.1997283463	the main results
+0.1995094334	if s
+0.1992387128	with n vertices
+0.1988343054	this paper
+0.1985484891	different levels
+0.1983098168	questions about
+0.1980853543	relatively simple
+0.1976185261	programming algorithm
+0.1976001715	an object
+0.1972107289	divided into
+0.1957782006	an image
+0.1954957914	better than
+0.1946311398	system architecture
+0.1936119429	necessary and sufficient conditions
+0.1935869185	a given set
+0.1935690729	special cases of
+0.1932536323	2 log
+0.1915793517	commonly used
+0.1908692530	infinitely many
+0.1904368113	so far
+0.1899780713	short time
+0.1897396521	an empirical
+0.1896719915	most important
+0.1895611524	2 k
+0.1892221831	an on line
+0.1887593492	the paper discusses
+0.1887331607	three types
+0.1884556349	computational complexity of
+0.1883926294	by introducing
+0.1874558908	determining whether
+0.1870567271	distance between
+0.1868682244	particular attention
+0.1864129018	difference between
+0.1863148084	each processor
+0.1860153487	very high
+0.1858619180	smaller than
+0.1856321176	look at
+0.1847567875	computer communication
+0.1840679788	this algorithm
+0.1837265880	computer simulations
+0.1835369055	even though
+0.1824987441	each iteration
+0.1814235426	the paper concludes
+0.1812418969	design system
+0.1809757508	the mean square
+0.1806779747	2 m
+0.1803607324	this model
+0.1803428473	two approaches
+0.1788644101	this panel
+0.1781233694	finite number of
+0.1778402497	an overview
+0.1778165427	an algorithm
+0.1777602362	management system
+0.1774281425	a linear time algorithm
+0.1770134434	based on
+0.1761864682	correspondence between
+0.1755925007	various types
+0.1750762546	necessary and sufficient
+0.1747559461	information about
+0.1744978261	this problem
+0.1743605178	previous work
+0.1742347243	very simple
+0.1731961185	an asymptotic
+0.1724160090	present paper
+0.1723799128	partitioned into
+0.1721096810	an analytic
+0.1712685240	aimed at
+0.1705032495	diameter of
+0.1697285070	multiprocessor system
+0.1694563120	results concerning
+0.1687400202	so as to minimize
+0.1683889653	more powerful
+0.1679951852	vision system
+0.1676559874	used to implement
+0.1673938953	on montre que
+0.1672011688	very important
+0.1663156267	larger than
+0.1662801928	this method
+0.1660846670	certain conditions
+0.1657602665	an expert
+0.1655482216	an attribute
+0.1653745129	frequently used
+0.1652228537	numerical example
+0.1651883035	this approach
+0.1643894101	an ideal
+0.1642630554	processing system
+0.1641590589	insight into
+0.1632107299	each level
+0.1631312205	approach to
+0.1625210879	more complex
+0.1624566103	dynamic time
+0.1621466537	an optimum
+0.1617296773	a tutorial
+0.1612364619	a real time
+0.1611246906	the problem of finding
+0.1600821142	space and time
+0.1594150772	the automorphism
+0.1593453560	communication system
+0.1590250967	several years
+0.1588716408	an expert system
+0.1585800580	1 m
+0.1581098889	well known
+0.1579931580	a subclass
+0.1579133232	recent work
+0.1578845491	incorporated into
+0.1578667619	an edge
+0.1578228275	two distinct
+0.1578161718	more efficient
+0.1570579558	an approximation
+0.1566497429	an optimal
+0.1559007237	software system
+0.1552892426	two vertices
+0.1544493303	to date
+0.1541764041	system performance
+0.1531890476	assumptions about
+0.1524734289	the special case
+0.1524033588	an introduction
+0.1516211440	referred to as
+0.1516160981	used to generate
+0.1514628821	an experimental
+0.1514462054	very efficient
+0.1513265354	in most cases
+0.1510534286	an array
+0.1509135754	the computational complexity
+0.1508432258	a computer program
+0.1507908765	less than
+0.1506550202	in many cases
+0.1501397994	used to obtain
+0.1500455555	an improved
+0.1495110277	the minimum number
+0.1493351242	two classes
+0.1492188593	a large class
+0.1485909804	new concept
+0.1484768497	to recognize
+0.1481694196	this technique
+0.1478599112	a comparative
+0.1476362135	distributed system
+0.1469397746	more effective
+0.1467812741	each step
+0.1459441988	an interval
+0.1455047117	the problem of determining
+0.1448724834	used to develop
+0.1447662379	an operational
+0.1446813400	an intelligent
+0.1446421347	large class of
+0.1440088412	the representation of
+0.1438235722	under development
+0.1419104443	an integrated
+0.1417802395	communication between
+0.1417311643	connections between
+0.1416301701	new method
+0.1415173006	the model
+0.1414240148	the new algorithm
+0.1412825585	transformed into
+0.1411110671	very little
+0.1407355470	the art
+0.1406168854	those obtained
+0.1405775994	by adding
+0.1402771881	relations between
+0.1401707762	number of
+0.1400457024	derived from
+0.1394942037	each class
+0.1390413084	wide class of
+0.1390162303	to communicate
+0.1389642469	rather than
+0.1383382883	the algorithm
+0.1381128277	the expected number
+0.1380216275	an arbitrary
+0.1378966820	this paper deals
+0.1371752482	viewed as
+0.1368920315	several examples
+0.1366519572	the time domain
+0.1363159365	interactive system
+0.1362614278	shown to
+0.1357703080	a top down
+0.1352766244	necessary and sufficient condition
+0.1350551721	the other hand
+0.1350276001	used to derive
+0.1342569555	applied to
+0.1339997224	in section
+0.1336535997	this class
+0.1321097573	this note
+0.1318556841	the number of nodes
+0.1312633332	current state of
+0.1310102573	best possible
+0.1309879407	a new technique
+0.1306413257	differs from
+0.1305348205	did not
+0.1302770117	algorithm for
+0.1293770441	results indicate
+0.1287529139	relation between
+0.1283713649	extracted from
+0.1283424531	in relation to
+0.1280835768	to assess
+0.1279527813	one to one
+0.1276330828	at least
+0.1273286124	an information
+0.1271462905	connection between
+0.1268129414	a new method
+0.1266026441	support system
+0.1264980738	this article
+0.1256789416	also included
+0.1245287873	bounds on
+0.1239634643	more general
+0.1236369478	tend to
+0.1230422440	our approach
+0.1227872579	a b
+0.1224322997	expressed in terms of
+0.1223562757	a program
+0.1219739479	conditions under
+0.1218684315	represented by
+0.1216600400	a graph g
+0.1213252010	comments on
+0.1208576259	a formal
+0.1207147981	implied by
+0.1201445363	even if
+0.1198474568	a new algorithm
+0.1197850807	on montre
+0.1194313910	a multiprocessor
+0.1193010591	generated by
+0.1189294188	very well
+0.1185279357	also discussed
+0.1184335703	to provide
+0.1183728006	to detect
+0.1182045403	to achieve
+0.1180663661	a digraph
+0.1179232023	for locating
+0.1178360740	do not
+0.1177130911	a first order
+0.1170737417	1 n
+0.1168266999	an important
+0.1164713598	dealing with
+0.1164420062	method for
+0.1163782113	caused by
+0.1162935534	dealt with
+0.1158073512	this study
+0.1151342139	total number of
+0.1150511673	to decide
+0.1150221222	algorithm uses
+0.1150046969	concerned with
+0.1148081550	for studying
+0.1143700048	recognition system
+0.1142833425	an approximate
+0.1134896846	whether or not
+0.1134390174	the number of vertices
+0.1134075609	by examining
+0.1131683587	an advanced
+0.1129126712	for managing
+0.1124601956	ranging from
+0.1122256406	many different
+0.1120210659	an organization
+0.1117645524	as follows
+0.1116934370	a graph
+0.1116483942	a necessary and sufficient condition
+0.1116139451	makes use of
+0.1114733283	used to solve
+0.1111097892	computation time
+0.1109705564	new technique
+0.1109115335	denoted by
+0.1108338228	take advantage of
+0.1102736504	an integer
+0.1102343070	a new approach
+0.1094825822	on log n
+0.1092062990	to assist
+0.1091640713	the problem
+0.1089435501	to reach
+0.1089431323	an approach
+0.1087313119	to understand
+0.1086083159	size n
+0.1085245416	depending on
+0.1084842911	used to evaluate
+0.1082538098	an integral
+0.1082044075	second part
+0.1081795532	to implement
+0.1081194206	the curve
+0.1080613886	the point of
+0.1075083258	also shown
+0.1074211030	the time of
+0.1072150136	bound on
+0.1070379435	characterized by
+0.1069517085	also presented
+0.1069013473	an evaluation of
+0.1068476319	to accomplish
+0.1068410178	to determine
+0.1064644344	this correspondence
+0.1063799166	deals with
+0.1062687957	depend on
+0.1061994443	more important
+0.1060864544	cope with
+0.1060489860	does not
+0.1060039058	this result
+0.1059832466	serves as
+0.1054864582	obtained by
+0.1052834281	serve as
+0.1051235766	a single
+0.1050864544	concentrates on
+0.1050212790	an analysis
+0.1049875357	a microcomputer
+0.1047671542	advantages over
+0.1046551446	a very high
+0.1046545108	an expression
+0.1046369923	system for
+0.1045370048	arising from
+0.1043445029	an alternative
+0.1042647769	compared with
+0.1037696584	replaced by
+0.1037290842	a simple
+0.1036996058	the number of processors
+0.1036649700	used to determine
+0.1032375225	many applications
+0.1032232659	problems such as
+0.1032009213	the design
+0.1031191775	to solve
+0.1030498881	to improve
+0.1026160994	an input
+0.1025554184	quite different
+0.1024965292	presented here
+0.1020897733	also discuss
+0.1020128342	the system to
+0.1018692727	queue with
+0.1017479102	control over
+0.1016646630	new approach
+0.1013073282	induced by
+0.1012609065	a fast
+0.1009350218	a system for
+0.1007051032	new algorithm for
+0.1006919490	to locate
+0.1005418138	model for
+0.1005015988	a database
+0.1000138339	become more
+0.0999390119	depends on
+0.0998146632	a survey
+0.0993529811	built in
+0.0990136268	requires only
+0.0987877391	a priori
+0.0987642322	concentrate on
+0.0987527059	to aid in
+0.0984887148	tends to
+0.0978547633	then used to
+0.0977650624	focuses on
+0.0977065060	influenced by
+0.0976875974	briefly described
+0.0974103805	as opposed to
+0.0972095574	focused on
+0.0971549094	interpreted as
+0.0970722682	drawn from
+0.0969582991	design and implementation of
+0.0968905755	the equivalence problem for
+0.0966773385	compilation of
+0.0965596368	wish to
+0.0965447306	new algorithm
+0.0964751367	one or more
+0.0961072898	known algorithms
+0.0960259035	to realize
+0.0958935478	the system
+0.0958875376	to support
+0.0958389981	all n
+0.0957408887	correspond to
+0.0955934871	also considered
+0.0955690896	responsible for
+0.0953528821	a model
+0.0952553678	produced by
+0.0952383258	an informal
+0.0950653415	this report
+0.0946895776	a unified
+0.0945023945	an exact
+0.0943871311	the first order
+0.0941628766	for deciding
+0.0937612326	followed by
+0.0934899329	to account for
+0.0932114911	very useful
+0.0931433343	the diameter
+0.0931419709	devoted to
+0.0931066412	applications such as
+0.0930834833	paper gives
+0.0927666679	interaction between
+0.0927613539	a large number
+0.0927475655	rely on
+0.0927108086	the total number of
+0.0925275984	for reasoning about
+0.0925241993	an effective
+0.0916444441	subjected to
+0.0914642731	to maximize
+0.0914606659	systems such as
+0.0913211044	to obtain
+0.0913012744	a hierarchical
+0.0912661910	more than
+0.0909961850	time required
+0.0908566684	achieved by
+0.0907420074	an application
+0.0906697249	completeness of
+0.0902868259	an initial
+0.0902107272	much more
+0.0901378313	problem for
+0.0901239749	or less
+0.0896970060	so as to
+0.0895662614	the estimation of
+0.0893250613	of vertices in
+0.0892583614	a wide
+0.0890203658	a hierarchy
+0.0889180456	obtained from
+0.0886656309	deal with
+0.0886272027	refers to
+0.0884448689	want to
+0.0883921118	used to
+0.0882623553	belong to
+0.0879522168	to prevent
+0.0877944167	for predicting
+0.0877769787	represented as
+0.0876838785	of order n
+0.0876260783	the system in
+0.0876240845	to compute
+0.0876229244	sensitivity of
+0.0874798267	illustrated by
+0.0873610983	n time
+0.0864809017	by considering
+0.0864033516	problems associated with
+0.0864032597	the techniques used
+0.0860061661	a system of
+0.0857280565	relies on
+0.0854824252	to optimize
+0.0850843482	access to
+0.0849507707	an unknown
+0.0849432013	defined by
+0.0849183158	set of n
+0.0848001389	associated with
+0.0847483005	to converge
+0.0847240012	the convex hull of
+0.0847146138	supported by
+0.0844965830	to perform
+0.0843636286	to check
+0.0842111241	member of
+0.0840677921	to evaluate
+0.0839903773	length n
+0.0838390182	an undirected
+0.0838164682	determined by
+0.0837966445	three different
+0.0834649085	starting from
+0.0832947719	a portable
+0.0831015635	affected by
+0.0828696562	an explicit
+0.0826136268	taken into
+0.0825183900	the vocal
+0.0822476031	to develop
+0.0818930362	to ensure
+0.0818011254	to minimize
+0.0816324830	to produce
+0.0814516356	such as
+0.0814437493	motivated by
+0.0808351224	used in
+0.0807271302	programming system
+0.0805659076	to generate
+0.0801801299	experiences with
+0.0801667576	to represent
+0.0801467378	to eliminate
+0.0801288007	a general
+0.0800671264	a finite
+0.0800475451	a finite number of
+0.0800349766	an implementation
+0.0799913328	a sentence
+0.0799483218	an intermediate
+0.0798865277	in mind
+0.0798304719	set of
+0.0797806105	in addition
+0.0797794066	exactly one
+0.0796395890	described here
+0.0794137553	to resolve
+0.0794020493	to meet
+0.0793412762	a large class of
+0.0792772128	not always
+0.0792772128	not yet
+0.0792393574	the core
+0.0791963117	the semantics of
+0.0790271233	handled by
+0.0788862328	the reliability of
+0.0787470809	resulted in
+0.0785622695	a document
+0.0778292500	developed at
+0.0776110919	interested in
+0.0775972396	led to
+0.0774898499	of length n
+0.0773562654	model of
+0.0773378606	modeled as
+0.0773007866	a note
+0.0772518660	to express
+0.0771366272	to reduce
+0.0770760574	many cases
+0.0765727203	the level of
+0.0761756748	to manage
+0.0759609615	arrangement of
+0.0759504572	a new
+0.0758146531	if and only if
+0.0757558865	try to
+0.0756840802	used by
+0.0755115895	presented for
+0.0754878972	corresponds to
+0.0754506308	the validity of
+0.0753024236	by allowing
+0.0752651119	a theory of
+0.0752510917	an algorithm for
+0.0751584516	defined in terms of
+0.0748890930	only if
+0.0747736647	more efficient than
+0.0747156990	used in conjunction with
+0.0747050992	lead to
+0.0745800748	used as
+0.0745059942	the user
+0.0743859190	with respect
+0.0743193194	for solving
+0.0741917728	an architecture
+0.0741242671	with regard to
+0.0737853460	a hybrid
+0.0737092011	as well as
+0.0736806834	referred to
+0.0736772443	all possible
+0.0735966450	the maximum number of
+0.0735544787	scheme for
+0.0733718889	to carry
+0.0732921269	placed on
+0.0732412646	each other
+0.0731897833	analysis of
+0.0730439402	refer to
+0.0729298239	integrated into
+0.0728334355	solved by
+0.0725630288	two major
+0.0724456949	the current state of
+0.0724210110	a framework
+0.0721749395	expressed as
+0.0720218210	the derivation of
+0.0719297111	a language for
+0.0719007305	consists of two
+0.0718851610	to combine
+0.0718515324	operating at
+0.0718455882	growth of
+0.0718090493	created by
+0.0717736894	an optimization
+0.0716650763	procedure for
+0.0715944838	guidelines for
+0.0715398688	as part of
+0.0714612506	a method
+0.0709357809	order n
+0.0709320153	a large
+0.0708568528	as long as
+0.0705298732	to use
+0.0705176395	information from
+0.0704436806	inclusion of
+0.0704190324	by applying
+0.0703414389	an analytical
+0.0703319371	to integrate
+0.0702676093	a database system
+0.0699497170	by combining
+0.0699268516	a stochastic
+0.0698729809	efficient than
+0.0696195275	not exist
+0.0696078790	to interpret
+0.0694035450	some general
+0.0690771289	a wide class of
+0.0690223524	the average
+0.0687713223	but not
+0.0687408426	defined as
+0.0686222028	a given set of
+0.0686078790	to calculate
+0.0685157345	regardless of
+0.0680557759	by taking
+0.0678862328	the capacity of
+0.0678181442	this work
+0.0677990724	performance of
+0.0677655552	related to
+0.0677176598	to predict
+0.0675988975	design of
+0.0675716819	an upper
+0.0675113566	used for
+0.0672197276	a model for
+0.0670056674	the state of
+0.0669355561	a model of
+0.0668612917	in order to
+0.0667967911	an evaluation
+0.0665696800	to learn
+0.0665694174	to bring
+0.0664429750	if and only
+0.0663224271	results show
+0.0660613339	in conjunction with
+0.0660584220	accomplished by
+0.0658129270	a set
+0.0657896162	the need for
+0.0657843141	to simulate
+0.0656303252	to construct
+0.0656027878	to extract
+0.0653565520	to create
+0.0653292774	satisfied by
+0.0652386587	proposed by
+0.0652278078	developed by
+0.0650472186	to serve
+0.0650164185	treated as
+0.0648016884	two kinds of
+0.0646084544	a new approach to
+0.0645942163	several different
+0.0645515845	effect of
+0.0645271834	factorization of
+0.0644553143	at least one
+0.0641734990	a computer system
+0.0641080961	an approach to
+0.0640742547	a set of
+0.0639927110	an investigation
+0.0639624754	to identify
+0.0638882045	for expressing
+0.0638159113	to test
+0.0638088508	an implementation of
+0.0637710801	with and without
+0.0637337888	to enhance
+0.0637002484	by comparing
+0.0636499600	with application to
+0.0635345919	together with
+0.0635287545	the equivalence
+0.0634439380	this paper deals with
+0.0634042041	the performance
+0.0633612917	the classification of
+0.0633473403	two types of
+0.0633405404	the reader
+0.0632852313	network with
+0.0632735730	also give
+0.0632596354	the resultant
+0.0632479652	an additional
+0.0631297518	modeled by
+0.0630197483	seems to
+0.0629954607	on log
+0.0629475532	seem to
+0.0629297111	the control of
+0.0628127770	some detail
+0.0626382159	make use of
+0.0626010195	some basic
+0.0625894347	two different
+0.0624789388	the minimization of
+0.0624295040	to write
+0.0623514090	compatible with
+0.0623486023	the simplex
+0.0622472029	to facilitate
+0.0622085726	a set of n
+0.0621891609	heuristics for
+0.0621608272	a large number of
+0.0621353328	computed from
+0.0620981003	at most
+0.0620734040	impact on
+0.0620405721	a comprehensive
+0.0620308031	complexity of
+0.0619525797	a linear time
+0.0619131801	this question
+0.0617581471	developed for
+0.0617060727	an existing
+0.0616548997	the original
+0.0614937548	for calculating
+0.0614806737	a new class of
+0.0614640106	directly from
+0.0614418452	the use of
+0.0612809773	leads to
+0.0612335932	to illustrate
+0.0610459742	to choose
+0.0609072994	a software system
+0.0608400790	the management of
+0.0606707339	methodology for
+0.0606646718	an essential
+0.0605166556	the number of
+0.0604607186	to handle
+0.0604185731	restrictions on
+0.0603397797	the design of
+0.0603037434	effect on
+0.0602058865	said to
+0.0601836842	to select
+0.0599868611	for example in
+0.0599189683	a wide variety of
+0.0599185943	a summary
+0.0598835573	the type of
+0.0598140852	a new algorithm for
+0.0597316567	a note on
+0.0597224319	the recognition of
+0.0596426758	a polynomial
+0.0591756986	for use in
+0.0591418912	to deal with
+0.0590395870	solution to
+0.0588633353	to execute
+0.0588337292	focus on
+0.0587076581	to fit
+0.0585922968	portion of
+0.0584428541	technique for
+0.0584288152	a new method for
+0.0584201927	a computer
+0.0583115192	the analysis of
+0.0583083774	provided by
+0.0583036830	presented in
+0.0582665718	the university
+0.0582635386	time algorithm
+0.0581314235	experience with
+0.0579427401	an improvement
+0.0579102667	seen as
+0.0578461855	understanding system
+0.0577659102	the simulation of
+0.0576856104	rise to
+0.0576305346	compiler for
+0.0576282884	an extensive
+0.0574755996	to maintain
+0.0574582836	an attempt
+0.0574265428	architecture for
+0.0573734868	with respect to
+0.0573734868	in terms of
+0.0573317228	a systematic
+0.0573293795	bounded by
+0.0573239486	controlled by
+0.0571376749	paid to
+0.0568654037	a distributed system
+0.0568178135	the shape of
+0.0567863567	graph with
+0.0567476417	also show
+0.0565806992	for specifying
+0.0564236656	package for
+0.0563381444	imposed by
+0.0563349974	considered as
+0.0563313824	reduced by
+0.0561889658	the performance of
+0.0561824321	the second part
+0.0560745275	support for
+0.0560140611	to avoid
+0.0559414295	an analysis of
+0.0559297111	the method of
+0.0558395160	introduced by
+0.0558267089	representation for
+0.0557779584	the processing of
+0.0557502530	suited to
+0.0556553753	the first part
+0.0556285065	more than one
+0.0552580964	realized by
+0.0551049561	derived by
+0.0550834198	taken from
+0.0548386693	the end of
+0.0547591318	work on
+0.0545905642	the design and implementation
+0.0545588275	an overview of
+0.0545099415	an interesting
+0.0544556227	an average
+0.0544151864	as well
+0.0543527667	the problem of
+0.0541706248	a polynomial time
+0.0541044230	to operate
+0.0540912401	a method for
+0.0539427349	to verify
+0.0537479757	an open
+0.0537268599	to overcome
+0.0534922787	a high
+0.0534266029	ease of
+0.0534106523	combined with
+0.0533612917	the principle of
+0.0533086789	communicate with
+0.0532634881	other than
+0.0531283878	or more
+0.0530976426	necessary and sufficient condition for
+0.0530259221	or even
+0.0530063893	to answer
+0.0530039544	by means of
+0.0529653612	to find
+0.0528623527	to aid
+0.0528255672	an appropriate
+0.0528215802	capable of
+0.0526968568	to build
+0.0526690882	to keep
+0.0525972529	not only
+0.0523734868	a proof of
+0.0523612917	the rate of
+0.0522508089	to incorporate
+0.0522076366	a wide range of
+0.0521592139	by showing
+0.0520748916	driven by
+0.0519576313	the cost of
+0.0519507113	consists of
+0.0518671044	described by
+0.0518257780	concludes with
+0.0518178135	the intersection of
+0.0517920493	regard to
+0.0516651421	theorem for
+0.0516451267	converges to
+0.0516144930	as to minimize
+0.0513430775	an equivalent
+0.0511894926	to define
+0.0511855000	the design and implementation of
+0.0511397253	an example
+0.0511044134	the value of
+0.0510403267	formed by
+0.0507106852	in connection with
+0.0506511468	the product of
+0.0505748022	the entire
+0.0505137734	note on
+0.0504922023	channel with
+0.0504889203	the usual
+0.0503970729	contained in
+0.0503734868	a group of
+0.0503640224	sequence of
+0.0502956643	attached to
+0.0502417847	to guarantee
+0.0501537401	the set of
+0.0501446912	compared to
+0.0500866736	for instance
+0.0500177306	any other
+0.0499109167	to explain
+0.0498984577	a variety of
+0.0498306294	resulting from
+0.0498178135	the convergence of
+0.0497415157	to do
+0.0495978160	a class of
+0.0494424595	the structure of
+0.0493968771	takes into
+0.0493734868	the execution of
+0.0492923968	made by
+0.0492465613	an extension
+0.0490623310	tailored to
+0.0490197536	agreement with
+0.0488449024	to specify
+0.0488178135	the detection of
+0.0487830918	a microprocessor
+0.0487558579	to store
+0.0486347830	an application of
+0.0486312731	state of
+0.0486288460	use of
+0.0486077321	performed by
+0.0484981594	the complexity of
+0.0484508273	the development
+0.0484202628	suitable for
+0.0483798012	the average number of
+0.0483734868	the vertices of
+0.0483612917	the architecture of
+0.0483610624	designed to
+0.0482937307	investigation of
+0.0481818970	role in
+0.0480483982	an actual
+0.0480339635	composed of
+0.0478863074	the position of
+0.0477609055	a technique for
+0.0476946251	the specification of
+0.0476507547	uniqueness of
+0.0475742586	report on
+0.0475570404	consist of
+0.0475050982	to prove
+0.0474929387	the same as
+0.0474781809	problem of
+0.0473832859	by providing
+0.0473734868	the organization of
+0.0473612917	the area of
+0.0473612917	the selection of
+0.0473343451	in practice
+0.0472691935	to analyze
+0.0472328937	also provides
+0.0472295296	the field
+0.0470767418	the presence of
+0.0470750580	a small number of
+0.0470299211	for evaluating
+0.0470242951	signal to
+0.0470040545	to know
+0.0469917847	to exploit
+0.0469914572	to hold
+0.0468952243	the work of
+0.0468947884	the paper concludes with
+0.0467603659	proportional to
+0.0466589771	but also
+0.0466392496	a module
+0.0465926462	as well as for
+0.0465707126	to include
+0.0463734868	the domain of
+0.0463734868	the output of
+0.0463075380	coupled with
+0.0460958721	also given
+0.0460303509	the well known
+0.0458863074	a means for
+0.0458757808	the first part of
+0.0458518502	structure of
+0.0458272330	a broad
+0.0458252445	a problem of
+0.0457119418	the same
+0.0455630090	extended to
+0.0455242826	done by
+0.0453521666	a methodology for
+0.0452356494	necessary and sufficient conditions for
+0.0451727943	a class
+0.0451157978	and implementation of
+0.0450039544	the assumption of
+0.0449971891	to make
+0.0449487125	suited for
+0.0449099451	formula for
+0.0448612917	a network of
+0.0447794275	in turn
+0.0447573422	proportion of
+0.0446024586	none of
+0.0444955905	a hierarchy of
+0.0444793990	this kind
+0.0444475609	the form of
+0.0444366959	bound for
+0.0444353658	the case of
+0.0444353658	the size of
+0.0444353658	a function of
+0.0443909730	the user to
+0.0443734868	a theorem of
+0.0443391757	this type
+0.0443267666	formulated as
+0.0442621383	to apply
+0.0441857980	to permit
+0.0441488893	take into
+0.0441207986	specified by
+0.0440772308	a new class
+0.0440669366	first part
+0.0440607462	a number
+0.0440316808	constructed from
+0.0439894963	an efficient algorithm for
+0.0439379323	implemented on
+0.0438863074	a sample of
+0.0438731989	the influence of
+0.0438136162	discussed in
+0.0437686991	a study of
+0.0437244005	a great deal of
+0.0437200962	the probability of
+0.0436636558	need for
+0.0435502567	an example of
+0.0435465511	proposed as
+0.0435098948	the creation
+0.0434457855	or not
+0.0433879976	a consequence
+0.0433734868	the generation of
+0.0433734868	the computation of
+0.0433389987	determination of
+0.0433239267	literature on
+0.0433177806	the same time
+0.0432870803	obtained for
+0.0432718203	a method of
+0.0431216015	the meaning of
+0.0431083123	computed by
+0.0429924076	absence of
+0.0428328667	class of
+0.0428328667	evaluation of
+0.0428022016	the same way
+0.0425288371	to demonstrate
+0.0425146837	the course of
+0.0424395340	subclass of
+0.0423757765	operate on
+0.0423395340	continue to
+0.0423218098	a small
+0.0422713603	a number of
+0.0422032841	a tool
+0.0421120046	for finding
+0.0421119894	the sum of
+0.0420665735	mechanism for
+0.0420268830	occurrence of
+0.0420039798	to enable
+0.0419963903	and only if
+0.0419357281	the development of
+0.0419240089	percentage of
+0.0418843836	the speed of
+0.0418427138	used to describe
+0.0418184968	response to
+0.0417877151	an overall
+0.0417686991	the solution of
+0.0417585287	converge to
+0.0416958924	a necessary and sufficient
+0.0414176410	to guide
+0.0413208643	implementation of
+0.0412105749	a characterization
+0.0410965981	for estimating
+0.0410212655	quality of
+0.0410114916	the evaluation of
+0.0410039544	the location of
+0.0409824214	the sequence of
+0.0408917847	to explore
+0.0408863074	the identification of
+0.0408843836	the consistency of
+0.0408612917	the order of
+0.0408196429	runs in
+0.0407718440	required by
+0.0406946251	the length of
+0.0406319572	to deal
+0.0406144858	as compared to
+0.0405774636	the number
+0.0404703057	strategy for
+0.0404617774	system consists of
+0.0403848775	evaluated by
+0.0403720166	the distribution of
+0.0402784721	opposed to
+0.0401887100	a review of
+0.0400946122	realization of
+0.0400898757	hold for
+0.0400039544	the interpretation of
+0.0399731279	assigned to
+0.0398960211	degree of
+0.0397686991	the process of
+0.0397686991	the study of
+0.0396923803	a part of
+0.0396330820	enough to
+0.0395877029	a framework for
+0.0395211059	added to
+0.0394511648	history of
+0.0393734868	the introduction of
+0.0393606103	to give
+0.0393521666	the quality of
+0.0392491216	the class of
+0.0392325146	to describe
+0.0391595833	to address
+0.0390472605	a characterization of
+0.0390167443	the former
+0.0390039544	the production of
+0.0388399079	a prototype
+0.0388300135	guaranteed to
+0.0388029882	a conjecture of
+0.0387634455	found to
+0.0387211969	the amount of
+0.0386928279	distribution of
+0.0386827619	for determining
+0.0386298597	a methodology
+0.0385515839	the rest
+0.0384955941	at most one
+0.0384955832	behaviour of
+0.0384883965	generated from
+0.0384786780	the expected number of
+0.0384586188	theory of
+0.0383350348	for obtaining
+0.0381172205	a generalization of
+0.0379889691	the capability of
+0.0379228218	a mixed
+0.0378863074	the result of
+0.0378863074	the question of
+0.0378470120	power of
+0.0378316532	to estimate
+0.0378069693	to take
+0.0377474423	involved in
+0.0376790414	to noise
+0.0374821144	to extend
+0.0373932447	an algorithm to
+0.0373444224	constructed by
+0.0373180655	a comparison
+0.0372273432	the minimum number of
+0.0370039544	the task of
+0.0370039544	the operation of
+0.0369889691	the objective of
+0.0369708814	new class of
+0.0369272407	the ability of
+0.0368843836	the relationship of
+0.0367170531	an application to
+0.0367068648	framework for
+0.0366836440	implemented by
+0.0366753412	new method for
+0.0366702462	proposed for
+0.0366264951	interaction with
+0.0365509190	appears to
+0.0365200562	behavior of
+0.0364867536	in contrast to
+0.0364575867	known as
+0.0364294901	new approach to
+0.0364053926	to increase
+0.0364039210	to reason
+0.0362260817	interface to
+0.0361011014	to establish
+0.0360780285	a measure of
+0.0360383827	assumed to
+0.0360039544	the accuracy of
+0.0359603814	a result of
+0.0359272407	a factor of
+0.0358929924	a family of
+0.0358843836	the framework of
+0.0357825714	the need to
+0.0357739813	in response to
+0.0357145494	the choice of
+0.0356459630	the theory of
+0.0356258810	part of
+0.0355595100	the impact of
+0.0355424644	a family
+0.0354649015	to help
+0.0354140132	the existence of
+0.0354135766	version of
+0.0353955389	of interest in
+0.0351850149	introduced as
+0.0350706403	the power of
+0.0350534295	the correctness of
+0.0350026677	the utility of
+0.0348882487	consistent with
+0.0348843836	the addition of
+0.0348843836	a list of
+0.0348843836	the integration of
+0.0348497674	reduces to
+0.0347574186	change in
+0.0346119966	to see
+0.0343841251	majority of
+0.0343374559	ability to
+0.0343141320	adapted to
+0.0342112583	these bounds
+0.0340630432	a series of
+0.0340627204	demonstrated by
+0.0340585086	the implementation of
+0.0340498276	studied by
+0.0340026677	the subject of
+0.0340026677	the aid of
+0.0339971329	to examine
+0.0339354312	aspect of
+0.0338481345	to characterize
+0.0338381444	starting with
+0.0338010111	definition of
+0.0337603084	to satisfy
+0.0336566815	need to
+0.0336158541	attempts to
+0.0335614968	obtained with
+0.0334853554	the occurrence
+0.0334701740	with regard
+0.0334120473	variant of
+0.0333634717	family of
+0.0333188930	measured by
+0.0332919255	to get
+0.0331350870	a finite set of
+0.0331061371	the possibility
+0.0330728960	examination of
+0.0330630432	the basis of
+0.0330026677	the sense of
+0.0330026677	the goal of
+0.0329804244	the interaction between
+0.0329276132	implemented as
+0.0329247526	the sensitivity of
+0.0328843836	the efficiency of
+0.0328755395	dependent on
+0.0327984709	up to
+0.0327915203	to introduce
+0.0327539593	a solution to
+0.0327033072	the existence
+0.0326980681	emphasis on
+0.0326914178	a sequence of
+0.0326884797	incorporated in
+0.0325498200	occurs in
+0.0324871551	tool for
+0.0324515894	appear to
+0.0324089464	the concept of
+0.0323385728	the stability of
+0.0320439190	treatment of
+0.0320026677	the idea of
+0.0319925451	the degree of
+0.0319436308	in addition to
+0.0319043301	as much
+0.0318068944	embedded in
+0.0317143110	for constructing
+0.0316664827	the application of
+0.0316381734	stability of
+0.0316162408	a necessary and sufficient condition for
+0.0315842357	fraction of
+0.0315170131	tested on
+0.0314443302	attempt to
+0.0313687897	required to
+0.0313602117	to compare
+0.0313556854	intended for
+0.0312829074	an attempt to
+0.0312566305	the relationship between
+0.0312419784	reduction in
+0.0311746067	sum of
+0.0311152368	published in
+0.0309925451	the behavior of
+0.0309633144	time algorithm for
+0.0309584577	the purpose of
+0.0309584577	the context of
+0.0309584577	the role of
+0.0309573793	motivation for
+0.0307921834	an extension of
+0.0307072914	in contrast
+0.0306455423	availability of
+0.0306353455	addition to
+0.0305597812	new class
+0.0304600398	characterization of
+0.0304473260	in detail
+0.0303821669	applies to
+0.0302813984	performed on
+0.0301873094	development of
+0.0301663163	to yield
+0.0301447728	encountered in
+0.0300438271	a description of
+0.0299638115	result from
+0.0299501745	needed to
+0.0299140114	to take advantage of
+0.0299037824	amount of
+0.0297233130	assessment of
+0.0296546933	prior to
+0.0296101485	a generalization
+0.0296011187	inherent in
+0.0295781341	close to
+0.0295251243	the effect of
+0.0294819041	condition for
+0.0294713359	to derive
+0.0294510229	stored in
+0.0294125138	creation of
+0.0294106068	lies in
+0.0294063334	basis for
+0.0293307764	implemented in
+0.0292598897	existence of
+0.0292466335	progress in
+0.0291849064	the absence of
+0.0289012428	description of
+0.0287422145	pair of
+0.0287394428	described in terms of
+0.0286852439	theorem on
+0.0286691579	criterion for
+0.0286204805	this paper provides
+0.0285203007	the aim
+0.0281754437	respect to
+0.0281521823	a survey of
+0.0281303859	the ratio of
+0.0280007641	increase in
+0.0279059803	the difference between
+0.0277657258	this type of
+0.0277270570	a brief
+0.0276936633	derived for
+0.0275931855	developed to
+0.0275927453	allowed to
+0.0275112942	status of
+0.0274999049	an alternative to
+0.0274961320	the presence
+0.0274864367	designed for
+0.0274138813	a combination
+0.0273653228	the distance between
+0.0272760257	most cases
+0.0271278460	the solution to
+0.0269940751	intended to
+0.0268774478	given set of
+0.0268691065	a collection of
+0.0268448297	paper provides
+0.0268435269	the field of
+0.0268398933	restricted to
+0.0268385625	comparison with
+0.0267901035	probability of
+0.0265736171	needed for
+0.0263864267	application of
+0.0263199516	expected to
+0.0263120766	same time
+0.0262691043	in particular
+0.0261884956	a method to
+0.0261560827	to investigate
+0.0261113365	with emphasis on
+0.0260561661	reduced to
+0.0260379049	consequence of
+0.0256991090	a collection
+0.0256560395	notion of
+0.0256462857	illustrated with
+0.0256216969	variety of
+0.0256024136	the effect
+0.0255228163	the ability to
+0.0254723781	to allow
+0.0254376323	collection of
+0.0252767030	an increase
+0.0252427882	derivation of
+0.0251720323	the basis for
+0.0251436720	for dealing with
+0.0249143880	presence of
+0.0248697761	correctness of
+0.0248298589	calculation of
+0.0247624858	needs to
+0.0247239560	a basis for
+0.0246269389	kind of
+0.0245653833	the relation between
+0.0245156341	apply to
+0.0243342993	this class of
+0.0243260575	the definition of
+0.0242563778	evolution of
+0.0241812236	written in
+0.0241269877	improvement in
+0.0239940315	reference to
+0.0236057807	a means of
+0.0234218648	extension of
+0.0234157102	the evolution of
+0.0232789694	the rest of
+0.0231966162	interest in
+0.0230480905	a novel
+0.0229591303	the determination of
+0.0229348402	expression for
+0.0228149456	the computational complexity of
+0.0227979770	required for
+0.0227824380	expressed in
+0.0226494822	the aim of
+0.0225481699	generalization of
+0.0224112057	a combination of
+0.0224090905	contribution of
+0.0224063198	hull of
+0.0223587677	a subset of
+0.0223241715	a comparison of
+0.0223029078	lack of
+0.0222967376	construction of
+0.0222965058	and hence
+0.0221868921	the expense of
+0.0221337365	an investigation of
+0.0220816626	this paper gives
+0.0220289694	the feasibility of
+0.0218219491	the latter
+0.0217691117	outline of
+0.0215869877	choice of
+0.0214974194	due to
+0.0214841443	validity of
+0.0213028526	proved to
+0.0212422402	the importance of
+0.0211829266	the behaviour of
+0.0210752904	the past
+0.0210307163	ratio of
+0.0210258086	employed to
+0.0207929215	the effectiveness of
+0.0207348476	the scope of
+0.0207324635	a special case of
+0.0206180797	a procedure for
+0.0205904122	a range of
+0.0204349064	the applicability of
+0.0203612462	the history of
+0.0202191281	a pair of
+0.0200779890	the possibility of
+0.0200719275	the construction of
+0.0200524614	the nature of
+0.0199846840	subject to
+0.0197651881	the creation of
+0.0197318606	the inclusion of
+0.0196296151	combination of
+0.0193902530	equivalent to
+0.0193902464	a discussion of
+0.0193100747	subset of
+0.0192280181	range of
+0.0190653930	discussion of
+0.0190344425	the description of
+0.0190093692	then used
+0.0187096325	the availability of
+0.0186663266	survey of
+0.0186106046	advantage of
+0.0184415139	the lack of
+0.0183477882	the collection of
+0.0183064749	included in
+0.0181652583	overview of
+0.0181007664	the calculation of
+0.0178815032	nature of
+0.0176956360	the usefulness of
+0.0175136505	the notion of
+0.0175031164	a modification of
+0.0173118998	the range of
+0.0173100115	aid in
+0.0172712236	expense of
+0.0170841305	modification of
+0.0170073691	effectiveness of
+0.0168923990	first part of
+0.0168034551	the family of
+0.0167455695	concept of
+0.0166572452	a summary of
+0.0164158326	employed in
+0.0163632351	long as
+0.0163047714	connection with
+0.0162915421	feasibility of
+0.0162824848	the feasibility
+0.0162530649	a tool for
+0.0158565395	the advantage of
+0.0155477882	the extension of
+0.0152989116	a consequence of
+0.0152773673	approaches to
+0.0147547638	means of
+0.0146876120	the effects of
+0.0145102921	applicability of
+0.0145102921	usefulness of
+0.0141334433	chosen to
+0.0136689006	reports on
+0.0135102921	scope of
+0.0133558762	importance of
+0.0129962392	aim of
+0.0124428911	the university of
+0.0110996358	possibility of
