@@ -1,5 +1,7 @@
 # Description of results folder
 
+Note: Some files within this folder require Git LFS (Large File Storage). You can install it [here](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
+
 * arxiv-FULL
     * Contains AutoPhrase results for the entire arXiv dataset (all years combined)
 * arxiv 
