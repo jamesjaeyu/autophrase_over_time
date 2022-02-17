@@ -5,6 +5,7 @@ Processing DBLP v10
 """
 import pandas as pd
 import time
+import re
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -60,6 +61,141 @@ def obtain_phrases(infolder, unique_by_year=False):
         df.to_csv('../results/dblp-v10-phrases-uniquebyyear.csv')
     else:
         df.to_csv('../results/dblp-v10-phrases-unique.csv')
+    end = time.time()
+    return end - start
+
+
+def obtain_phrases_grouped(infolder, threshold):
+    """
+    Processes AutoPhrase results and outputs individual phrases to a csv
+    (Takes around 18 minutes to run)
+
+    infolder: The folder containing the dblp-v10-grouped AutoPhrase results
+    threshold: Tuple containing the single & multi word quality minimums
+
+    >>> obtain_phrases_grouped('../results/dblp-v10-grouped', (0.8, 0.5))
+    """
+    start = time.time()
+    df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year'])
+
+    filepaths = []
+    for i in range(1950, 2019, 5):
+        if i == 1950 or i == 1955:
+            subfolder = '1950-1959'
+        elif i == 2015:
+            subfolder = '2015-2017'
+        else:
+            subfolder = str(i) + '-' + str(i+4)
+        filepaths.append(infolder + '/' + subfolder + '/AutoPhrase.txt')
+
+    for fp in filepaths:
+        try:
+            file = open(fp, 'r')
+            year = fp.split('/')[3]
+            for line in file:
+                line = line.strip().split('\t')
+                phrase = line[1]
+                num_words = len(line[1].split())
+                score = float(line[0])
+                if (num_words == 1 and score >= threshold[0]) or (num_words > 1 and score >= threshold[1]):
+                    df.loc[len(df.index)] = [score, phrase, year]
+            file.close()
+        except:
+            continue
+    df.to_csv('../results/dblp-v10-grouped/dblp-v10-grouped-phrases.csv')
+    end = time.time()
+    return end - start
+
+
+def process_seg(infolder):
+    """
+    Processes segmentation.txt files in all subfolders of infolder
+
+    Creates csv with columns: Phrases, Year, Frequency
+    Each entry of Phrases will contain all phrases within a single paper
+
+    TODO: Issue with low-quality phrases being included in output. This can be
+          resolved during processing or afterwards.
+    TODO: Maybe output separate csv's for each year, then combine them later on
+
+    >>> process_seg('../results/dblp-v10-grouped')
+    """
+    start = time.time()
+    # Obtains filepaths for all segmentation.txt files
+    filepaths = []
+    for i in range(1950, 2019, 5):
+        if i == 1950 or i == 1955:
+            subfolder = '1950-1959'
+        elif i == 2015:
+            subfolder = '2015-2017'
+        else:
+            subfolder = str(i) + '-' + str(i+4)
+        filepaths.append(infolder + '/' + subfolder + '/segmentation.txt')
+
+    df = pd.DataFrame(columns=['Phrases', 'Year'])
+    for fp in filepaths:
+        file = open(fp)
+        # Each line in the file represents a single paper's title + abstract
+        for line in file:
+            data = []
+            line = line.lower()
+            # Adds marked phrases to the data list until we have no more phrases
+            while line.find('<phrase>') != -1:
+                start_idx = line.find('<phrase>')
+                end_idx = line.find('</phrase>')
+                out = line[start_idx+8:end_idx]
+                data.append(out)
+                line = line[end_idx+9:]
+            # Phrases are separated by commas
+            phrases = ','.join(data)
+            year = fp.split('/')[3]
+            df.loc[len(df.index)] = [phrases, year]
+    outpath = infolder + '/dblp-v10-grouped-seg.csv'
+    df.to_csv(outpath)
+    end = time.time()
+    return end - start
+
+
+def process_seg_alt(infolder):
+    """
+    Alternate approach to processing segmentation.txt files
+    Outputs separate csvs for each year range, rather than all in a single csv
+
+    >>> process_seg_alt('../results/dblp-v10-grouped')
+    """
+    start = time.time()
+    # Obtains filepaths for all segmentation.txt files
+    filepaths = []
+    for i in range(1950, 2019, 5):
+        if i == 1950 or i == 1955:
+            subfolder = '1950-1959'
+        elif i == 2015:
+            subfolder = '2015-2017'
+        else:
+            subfolder = str(i) + '-' + str(i+4)
+        filepaths.append(infolder + '/' + subfolder + '/segmentation.txt')
+
+    for fp in filepaths:
+        df = pd.DataFrame(columns=['Phrases', 'Year'])
+        file = open(fp)
+        year = fp.split('/')[3]
+        # Each line in the file represents a single paper's title + abstract
+        for line in file:
+            phrases = []
+            line = line.lower()
+            # Adds marked phrases to the data list until we have no more phrases
+            while line.find('<phrase>') != -1:
+                start_idx = line.find('<phrase>')
+                end_idx = line.find('</phrase>')
+                phrase = line[start_idx+8:end_idx]
+                phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
+                phrases.append(phrase)
+                line = line[end_idx+9:]
+            # Phrases are separated by commas
+            phrases = ','.join(phrases)
+            df.loc[len(df.index)] = [phrases, year]
+        outpath = infolder + '/' + year + '_segmented.csv'
+        df.to_csv(outpath)
     end = time.time()
     return end - start
 
