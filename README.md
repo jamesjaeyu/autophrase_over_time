@@ -7,21 +7,26 @@
 
 <br />
 
-[Link to DBLP v10 dataset](https://drive.google.com/file/d/1K5IqyPai_rDti8ayYuXC9Oa9DFP2FgWv/view?usp=sharing)
+[Link to DBLP v10 dataset download](https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip)
 
-- Contains raw json files along with output .txt and .csv files from the process_dblp_v10.py functions
+- Direct download link from [aminer.org/citation](https://www.aminer.org/citation)
+- zip file size is 1.7 GB, 4.08 GB when extracted
 
-Folder descriptions:
-- config folder: Contains configuration files
+File & folder descriptions:
+- `config` folder: Contains configuration files for run.py
 
-- data folder: Directory for storing data
+- `data` folder: Directory for full data when running 'all' target on run.py
 
-- docs folder: Contains GitHub Pages files
+- `docs` folder: Contains GitHub Pages files for the visual presentation website
 
-- notebooks folder: Contains notebooks for initial code testing
+- `notebooks` folder: Contains notebooks for preliminary code testing. Finalized code will be moved to src folder in a .py file
 
-- results folder: Contains AutoPhrase results and .csv files of aggregated AutoPhrase results
+- `results` folder: Contains results of EDA figures and AutoPhrase
 
-- scripts folder: Contains .sh files for running AutoPhrase on DSMLP
+- `src` folder: Contains .py files for processing datasets, performing EDA, and model generation
 
-- src folder: Contains .py files for processing arXiv, DBLP v10 and v13 datasets + model generation
+- `test` folder: Contains `testdata` and `testresults` for running 'test' target on run.py
+
+- `run.py`: Run file for the project. Targets are 'data', 'eda', 'model'
+    - 'all' will run all targets with full dataset
+    - 'test' will run 'data' and 'model' with test data. 'eda' will run the same
