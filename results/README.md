@@ -8,6 +8,7 @@ Note: Some files within this folder require Git LFS (Large File Storage). You ca
     * Also contains AutoPhrase results on all years combined (`ALL_YEARS` folder)
 * `dblp-v10-grouped`
     * Contains AutoPhrase results for grouped years in the DBLP-v10 dataset
+    * Contains processed phrasal segmentation results in .csv files for each year range
 * `dblp-v10`
     * Contains AutoPhrase results for each year in the DBLP-v10 dataset (1950-2017)
     * Also contains AutoPhrase results on all years combined (`ALL_YEARS` folder)
