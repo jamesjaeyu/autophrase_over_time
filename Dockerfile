@@ -26,7 +26,7 @@ USER jovyan
 
 #RUN conda install --yes scikit-learn
 
-RUN pip install --no-cache-dir pandas matplotlib sklearn Levenshtein gensim nltk altair altair_saver selenium
+RUN pip install --no-cache-dir pandas matplotlib sklearn Levenshtein gensim nltk ast
 
 # Override command to disable running jupyter notebook at launch
 #CMD ["/bin/bash"]

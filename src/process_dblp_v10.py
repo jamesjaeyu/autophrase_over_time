@@ -35,7 +35,7 @@ def print_stats(time, papers, issues, empty, year):
     print(str(papers) + ' papers processed')
     print(str(issues) + ' number of papers with json formatting issues (' + str(issues/papers)[:5] + ')')
     print(str(empty) + ' number of papers with empty abstracts (' + str(empty/papers)[:5] + ')')
-    print(str(year) + ' number of papers with invalid/irrelevant years < 1950, > 2022')
+    print(str(year) + ' number of papers with invalid/irrelevant years < 1950, > 2017')
 
 
 def process_v10_txt(infolder):

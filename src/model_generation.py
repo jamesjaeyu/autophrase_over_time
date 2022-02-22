@@ -115,7 +115,7 @@ def process_seg(infolder):
         df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
         df['Year Range'] = [year] * len(df)
         df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
-        outpath = infolder + '/segmentation/' + year + '_segmented.csv'
+        outpath = infolder + '/' + year + '_segmented.csv'
         df.to_csv(outpath)
     end = time.time()
     return end - start
