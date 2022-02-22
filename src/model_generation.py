@@ -81,6 +81,10 @@ def process_seg(infolder):
     NOTE: Additional processing may be required (in a separate function)
           to remove low-quality phrases
 
+    NOTE: The repo doesn't contain the segmentation.txt files since they are so large,
+          so this function may need to be skipped in the 'all' target for run.py
+          and instead use the output YEAR_segmented.csv files
+
     >>> process_seg('../results/dblp-v10-grouped')
     """
     def extract_phrases(line):
@@ -194,15 +198,17 @@ def baseline_model(fp):
                                                         random_state=1)
     # Trains model
     pl.fit(X_train, y_train)
+
+    return pl.score(X_test, y_test)
     # Runs predictions on test set
-    X_test['Predicted Year'] = pl.predict(X_test)
+    #X_test['Predicted Year'] = pl.predict(X_test)
 
     # Creates Abs Year Diff column: the absolute difference between actual and predicted year
-    X_test['Year'] = y_test
-    X_test['Abs Year Diff'] = abs(X_test['Year'] - X_test['Predicted Year'])
+    #X_test['Year'] = y_test
+    #X_test['Abs Year Diff'] = abs(X_test['Year'] - X_test['Predicted Year'])
 
     # Returns the average absolute difference - want this metric to be close to 0
-    return X_test['Abs Year Diff'].mean()
+    #return X_test['Abs Year Diff'].mean()
 
 
 def refined_model():

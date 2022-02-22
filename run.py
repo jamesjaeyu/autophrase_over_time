@@ -38,11 +38,12 @@ def main(targets):
         threshold = (threshold[0], threshold[1])
         obtain_phrases(model_cfg['infolder'], threshold)
         process_seg(model_cfg['infolder'])
+        baseline_model(model_cfg['fp'])
     else:
         # Runs each relevant target in targets
         if 'data' in targets:
             data_cfg = json.load(open('config/data-params.json'))
-            download_v10()
+            #download_v10()
             # Processes DBLP v10 dataset into aggregated .txt files by year
             process_v10_txt(data_cfg['infolder'])
 
@@ -53,12 +54,11 @@ def main(targets):
 
         if 'model' in targets:
             model_cfg = json.load(open('config/model-params.json'))
-            # Processes the AutoPhrase results in the results/dblp-v10 folder
+
             threshold = [float(x) for x in model_cfg['threshold'].split(',')]
             threshold = (threshold[0], threshold[1])
             #obtain_phrases(model_cfg['infolder'], threshold)
             obtain_phrases(model_cfg['infolder_grouped'], threshold)
-            process_seg(model_cfg['infolder_grouped'])
             baseline_model(model_cfg['fp_grouped'])
 
     return

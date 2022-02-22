@@ -1,6 +1,6 @@
 {
     "infolder": "results/dblp-v10",
     "infolder_grouped": "results/dblp-v10-grouped",
-    "fp": "results/dblp-v10-phrases-uniquebyyear.csv",
-    "fp_grouped": "results/dblp-v10-grouped/dblp-v10-grouped-phrases.csv"
+    "fp": "results/dblp-v10/phrases.csv",
+    "fp_grouped": "results/dblp-v10-grouped/phrases.csv"
 }
