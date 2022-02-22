@@ -1,0 +1,2 @@
+A <phrase>practical implementation</phrase> of AutoPhrase may require many resources. <phrase>network nodes</phrase> may be useful in improving
+The <phrase>data base</phrase> containing all of the information on <phrase>pattern recognition</phrase> can be found online, quite easily.

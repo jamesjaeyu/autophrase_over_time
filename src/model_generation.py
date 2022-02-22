@@ -19,7 +19,6 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 
 
-
 def obtain_phrases(infolder, threshold=(0.8,0.5)):
     """
     Outputs a csv containing consolidated AutoPhrase results.
@@ -104,15 +103,12 @@ def process_seg(infolder):
 
     start = time.time()
     # Obtains filepaths for all segmentation.txt files
+    subfolders = glob(infolder + '/*/')
+    subfolders = [x.split('\\')[1] for x in subfolders]
     filepaths = []
-    for i in range(1950, 2019, 5):
-        if i == 1950 or i == 1955:
-            subfolder = '1950-1959'
-        elif i == 2015:
-            subfolder = '2015-2017'
-        else:
-            subfolder = str(i) + '-' + str(i+4)
-        filepaths.append(infolder + '/' + subfolder + '/segmentation.txt')
+    for sub in subfolders:
+        filepaths.append(infolder + '/' + sub + '/segmentation.txt')
+
     # Processes each segmentation.txt file
     for fp in filepaths:
         year = fp.split('/')[3]

@@ -1,0 +1,14 @@
+0.9715692372	heat transfer
+0.9706830341	belief propagation
+0.9692096444	stock market
+0.9692028232	congestion avoidance
+0.9691017793	kalman filters
+0.9690039144	pattern recognition
+0.9686780155	hamming distance
+0.9685654131	random walks
+0.9684725134	cellular phone
+0.9684547602	stream cipher
+0.9680622913	stereo vision
+0.9680292679	user interfaces
+0.9676849369	higher education
+0.9676030052	wave propagation

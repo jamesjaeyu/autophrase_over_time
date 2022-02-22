@@ -37,6 +37,7 @@ def main(targets):
         threshold = [float(x) for x in model_cfg['threshold'].split(',')]
         threshold = (threshold[0], threshold[1])
         obtain_phrases(model_cfg['infolder'], threshold)
+        process_seg(model_cfg['infolder'])
     else:
         # Runs each relevant target in targets
         if 'data' in targets:

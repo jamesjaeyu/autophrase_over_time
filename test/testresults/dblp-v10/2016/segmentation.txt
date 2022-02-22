@@ -1,0 +1,3 @@
+This paper describes how <phrase>artificial intelligence</phrase> can be used to build <phrase>convolutional neural networks</phrase>.
+A <phrase>programming language</phrase> is used to build our <phrase>natural language model</phrase> that has features such as <phrase>pattern recognition</phrase>
+<phrase>Problem solving</phrase> is the key to understanding <phrase>data structures</phrase>

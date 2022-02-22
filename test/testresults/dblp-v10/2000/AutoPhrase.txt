@@ -1,0 +1,11 @@
+0.9640877563	machine learning
+0.9627931557	load balancing
+0.9619412536	temporal logic
+0.9618132944	dynamic programming
+0.9615367883	sequent calculus
+0.9604384138	resource management
+0.9601422548	vector quantization vq
+0.9598612067	reverse engineering
+0.9595359994	gaussian elimination
+0.9592247310	knowledge representation
+0.9584704577	fuzzy logic
