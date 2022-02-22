@@ -1,3 +1,4 @@
+
 """
 DSC180B
 Q2 Project
@@ -6,6 +7,7 @@ Processing DBLP v10
 import pandas as pd
 import time
 import re
+from glob import glob
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
 import numpy as np
@@ -17,95 +19,51 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 
 
-def obtain_phrases(infolder, unique_by_year=False):
+
+def obtain_phrases(infolder, threshold=(0.8,0.5)):
     """
-    Given the folder path containing AutoPhrase results by year, read in
-    the quality phrases (multi >= 0.6, single >= 0.8) and output a csv.
-    Columns: Phrase Quality, Phrase, Year
+    (Takes 8 seconds to run)
 
-    unique_by_year determines if we look at unique phrases overall, or by year.
-    - False means phrases across all years must be unique. So the earliest instance
-        will be the only time the phrase shows up. (takes around 1 minute to run)
-    - True means phrases just have to be unique per year. So there can be duplicates
-        across multiple years. (takes around 20 minutes to run)
+    Outputs a csv containing consolidated AutoPhrase results.
+    Columns: Phrase Quality, Phrase, Year, Num Words
 
-    TODO: Can try messing around with score threshold values
+    infolder: Folder path containing AutoPhrase results by year
+    threshold: Tuple containing floats for (single-word, multi-word) thresholds
+               for phrase quality
 
-    >>> obtain_phrases('../results/dblp-v10', False)
-    >>> obtain_phrases('../results/dblp-v10', True)
+    >>> obtain_phrases('../results/dblp-v10', (0.8, 0.5))
+    >>> obtain_phrases('../results/dblp-v10-grouped', (0.8, 0.5))
     """
     start = time.time()
-    df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year'])
-    if not unique_by_year: # Set is maintained across all years
-        phrases = set()
-    for year in range(1960, 2018):
-        filepath = infolder + '/' + str(year) + '/AutoPhrase.txt'
-        if unique_by_year: # Set is reset every year
-            phrases = set()
-        try:
-            file = open(filepath, 'r')
-            for line in file:
-                line = line.strip().split('\t')
-                phrase = line[1]
-                if phrase in phrases:
-                    continue
-                num_words = len(line[1].split())
-                score = float(line[0])
-                if (num_words > 1 and score >= 0.6) or (num_words == 1 and score >= 0.8):
-                    df.loc[len(df.index)] = [score, phrase, year]
-                    phrases.add(phrase)
-            file.close()
-        except:
-            continue
-    if unique_by_year:
-        df.to_csv('../results/dblp-v10-phrases-uniquebyyear.csv')
-    else:
-        df.to_csv('../results/dblp-v10-phrases-unique.csv')
-    end = time.time()
-    return end - start
 
-
-def obtain_phrases_grouped(infolder, threshold):
-    """
-    Processes the grouped AutoPhrase results and outputs individual phrases to a csv
-    (Takes around 18 minutes to run)
-
-    TODO: This function could be combined with obtain_phrases by using os to
-    automatically find all subfolders within the infolder
-
-    infolder: The folder containing the dblp-v10-grouped AutoPhrase results
-    threshold: Tuple containing the single & multi word quality minimums
-
-    >>> obtain_phrases_grouped('../results/dblp-v10-grouped', (0.8, 0.5))
-    """
-    start = time.time()
-    df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year'])
-
+    subfolders = glob(infolder + '/*/')
+    subfolders = [x.split('\\')[1] for x in subfolders]
     filepaths = []
-    for i in range(1950, 2019, 5):
-        if i == 1950 or i == 1955:
-            subfolder = '1950-1959'
-        elif i == 2015:
-            subfolder = '2015-2017'
-        else:
-            subfolder = str(i) + '-' + str(i+4)
-        filepaths.append(infolder + '/' + subfolder + '/AutoPhrase.txt')
+    for sub in subfolders:
+        filepaths.append(infolder + '/' + sub + '/AutoPhrase.txt')
+
+    out_df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year', 'Num Words'])
 
     for fp in filepaths:
-        try:
-            file = open(fp, 'r')
-            year = fp.split('/')[3]
-            for line in file:
-                line = line.strip().split('\t')
-                phrase = line[1]
-                num_words = len(line[1].split())
-                score = float(line[0])
-                if (num_words == 1 and score >= threshold[0]) or (num_words > 1 and score >= threshold[1]):
-                    df.loc[len(df.index)] = [score, phrase, year]
-            file.close()
-        except:
-            continue
-    df.to_csv('../results/dblp-v10-grouped/dblp-v10-grouped-phrases.csv')
+        year = fp.split('/')[-2]
+        df = pd.read_csv(fp, sep='\t', header=None, names=['Phrase Quality', 'Phrase'])
+        df = df.dropna()
+        df['Year'] = [year] * len(df)
+        df['Num Words'] = df['Phrase'].map(str.split).map(len)
+
+        filter_qual = lambda x: True if \
+            (x['Num Words'] > 1 and x['Phrase Quality'] >= threshold[1]) \
+            or (x['Num Words'] == 1 and x['Phrase Quality'] >= threshold[0]) \
+            else False
+
+        valid_idx = df.apply(filter_qual, axis=1)
+        df = df[valid_idx]
+
+        out_df = out_df.append(df, ignore_index=True)
+
+    outpath = infolder + '/phrases.csv'
+    out_df.to_csv(outpath)
+
     end = time.time()
     return end - start
 

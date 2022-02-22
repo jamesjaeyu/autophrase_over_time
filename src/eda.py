@@ -36,6 +36,7 @@ def v10_papers_per_year(fp, outfolder):
     fn = '/v10_papers_per_year.png'
     plt.savefig(outfolder + fn)
 
+
 def arxiv_figures(fp, outfolder):
     """
     Takes in filepath for the Arxiv .json data file,

@@ -1,0 +1,5 @@
+{
+    "infolder": "test/testresults/dblp-v10",
+    "infolder_grouped": "test/testresults/dblp-v10-grouped",
+    "threshold": "0.8,0.5"
+}

@@ -8,6 +8,27 @@ import json
 import time
 import re
 import os
+import requests
+import shutil
+from glob import glob
+
+def download_v10():
+    """
+    Downloads DBLP v10 dataset and creates directory
+    """
+    if not os.path.exists('data'):
+        os.mkdir('data')
+    if not os.path.exists('data/dblp-v10'):
+        os.mkdir('data/dblp-v10')
+
+    dl_link = 'https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip'
+
+    data = open('data/dblp-v10/dblp-v10.zip', 'wb')
+    r = requests.get(dl_link, allow_redirects=True)
+    data.write(r.content)
+    shutil.unpack_archive('data/dblp-v10/dblp-v10.zip', 'data/dblp-v10')
+    return
+
 
 def print_stats(time, papers, issues, empty, year):
     print(str(time) + ' seconds has elapsed since start of function')
@@ -27,7 +48,9 @@ def process_v10_txt(infolder):
     >>> process_v10_txt('../data/dblp-v10')
     """
     start = time.time()
-    filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
+    filepaths = glob(infolder + '/*.json')
+
+    #filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
     outfolder = infolder + '/txt/'
     if not os.path.exists(outfolder):
         os.mkdir(outfolder)
@@ -41,7 +64,7 @@ def process_v10_txt(infolder):
             try:
                 data = json.loads(line)
                 year = data['year']
-                if year < 1950 or year > 2018:
+                if year < 1950 or year > 2017:
                     num_year += 1
                     continue
                 outpath = outfolder + str(year) + '.txt'
@@ -79,7 +102,7 @@ def process_v10_txt_grouped(infolder):
     start = time.time()
     # Creates dictionary mapping for each year's new year-range category
     mapping = {}
-    for i in range(1950, 2019, 5):
+    for i in range(1950, 2018, 5):
         if i == 1950 or i == 1955:
             cat = '1950-1959'
         elif i == 2015:
@@ -90,7 +113,8 @@ def process_v10_txt_grouped(infolder):
             mapping[j] = cat
 
     # Processes input files
-    filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
+    filepaths = glob(infolder + '/*.json')
+    #filepaths = [infolder + '/dblp-ref-' + str(num) + '.json' for num in range(4)]
     outfolder = infolder + '/txt_grouped/'
     if not os.path.exists(outfolder):
         os.mkdir(outfolder)
@@ -139,7 +163,8 @@ def process_v10_txt_grouped(infolder):
 
 def process_v10_csv(infolder):
     """
-    Outputs aggregate .csv files by year (titles + abstracts)
+    Outputs aggregate .csv files by year
+    Columns are: Title, Abstract
 
     >>> process_v10_csv('../data/dblp-v10')
     """
@@ -159,7 +184,7 @@ def process_v10_csv(infolder):
             try:
                 data = json.loads(line)
                 year = data['year']
-                if year < 1950 or year > 2018:
+                if year < 1950 or year > 2017:
                     num_year += 1
                     continue
                 outpath = outfolder + str(year) + '.csv'
@@ -189,6 +214,8 @@ def process_v10_csv(infolder):
 
 def process_v10_txt_agg(infolder):
     """
+    Outputs aggregated .txt file for titles + abstracts across all years
+
     >>> process_v10_txt_agg('../data/dblp-v10')
     """
     start = time.time()
@@ -207,7 +234,7 @@ def process_v10_txt_agg(infolder):
             try:
                 data = json.loads(line)
                 year = data['year']
-                if year < 1950 or year > 2018:
+                if year < 1950 or year > 2017:
                     num_year += 1
                     continue
                 outfile = open(outpath, 'a')
