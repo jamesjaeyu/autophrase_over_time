@@ -1,3 +1,7 @@
 {
-    "infolder": "data/dblp-v10"
+    "in_folder": "data/dblp-v10",
+    "out_txt_folder": "data/dblp-v10/txt",
+    "dblp_v10_url": "https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip",
+    "dblp_v10_per_year_data_folder": "data/dblp-v10/txt",
+    "dblp_v10_paper_count_per_year_file": "data/dblp-v10/dblp-v10-counts.csv"
 }

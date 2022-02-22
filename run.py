@@ -7,7 +7,7 @@ Script for running targets
 import sys
 import json
 
-from src.process_dblp_v10 import download_v10, process_v10_txt
+from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_model
 
@@ -43,9 +43,14 @@ def main(targets):
         # Runs each relevant target in targets
         if 'data' in targets:
             data_cfg = json.load(open('config/data-params.json'))
-            #download_v10()
-            # Processes DBLP v10 dataset into aggregated .txt files by year
-            process_v10_txt(data_cfg['infolder'])
+
+            #download_dblp_v10(data_cfg['dblp_v10_url'])
+            #download_dblp_v10_using_requests(data_cfg['dblp_v10_url'])
+
+            ## Processes DBLP v10 dataset into aggregated .txt files by year
+            year_grouping = False
+            output_type = 'txt'
+            process_v10(data_cfg['in_folder'], data_cfg['out_txt_folder'], year_grouping, output_type)
 
         if 'eda' in targets:
             eda_cfg = json.load(open('config/eda-params.json'))
