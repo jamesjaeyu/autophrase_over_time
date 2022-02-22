@@ -22,10 +22,9 @@ from sklearn.preprocessing import StandardScaler
 
 def obtain_phrases(infolder, threshold=(0.8,0.5)):
     """
-    (Takes 8 seconds to run)
-
     Outputs a csv containing consolidated AutoPhrase results.
     Columns: Phrase Quality, Phrase, Year, Num Words
+    (Takes 8 seconds to run)
 
     infolder: Folder path containing AutoPhrase results by year
     threshold: Tuple containing floats for (single-word, multi-word) thresholds
@@ -36,34 +35,38 @@ def obtain_phrases(infolder, threshold=(0.8,0.5)):
     """
     start = time.time()
 
+    # Gathers filepaths of each AutoPhrase.txt file
     subfolders = glob(infolder + '/*/')
     subfolders = [x.split('\\')[1] for x in subfolders]
     filepaths = []
     for sub in subfolders:
         filepaths.append(infolder + '/' + sub + '/AutoPhrase.txt')
 
+    # Output dataframe
     out_df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year', 'Num Words'])
 
+    # Processes each AutoPhrase.txt file
     for fp in filepaths:
         year = fp.split('/')[-2]
         df = pd.read_csv(fp, sep='\t', header=None, names=['Phrase Quality', 'Phrase'])
         df = df.dropna()
         df['Year'] = [year] * len(df)
+        # Number of words in the phrase
         df['Num Words'] = df['Phrase'].map(str.split).map(len)
 
+        # Filters out single and multi-word phrases based on phrase quality
         filter_qual = lambda x: True if \
             (x['Num Words'] > 1 and x['Phrase Quality'] >= threshold[1]) \
             or (x['Num Words'] == 1 and x['Phrase Quality'] >= threshold[0]) \
             else False
-
+        # Only keeps phrases above given threshold
         valid_idx = df.apply(filter_qual, axis=1)
         df = df[valid_idx]
-
+        # Appends rows to output dataframe
         out_df = out_df.append(df, ignore_index=True)
-
+    # Outputs to infolder as phrases.csv
     outpath = infolder + '/phrases.csv'
     out_df.to_csv(outpath)
-
     end = time.time()
     return end - start
 

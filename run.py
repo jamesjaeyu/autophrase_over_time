@@ -10,7 +10,6 @@ import json
 from src.process_dblp_v10 import download_v10, process_v10_txt
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_model
-# TODO: Import relevant files/functions for running targets
 
 def main(targets):
     """
@@ -20,10 +19,11 @@ def main(targets):
     if 'all' in targets:
         targets = ['data', 'eda', 'model']
 
-    # 'test' target will be the same for 'eda' but different for 'data' and 'model'
-    # (uses smaller test data)
     if 'test' in targets:
+        # 'test' target will be the same for 'eda' but different for 'data' and 'model'
+        # (uses smaller test data)
         targets = ['data', 'eda', 'model']
+
         # data
         data_cfg = json.load(open('config/data_test-params.json'))
         process_v10_txt(data_cfg['infolder'])
@@ -41,7 +41,6 @@ def main(targets):
         # Runs each relevant target in targets
         if 'data' in targets:
             data_cfg = json.load(open('config/data-params.json'))
-            # TODO: Add function for initial download of dataset
             download_v10()
             # Processes DBLP v10 dataset into aggregated .txt files by year
             process_v10_txt(data_cfg['infolder'])
@@ -54,11 +53,9 @@ def main(targets):
         if 'model' in targets:
             model_cfg = json.load(open('config/model-params.json'))
             # Processes the AutoPhrase results in the results/dblp-v10 folder
-            obtain_phrases(model_cfg['infolder'], True)
-            obtain_phrases(model_cfg['infolder'], False)
-            # TODO: Add any new functions related to the model
             threshold = [float(x) for x in model_cfg['threshold'].split(',')]
             threshold = (threshold[0], threshold[1])
+            #obtain_phrases(model_cfg['infolder'], threshold)
             obtain_phrases(model_cfg['infolder_grouped'], threshold)
             process_seg(model_cfg['infolder_grouped'])
             baseline_model(model_cfg['fp_grouped'])
