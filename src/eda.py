@@ -47,7 +47,7 @@ def autophrase_figures(fp, outfolder):
         os.mkdir(outfolder)
 
     # Reads in AutoPhrase results csv
-    fp = '../results/dblp-v10-grouped/phrases.csv'
+    fp = 'results/dblp-v10-grouped/phrases.csv'
     df = pd.read_csv(fp, index_col=0)
 
     # Bar chart for average number of words in phrases
@@ -71,7 +71,7 @@ def autophrase_figures(fp, outfolder):
     plt.clf()
 
     # Reads in phrasal segmentation csvs
-    infolder = '../results/dblp-v10-grouped'
+    infolder = 'results/dblp-v10-grouped'
     subfolders = glob(infolder + '/*.csv')
     subfolders = list(filter(lambda x: 'segmented' in x, subfolders))
     out = pd.DataFrame(columns=['Year', 'Num Phrases'])

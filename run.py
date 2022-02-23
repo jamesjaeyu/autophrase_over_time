@@ -7,7 +7,7 @@ Script for running targets
 import sys
 import json
 
-from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10
+from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10, process_v10_txt
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_model
 
@@ -26,7 +26,7 @@ def main(targets):
 
         # data
         data_cfg = json.load(open('config/data_test-params.json'))
-        process_v10(data_cfg['infolder'], data_cfg['outfolder'])
+        process_v10_txt(data_cfg['infolder'])
 
         # eda
         eda_cfg = json.load(open('config/eda-params.json'))

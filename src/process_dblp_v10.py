@@ -265,6 +265,45 @@ def process_v10(infolder, outfolder, year_grouping = False, output_type = 'txt')
     print(f'{START_YEAR}-{END_YEAR}: input:{infolder} output:{outfolder} {total_time_used:.3f} seconds', flush=True)
 
 
+def process_v10_txt(infolder):
+    """
+    Processes DBLP v10 dataset
+    Outputs aggregate .txt files by year (only titles + abstracts)
+    Takes around 8-9 minutes to process all papers
+    >>> process_v10_txt('../data/dblp-v10')
+    """
+    start = time.time()
+    filepaths = glob(infolder + '/*.json')
+    outfolder = infolder + '/txt/'
+    if not os.path.exists(outfolder):
+        os.mkdir(outfolder)
+    for fp in filepaths:
+        file = open(fp)
+        for line in file:
+            try:
+                data = json.loads(line)
+                year = data['year']
+                if year < 1950 or year > 2017:
+                    continue
+                outpath = outfolder + str(year) + '.txt'
+                outfile = open(outpath, 'a')
+                if 'abstract' in data.keys():
+                    if len(data['abstract']) == 0:
+                        continue
+                    abstract = data['abstract']
+                    abstract = re.sub(r'[^A-Za-z0-9- ]+', '', abstract)
+                    outfile.write(abstract + '\n')
+                else:
+                    continue
+                if 'title' in data.keys():
+                    title = data['title']
+                    title = re.sub(r'[^A-Za-z0-9- ]+', '', title)
+                    outfile.write(title + '\n')
+                else:
+                    continue
+            except:
+                continue
+        file.close()
 
 
 def process_v10_txt_grouped(infolder):
