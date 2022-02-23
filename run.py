@@ -26,7 +26,7 @@ def main(targets):
 
         # data
         data_cfg = json.load(open('config/data_test-params.json'))
-        process_v10_txt(data_cfg['infolder'])
+        process_v10(data_cfg['infolder'], data_cfg['outfolder'])
 
         # eda
         eda_cfg = json.load(open('config/eda-params.json'))

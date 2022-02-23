@@ -26,7 +26,7 @@ def download_dblp_v10(dblp_v10_url):
         os.mkdir('tmp')
     if os.path.exists('tmp/dblp-ref'):
         shutil.rmtree('tmp/dblp-ref')
-    
+
     if os.path.exists(dblp_v10_zip_file):
         os.remove(dblp_v10_zip_file)
     os.system(f"wget -O {dblp_v10_zip_file} {dblp_v10_url}")

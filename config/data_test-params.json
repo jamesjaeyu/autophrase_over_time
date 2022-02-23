@@ -1,3 +1,4 @@
 {
-    "infolder": "test/testdata/dblp-v10"
+    "infolder": "test/testdata/dblp-v10",
+    "outfolder": "test/testdata/dblp-v10/txt"
 }
