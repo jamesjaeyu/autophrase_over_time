@@ -119,10 +119,71 @@ def process_seg(infolder):
         df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
         df['Year Range'] = [year] * len(df)
         df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
+        # Outputs YEAR-RANGE_segmented.csv
         outpath = infolder + '/' + year + '_segmented.csv'
         df.to_csv(outpath)
     end = time.time()
     return end - start
+
+
+def phrase_counts(infolder):
+    """
+    Using the segmentation results, returns a dictionary with the phrase counts
+    across each year range.
+    Dictionary format will be {Year Range: {phrase: count}}
+
+    >>> phrase_counts('../results/dblp-v10-grouped')
+    """
+    def add_counts(x):
+        """
+        Helper function for processing segmented.csv dataframes
+        Modifies the counts output dictionary
+        """
+        phrases = x['Phrases'].split(',')
+        year = x['Year']
+        for phrase in phrases:
+            if phrase not in counts[year]:
+                counts[year][phrase] = 0
+            counts[year][phrase] += 1
+
+    # Obtains filepaths for all segmented.csv files
+    subfolders = glob(infolder + '/*.csv')
+    filepaths = list(filter(lambda x: 'segmented' in x, subfolders))
+
+    # Creates dataframe with all segmentation.csv data combined
+    seg = pd.DataFrame(columns=['Phrases', 'Year'])
+    for fp in filepaths:
+        df = pd.read_csv(fp, index_col=0)
+        df = df.dropna()
+        #df['Num Phrases'] = df.apply(lambda x: len(x['Phrases'].split(',')), axis=1)
+        #df = df.drop('Phrases', axis=1)
+        seg = seg.append(df, ignore_index=True)
+
+    # Output dictionary
+    counts = {}
+    for yr in seg['Year'].unique():
+        counts[yr] = {}
+
+    # Helper function will modify the counts dictionary
+    seg.apply(add_counts, axis=1)
+
+    # Sorts the inner dictionaries of counts in descending order based on frequency
+    for key, val in counts.items():
+        counts[key] = dict(sorted(val.items(), key=lambda item: item[1], reverse=True))
+
+    # Dictionary that only contains multi-word phrases and counts
+    multi_counts = {}
+    for year_range, phrase_counts in counts.items():
+        multi_counts[year_range] = {key: val for key, val in phrase_counts.items() if len(key.split()) > 1}
+
+    # Creates counts dictionary but with percent as values, rather than raw frequency
+    counts_per = {}
+    for year_range, phrase_counts in counts.items():
+        total_count_yr = sum(phrase_counts.values())
+        prop_counts = {}
+        for key, val in phrase_counts.items():
+            prop_counts[key] = (val / total_count_yr) * 100
+        counts_per[year_range] = prop_counts
 
 
 def find_similar(input_phrase, fp):
