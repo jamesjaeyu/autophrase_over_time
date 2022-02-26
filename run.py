@@ -48,7 +48,7 @@ def main(targets):
             #download_dblp_v10_using_requests(data_cfg['dblp_v10_url'])
 
             ## Processes DBLP v10 dataset into aggregated .txt files by year
-            year_grouping = False
+            year_grouping = True
             output_type = 'txt'
             process_v10(data_cfg['in_folder'], data_cfg['out_txt_folder'], year_grouping, output_type)
 
