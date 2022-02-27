@@ -662,3 +662,150 @@ def perform_autophrase(input_file, model_dir):
     end = time.time()
     current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f'{current_datetime}: {input_file} => {model_dir} {(end - start):.03f} seconds', flush=True)
+
+# common phrases to be excluded
+stop_phrase_list = [
+    "abstractthis paper", "abstractthis paper investigates", "analysis of",
+    "cited papers", "companion paper",
+    "invited paper", "paper addresses", "paper analyzes",
+    "paper argues", "paper compares", "paper considers", "paper describes",
+    "paper discusses", "paper documents", "paper ends", "paper evaluates",
+    "paper examines", "paper explains", "paper explores", "paper illustrates",
+    "paper introduces", "paper investigates", "paper outlines",
+    "paper presents", "paper proposes", "paper puts forward", "paper reports",
+    "paper reviews", "paper revisits", "paper shows", "papers published",
+    "paper summarizes", "previous papers", "published papers",
+    "research papers", "scientific papers", "selected papers", "seminal paper",
+    "short paper", "survey paper", "a case study", "worst case", "worst-case", "write",
+    "the problem", "this paper"]
+
+def skip_phrase(phrase):
+    """
+    exclude common phrases and single-character-phrase
+    """
+    if len(phrase) <= 1:
+        return True
+    if phrase in stop_phrase_list:
+        return True
+    return False
+
+# autophrase_out_folder=results/autophrase/dblp-v10/grouped
+def extract_phrases_one_dir(autophrase_out_folder):
+    """
+    input: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959/segmentation.txt
+        results/autophrase/dblp-v10/grouped/1960-1965/segmentation.txt
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017/segmentation.txt
+            This <phrase>paper</phrase> describes the logical <phrase>nature</phrase> of <phrase>computing</phrase> machines ..
+            problem of discovery in <phrase>mathematics</phrase> and empirical <phrase>science</phrase> is discussed ...
+            formulate hypotheses modify them in the <phrase>light</phrase> of new experience and eventually ...
+            simple <phrase>universe</phrase>
+            <phrase>Logic</phrase> discovery and the foundations of <phrase>computing</phrase> machinery
+
+    output: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959/segmentation_extracted_phrases.txt
+        results/autophrase/dblp-v10/grouped/1960-1965/segmentation_extracted_phrases.txt
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017/segmentation_extracted_phrases.txt
+            paper
+            nature
+            computing
+            mathematics
+            ...
+    """
+    if not os.path.exists(autophrase_out_folder):
+        print(f"{autophrase_out_folder} does not exists.", file=sys.stderr)
+        sys.exit(1)
+
+    # compiled regex for better speed
+    phrase_regex = re.compile(r"<phrase>(.*?)</phrase>", flags=0)
+
+    for dirname in sorted(os.listdir(autophrase_out_folder)):
+        a_dir = os.path.join(autophrase_out_folder, dirname)
+        # results/autophrase/dblp-v10/grouped/1950-1959
+        if not os.path.isdir(a_dir):
+            continue
+        seg_filename = os.path.join(a_dir, "segmentation.txt")
+        if not os.path.exists(seg_filename):
+            continue
+        
+        extracted_phrases_filename = os.path.join(a_dir, "segmentation_extracted_phrases.txt")
+        if os.path.exists(extracted_phrases_filename):
+            os.remove(extracted_phrases_filename)
+
+        start = time.time()
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{current_datetime}: {seg_filename} => {extracted_phrases_filename} ...")
+        try:
+            extracted_phrases_file = open(extracted_phrases_filename, 'a')
+        except OSError as ex:
+            print(f"{ex}", file=sys.stderr)
+            sys.exit(1)
+        with extracted_phrases_file:
+            with open(seg_filename, "r") as seg_file:
+                for line in seg_file:
+                    for phrase in phrase_regex.findall(line):
+                        lower_phrase = phrase.lower()
+                        if skip_phrase(lower_phrase):
+                            continue
+                        extracted_phrases_file.write(lower_phrase)
+                        extracted_phrases_file.write('\n')
+        end = time.time()
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{current_datetime}: {seg_filename} => {extracted_phrases_filename} {(end - start):.03f} seconds", flush=True)
+
+# cat segmentation_extracted_phrases.txt  | sort | uniq -c | sort -k1nr 2>&1 | sed -e 's/^[ ]*//g' | sed 's/^\([[:digit:]]*\) /\1,/g'
+# autophrase_out_folder=results/autophrase/dblp-v10/grouped
+def count_phrase_one_dir(autophrase_out_folder):
+    """
+    count and sort phrases based on their total counter (desc)
+    We use Linux commands instead of pandas.Dataframe for performance.
+    Make sure that we have cat, sort, uniq, and sed on a Windows PC
+    cat segmentation_extracted_phrases.txt  | sort | uniq -c | sort -k1nr 2>&1 | sed -e 's/^[ ]*//g' | sed 's/^\([[:digit:]]*\) /\1,/g'
+
+    input: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959/segmentation_extracted_phrases.txt
+        results/autophrase/dblp-v10/grouped/1960-1965/segmentation_extracted_phrases.txt
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017/segmentation_extracted_phrases.txt
+            paper
+            nature
+            computing
+            mathematics
+            ...
+
+    output: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959/segmentation_extracted_phrase_count.csv
+        results/autophrase/dblp-v10/grouped/1960-1964/segmentation_extracted_phrase_count.csv
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017/segmentation_extracted_phrase_count.csv
+            125,digital
+            107,paper
+            91,information
+            87,function
+    """
+    if not os.path.exists(autophrase_out_folder):
+        print(f"{autophrase_out_folder} does not exists.", file=sys.stderr)
+        sys.exit(1)
+
+    for dirname in sorted(os.listdir(autophrase_out_folder)):
+        a_dir = os.path.join(autophrase_out_folder, dirname)
+        # results/autophrase/dblp-v10/grouped/1950-1959
+        if not os.path.isdir(a_dir):
+            continue
+        segmentation_extracted_phrases_txt_filename = os.path.join(a_dir, "segmentation_extracted_phrases.txt")
+        if not os.path.exists(segmentation_extracted_phrases_txt_filename):
+            print(f"{segmentation_extracted_phrases_txt_filename} does not exists.", file=sys.stderr)
+            continue
+        
+        extracted_phrases_count_csv_filename = os.path.join(a_dir, "segmentation_extracted_phrase_count.csv")
+        cmd = f"cat {segmentation_extracted_phrases_txt_filename}  | sort | uniq -c | sort -k1nr | sed -e 's/^[ ]*//g' | sed 's/^\([[:digit:]]*\) /\\1,/g' > {extracted_phrases_count_csv_filename}"
+
+        start = time.time()
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{current_datetime}: {segmentation_extracted_phrases_txt_filename} => {extracted_phrases_count_csv_filename} ...")
+        os.system(cmd)
+        end = time.time()
+        current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"{current_datetime}: {segmentation_extracted_phrases_txt_filename} => {extracted_phrases_count_csv_filename} {(end - start):.03f} seconds", flush=True)

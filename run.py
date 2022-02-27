@@ -8,7 +8,7 @@ import sys
 import json
 
 from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10, \
-    process_v10_txt, autophrase_one_dir
+    process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_model
 
@@ -56,6 +56,8 @@ def main(targets):
 
             #process_v10(data_cfg['in_folder'], data_cfg['out_grouped_txt_folder'], year_grouping, output_type)
             autophrase_one_dir(data_cfg['autophrase_in_folder'], data_cfg['autophrase_out_folder'])
+            extract_phrases_one_dir(data_cfg['autophrase_out_folder'])
+            count_phrase_one_dir(data_cfg['autophrase_out_folder'])
 
         if 'eda' in targets:
             eda_cfg = json.load(open('config/eda-params.json'))
