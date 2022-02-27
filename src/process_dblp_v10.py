@@ -5,6 +5,7 @@ Processing DBLP v10
 """
 import pandas as pd
 import json
+import datetime
 import time
 import sys
 import re
@@ -555,3 +556,109 @@ def process_v10_txt_agg(infolder):
     end = time.time()
     time_elapsed = end - start
     print_stats(time_elapsed, num_papers, num_issues, num_no_abstract, num_year)
+
+# autophrase_in_folder=data/dblp-v10/txt_grouped
+# autophrase_out_folder=results/autophrase/dblp-v10/grouped
+def autophrase_one_dir(autophrase_in_folder, autophrase_out_folder):
+    """
+    input: data/dblp-v10/txt_grouped
+        data/dblp-v10/txt_grouped/1950-1959.txt
+        data/dblp-v10/txt_grouped/1960-1964.txt
+        ...
+        data/dblp-v10/txt_grouped/2015-2017.txt
+
+        1950-1959.txt: <abstract>\n<title>\n, e.g.
+            This paper describes the logical nature of computing machines ... discover the laws of a very simple universe
+            Logic discovery and the foundations of computing machinery
+    
+    output: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959
+        results/autophrase/dblp-v10/grouped/1960-1964
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017
+    """
+    if not os.path.exists(autophrase_in_folder):
+        print(f"{autophrase_in_folder} does not exists.", file=sys.stderr)
+        sys.exit(1)
+
+    if os.path.exists(autophrase_out_folder):
+        shutil.rmtree(autophrase_out_folder)
+    os.makedirs(autophrase_out_folder, exist_ok=True)
+
+    print(f'{autophrase_in_folder} => {autophrase_out_folder}')
+
+    # iterate through the files (e.g. 1950-1959.txt) under "data/dblp-v10/txt_grouped"
+    for filename in sorted(os.listdir(autophrase_in_folder)):
+        # 1950-1959.txt => 1950-1959
+        model_dir = autophrase_out_folder + '/' + filename.split('.')[0]
+        # delete the results of previous run if there is any
+        if os.path.exists(model_dir):
+            shutil.rmtree(model_dir)
+
+        # mkdir results/autophrase/dblp-v10/grouped/1950-1959
+        os.makedirs(model_dir, exist_ok=True)
+
+        one_year_file = os.path.join(autophrase_in_folder, filename)
+        # one_year_file = data/dblp-v10/txt_grouped/1950-1959.txt
+        # model_dir = results/autophrase/dblp-v10/grouped/1950-1959
+        perform_autophrase(one_year_file, model_dir)
+
+# input_file=data/dblp-v10/txt_grouped/1950-1959.txt
+# model_dir=results/autophrase/dblp-v10/grouped/1950-1959
+def perform_autophrase(input_file, model_dir):
+    """
+    input:  data/dblp-v10/txt_grouped/1950-1959.txt
+    output: results/autophrase/dblp-v10/grouped/1950-1959
+                AutoPhrase_multi-words.txt
+                AutoPhrase_single-word.txt
+                AutoPhrase.txt
+                language.txt
+                segmentation_extracted_phrases.csv
+                segmentation_extracted_phrases.txt
+                segmentation.model
+                segmentation.txt
+                token_mapping.txt    
+    """
+    MIN_SUP = 20
+    MODEL = "../" + model_dir
+    RAW_TRAIN = "../" + input_file
+    TEXT_TO_SEG = RAW_TRAIN
+    THREAD = 64
+
+    autophrase_params = f"MIN_SUP={MIN_SUP} MODEL={MODEL} RAW_TRAIN={RAW_TRAIN} TEXT_TO_SEG={TEXT_TO_SEG} THREAD={THREAD}"
+
+    # MIN_SUP=20 MODEL=../results/autophrase/dblp-v10/grouped/1950-1959 RAW_TRAIN=../data/dblp-v10/txt_grouped/1950-1959.txt TEXT_TO_SEG=../data/dblp-v10/txt_grouped/1950-1959.txt THREAD=1 ./auto_phrase.sh
+    # auto_phrase.sh
+    # input:
+    #     data/dblp-v10/txt_grouped/1950-1959.txt
+    # output:
+    #     results/autophrase/dblp-v10/grouped/1950-1959/AutoPhrase_multi-words.txt
+    #     results/autophrase/dblp-v10/grouped/1950-1959/AutoPhrase_single-word.txt
+    #     results/autophrase/dblp-v10/grouped/1950-1959/AutoPhrase.txt
+    #     results/autophrase/dblp-v10/grouped/1950-1959/language.txt
+    #     results/autophrase/dblp-v10/grouped/1950-1959/segmentation.model
+    #     results/autophrase/dblp-v10/grouped/1950-1959/token_mapping.txt
+    #
+    #     where AutoPhrase.txt = AutoPhrase_single-word.txt + AutoPhrase_multi-words.txt
+    #     therefore, use AutoPhrase.txt is good enough
+
+    # MIN_SUP=20 MODEL=../results/autophrase/dblp-v10/grouped/1950-1959 RAW_TRAIN=../data/dblp-v10/txt_grouped/1950-1959.txt TEXT_TO_SEG=../data/dblp-v10/txt_grouped/1950-1959.txt THREAD=1 ./phrasal_segmentation.sh
+    # phrasal_segmentation.sh
+    # input:
+    #     data/dblp-v10/txt_grouped/1950-1959.txt
+    # output:
+    #     results/autophrase/dblp-v10/grouped/1950-1959/segmentation.txt
+    #       This <phrase>paper</phrase> describes the logical <phrase>nature</phrase> of <phrase>computing</phrase> machines 
+    #       in terms of languages and the types of problems that can be solved by logical operations on languages 
+    #       The problem of discovery in <phrase>mathematics</phrase> and empirical <phrase>science</phrase> is discussed 
+    #       and an inductive machine is described which would be able to formulate hypotheses modify them in the <phrase>light</phrase> 
+    #       of new experience and eventually discover the laws of a very simple <phrase>universe</phrase>
+    #       <phrase>Logic</phrase> discovery and the foundations of <phrase>computing</phrase> machinery
+    cmd = f'cd AutoPhrase && {autophrase_params} ./auto_phrase.sh && {autophrase_params} ./phrasal_segmentation.sh'
+    start = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: {cmd}", flush=True)
+    os.system(cmd)
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f'{current_datetime}: {input_file} => {model_dir} {(end - start):.03f} seconds', flush=True)

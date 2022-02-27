@@ -1,7 +1,13 @@
 {
     "in_folder": "data/dblp-v10",
     "out_txt_folder": "data/dblp-v10/txt",
+    "out_grouped_txt_folder": "data/dblp-v10/txt_grouped",
+    "out_csv_folder": "data/dblp-v10/csv",
+    "out_grouped_csv_folder": "data/dblp-v10/csv_grouped",
     "dblp_v10_url": "https://lfs.aminer.cn/lab-datasets/citation/dblp.v10.zip",
+    "dblp_v13_url": "https://originalstatic.aminer.cn/misc/dblp.v13.7z",
     "dblp_v10_per_year_data_folder": "data/dblp-v10/txt",
-    "dblp_v10_paper_count_per_year_file": "data/dblp-v10/dblp-v10-counts.csv"
+    "dblp_v10_paper_count_per_year_file": "data/dblp-v10/dblp-v10-counts.csv",
+    "autophrase_in_folder": "data/dblp-v10/txt_grouped",
+    "autophrase_out_folder": "results/autophrase/dblp-v10/grouped"
 }
