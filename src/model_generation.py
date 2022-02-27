@@ -7,6 +7,7 @@ Processing DBLP v10
 import pandas as pd
 import time
 import re
+import os
 from glob import glob
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
@@ -184,6 +185,56 @@ def phrase_counts(infolder):
         for key, val in phrase_counts.items():
             prop_counts[key] = (val / total_count_yr) * 100
         counts_per[year_range] = prop_counts
+
+
+def process_seg_model(infolder, outfolder, phrases_fp):
+    """
+    Processes phrasal segmentation results for the purpose of the model
+    Only keeps high-quality phrases (by using matching to the AutoPhrase results csv)
+    Duplicate phrases are not allowed for an individual paper
+    (process_seg is still useful as we want to know the counts of phrases over time)
+    """
+    def extract_phrases(line):
+        """
+        Helper function for processing each paper's phrases
+        Modified to only keep high quality phrases and remove duplicates per paper
+        """
+        line = line.lower()
+        out = set()
+        while line.find('<phrase>') != -1:
+            start_idx = line.find('<phrase>')
+            end_idx = line.find('</phrase>')
+            phrase = line[start_idx+8:end_idx]
+            phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
+            if phrase in unique_phrases:
+                out.add(phrase)
+            line = line[end_idx+9:]
+        out = list(out)
+        out = ','.join(out)
+        return out
+
+    # Reading in AutoPhrase results csv
+    df_phrases = pd.read_csv(phrases_fp, index_col=0)
+    unique_phrases = set(df_phrases['Phrase'].values)
+
+    # Getting filepaths for segmentation.txt files
+    infolder = '../results/dblp-v10-grouped'
+    subfolders = glob(infolder + '/*/')
+    subfolders = [x.split('\\')[1] for x in subfolders]
+    filepaths = []
+    for sub in subfolders:
+        filepaths.append(infolder + '/' + sub + '/segmentation.txt')
+
+    # Processing and outputting .csv files for each year range
+    if not os.path.exists(outfolder):
+        os.mkdir(outfolder)
+    for fp in filepaths:
+        year = fp.split('/')[3]
+        df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
+        df['Year Range'] = [year] * len(df)
+        df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
+        outpath = outfolder + '/' + year + '_segmented_unique.csv'
+        df.to_csv(outpath)
 
 
 def find_similar(input_phrase, fp):

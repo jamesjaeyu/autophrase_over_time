@@ -143,3 +143,4 @@ data/arxiv/csv/*
 
 results/dblp-v10-grouped/**/segmentation.txt
 results/dblp-v10/ALL_YEARS/segmentation.txt
+results/test/*
