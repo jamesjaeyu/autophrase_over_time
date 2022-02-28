@@ -193,6 +193,63 @@ def obtain_phrases_alt(infolder, threshold):
     return end - start
 
 
+def process_seg(infolder):
+    """
+    Processes phrasal segmentation results to extract the group of phrases
+    from each paper. Each year range will be outputted to separate files.
+    Outputs csv with columns: Phrases, Year Range
+    Each row represents a single paper in the DBLP v10 dataset
+    (Takes around 2.5 minutes to run)
+
+    NOTE: Additional processing may be required (in a separate function)
+          to remove low-quality phrases
+
+    NOTE: The repo doesn't contain the segmentation.txt files since they are so large,
+          so this function may need to be skipped in the 'all' target for run.py
+          and instead use the output YEAR_segmented.csv files
+
+    >>> process_seg('../results/dblp-v10-grouped')
+    """
+    def extract_phrases(line):
+        """
+        Processes a single line from the segmentation results.
+        Extracts all phrases marked with <phrase> and </phrases> and returns
+        them in a string, with each phrase separated by commas.
+        """
+        line = line.lower()
+        phrases = []
+        while line.find('<phrase>') != -1:
+            start_idx = line.find('<phrase>')
+            end_idx = line.find('</phrase>')
+            phrase = line[start_idx+8:end_idx]
+            phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
+            phrases.append(phrase)
+            line = line[end_idx+9:]
+        phrases = ','.join(phrases)
+        return phrases
+
+    start = time.time()
+    # Obtains filepaths for all segmentation.txt files
+    subfolders = glob(infolder + '/*/')
+    subfolders = [x.split('\\')[1] for x in subfolders]
+    filepaths = []
+    for sub in subfolders:
+        filepaths.append(infolder + '/' + sub + '/segmentation.txt')
+
+    # Processes each segmentation.txt file
+    for fp in filepaths:
+        year = fp.split('/')[3]
+        df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
+        df['Year Range'] = [year] * len(df)
+        df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
+        # Outputs YEAR-RANGE_segmented.csv
+        outpath = infolder + '/' + year + '_segmented.csv'
+        df.to_csv(outpath)
+    end = time.time()
+    return end - start
+
+
+
 # NOTE: From sort_jsons.py
 import json
 

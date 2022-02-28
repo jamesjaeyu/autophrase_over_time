@@ -1,19 +1,17 @@
-
 """
 DSC180B
 Q2 Project
 Processing DBLP v10
 """
 import pandas as pd
+import numpy as np
 import time
 import re
 import os
 from glob import glob
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
-import numpy as np
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.preprocessing import FunctionTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -34,7 +32,6 @@ def obtain_phrases(infolder, threshold=(0.8,0.5)):
     >>> obtain_phrases('../results/dblp-v10-grouped', (0.8, 0.5))
     """
     start = time.time()
-
     # Gathers filepaths of each AutoPhrase.txt file
     subfolders = glob(infolder + '/*/')
     subfolders = [x.split('\\')[1] for x in subfolders]
@@ -44,7 +41,6 @@ def obtain_phrases(infolder, threshold=(0.8,0.5)):
 
     # Output dataframe
     out_df = pd.DataFrame(columns=['Phrase Quality', 'Phrase', 'Year', 'Num Words'])
-
     # Processes each AutoPhrase.txt file
     for fp in filepaths:
         year = fp.split('/')[-2]
@@ -53,7 +49,6 @@ def obtain_phrases(infolder, threshold=(0.8,0.5)):
         df['Year'] = [year] * len(df)
         # Number of words in the phrase
         df['Num Words'] = df['Phrase'].map(str.split).map(len)
-
         # Filters out single and multi-word phrases based on phrase quality
         filter_qual = lambda x: True if \
             (x['Num Words'] > 1 and x['Phrase Quality'] >= threshold[1]) \
@@ -71,60 +66,97 @@ def obtain_phrases(infolder, threshold=(0.8,0.5)):
     return end - start
 
 
-def process_seg(infolder):
+def process_seg(infolder, outfolder, phrases_fp=None, method='general'):
     """
-    Processes phrasal segmentation results to extract the group of phrases
-    from each paper. Each year range will be outputted to separate files.
-    Outputs csv with columns: Phrases, Year Range
-    Each row represents a single paper in the DBLP v10 dataset
-    (Takes around 2.5 minutes to run)
+    Processes phrasal segmentation .txt results
+    Outputs .csv files with columns: Phrases, Year Range
+    Each row represents a single paper
 
-    NOTE: Additional processing may be required (in a separate function)
-          to remove low-quality phrases
+    method='general': All phrases from phrasal segmentation results are included in output
+        phrases_fp can be a random input - it will not be used
+    method='model': Only high-quality phrases, no duplicates in each row
+    method='gephi': Only multi-word, high-quality phrases, no duplicates in each row
 
-    NOTE: The repo doesn't contain the segmentation.txt files since they are so large,
-          so this function may need to be skipped in the 'all' target for run.py
-          and instead use the output YEAR_segmented.csv files
+    >>> process_seg('../results/dblp-v10-grouped', '../results/dblp-v10-grouped')
 
-    >>> process_seg('../results/dblp-v10-grouped')
+    >>> process_seg('../results/dblp-v10-grouped', \
+                    '../results/dblp-v10-model', \
+                    '../results/dblp-v10-grouped/phrases.csv', \
+                    'model')
+
+    >>> process_seg('../results/dblp-v10-grouped', \
+                    '../results/dblp-v10-gephi', \
+                    '../results/dblp-v10-grouped/phrases.csv', \
+                    'gephi')
     """
-    def extract_phrases(line):
-        """
-        Processes a single line from the segmentation results.
-        Extracts all phrases marked with <phrase> and </phrases> and returns
-        them in a string, with each phrase separated by commas.
-        """
-        line = line.lower()
-        phrases = []
-        while line.find('<phrase>') != -1:
-            start_idx = line.find('<phrase>')
-            end_idx = line.find('</phrase>')
-            phrase = line[start_idx+8:end_idx]
-            phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
-            phrases.append(phrase)
-            line = line[end_idx+9:]
-        phrases = ','.join(phrases)
-        return phrases
-
     start = time.time()
-    # Obtains filepaths for all segmentation.txt files
+    if method not in ['general', 'model', 'gephi']:
+        print('Choose a valid process_seg method: general, model, gephi')
+        return
+
+    # Only needed if the method is 'model' or 'gephi'
+    if method != 'general':
+        # Reading in AutoPhrase results csv
+        df_phrases = pd.read_csv(phrases_fp, index_col=0)
+        # Set containing all the high-quality phrases from AutoPhrase results
+        # (single-words with quality >= 0.8, multi >= 0.5)
+        unique_phrases = set(df_phrases['Phrase'].values)
+
+    # Getting filepaths for segmentation.txt files
+    infolder = '../results/dblp-v10-grouped'
     subfolders = glob(infolder + '/*/')
     subfolders = [x.split('\\')[1] for x in subfolders]
     filepaths = []
     for sub in subfolders:
         filepaths.append(infolder + '/' + sub + '/segmentation.txt')
 
-    # Processes each segmentation.txt file
+    def extract_phrases(line):
+        """
+        Helper function for processing phrasal segmentation .txt results
+        Outputs a string containing phrases in line, separated by commas
+        """
+        line = line.lower()
+        if method == 'general':
+            out = []
+        else:
+            out = set()
+        # Processes the line until there are no phrases left
+        while line.find('<phrase>') != -1:
+            start_idx = line.find('<phrase>')
+            end_idx = line.find('</phrase>')
+            # Obtains text between phrase markers
+            phrase = line[start_idx+8:end_idx]
+            line = line[end_idx+9:]
+            # Removes any non-alphanumeric characters
+            phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
+            phrase = re.sub(r'-', ' ', phrase)
+            # Adds phrase to output
+            if method == 'general':
+                out.append(phrase)
+            else:
+                # If the phrase is contained within the AutoPhrase results
+                # it is a high-quality phrase, so we can add it
+                if phrase in unique_phrases:
+                    out.add(phrase)
+        # Output will be all the phrases in a single string, separated by commas
+        if method != 'general':
+            out = list(out)
+        out = ','.join(out)
+        return out
+
+    # Processing the segmentation.txt files for each year range
+    # Outputs into separate .csv files for each year range
+    if not os.path.exists(outfolder):
+        os.mkdir(outfolder)
     for fp in filepaths:
         year = fp.split('/')[3]
         df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
         df['Year Range'] = [year] * len(df)
         df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
-        # Outputs YEAR-RANGE_segmented.csv
-        outpath = infolder + '/' + year + '_segmented.csv'
+        outpath = outfolder + '/' + year + '_segmented_' + method + '.csv'
         df.to_csv(outpath)
     end = time.time()
-    return end - start
+    return str(end-start) + ' seconds to run'
 
 
 def phrase_counts(infolder):
@@ -185,56 +217,6 @@ def phrase_counts(infolder):
         for key, val in phrase_counts.items():
             prop_counts[key] = (val / total_count_yr) * 100
         counts_per[year_range] = prop_counts
-
-
-def process_seg_model(infolder, outfolder, phrases_fp):
-    """
-    Processes phrasal segmentation results for the purpose of the model
-    Only keeps high-quality phrases (by using matching to the AutoPhrase results csv)
-    Duplicate phrases are not allowed for an individual paper
-    (process_seg is still useful as we want to know the counts of phrases over time)
-    """
-    def extract_phrases(line):
-        """
-        Helper function for processing each paper's phrases
-        Modified to only keep high quality phrases and remove duplicates per paper
-        """
-        line = line.lower()
-        out = set()
-        while line.find('<phrase>') != -1:
-            start_idx = line.find('<phrase>')
-            end_idx = line.find('</phrase>')
-            phrase = line[start_idx+8:end_idx]
-            phrase = re.sub(r'[^A-Za-z0-9- ]+', '', phrase)
-            if phrase in unique_phrases:
-                out.add(phrase)
-            line = line[end_idx+9:]
-        out = list(out)
-        out = ','.join(out)
-        return out
-
-    # Reading in AutoPhrase results csv
-    df_phrases = pd.read_csv(phrases_fp, index_col=0)
-    unique_phrases = set(df_phrases['Phrase'].values)
-
-    # Getting filepaths for segmentation.txt files
-    infolder = '../results/dblp-v10-grouped'
-    subfolders = glob(infolder + '/*/')
-    subfolders = [x.split('\\')[1] for x in subfolders]
-    filepaths = []
-    for sub in subfolders:
-        filepaths.append(infolder + '/' + sub + '/segmentation.txt')
-
-    # Processing and outputting .csv files for each year range
-    if not os.path.exists(outfolder):
-        os.mkdir(outfolder)
-    for fp in filepaths:
-        year = fp.split('/')[3]
-        df = pd.read_csv(fp, sep='\n', header=None, names=['Phrases'])
-        df['Year Range'] = [year] * len(df)
-        df['Phrases'] = df.apply(lambda x: extract_phrases(x['Phrases']), axis=1)
-        outpath = outfolder + '/' + year + '_segmented_unique.csv'
-        df.to_csv(outpath)
 
 
 def find_similar(input_phrase, fp):
