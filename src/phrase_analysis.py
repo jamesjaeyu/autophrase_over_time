@@ -107,7 +107,7 @@ def gephi_preprocess(infolder, outfolder, edge_thresh):
     outpath_edge = outfolder + '/EdgeData.csv'
     with open(outpath_edge, 'w') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(['Source', 'Target', ' Weight'])
+        writer.writerow(['Source', 'Target', 'Weight'])
         for phrase, phrase_counts in edge_filtered.items():
             for inner_phrase, count in phrase_counts.items():
                 writer.writerow([phrase, inner_phrase, count])
@@ -144,15 +144,126 @@ def gephi_preprocess(infolder, outfolder, edge_thresh):
     outpath_node = outfolder + '/NodeData.csv'
     labels.to_csv(outpath_node)
 
-    return
-
 
 def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
     """
     Preprocessing segmentation results for Gephi visualizations, but accounting
     for the year range for each phrase
+
+    # NOTE: May need to adjust threshold as edges are only yearly
+    # TODO: Different threshold values for each year range? Less papers means less opportunities for connections
+    >>> gephi_preprocess_yearly('../results/gephi', '../results/temp', 150)
     """
-    return
+    # Gephi segmentation csvs only contain high-quality, multi-word phrases (no duplicates per paper)
+    subfolders = glob(infolder + '/*.csv')
+    subfolders = list(filter(lambda x: 'segmented' in x, subfolders))
+    seg = pd.DataFrame(columns=['Phrases', 'Year Range'])
+    for fp in subfolders:
+        df = pd.read_csv(fp, index_col=0)
+        df = df.dropna()
+        seg = seg.append(df, ignore_index=True)
+    seg = seg.dropna()
+    seg['Phrases'] = seg['Phrases'].map(lambda x: x.split(','))
+
+    # Removes any papers (rows) with only a single phrase - no edges are possible
+    seg = seg[seg.apply(lambda x: len(x['Phrases']) > 1, axis=1)]
+
+    # Creates and outputs EdgeData.csv
+    edge_counts = {}
+    def get_edges(line):
+        """
+        Helper function to process segmentation results csv to get edge data
+        Modifies the edge_dict dictionary
+        """
+        year_range = line['Year Range']
+        phrase_lst = line['Phrases']
+        for phrase in phrase_lst:
+            for inner_phrase in phrase_lst:
+                # Prevents any bad phrases from being included
+                if phrase in BAD_PHRASES_MULTI or inner_phrase in BAD_PHRASES_MULTI:
+                    continue
+
+                # Prevents any self-comparisons
+                if phrase == inner_phrase: continue
+
+                # Modifies phrase to include Year Range in parenthesis
+                temp_phrase = phrase +  ' (' + year_range + ')'
+                temp_inner_phrase = inner_phrase + ' (' + year_range + ')'
+
+                # Stops any comparisons of existing phrase A - phrase B comparisons
+                # We don't need to add the phrase B - phrase A data to the dictionary
+                if temp_inner_phrase in edge_counts and temp_phrase in edge_counts[temp_inner_phrase]:
+                    continue
+
+                # Creates inner dictionary and adds to count
+                if temp_phrase not in edge_counts:
+                    edge_counts[temp_phrase] = {}
+                if temp_inner_phrase not in edge_counts[temp_phrase]:
+                    edge_counts[temp_phrase][temp_inner_phrase] = 0
+                edge_counts[temp_phrase][temp_inner_phrase] += 1
+        return
+    # Applies helper function to seg dataframe. The function will just modify
+    # the edge_dict dictionary
+    _ = seg.apply(lambda x: get_edges(x), axis=1)
+    # Filters out edges that have less than edge_thresh overlaps
+    edge_filtered = {}
+    edge_phrases = set() # Keeps track of phrases included in EdgeData
+    for phrase, phrase_counts in edge_counts.items():
+        for inner_phrase, count in phrase_counts.items():
+            # Skips any edges with less overlaps than the threshold
+            if count < edge_thresh: continue
+            # Otherwise, add the edge to the dictionary
+            if phrase not in edge_filtered:
+                edge_filtered[phrase] = {}
+            edge_filtered[phrase][inner_phrase] = count
+            edge_phrases.add(phrase)
+            edge_phrases.add(inner_phrase)
+    # Outputs to EdgeData.csv
+    outpath_edge = outfolder + '/EdgeDataYearly.csv'
+    with open(outpath_edge, 'w') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Source', 'Target', 'Weight'])
+        for phrase, phrase_counts in edge_filtered.items():
+            for inner_phrase, count in phrase_counts.items():
+                writer.writerow([phrase, inner_phrase, count])
+
+
+    # Creates and outputs NodeData.csv
+    label_counts = {}
+    def get_label_counts(line):
+        """
+        Helper function to process segmentation results csv to get node counts
+        Modifies the label_counts dictionary
+        """
+        year_range = line['Year Range']
+        phrase_lst = line['Phrases']
+        for phrase in phrase_lst:
+            # Prevents phrase from being included if it is a bad phrase
+            if phrase in BAD_PHRASES_MULTI:
+                continue
+
+            temp_phrase = phrase +  ' (' + year_range + ')'
+            # Skips the phrase if it is not included in EdgeData.csv
+            if temp_phrase not in edge_phrases: continue
+
+            # Otherwise add it to the dict
+            if temp_phrase not in label_counts:
+                label_counts[temp_phrase] = 0
+            label_counts[temp_phrase] += 1
+        return
+    _ = seg.apply(lambda x: get_label_counts(x), axis=1)
+    label_counts = dict(sorted(label_counts.items(), key=lambda item: item[1], reverse=True))
+    labels = pd.DataFrame.from_dict(label_counts,
+                                    orient='index',
+                                    columns=['Count']
+                                    ).reset_index().rename(columns={'index': 'ID'})
+    labels['Label'] = labels['ID']
+    labels = labels[['ID', 'Label', 'Count']]
+    # Adds Year Range column
+    labels['Year Range'] = labels['Label'].apply(lambda x: x.split()[-1][1:-1])
+    # Outputs NodeData.csv
+    outpath_node = outfolder + '/NodeDataYearly.csv'
+    labels.to_csv(outpath_node)
 
 
 def gephi_instructions():
