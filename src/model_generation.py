@@ -134,6 +134,12 @@ def process_seg(infolder, outfolder, phrases_fp=None, method='general'):
             if method == 'general':
                 out.append(phrase)
             else:
+                # Ensures we only keep multi-word phrases for 'gephi' method
+                # if method == 'gephi':
+                #     num_words = len(phrase.split())
+                #     if num_words == 1:
+                #         continue
+
                 # If the phrase is contained within the AutoPhrase results
                 # it is a high-quality phrase, so we can add it
                 if phrase in unique_phrases:

@@ -317,3 +317,104 @@ for l in file:
 		writefile.writelines("\n")
 file.close()
 
+# phrase_analysis.py
+def gephi_preprocess(infolder, outfolder, node_thresh, edge_thresh):
+    """
+    Preprocessing of segmentation results for Gephi graph visualization.
+    Outputs NodeData.csv and EdgeData.csv to outfolder
+
+    infolder: Folder path containing Gephi phrasal segmentation results
+        (see process_seg in model_generation.py)
+    outfolder: Folder path for output files
+    node_thresh: Minimum count for a phrase to be included in NodeData.csv
+    edge_thresh: Minimum count for an edge to be included in EdgeData.csv
+
+    >>> gephi_preprocess('../results/gephi', '../results/temp', 50, 10)
+    """
+    # Gephi segmentation csvs only contain high-quality, multi-word phrases (no duplicates per paper)
+    subfolders = glob(infolder + '/*.csv')
+    subfolders = list(filter(lambda x: 'segmented' in x, subfolders))
+    seg = pd.DataFrame(columns=['Phrases', 'Year Range'])
+    for fp in subfolders:
+        df = pd.read_csv(fp, index_col=0)
+        df = df.dropna()
+        seg = seg.append(df, ignore_index=True)
+    seg = seg.dropna()
+    seg['Phrases'] = seg['Phrases'].map(lambda x: x.split(','))
+
+    # Removes any papers (rows) with only a single phrase - no edges are possible
+    seg = seg[seg.apply(lambda x: len(x['Phrases']) > 1, axis=1)]
+
+    # Creates and outputs NodeData.csv
+    label_counts = {}
+    def get_label_counts(x):
+        """
+        Helper function to process segmentation results csv to get node counts
+        Modifies the label_counts dictionary
+        """
+        for phrase in x:
+            if phrase not in label_counts:
+                label_counts[phrase] = 0
+            label_counts[phrase] += 1
+        return
+    _ = seg.apply(lambda x: get_label_counts(x['Phrases']), axis=1)
+    label_counts = dict(sorted(label_counts.items(), key=lambda item: item[1], reverse=True))
+    labels = pd.DataFrame.from_dict(label_counts,
+                                    orient='index',
+                                    columns=['Count']
+                                    ).reset_index().rename(columns={'index': 'ID'})
+    labels['Label'] = labels['ID']
+    labels = labels[['ID', 'Label', 'Count']]
+    # Only keeps nodes that have counts above node_thresh
+    labels = labels[labels['Count'] > node_thresh]
+    # Outputs NodeData.csv
+    outpath_node = outfolder + '/NodeData.csv'
+    labels.to_csv(outpath_node)
+
+    # Creates and outputs EdgeData.csv
+    edge_counts = {}
+    def get_edges(phrase_lst):
+        """
+        Helper function to process segmentation results csv to get edge data
+        Modifies the edge_dict dictionary
+        """
+        for phrase in phrase_lst:
+            for inner_phrase in phrase_lst:
+                # Prevents any self-comparisons
+                if phrase == inner_phrase: continue
+
+                # Stops any comparisons of existing phrase A - phrase B comparisons
+                # We don't need to add the phrase B - phrase A data to the dictionary
+                if inner_phrase in edge_counts and phrase in edge_counts[inner_phrase]:
+                    continue
+
+                # Creates inner dictionary and adds to count
+                if phrase not in edge_counts:
+                    edge_counts[phrase] = {}
+                if inner_phrase not in edge_counts[phrase]:
+                    edge_counts[phrase][inner_phrase] = 0
+                edge_counts[phrase][inner_phrase] += 1
+        return
+    # Applies helper function to seg dataframe. The function will just modify
+    # the edge_dict dictionary
+    _ = seg.apply(lambda x: get_edges(x['Phrases']), axis=1)
+
+    # Filters out edges that have less than edge_thresh overlaps
+    edge_filtered = {}
+    for phrase, phrase_counts in edge_counts.items():
+        edge_filtered[phrase] = {}
+        for inner_phrase, count in phrase_counts.items():
+            if count < edge_thresh:
+                continue
+            edge_filtered[phrase][inner_phrase] = count
+
+    # Outputs to EdgeData.csv
+    outpath_edge = outfolder + '/EdgeData.csv'
+    with open(outpath_edge, 'w') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Source', 'Target', ' Weight'])
+        for phrase, phrase_counts in edge_filtered.items():
+            for inner_phrase, count in phrase_counts.items():
+                writer.writerow([phrase, inner_phrase, count])
+
+    return

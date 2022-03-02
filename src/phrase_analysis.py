@@ -4,18 +4,46 @@ Q2 Project
 Phrase analysis + visualizations of segmentation results
 """
 
+# TODO: Determine best threshold values for a comprehensive (but uncluttered) graph
+# TODO: Associate year ranges with phrases (needs to be for both node and edge data)
+#       Can maybe add this as a column in NodeData, but we would also need to know it in EdgeData to see how nodes conect
+#       Possibly - add Year Range as a column, but also add it to each phrase?
+# TODO: Remove any nodes from NodeData that aren't included in the edges (makes it so node_thresh is no longer needed)
+
 import pandas as pd
 import os
 from glob import glob
 import csv
 import altair as alt
 
+BAD_PHRASES_MULTI = set(['an adaptive', 'based approach', 'de los', 'en la',
+                         'de la', 'en el', 'de las', '2005 copyright spie',
+                         'outcomes of dagstuhl seminar', 'periodicals inc comput appl eng educ',
+                         'de donnees', 'de ces', '2008 copyright spie', 'que la',
+                         'sur des', 'et les', 'sur la', 'sur les', 'dans les',
+                         'proposed algorithm', 'proposed approach', 'proposed method',
+                         'a case study', 'recent years', 'an adaptive', 'an overview',
+                         'proposed scheme', 'case study', 'obtainable from cpc program library queens',
+                         'university belfast n irelandrnrnlicensing provisions',
+                         'format targzrnrnprogramming language',
+                         'summaryrunprogram title',
+                         'distributed program including test data etc'])
+BAD_PHRASES_SINGLE = set(['as', 'first', 'most', 'finally', 'e', 'do', 'ii',
+                          'n', 'i', 'al', 'k', 'm', 'c', 'd', 'most'])
 
-def gephi_preprocess(infolder, outfolder, node_thresh, edge_thresh):
+
+def gephi_preprocess(infolder, outfolder, edge_thresh):
     """
-    Preprocessing of segmentation results for Gephi graph visualization
+    Preprocessing of segmentation results for Gephi graph visualization.
+    Outputs NodeData.csv and EdgeData.csv to outfolder
 
-    >>> gephi_preprocess('../results/gephi', '../results, 300, 300)
+    infolder: Folder path containing Gephi phrasal segmentation results
+        (see process_seg in model_generation.py)
+    outfolder: Folder path for output files
+    edge_thresh: Minimum number of overlaps between phrases to be included in the output
+
+    >>> gephi_preprocess('../results/gephi', '../results/temp', 150)
+    >>> gephi_preprocess('../results/gephi-all', '../results/temp', 300)
     """
     # Gephi segmentation csvs only contain high-quality, multi-word phrases (no duplicates per paper)
     subfolders = glob(infolder + '/*.csv')
@@ -28,16 +56,78 @@ def gephi_preprocess(infolder, outfolder, node_thresh, edge_thresh):
     seg = seg.dropna()
     seg['Phrases'] = seg['Phrases'].map(lambda x: x.split(','))
 
-    # Removes any papers with only a single phrase
+    # Removes any papers (rows) with only a single phrase - no edges are possible
     seg = seg[seg.apply(lambda x: len(x['Phrases']) > 1, axis=1)]
+
+    # Creates and outputs EdgeData.csv
+    edge_counts = {}
+    def get_edges(phrase_lst):
+        """
+        Helper function to process segmentation results csv to get edge data
+        Modifies the edge_dict dictionary
+        """
+        for phrase in phrase_lst:
+            for inner_phrase in phrase_lst:
+                # Prevents any bad phrases from being included
+                if phrase in BAD_PHRASES_MULTI or inner_phrase in BAD_PHRASES_MULTI:
+                    continue
+
+                # Prevents any self-comparisons
+                if phrase == inner_phrase: continue
+
+                # Stops any comparisons of existing phrase A - phrase B comparisons
+                # We don't need to add the phrase B - phrase A data to the dictionary
+                if inner_phrase in edge_counts and phrase in edge_counts[inner_phrase]:
+                    continue
+
+                # Creates inner dictionary and adds to count
+                if phrase not in edge_counts:
+                    edge_counts[phrase] = {}
+                if inner_phrase not in edge_counts[phrase]:
+                    edge_counts[phrase][inner_phrase] = 0
+                edge_counts[phrase][inner_phrase] += 1
+        return
+    # Applies helper function to seg dataframe. The function will just modify
+    # the edge_dict dictionary
+    _ = seg.apply(lambda x: get_edges(x['Phrases']), axis=1)
+    # Filters out edges that have less than edge_thresh overlaps
+    edge_filtered = {}
+    edge_phrases = set() # Keeps track of phrases included in EdgeData
+    for phrase, phrase_counts in edge_counts.items():
+        for inner_phrase, count in phrase_counts.items():
+            # Skips any edges with less overlaps than the threshold
+            if count < edge_thresh: continue
+            # Otherwise, add the edge to the dictionary
+            if phrase not in edge_filtered:
+                edge_filtered[phrase] = {}
+            edge_filtered[phrase][inner_phrase] = count
+            edge_phrases.add(phrase)
+            edge_phrases.add(inner_phrase)
+    # Outputs to EdgeData.csv
+    outpath_edge = outfolder + '/EdgeData.csv'
+    with open(outpath_edge, 'w') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Source', 'Target', ' Weight'])
+        for phrase, phrase_counts in edge_filtered.items():
+            for inner_phrase, count in phrase_counts.items():
+                writer.writerow([phrase, inner_phrase, count])
 
     # Creates and outputs NodeData.csv
     label_counts = {}
     def get_label_counts(x):
         """
         Helper function to process segmentation results csv to get node counts
+        Modifies the label_counts dictionary
         """
         for phrase in x:
+            # Skips the phrase if it is not included in EdgeData.csv
+            if phrase not in edge_phrases: continue
+
+            # Prevents phrase from being included if it is a bad phrase
+            if phrase in BAD_PHRASES_MULTI:
+                continue
+
+            # Otherwise add it to the dict
             if phrase not in label_counts:
                 label_counts[phrase] = 0
             label_counts[phrase] += 1
@@ -50,57 +140,18 @@ def gephi_preprocess(infolder, outfolder, node_thresh, edge_thresh):
                                     ).reset_index().rename(columns={'index': 'ID'})
     labels['Label'] = labels['ID']
     labels = labels[['ID', 'Label', 'Count']]
-    # Only keeps nodes that have counts above node_thresh
-    labels = labels[labels['Count'] > node_thresh]
     # Outputs NodeData.csv
     outpath_node = outfolder + '/NodeData.csv'
     labels.to_csv(outpath_node)
 
-    # Creates and outputs EdgeData.csv
-    edge_dict = {}
-    def get_edges(phrase_lst):
-        """
-        Helper function to process segmentation results csv to get edge data
-        """
-        for phrase in phrase_lst:
-            for inner_phrase in phrase_lst:
-                # Prevents any self-comparisons
-                if phrase == inner_phrase: continue
+    return
 
-                # Stops any comparisons of existing phrase A - phrase B comparisons
-                # We don't need to add the phrase B - phrase A data to the dictionary
-                if inner_phrase in edge_dict and phrase in edge_dict[inner_phrase]:
-                    continue
 
-                # Creates inner dictionary and adds to count
-                if phrase not in edge_dict:
-                    edge_dict[phrase] = {}
-                if inner_phrase not in edge_dict[phrase]:
-                    edge_dict[phrase][inner_phrase] = 0
-                edge_dict[phrase][inner_phrase] += 1
-        return
-    # Applies helper function to seg dataframe. The function will just modify
-    # the edge_dict dictionary
-    _ = seg.apply(lambda x: get_edges(x['Phrases']), axis=1)
-
-    # Filters out edges that have less than edge_thresh overlaps
-    edge_filtered = {}
-    for phrase, phrase_counts in edge_dict.items():
-        edge_filtered[phrase] = {}
-        for inner_phrase, count in phrase_counts.items():
-            if count < edge_thresh:
-                continue
-            edge_filtered[phrase][inner_phrase] = count
-
-    # Outputs to EdgeData.csv
-    outpath_edge = outfolder + '/EdgeData.csv'
-    with open(outpath_edge, 'w') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(['Source', 'Target', ' Weight'])
-        for phrase, phrase_counts in edge_filtered.items():
-            for inner_phrase, count in phrase_counts.items():
-                writer.writerow([phrase, inner_phrase, count])
-
+def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
+    """
+    Preprocessing segmentation results for Gephi visualizations, but accounting
+    for the year range for each phrase
+    """
     return
 
 
