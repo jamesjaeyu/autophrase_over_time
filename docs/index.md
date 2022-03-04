@@ -13,7 +13,8 @@ With that in mind, we utilized AutoPhrase to extract the phrases from a database
 
 ### Exploring the data
 The original DBLP V10 data set we utilized for our project contains 3,097,007 total papers. However, during data processing, 530,394 were filtered out due to empty abstracts, as well as 82 others due to our year cut off. That leave us with 2,548,531 papers ranging from 1968 to 2017.
-![alt text](https://github.com/jamesjaeyu/autophrase_over_time/tree/main/docs/assets/papers_per_year.png "Papers Per Year")
+![alt text](https://github.com/jamesjaeyu/autophrase_over_time/tree/main/docs/assets/papers_per_year.png?raw=true "Papers Per Year")
+
 We also wanted to use some data from the ArXiv data set for data exploration and later use. Unfortunately, we weren't able to use it for modelling due to its small size, but we still did data exploration on this set.
 
 
