@@ -15,6 +15,8 @@ import os
 from glob import glob
 import csv
 import altair as alt
+import sys
+import shutil
 
 BAD_PHRASES_MULTI = set(['an adaptive', 'based approach', 'de los', 'en la',
                          'de la', 'en el', 'de las', '2005 copyright spie',
@@ -30,7 +32,7 @@ BAD_PHRASES_MULTI = set(['an adaptive', 'based approach', 'de los', 'en la',
                          'distributed program including test data etc'])
 BAD_PHRASES_SINGLE = set(['as', 'first', 'most', 'finally', 'e', 'do', 'ii',
                           'n', 'i', 'al', 'k', 'm', 'c', 'd', 'most'])
-
+TOP_K = 10
 
 def gephi_preprocess(infolder, outfolder, edge_thresh):
     """
@@ -323,3 +325,57 @@ def gephi_instructions():
     (The layout of nodes can be adjusted manually as well)
     """
     return
+
+def phrase_tables(config):
+    """
+    Create table(s) for report analysis
+    Current tables:
+    Top 10 Phrases per Grouped Years by AutoPhrase
+    """
+    infolders = [config['top_10_infolder']]
+    outfolders = [config['top_10_outfolder']]
+    # check if infolders exists
+    for infolder in infolders:
+        if not os.path.exists(infolder):
+            print(f"{infolder} does not exists.", file=sys.stderr)
+            sys.exit(1)
+    # deleting outolders if it exists to reset
+    for outfolder in outfolders:
+        if os.path.exists(outfolder):
+            shutil.rmtree(outfolder)
+        os.mkdir(outfolder)
+
+    # initial year initialization
+    file_handlers = []
+
+    top_10_outfile = open(f"{config['top_10_outfolder']}/top_10.csv", 'a')
+    years = sorted(next(os.walk(config['top_10_infolder']))[1])
+    for dirname in years:
+        a_dir = os.path.join(config['top_10_infolder'], dirname)
+        if not os.path.isdir(a_dir):
+            continue
+        autophrase_txt_filename = os.path.join(a_dir, 'AutoPhrase.txt')
+        if not os.path.exists(autophrase_txt_filename):
+            print(f"{autophrase_txt_filename} does not exists.", file=sys.stderr)
+            continue
+        infile = open(autophrase_txt_filename, 'r')
+        file_handlers.append(infile)
+
+        if dirname == years[-1]:
+            top_10_outfile.write(dirname + '\n')
+        else:
+            top_10_outfile.write(dirname + ',')
+
+    # write top phrases
+    for i in range(TOP_K):
+        for j in range(len(years)):
+            top_10_outfile.write(file_handlers[j].readline().strip('\n'))
+            if j < len(years)-1:
+                top_10_outfile.write(',')
+            else:
+                top_10_outfile.write('\n')
+    for files in file_handlers:
+        files.close()
+    top_10_outfile.close()
+            
+

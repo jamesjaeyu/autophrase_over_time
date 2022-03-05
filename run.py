@@ -11,6 +11,7 @@ from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requ
     process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_model
+from src.phrase_analysis import phrase_tables
 
 def main(targets):
     """
@@ -18,7 +19,7 @@ def main(targets):
     """
     # Updates targets to include everything if 'all' is included
     if 'all' in targets:
-        targets = ['data', 'eda', 'model']
+        targets = ['data', 'eda', 'model', 'analysis']
 
     if 'test' in targets:
         # 'test' target will be the same for 'eda' but different for 'data' and 'model'
@@ -40,6 +41,10 @@ def main(targets):
         obtain_phrases(model_cfg['infolder'], threshold)
         process_seg(model_cfg['infolder'])
         baseline_model(model_cfg['fp'])
+
+        # analysis
+        analysis_cfg = json.load(open('config/analysis-params.json'))
+        phrase_tables(analysis_cfg)
     else:
         # Runs each relevant target in targets
         if 'data' in targets:
@@ -72,6 +77,10 @@ def main(targets):
             #obtain_phrases(model_cfg['infolder'], threshold)
             obtain_phrases(model_cfg['infolder_grouped'], threshold)
             baseline_model(model_cfg['fp_grouped'])
+        
+        if 'analysis' in targets:
+            analysis_cfg = json.load(open('config/analysis-params.json'))
+            phrase_tables(analysis_cfg)
 
     return
 
