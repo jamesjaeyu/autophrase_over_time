@@ -38,7 +38,7 @@ Add tables + explanations of the process
 ### Network visualization
 [Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=imgf874e11decc6920d_10)
 
-![Network visualization](/docs/assets/network.png)
+![Network visualization](/autophrase_over_time/assets/network.png)
 
 
 ---
