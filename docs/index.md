@@ -32,6 +32,10 @@ Description of methods used to run AutoPhrase
 ### AutoPhrase Results
 Add tables + explanations of AutoPhrase results
 
+![Bar chart of number of phrases identified by AutoPhrase](/autophrase_over_time/assets/bar_avg_phrases_identified.png)
+
+![Histogram of number of phrases identified by AutoPhrase](/autophrase_over_time/assets/hist_phrases_identified.png)
+
 ### Consolidating AutoPhrase results
 Add tables + explanations of the process
 
