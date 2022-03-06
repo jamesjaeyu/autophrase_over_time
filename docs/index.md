@@ -40,7 +40,7 @@ Add tables + explanations of AutoPhrase results
 Add tables + explanations of the process
 
 ### Network visualization
-[Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=imgf874e11decc6920d_10)
+[Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=img738fab87ba012f22_2)
 
 ![Network visualization](/autophrase_over_time/assets/network.png)
 
