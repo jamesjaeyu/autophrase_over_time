@@ -17,6 +17,7 @@ import csv
 import altair as alt
 import sys
 import shutil
+import re
 
 BAD_PHRASES_MULTI = set(['an adaptive', 'based approach', 'de los', 'en la',
                          'de la', 'en el', 'de las', '2005 copyright spie',
@@ -369,7 +370,9 @@ def phrase_tables(config):
     # write top phrases
     for i in range(TOP_K):
         for j in range(len(years)):
-            top_10_outfile.write(file_handlers[j].readline().strip('\n'))
+            phrase = file_handlers[j].readline().strip('\n')
+            phrase = re.sub(r'^[0-9.]+', '', phrase)
+            top_10_outfile.write(phrase.strip())
             if j < len(years)-1:
                 top_10_outfile.write(',')
             else:
