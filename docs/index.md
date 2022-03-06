@@ -25,13 +25,18 @@ Brief description of how the data was processed for further analysis
 ---
 
 # Methods
-Description of methods used to run AutoPhrase
+### Running AutoPhrase
+AutoPhrase has two functions that can be run. Phrase mining and phrasal segmentation. In order to perform the phrase mining step, a single .txt file is required. Once that step is ran, a segmentation model is generated that can be used to segment any other .txt file, including the same input .txt file.
 
 ---
 
 # Results
-### AutoPhrase Results
+### Phrase mining results
 To run AutoPhrase on our data, first we just split it by year to aggregate the most important phrases for each year. In doing this, we found that there was a minimum file size of about 200-300 kB for running AutoPhrase, meaning that we were unable to utilize the years 1950-67. However, we also found that we could group the years together both to enable more years in our data as well as to find salient phrases during longer time periods. Having each year separate makes the data much more sparse, so grouping will enable stronger classification results in the future.
+
+![Phrase mining example results](/autophrase_over_time/assets/autophrase.png)
+
+Phrase mining returns a .txt file containing each extracted phrase, along with their associated phrase quality. Phrase quality ranges from 0.0 to 1.0, with 1.0 being the highest quality.
 
 ![Bar chart of number of phrases identified by AutoPhrase](/autophrase_over_time/assets/bar_avg_phrases_identified.png)
 
@@ -41,14 +46,22 @@ Here, we can see that the number of phrases per paper changes drastically depend
 
 Overall, the number of phrases in a paper can vary widely, but the vast majority lie between 15 and 50 phrases.
 
-### Consolidating AutoPhrase results
+### Consolidating phrase mining results
 Add tables + explanations of the process
+
+### Phrasal segmentation results
+When running phrasal segmentation on the input data, we are able to obtain all of the phrases mined by AutoPhrase on a per-paper level. 
+
+![Phrasal segmentation example results](/autophrase_over_time/assets/phrasal_seg.png)
+
+The input text data will mark any identified phrases with phrase markers. The phrase markers and phrases are highlighted in this screenshot for clarity.
 
 ### Network visualization
 [Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=img738fab87ba012f22_2)
 
 ![Network visualization](/autophrase_over_time/assets/network.png)
 
+The network visualization shows the relationship between phrases in the entire DBLP v10 dataset. More frequent phrases are represented by larger nodes. Nodes that have stronger and more frequent connections with each other will be represented by the same color, determined by their modularity.
 
 ---
 
