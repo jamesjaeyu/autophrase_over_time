@@ -13,6 +13,7 @@ With that in mind, we utilized AutoPhrase to extract the phrases from a database
 
 ### Exploring the data
 The original DBLP V10 data set we utilized for our project contains 3,097,007 total papers. However, during data processing, 530,394 were filtered out due to empty abstracts, as well as 82 others due to our year cut off. That leave us with 2,548,531 papers ranging from 1968 to 2017.
+
 ![Papers years](/autophrase_over_time/assets/papers_per_year.png)
 
 We also wanted to use some data from the ArXiv data set for data exploration and later use. Unfortunately, we weren't able to use it for modelling due to its small size, but we still did data exploration on this set.
@@ -30,11 +31,15 @@ Description of methods used to run AutoPhrase
 
 # Results
 ### AutoPhrase Results
-Add tables + explanations of AutoPhrase results
+To run AutoPhrase on our data, first we just split it by year to aggregate the most important phrases for each year. In doing this, we found that there was a minimum file size of about 200-300 kB for running AutoPhrase, meaning that we were unable to utilize the years 1950-67. However, we also found that we could group the years together both to enable more years in our data as well as to find salient phrases during longer time periods. Having each year separate makes the data much more sparse, so grouping will enable stronger classification results in the future.
 
 ![Bar chart of number of phrases identified by AutoPhrase](/autophrase_over_time/assets/bar_avg_phrases_identified.png)
 
+Here, we can see that the number of phrases per paper changes drastically depending on the year range. This can be due to factors like average length of input papers for that year range, but could also be dependent upon the range of phrases displayed within that range. A year range with more phrase variety could have less phrases show up per paper due to the lower average scores of the phrases causing them to be excluded from our high-quality phrase list.
+
 ![Histogram of number of phrases identified by AutoPhrase](/autophrase_over_time/assets/hist_phrases_identified.png)
+
+Overall, the number of phrases in a paper can vary widely, but the vast majority lie between 15 and 50 phrases.
 
 ### Consolidating AutoPhrase results
 Add tables + explanations of the process
