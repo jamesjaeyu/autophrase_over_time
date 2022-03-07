@@ -16,6 +16,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import AdaBoostClassifier
 
 
 def obtain_phrases(infolder, threshold=(0.8,0.5)):
@@ -245,9 +246,9 @@ def find_similar(input_phrase, fp):
     return (closest_dist, closest, years)
 
 
-def baseline_model(fp):
+def generate_model(fp):
     """
-    Baseline model using DecisionTreeClassifier
+    fp: Filepath containing AutoPhrase phrase mining results csv
 
     Features (x):
     -------------
@@ -260,56 +261,45 @@ def baseline_model(fp):
     Phrase Quality (float)
         no modification. May need to normalize in the future. Also, the
         'phrases' dataframe only contains high-quality phrases (multi >= 0.6, single >= 0.8)
+    Num Words (int)
+        Number of words in the phrase
 
     Label (y):
     ---------------
     Year (int)
-        THe year the phrase belongs to.
+        The year the phrase belongs to.
 
     Returns
     -------
     float
-        The mean absolute difference between actual and predicted years on the test set.
+        Accuracy on the test set
 
-    >>> baseline_model('../results/dblp-v10-phrases-uniquebyyear.csv')
+    >>> refined_model('../results/dblp-v10-grouped/phrases.csv')
     """
-    # Reads in unique by year phrases
-    phrases = pd.read_csv(fp, index_col=0)
-    # Only keeps phrases from 1968+ and drops any null values
-    phrases = phrases[phrases['Year'] >= 1968]
-    phrases = phrases.dropna()
+    df = pd.read_csv(fp, index_col=0)
+    df = df.dropna()
+    # Creates 'num_years' column - number of year ranges a phrase has appeared in
+    phr_counts = df.groupby('Phrase').size()
+    df['num_years'] = df.apply(lambda x: phr_counts[x['Phrase']], axis=1)
 
-    # Creates num_years column: the number of years a phrase has shown up in
-    counts = phrases.groupby('Phrase').size()
-    phrases['num_years'] = phrases.apply(lambda x: counts[x['Phrase']], axis=1)
+    # Train-test split
+    X_train, X_test, y_train, y_test = train_test_split(df[['Phrase', 'num_years', 'Phrase Quality']],
+                                                        df['Year'])
 
     # Creates pipeline
     std_pipe = Pipeline([('scale', StandardScaler())])
     ohe_pipe = Pipeline([('one-hot', OneHotEncoder(handle_unknown='ignore'))])
     ct = ColumnTransformer(transformers=[('ohe', ohe_pipe, ['Phrase']),
                                         ('scale', std_pipe, ['num_years']),
-                                        ('keep', 'passthrough', ['Phrase Quality'])
+                                        ('keep', 'passthrough', ['Phrase Quality', 'Num Words'])
                                         ])
-    pl = Pipeline([('transform', ct), ('classifier', DecisionTreeClassifier())])
+    pl = Pipeline([('transform', ct), ('classifier', AdaBoostClassifier(n_estimators=100,
+                                                                        learning_rate=1.1))])
 
-    # Train-test split
-    X_train, X_test, y_train, y_test = train_test_split(phrases[['Phrase', 'num_years', 'Phrase Quality']],
-                                                        phrases['Year'],
-                                                        random_state=1)
     # Trains model
     pl.fit(X_train, y_train)
 
+    # Baseline accuracy - most popular label
+    base_acc = (y_test == '2010-2014').mean()
+
     return pl.score(X_test, y_test)
-    # Runs predictions on test set
-    #X_test['Predicted Year'] = pl.predict(X_test)
-
-    # Creates Abs Year Diff column: the absolute difference between actual and predicted year
-    #X_test['Year'] = y_test
-    #X_test['Abs Year Diff'] = abs(X_test['Year'] - X_test['Predicted Year'])
-
-    # Returns the average absolute difference - want this metric to be close to 0
-    #return X_test['Abs Year Diff'].mean()
-
-
-def refined_model():
-    return
