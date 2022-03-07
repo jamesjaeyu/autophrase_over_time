@@ -51,8 +51,7 @@ This histogram shows the distribution of the number of phrases identified across
 
 ### Most popular multi-word phrases over time
 
-<center>
-    | 1950-1959                  | 1960-1964                   | 1965-1969                | 1970-1974                 | 1975-1979                 | 1980-1984                 | 1985-1989                     | 1990-1994                 | 1995-1999                   | 2000-2004                   | 2005-2009                       | 2010-2014                        | 2015-2017                |
+| 1950-1959                  | 1960-1964                   | 1965-1969                | 1970-1974                 | 1975-1979                 | 1980-1984                 | 1985-1989                     | 1990-1994                 | 1995-1999                   | 2000-2004                   | 2005-2009                       | 2010-2014                        | 2015-2017                |
 | -------------------------- | --------------------------- | ------------------------ | ------------------------- | ------------------------- | ------------------------- | ----------------------------- | ------------------------- | --------------------------- | --------------------------- | ------------------------------- | -------------------------------- | ------------------------ |
 | operations research (82)   | pattern recognition (27)    | sequential machines (85) | pattern recognition (165) | natural language (253)    | natural language (494)    | expert systems (782)          | neural network (2504)     | neural network (4977)       | neural network (6001)       | web services (12672)            | cloud computing (16170)          | machine learning (11254) |
 | gaussian noise (16)        | regular expressions (22)    | pattern recognition (75) | linear programming (122)  | pattern recognition (132) | signal processing (268)   | natural language (770)        | natural language (1089)   | genetic algorithm (1700)    | data mining (4901)          | neural network (12314)          | machine learning (14046)         | big data (10885)         |
@@ -60,8 +59,6 @@ This histogram shows the distribution of the number of phrases identified across
 | dynamic programming (8)    | linear programming (19)     | analog computer (58)     | computer graphics (72)    | linear programming (106)  | pattern recognition (192) | user interface (495)          | image processing (827)    | software engineering (1430) | software engineering (3188) | wireless sensor networks (9382) | neural network (11381)           | cloud computing (8373)   |
 | standard model (8)         | sequential circuits (15)    | sequential machine (54)  | dynamic programming (69)  | problem solving (104)     | linear programming (174)  | artificial intelligence (398) | distributed systems (799) | distributed systems (1414)  | genetic algorithm (3115)    | genetic algorithm (8088)        | data mining (11235)              | power consumption (6124) |
 |                            |
-
-</center>
 
 By processing the phrasal segmentation results, we can obtain the counts of each phrase in the input data.  We specifically focused on the most frequent multi-word phrases across each year range in order to identify the most popular Computer Science topics in each period. In the early years, there is a large focus on pattern recognition, as it is in the top 5 in all of the year ranges from 1960-1984. Over time, this changes, with topics such as neural networks and machine learning becoming more prominent.
 
