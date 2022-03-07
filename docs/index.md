@@ -56,12 +56,19 @@ When running phrasal segmentation on the input data, we are able to obtain all o
 
 The input text data will mark any identified phrases with phrase markers. The phrase markers and phrases are highlighted in this screenshot for clarity.
 
-### Network visualization
+### Phrase network
 [Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=img738fab87ba012f22_2)
 
-![Network visualization](/autophrase_over_time/assets/network.png)
+![Network visualization](/autophrase_over_time/assets/network_small.png)
 
 The network visualization shows the relationship between phrases in the entire DBLP v10 dataset. More frequent phrases are represented by larger nodes. Nodes that have stronger and more frequent connections with each other will be represented by the same color, determined by their modularity.
+
+### Phrase network by Year Range
+[Link to high-resolution, zoomable image](https://i.ibb.co/tY0NcLy/2.png)
+
+![Yearly network visualization](/autophrase_over_time/assets/network_yearly_small.png)
+
+This network visualization shows the relationship between phrases with the year range of each phrase in consideration.
 
 ---
 
