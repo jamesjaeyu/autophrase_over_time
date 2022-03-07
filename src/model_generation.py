@@ -6,8 +6,14 @@ Processing DBLP v10
 import pandas as pd
 import numpy as np
 import time
+import sys
+import datetime
+import pickle
 import re
 import os
+import nltk
+import sklearn
+
 from glob import glob
 import Levenshtein as Lv # Used to calculate string similarity
 from sklearn.model_selection import train_test_split
@@ -17,7 +23,27 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import AdaBoostClassifier
+from sklearn.preprocessing import FunctionTransformer
+from sklearn.preprocessing import StandardScaler
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.model_selection import cross_validate
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import SGDClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import f1_score
+from nltk.stem import PorterStemmer 
+import warnings
+import matplotlib.pyplot as plt
+from sklearn.neural_network import MLPClassifier
+from sklearn import svm
+from joblib import dump, load
+warnings.filterwarnings("ignore")
 
 def obtain_phrases(infolder, threshold=(0.8,0.5)):
     """
@@ -303,3 +329,101 @@ def generate_model(fp):
     base_acc = (y_test == '2010-2014').mean()
 
     return pl.score(X_test, y_test)
+
+#...
+# input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+# output: baseline_lr_model_pkl = "results/autophrase/dblp-v10/grouped/baseline_lr_model.pkl"
+def baseline_tfidf_model(extract_phrases_per_paper_pkl_file, baseline_lr_model_pkl):
+    phrases_by_paper = pd.read_pickle(extract_phrases_per_paper_pkl_file)
+    print(phrases_by_paper.groupby('year_bracket_int_encoded').size())
+    # 0        333
+    # 1        852
+    # 2       2642
+    # 3       5568
+    # 4       9371
+    # 5      16844
+    # 6      32767
+    # 7      71404
+    # 8     144387
+    # 9     309672
+    # 10    651834
+    # 11    872491
+    # 12    430036
+
+    print(phrases_by_paper.groupby('year_bracket_int_encoded').size()/len(phrases_by_paper))
+    # 0     0.000131
+    # 1     0.000334
+    # 2     0.001037
+    # 3     0.002185
+    # 4     0.003677
+    # 5     0.006610
+    # 6     0.012859
+    # 7     0.028021
+    # 8     0.056662
+    # 9     0.121526
+    # 10    0.255802
+    # 11    0.342395
+    # 12    0.168761
+
+    # split tran_set and test_set based on the distribution of the column of 'year_bracket_int_encoded'
+    # tran_set and test_set have the same distribution
+    split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    for train_index, test_index in split.split(phrases_by_paper, phrases_by_paper["year_bracket_int_encoded"]):
+        strat_train_set = phrases_by_paper.loc[train_index]
+        strat_test_set = phrases_by_paper.loc[test_index]
+    #print(f"len(strat_train_set)={len(strat_train_set)} len(strat_test_set)={len(strat_test_set)} {len(strat_test_set)/len(strat_train_set)}")
+    #print(strat_train_set.groupby('year_bracket_int_encoded').size()/len(strat_train_set))
+    #print(strat_test_set.groupby('year_bracket_int_encoded').size()/len(strat_test_set))
+
+    X_train, X_test, y_train, y_test = strat_train_set.loc[:, 'phrases'], strat_test_set.loc[:, 'phrases'], strat_train_set.loc[:, 'year_bracket_int_encoded'], strat_test_set.loc[:, 'year_bracket_int_encoded']
+
+    # Convert X_train into a matrix of TF-IDF features.
+    start = time.time()
+    tfidf_vectorizer = TfidfVectorizer(analyzer = 'word', stop_words = {'english'}, max_features=1000000)
+    X_train_tfidf = tfidf_vectorizer.fit_transform(X_train.values)
+    sorted_vocabulary_ = dict( sorted(tfidf_vectorizer.vocabulary_.items(), key=lambda item: item[1], reverse=True))
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: tfidf_vectorizer.fit_transform {(end - start):.03f} seconds", flush=True)
+    #print(sorted_vocabulary_)
+    # term frequency: {'zyx': 56126, 'zynq': 56125, 'zynga': 56124, 'zygote': 56123, 'zygomatic': 56122, ...}
+
+    # baseline model
+    # One-vs-the-rest (OvR) used for multilabel classification.
+    # https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsRestClassifier.html
+    # a paper can belong to one of the following classes:
+    #   '1950-1959'/0,
+    #   '1960-1964'/1
+    #   '1965-1969'/2
+    #   '1970-1974'/3
+    #   '1975-1979'/4
+    #   '1980-1984'/5
+    #   '1985-1989'/6
+    #   '1990-1994'/7
+    #   '1995-1999'/8
+    #   '2000-2004'/9
+    #   '2005-2009'/10
+    #   '2010-2014'/11
+    #   '2015-2017'/12
+    start = time.time()
+    log_regress = LogisticRegression(solver='lbfgs', max_iter=100)
+    clf_name = "LogisticRegression"
+    baseline_clf = OneVsRestClassifier(log_regress, n_jobs = 32)
+    baseline_clf.fit(X_train_tfidf, y_train)
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: {clf_name} fit {(end - start):.03f} seconds", flush=True)
+
+    # evaluation of the model
+    X_test_tfidf = tfidf_vectorizer.transform(X_test.values)
+    y_test_pred = baseline_clf.predict(X_test_tfidf)
+    baseline_f1 = f1_score(y_test, y_test_pred, average="micro")
+    print(f"baseline_f1={baseline_f1}")
+    # baseline_f1=0.7659038421163132
+
+    if os.path.exists(baseline_lr_model_pkl):
+        os.remove(baseline_lr_model_pkl)
+    with open(baseline_lr_model_pkl,'wb') as baseline_lr_model_pkl_file:
+        pickle.dump(baseline_clf, baseline_lr_model_pkl_file)
+    print(f"baseline_clf has been saved to {baseline_lr_model_pkl}")
+

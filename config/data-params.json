@@ -9,5 +9,7 @@
     "dblp_v10_per_year_data_folder": "data/dblp-v10/txt",
     "dblp_v10_paper_count_per_year_file": "data/dblp-v10/dblp-v10-counts.csv",
     "autophrase_in_folder": "data/dblp-v10/txt_grouped",
-    "autophrase_out_folder": "results/autophrase/dblp-v10/grouped"
+    "autophrase_out_folder": "results/autophrase/dblp-v10/grouped",
+    "extract_phrases_per_paper_csv_file": "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv",
+    "extract_phrases_per_paper_pkl_file": "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl" 
 }

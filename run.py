@@ -8,9 +8,10 @@ import sys
 import json
 
 from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10, \
-    process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir
+    process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir, \
+    extract_phrases_per_paper_one_dir, convert_extract_phrases_per_paper_csv_to_df_pickle
 from src.eda import generate_figures
-from src.model_generation import obtain_phrases, process_seg, baseline_model
+from src.model_generation import obtain_phrases, process_seg, baseline_tfidf_model
 from src.phrase_analysis import phrase_tables
 
 def main(targets):
@@ -54,15 +55,30 @@ def main(targets):
             #download_dblp_v10_using_requests(data_cfg['dblp_v10_url'])
 
             ## Processes DBLP v10 dataset into aggregated .txt files by year
-            year_grouping = True
-            output_type = 'txt'
+            #year_grouping = True
+            #output_type = 'txt'
             #year_grouping = False
             # output_type = 'csv'
 
             #process_v10(data_cfg['in_folder'], data_cfg['out_grouped_txt_folder'], year_grouping, output_type)
-            autophrase_one_dir(data_cfg['autophrase_in_folder'], data_cfg['autophrase_out_folder'])
-            extract_phrases_one_dir(data_cfg['autophrase_out_folder'])
-            count_phrase_one_dir(data_cfg['autophrase_out_folder'])
+            #autophrase_one_dir(data_cfg['autophrase_in_folder'], data_cfg['autophrase_out_folder'])
+            #extract_phrases_one_dir(data_cfg['autophrase_out_folder'])
+            #count_phrase_one_dir(data_cfg['autophrase_out_folder'])
+
+            #...
+            only_first_year_bracket = False
+            # input: autophrase_dblp_v10_grouped_folder=results/autophrase/dblp-v10/grouped
+            # output: extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+            autophrase_dblp_v10_grouped_folder = data_cfg['autophrase_out_folder']
+            extract_phrases_per_paper_csv_file = data_cfg['extract_phrases_per_paper_csv_file']
+            extract_phrases_per_paper_one_dir(autophrase_dblp_v10_grouped_folder, extract_phrases_per_paper_csv_file, only_first_year_bracket)
+
+            # input: extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+            # output: extract_phrases_per_paper_pkl_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl
+            extract_phrases_per_paper_csv_file = data_cfg['extract_phrases_per_paper_csv_file']
+            extract_phrases_per_paper_pkl_file = data_cfg['extract_phrases_per_paper_pkl_file']
+            convert_extract_phrases_per_paper_csv_to_df_pickle(extract_phrases_per_paper_csv_file, extract_phrases_per_paper_pkl_file)
+
 
         if 'eda' in targets:
             eda_cfg = json.load(open('config/eda-params.json'))
@@ -72,11 +88,16 @@ def main(targets):
         if 'model' in targets:
             model_cfg = json.load(open('config/model-params.json'))
 
-            threshold = [float(x) for x in model_cfg['threshold'].split(',')]
-            threshold = (threshold[0], threshold[1])
+            #threshold = [float(x) for x in model_cfg['threshold'].split(',')]
+            #threshold = (threshold[0], threshold[1])
             #obtain_phrases(model_cfg['infolder'], threshold)
-            obtain_phrases(model_cfg['infolder_grouped'], threshold)
-            baseline_model(model_cfg['fp_grouped'])
+            #obtain_phrases(model_cfg['infolder_grouped'], threshold)
+            #baseline_model(model_cfg['fp_grouped'])
+
+            # input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+            # output: baseline_lr_model_pkl = "results/autophrase/dblp-v10/grouped/baseline_lr_model.pkl"
+            baseline_tfidf_model(model_cfg['extract_phrases_per_paper_pkl_file'], model_cfg['baseline_lr_model_pkl'])
+
         
         if 'analysis' in targets:
             analysis_cfg = json.load(open('config/analysis-params.json'))

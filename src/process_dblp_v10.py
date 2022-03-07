@@ -100,6 +100,55 @@ def year_to_filename(year, year_grouping = False, output_type = 'txt'):
     #    1950 => 1950.csv
     return f'{year}.{output_type}'
 
+# common phrases to be excluded
+stop_phrase_list = [
+    "paper", "abstractthis paper", "abstractthis paper investigates", "analysis of",
+    "cited papers", "companion paper",
+    "invited paper", "paper addresses", "paper analyzes",
+    "paper argues", "paper compares", "paper considers", "paper describes",
+    "paper discusses", "paper documents", "paper ends", "paper evaluates",
+    "paper examines", "paper explains", "paper explores", "paper illustrates",
+    "paper introduces", "paper investigates", "paper outlines",
+    "paper presents", "paper proposes", "paper puts forward", "paper reports",
+    "paper reviews", "paper revisits", "paper shows", "papers published",
+    "paper summarizes", "previous papers", "published papers",
+    "research papers", "scientific papers", "selected papers", "seminal paper",
+    "short paper", "survey paper", "a case study", "worst case", "worst-case", "write",
+    "the problem", "this paper", "by"]
+
+def skip_phrase(phrase):
+    """
+    exclude common phrases and single-character-phrase
+    """
+    if len(phrase) <= 1:
+        return True
+    if phrase in stop_phrase_list:
+        return True
+    return False
+
+year_bracket_int_mapping = {
+    '1950-1959': 0,
+    '1960-1964': 1,
+    '1965-1969': 2,
+    '1970-1974': 3,
+    '1975-1979': 4,
+    '1980-1984': 5,
+    '1985-1989': 6,
+    '1990-1994': 7,
+    '1995-1999': 8,
+    '2000-2004': 9,
+    '2005-2009': 10,
+    '2010-2014': 11,
+    '2015-2017': 12
+}
+
+def year_bracket_to_int(year_bracket):
+    encoded_int = year_bracket_int_mapping.get(year_bracket)
+    if encoded_int is None:
+        print(f"{year_bracket} unknown.", file=sys.stderr)
+    return encoded_int
+
+
 def download_dblp_v10(dblp_v10_url):
     """
     Downloads DBLP v10 dataset and creates directory
@@ -809,3 +858,109 @@ def count_phrase_one_dir(autophrase_out_folder):
         end = time.time()
         current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         print(f"{current_datetime}: {segmentation_extracted_phrases_txt_filename} => {extracted_phrases_count_csv_filename} {(end - start):.03f} seconds", flush=True)
+
+# input: autophrase_dblp_v10_grouped_folder=results/autophrase/dblp-v10/grouped
+# output: extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+def extract_phrases_per_paper_one_dir(autophrase_dblp_v10_grouped_folder, extract_phrases_per_paper_csv_file, only_first_year_bracket = False):
+    """
+    input: results/autophrase/dblp-v10/grouped
+        results/autophrase/dblp-v10/grouped/1950-1959/segmentation.txt
+        results/autophrase/dblp-v10/grouped/1960-1965/segmentation.txt
+        ...
+        results/autophrase/dblp-v10/grouped/2015-2017/segmentation.txt
+            This <phrase>paper</phrase> describes the logical <phrase>nature</phrase> of <phrase>computing</phrase> machines ..
+            problem of discovery in <phrase>mathematics</phrase> and empirical <phrase>science</phrase> is discussed ...
+            formulate hypotheses modify them in the <phrase>light</phrase> of new experience and eventually ...
+            simple <phrase>universe</phrase>
+            <phrase>Logic</phrase> discovery and the foundations of <phrase>computing</phrase> machinery
+
+    output: results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+        paper_id,"phrases",year_bracket,year_bracket_int_encoded
+        1,"paper,nature",1950-1959,0
+        ...
+    """
+    if not os.path.exists(autophrase_dblp_v10_grouped_folder):
+        print(f"{autophrase_dblp_v10_grouped_folder} does not exists.", file=sys.stderr)
+        sys.exit(1)
+
+    # extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+    if os.path.exists(extract_phrases_per_paper_csv_file):
+        os.remove(extract_phrases_per_paper_csv_file)
+
+    try:
+        extract_phrases_per_paper_csv_file_fp = open(extract_phrases_per_paper_csv_file, 'a')
+    except OSError as ex:
+        print(f"{ex}", file=sys.stderr)
+        sys.exit(1)
+
+    # compiled regex for better speed
+    phrase_regex = re.compile(r"<phrase>(.*?)</phrase>", flags=0)
+
+    paper_id = 0
+    with extract_phrases_per_paper_csv_file_fp:
+        for dirname in sorted((f for f in os.listdir(autophrase_dblp_v10_grouped_folder) if not f.endswith(".pkl") and not f.endswith(".csv")), key=str.lower):
+            a_dir = os.path.join(autophrase_dblp_v10_grouped_folder, dirname)
+            # results/autophrase/dblp-v10/grouped/1950-1959
+            if not os.path.isdir(a_dir):
+                continue
+            seg_filename = os.path.join(a_dir, "segmentation.txt")
+            if not os.path.exists(seg_filename):
+                continue
+            
+            # results/autophrase/dblp-v10/grouped/1950-1959 => 1950-1959
+            year_bracket = a_dir.split('\\')[-1]
+
+            start = time.time()
+            current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print(f"{current_datetime}: {seg_filename} => {extract_phrases_per_paper_csv_file} ...", end=" ")
+            with open(seg_filename, "r") as seg_file:
+                per_file_line_counter = 0
+                paper_phrases = []
+                for line in seg_file:
+                    for phrase in phrase_regex.findall(line):
+                        lower_phrase = phrase.lower()
+                        if not skip_phrase(lower_phrase):
+                            paper_phrases.append(lower_phrase)
+                    # each paper has two lines: abstract and title
+                    if per_file_line_counter % 2 == 1:
+                        phrases_csv = '_'.join(paper_phrases)
+                        #print(f"{paper_phrases} {phrases_csv}")
+                        if len(phrases_csv) > 0:
+                            year_bracket_int_encoded = year_bracket_to_int(year_bracket)
+                            # 1,transistors_semiconductor_transistor_amplifiers_binary_cps,1950-1959,0
+                            content = f'{paper_id},{phrases_csv},{year_bracket},{year_bracket_int_encoded}'
+                            extract_phrases_per_paper_csv_file_fp.write(content)
+                            extract_phrases_per_paper_csv_file_fp.write('\n')
+                        else:
+                            print(f"empty:phrases_csv: {line}")
+                        paper_id += 1
+                        paper_phrases = []
+                    per_file_line_counter += 1
+            end = time.time()
+            print(f"{(end - start):.03f} seconds", flush=True)
+            if only_first_year_bracket:
+                return
+
+# input: extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+# output: extract_phrases_per_paper_pkl_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl
+def convert_extract_phrases_per_paper_csv_to_df_pickle(extract_phrases_per_paper_csv_file, extract_phrases_per_paper_pkl_file):
+    """
+        input: extract_phrases_per_paper_csv_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.csv
+            0,nature_computing_mathematics_science_light_universe_logic_computing,1950-1959,0
+            1,transistors_semiconductor_transistor_amplifiers_binary_cps,1950-1959,0
+        output: extract_phrases_per_paper_pkl_file=results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl
+            replace "_" with " "
+            paper_id, phrases, year_bracket, year_bracket_int_encoded
+            0,nature computing mathematics science light universe logic computing,1950-1959,0
+            1,transistors semiconductor transistor amplifiers binary cps,1950-1959,0
+    """
+    if not os.path.exists(extract_phrases_per_paper_csv_file):
+        print(f"{extract_phrases_per_paper_csv_file} does not exists.", file=sys.stderr)
+        sys.exit(1)
+
+    if os.path.exists(extract_phrases_per_paper_pkl_file):
+        os.remove(extract_phrases_per_paper_pkl_file)
+
+    df = pd.read_csv(extract_phrases_per_paper_csv_file, names=['paper_id', 'phrases', 'year_bracket', 'year_bracket_int_encoded'])
+    df['phrases'] = df.apply(lambda x: x['phrases'].replace("_", " ") if isinstance(x['phrases'], str) else np.nan, axis=1)
+    df.to_pickle(extract_phrases_per_paper_pkl_file)
