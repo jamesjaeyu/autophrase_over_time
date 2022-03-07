@@ -67,7 +67,7 @@ The network visualization shows the relationship between phrases in the entire D
 
 # Model
 ### Creating and Refining the Model
-Description of the goal of the model and the training data.
+One of our goals for this project was to create a classifier for predicting the year of an input paper in order to demonstrate how distinct phrases contained within certain years have the capability to identify what year of the input paper. For this, we attempted multiple types of models including a Jaccard-based predictor, a predictor using phrase overlap between years, as well as trained models using one-hot encoding. However, we found that the best result was by using a predictor which just took a single phrase as input. We can then use the year predictions from each individual phrase within an input paper to find an aggregate year value for the paper as a whole.
 
 ### Model Results and Output
 Description of the model results on test data along with any relevant tables/graphs
@@ -78,4 +78,4 @@ Description of the model results on test data along with any relevant tables/gra
 Brief summary of methods & results 
 
 ### Future Work & Extensions
-Discussion of future work and potential extensions to the project
+A possible extension for this project could be developing a more refined model which is able to be trained on whole paper inputs rather than individual phrases. This would potentially allow for a more robust predictor for input papers.
