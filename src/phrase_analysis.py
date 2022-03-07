@@ -3,13 +3,6 @@ DSC180B
 Q2 Project
 Phrase analysis + visualizations of segmentation results
 """
-
-# TODO: Determine best threshold values for a comprehensive (but uncluttered) graph
-# TODO: Associate year ranges with phrases (needs to be for both node and edge data)
-#       Can maybe add this as a column in NodeData, but we would also need to know it in EdgeData to see how nodes conect
-#       Possibly - add Year Range as a column, but also add it to each phrase?
-# TODO: Remove any nodes from NodeData that aren't included in the edges (makes it so node_thresh is no longer needed)
-
 import pandas as pd
 import os
 from glob import glob
@@ -34,6 +27,7 @@ BAD_PHRASES_MULTI = set(['an adaptive', 'based approach', 'de los', 'en la',
 BAD_PHRASES_SINGLE = set(['as', 'first', 'most', 'finally', 'e', 'do', 'ii',
                           'n', 'i', 'al', 'k', 'm', 'c', 'd', 'most'])
 TOP_K = 10
+
 
 def gephi_preprocess(infolder, outfolder, edge_thresh):
     """
@@ -148,15 +142,27 @@ def gephi_preprocess(infolder, outfolder, edge_thresh):
     labels.to_csv(outpath_node)
 
 
-def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
+def gephi_preprocess_yearly(infolder, outfolder):
     """
     Preprocessing segmentation results for Gephi visualizations, but accounting
-    for the year range for each phrase
+    for the year range for each phrase. Uses a static threshold
 
-    # NOTE: May need to adjust threshold as edges are only yearly
-    # TODO: Different threshold values for each year range? Less papers means less opportunities for connections
     >>> gephi_preprocess_yearly('../results/gephi', '../results/temp', 150)
     """
+    thresholds = {'1950-1959': 1.0,
+                '1960-1964': 1.0,
+                '1965-1969': 2.0,
+                '1970-1974': 2.0,
+                '1975-1979': 2.0,
+                '1980-1984': 2.0,
+                '1985-1989': 2.0,
+                '1990-1994': 4.0,
+                '1995-1999': 4.0,
+                '2000-2004': 10.0,
+                '2005-2009': 15.0,
+                '2010-2014': 15.0,
+                '2015-2017': 12.0}
+
     # Gephi segmentation csvs only contain high-quality, multi-word phrases (no duplicates per paper)
     subfolders = glob(infolder + '/*.csv')
     subfolders = list(filter(lambda x: 'segmented' in x, subfolders))
@@ -210,15 +216,25 @@ def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
     _ = seg.apply(lambda x: get_edges(x), axis=1)
     # Filters out edges that have less than edge_thresh overlaps
     edge_filtered = {}
-    edge_phrases = set() # Keeps track of phrases included in EdgeData
     for phrase, phrase_counts in edge_counts.items():
         for inner_phrase, count in phrase_counts.items():
+            # Extracts the year range for the phrase
+            year_range = inner_phrase.split()[-1][1:-1]
             # Skips any edges with less overlaps than the threshold
-            if count < edge_thresh: continue
+            if count < thresholds[year_range]: continue
             # Otherwise, add the edge to the dictionary
             if phrase not in edge_filtered:
                 edge_filtered[phrase] = {}
             edge_filtered[phrase][inner_phrase] = count
+    # Filters edges based on degree - only keep phrases with at least 3+ connections
+    edge_filtered_degree = {}
+    for key, val in edge_filtered.items():
+        if len(val) >= 3:
+            edge_filtered_degree = val
+    # Keeps track of the phrases in edge_filtered_degree for NodeData
+    edge_phrases = set()
+    for phrase, phrase_counts in edge_filtered_degree.items():
+        for inner_phrase, count in phrase_counts.items():
             edge_phrases.add(phrase)
             edge_phrases.add(inner_phrase)
     # Outputs to EdgeData.csv
@@ -226,10 +242,9 @@ def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
     with open(outpath_edge, 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Source', 'Target', 'Weight'])
-        for phrase, phrase_counts in edge_filtered.items():
+        for phrase, phrase_counts in edge_filtered_degree.items():
             for inner_phrase, count in phrase_counts.items():
                 writer.writerow([phrase, inner_phrase, count])
-
 
     # Creates and outputs NodeData.csv
     label_counts = {}
@@ -244,7 +259,6 @@ def gephi_preprocess_yearly(infolder, outfolder, edge_thresh):
             # Prevents phrase from being included if it is a bad phrase
             if phrase in BAD_PHRASES_MULTI:
                 continue
-
             temp_phrase = phrase +  ' (' + year_range + ')'
             # Skips the phrase if it is not included in EdgeData.csv
             if temp_phrase not in edge_phrases: continue
