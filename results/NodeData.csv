@@ -1,0 +1,1863 @@
+,ID,Label,Count
+0,machine learning,machine learning,27560
+1,wide range,wide range,27024
+2,neural network,neural network,26738
+3,numerical results,numerical results,25057
+4,computational complexity,computational complexity,23134
+5,real time,real time,22292
+6,neural networks,neural networks,20723
+7,data mining,data mining,20051
+8,power consumption,power consumption,19545
+9,wireless sensor networks,wireless sensor networks,19529
+10,real world,real world,19247
+11,optimization problem,optimization problem,18734
+12,performance evaluation,performance evaluation,17589
+13,genetic algorithm,genetic algorithm,17198
+14,ad hoc,ad hoc,16695
+15,performance analysis,performance analysis,15758
+16,large scale,large scale,15530
+17,image processing,image processing,15370
+18,decision making,decision making,15333
+19,computer vision,computer vision,14882
+20,existing methods,existing methods,14690
+21,case studies,case studies,14592
+22,numerical examples,numerical examples,14325
+23,cloud computing,cloud computing,13950
+24,real data,real data,13474
+25,feature extraction,feature extraction,13228
+26,signal processing,signal processing,13068
+27,objective function,objective function,13017
+28,sufficient conditions,sufficient conditions,12647
+29,training data,training data,12634
+30,optimal solution,optimal solution,12509
+31,web services,web services,12458
+32,theoretical analysis,theoretical analysis,12394
+33,resource allocation,resource allocation,12379
+34,natural language,natural language,12321
+35,computer science,computer science,12281
+36,software engineering,software engineering,12271
+37,support vector machine,support vector machine,12057
+38,time series,time series,11712
+39,social networks,social networks,11421
+40,numerical experiments,numerical experiments,11323
+41,information technology,information technology,11007
+42,proposed framework,proposed framework,10874
+43,feature selection,feature selection,10827
+44,software development,software development,10648
+45,pattern recognition,pattern recognition,10617
+46,existing approaches,existing approaches,10601
+47,base station,base station,10588
+48,special case,special case,10576
+49,source code,source code,10433
+50,social network,social network,10266
+51,user interface,user interface,9900
+52,linear programming,linear programming,9878
+53,quality of service qos,quality of service qos,9795
+54,numerical simulations,numerical simulations,9736
+55,wireless communication,wireless communication,9700
+56,low cost,low cost,9561
+57,low power,low power,9488
+58,embedded systems,embedded systems,9428
+59,genetic algorithms,genetic algorithms,9277
+60,dynamic programming,dynamic programming,9225
+61,mathematical model,mathematical model,9148
+62,distributed systems,distributed systems,9078
+63,remote sensing,remote sensing,9033
+64,preliminary results,preliminary results,9025
+65,computational cost,computational cost,8970
+66,cognitive radio,cognitive radio,8913
+67,theoretical results,theoretical results,8863
+68,social media,social media,8863
+69,monte carlo,monte carlo,8796
+70,cost function,cost function,8792
+71,information retrieval,information retrieval,8665
+72,previous studies,previous studies,8588
+73,wireless networks,wireless networks,8533
+74,fuzzy logic,fuzzy logic,8504
+75,future research,future research,8487
+76,image segmentation,image segmentation,8262
+77,maximum likelihood,maximum likelihood,8203
+78,speech recognition,speech recognition,8068
+79,artificial intelligence,artificial intelligence,7976
+80,big data,big data,7974
+81,significantly improve,significantly improve,7965
+82,semantic web,semantic web,7955
+83,access control,access control,7921
+84,special cases,special cases,7904
+85,mobile robot,mobile robot,7884
+86,prior knowledge,prior knowledge,7872
+87,input data,input data,7865
+88,web service,web service,7838
+89,decision support,decision support,7807
+90,computationally efficient,computationally efficient,7779
+91,service providers,service providers,7716
+92,extensive experiments,extensive experiments,7641
+93,load balancing,load balancing,7628
+94,optimal control,optimal control,7595
+95,finite element,finite element,7592
+96,statistical analysis,statistical analysis,7577
+97,previously proposed,previously proposed,7576
+98,principal component analysis,principal component analysis,7562
+99,face recognition,face recognition,7465
+100,proposed model,proposed model,7429
+101,promising results,promising results,7412
+102,performance improvement,performance improvement,7398
+103,programming language,programming language,7334
+104,quality of service,quality of service,7310
+105,operating system,operating system,7294
+106,low complexity,low complexity,7234
+107,support vector machines,support vector machines,7229
+108,open source,open source,7226
+109,network topology,network topology,7207
+110,network performance,network performance,7179
+111,response time,response time,7130
+112,parameter estimation,parameter estimation,7073
+113,recent advances,recent advances,7056
+114,empirical results,empirical results,7004
+115,reinforcement learning,reinforcement learning,7003
+116,sufficient condition,sufficient condition,6973
+117,fault tolerance,fault tolerance,6904
+118,packet loss,packet loss,6882
+119,gene expression,gene expression,6879
+120,practical applications,practical applications,6871
+121,learning algorithm,learning algorithm,6795
+122,degrees of freedom,degrees of freedom,6769
+123,control system,control system,6745
+124,existing algorithms,existing algorithms,6593
+125,analytical model,analytical model,6504
+126,extensive simulations,extensive simulations,6488
+127,network traffic,network traffic,6463
+128,wireless sensor network,wireless sensor network,6417
+129,training set,training set,6388
+130,wireless network,wireless network,6386
+131,data analysis,data analysis,6378
+132,supply chain,supply chain,6359
+133,image quality,image quality,6358
+134,an empirical study,an empirical study,6220
+135,main result,main result,6213
+136,next generation,next generation,6206
+137,search space,search space,6196
+138,routing protocol,routing protocol,6173
+139,wireless sensor networks wsns,wireless sensor networks wsns,6168
+140,search algorithm,search algorithm,6148
+141,clustering algorithm,clustering algorithm,6136
+142,analytical results,analytical results,6072
+143,virtual reality,virtual reality,6030
+144,error rate,error rate,6012
+145,feature space,feature space,5987
+146,mutual information,mutual information,5952
+147,significantly reduce,significantly reduce,5945
+148,image analysis,image analysis,5931
+149,cellular networks,cellular networks,5929
+150,performance degradation,performance degradation,5927
+151,based method,based method,5836
+152,user experience,user experience,5828
+153,approximation algorithm,approximation algorithm,5786
+154,efficient algorithms,efficient algorithms,5783
+155,knowledge management,knowledge management,5748
+156,distributed computing,distributed computing,5734
+157,image data,image data,5728
+158,user study,user study,5706
+159,object recognition,object recognition,5682
+160,classification accuracy,classification accuracy,5663
+161,optimization problems,optimization problems,5653
+162,problem solving,problem solving,5597
+163,particle swarm optimization,particle swarm optimization,5564
+164,second order,second order,5537
+165,simulated annealing,simulated annealing,5486
+166,end users,end users,5432
+167,mobile phones,mobile phones,5428
+168,computational results,computational results,5426
+169,decision tree,decision tree,5383
+170,evolutionary algorithms,evolutionary algorithms,5367
+171,shortest path,shortest path,5354
+172,data management,data management,5326
+173,an improved,an improved,5318
+174,computational efficiency,computational efficiency,5317
+175,supervised learning,supervised learning,5297
+176,petri nets,petri nets,5249
+177,local search,local search,5246
+178,operating systems,operating systems,5244
+179,evolutionary algorithm,evolutionary algorithm,5211
+180,development process,development process,5207
+181,orthogonal frequency division multiplexing,orthogonal frequency division multiplexing,5173
+182,user interfaces,user interfaces,5171
+183,lessons learned,lessons learned,5139
+184,physical layer,physical layer,5114
+185,web applications,web applications,5108
+186,software architecture,software architecture,5070
+187,resource management,resource management,5068
+188,significantly outperforms,significantly outperforms,5063
+189,control systems,control systems,5058
+190,higher order,higher order,5055
+191,closed form,closed form,4999
+192,sensitivity analysis,sensitivity analysis,4997
+193,spectral efficiency,spectral efficiency,4997
+194,search engine,search engine,4990
+195,ground truth,ground truth,4966
+196,scheduling algorithm,scheduling algorithm,4957
+197,random variables,random variables,4948
+198,performance measures,performance measures,4948
+199,domain knowledge,domain knowledge,4948
+200,differential equations,differential equations,4947
+201,higher level,higher level,4927
+202,synthetic data,synthetic data,4926
+203,control scheme,control scheme,4919
+204,convex optimization,convex optimization,4898
+205,outage probability,outage probability,4890
+206,performance metrics,performance metrics,4877
+207,least squares,least squares,4870
+208,virtual environment,virtual environment,4817
+209,query processing,query processing,4812
+210,image retrieval,image retrieval,4794
+211,intrusion detection,intrusion detection,4780
+212,kalman filter,kalman filter,4773
+213,power allocation,power allocation,4768
+214,successfully applied,successfully applied,4753
+215,state space,state space,4752
+216,power control,power control,4742
+217,optimization algorithm,optimization algorithm,4698
+218,data model,data model,4692
+219,decision makers,decision makers,4655
+220,shared memory,shared memory,4650
+221,augmented reality,augmented reality,4650
+222,genetic algorithm ga,genetic algorithm ga,4646
+223,boundary conditions,boundary conditions,4644
+224,moving objects,moving objects,4632
+225,numerical simulation,numerical simulation,4615
+226,motion estimation,motion estimation,4598
+227,global optimization,global optimization,4572
+228,computer graphics,computer graphics,4554
+229,transmit power,transmit power,4536
+230,computational model,computational model,4512
+231,similarity measure,similarity measure,4502
+232,application domains,application domains,4493
+233,united states,united states,4474
+234,fault detection,fault detection,4474
+235,relevant information,relevant information,4472
+236,dynamical systems,dynamical systems,4467
+237,social networking,social networking,4419
+238,dimensionality reduction,dimensionality reduction,4396
+239,business process,business process,4366
+240,base stations,base stations,4362
+241,iterative algorithm,iterative algorithm,4351
+242,frequency domain,frequency domain,4349
+243,significantly reduced,significantly reduced,4345
+244,first order,first order,4340
+245,significantly reduces,significantly reduces,4324
+246,control strategy,control strategy,4308
+247,based methods,based methods,4276
+248,parallel processing,parallel processing,4250
+249,hardware implementation,hardware implementation,4240
+250,convergence rate,convergence rate,4221
+251,health care,health care,4210
+252,energy efficient,energy efficient,4197
+253,received signal,received signal,4174
+254,empirical studies,empirical studies,4169
+255,linear regression,linear regression,4167
+256,feature vectors,feature vectors,4158
+257,message passing,message passing,4157
+258,linear combination,linear combination,4156
+259,virtual machines,virtual machines,4132
+260,time delay,time delay,4120
+261,learning algorithms,learning algorithms,4073
+262,combinatorial optimization,combinatorial optimization,4056
+263,linear systems,linear systems,4036
+264,network resources,network resources,4026
+265,artificial neural networks,artificial neural networks,4001
+266,transfer function,transfer function,3977
+267,computational resources,computational resources,3966
+268,web search,web search,3957
+269,numerical solution,numerical solution,3930
+270,smart grid,smart grid,3924
+271,petri net,petri net,3911
+272,ubiquitous computing,ubiquitous computing,3908
+273,parallel computing,parallel computing,3907
+274,image sequences,image sequences,3889
+275,power supply,power supply,3884
+276,low level,low level,3875
+277,virtual machine,virtual machine,3870
+278,feature vector,feature vector,3869
+279,decision trees,decision trees,3866
+280,network lifetime,network lifetime,3860
+281,network architecture,network architecture,3849
+282,time domain,time domain,3835
+283,computational experiments,computational experiments,3834
+284,multiple access,multiple access,3828
+285,parameter values,parameter values,3821
+286,optical flow,optical flow,3814
+287,adaptive control,adaptive control,3809
+288,simulated data,simulated data,3779
+289,supply voltage,supply voltage,3779
+290,probability distribution,probability distribution,3767
+291,dynamic range,dynamic range,3766
+292,probability density function,probability density function,3751
+293,anomaly detection,anomaly detection,3750
+294,user interaction,user interaction,3746
+295,resource utilization,resource utilization,3738
+296,nash equilibrium,nash equilibrium,3732
+297,clustering algorithms,clustering algorithms,3723
+298,probability distributions,probability distributions,3722
+299,genetic programming,genetic programming,3699
+300,recommender systems,recommender systems,3698
+301,spatial information,spatial information,3691
+302,path planning,path planning,3690
+303,online learning,online learning,3677
+304,routing algorithm,routing algorithm,3675
+305,image compression,image compression,3657
+306,approximation algorithms,approximation algorithms,3657
+307,control law,control law,3657
+308,transmission power,transmission power,3642
+309,data center,data center,3629
+310,nearest neighbor,nearest neighbor,3622
+311,static analysis,static analysis,3601
+312,network coding,network coding,3600
+313,object detection,object detection,3576
+314,three dimensional,three dimensional,3570
+315,mobile computing,mobile computing,3569
+316,image features,image features,3564
+317,wiley periodicals inc,wiley periodicals inc,3564
+318,formal verification,formal verification,3561
+319,web application,web application,3519
+320,knowledge base,knowledge base,3511
+321,integrated circuits,integrated circuits,3500
+322,web server,web server,3500
+323,image classification,image classification,3474
+324,error correction,error correction,3472
+325,network structure,network structure,3471
+326,logistic regression,logistic regression,3468
+327,data fusion,data fusion,3460
+328,scheduling algorithms,scheduling algorithms,3459
+329,magnetic resonance,magnetic resonance,3458
+330,greedy algorithm,greedy algorithm,3456
+331,stability analysis,stability analysis,3454
+332,bit error rate,bit error rate,3428
+333,randomly generated,randomly generated,3426
+334,search results,search results,3426
+335,original image,original image,3404
+336,artificial neural network,artificial neural network,3383
+337,international society for optical engineering downloading,international society for optical engineering downloading,3379
+338,higher education,higher education,3377
+339,false positives,false positives,3374
+340,fixed point,fixed point,3372
+341,cellular network,cellular network,3342
+342,benchmark datasets,benchmark datasets,3338
+343,image registration,image registration,3326
+344,power dissipation,power dissipation,3319
+345,training samples,training samples,3315
+346,false alarm,false alarm,3296
+347,particle swarm optimization pso,particle swarm optimization pso,3284
+348,fault tolerant,fault tolerant,3283
+349,motion planning,motion planning,3280
+350,grid computing,grid computing,3280
+351,detection algorithm,detection algorithm,3277
+352,network management,network management,3272
+353,hidden markov models,hidden markov models,3266
+354,raw data,raw data,3245
+355,data stream,data stream,3238
+356,congestion control,congestion control,3238
+357,hidden markov model,hidden markov model,3227
+358,input signal,input signal,3206
+359,network model,network model,3202
+360,large datasets,large datasets,3200
+361,location information,location information,3200
+362,large data,large data,3200
+363,video streaming,video streaming,3200
+364,integer programming,integer programming,3196
+365,monte carlo simulation,monte carlo simulation,3191
+366,breast cancer,breast cancer,3178
+367,deep learning,deep learning,3174
+368,unsupervised learning,unsupervised learning,3163
+369,control algorithm,control algorithm,3161
+370,information security,information security,3160
+371,coding scheme,coding scheme,3156
+372,parallel programming,parallel programming,3155
+373,query language,query language,3148
+374,process model,process model,3148
+375,application domain,application domain,3143
+376,human brain,human brain,3137
+377,controller design,controller design,3135
+378,collaborative filtering,collaborative filtering,3126
+379,parallel algorithm,parallel algorithm,3124
+380,fault diagnosis,fault diagnosis,3121
+381,power management,power management,3118
+382,partial differential equations,partial differential equations,3114
+383,random walk,random walk,3111
+384,highly dynamic,highly dynamic,3103
+385,detection performance,detection performance,3102
+386,operating conditions,operating conditions,3084
+387,cellular automata,cellular automata,3078
+388,admission control,admission control,3074
+389,use cases,use cases,3072
+390,data transmission,data transmission,3061
+391,fading channels,fading channels,3060
+392,search engines,search engines,3054
+393,local information,local information,3050
+394,input image,input image,3039
+395,statistical methods,statistical methods,3032
+396,basis functions,basis functions,3031
+397,network throughput,network throughput,3031
+398,active learning,active learning,3030
+399,collected data,collected data,3027
+400,relational database,relational database,3024
+401,context information,context information,3024
+402,fitness function,fitness function,3011
+403,special issue,special issue,3005
+404,edge detection,edge detection,3002
+405,real datasets,real datasets,3000
+406,classification performance,classification performance,2999
+407,graphical user interface,graphical user interface,2993
+408,real images,real images,2983
+409,formal methods,formal methods,2969
+410,numerical methods,numerical methods,2942
+411,benchmark problems,benchmark problems,2941
+412,text mining,text mining,2937
+413,best practices,best practices,2933
+414,in vivo,in vivo,2931
+415,existing schemes,existing schemes,2925
+416,facial expressions,facial expressions,2924
+417,molecular dynamics,molecular dynamics,2909
+418,domain experts,domain experts,2901
+419,the world wide web,the world wide web,2899
+420,machine translation,machine translation,2897
+421,performance gain,performance gain,2895
+422,error rates,error rates,2894
+423,power system,power system,2891
+424,use case,use case,2883
+425,sample size,sample size,2880
+426,transmission rate,transmission rate,2872
+427,prediction model,prediction model,2872
+428,similarity measures,similarity measures,2869
+429,control method,control method,2866
+430,nonlinear systems,nonlinear systems,2862
+431,network design,network design,2858
+432,finite difference,finite difference,2851
+433,model checking,model checking,2849
+434,feature set,feature set,2847
+435,software design,software design,2846
+436,spatial resolution,spatial resolution,2842
+437,control problem,control problem,2827
+438,knowledge discovery,knowledge discovery,2821
+439,discrete cosine transform,discrete cosine transform,2813
+440,bit error rate ber,bit error rate ber,2810
+441,mathematical models,mathematical models,2810
+442,method outperforms,method outperforms,2797
+443,complex networks,complex networks,2797
+444,control design,control design,2790
+445,measurement results,measurement results,2790
+446,content analysis,content analysis,2787
+447,facial expression,facial expression,2778
+448,error probability,error probability,2777
+449,digital library,digital library,2776
+450,social interaction,social interaction,2775
+451,total cost,total cost,2774
+452,two dimensional,two dimensional,2771
+453,traffic load,traffic load,2769
+454,an open source,an open source,2759
+455,association rules,association rules,2748
+456,numerical method,numerical method,2747
+457,computational models,computational models,2734
+458,limited resources,limited resources,2734
+459,convergence speed,convergence speed,2733
+460,face images,face images,2719
+461,near optimal,near optimal,2713
+462,logic programming,logic programming,2711
+463,digital libraries,digital libraries,2711
+464,parallel algorithms,parallel algorithms,2710
+465,noise reduction,noise reduction,2707
+466,exhaustive search,exhaustive search,2707
+467,compressed sensing,compressed sensing,2701
+468,fuzzy set,fuzzy set,2700
+469,multiple users,multiple users,2699
+470,random access,random access,2694
+471,membership functions,membership functions,2686
+472,prior information,prior information,2681
+473,space exploration,space exploration,2674
+474,knowledge representation,knowledge representation,2674
+475,object tracking,object tracking,2667
+476,cost functions,cost functions,2661
+477,end user,end user,2660
+478,network topologies,network topologies,2660
+479,radial basis function,radial basis function,2654
+480,network nodes,network nodes,2651
+481,channel estimation,channel estimation,2646
+482,information extraction,information extraction,2644
+483,formal specification,formal specification,2636
+484,user preferences,user preferences,2626
+485,resource sharing,resource sharing,2619
+486,high performance computing,high performance computing,2613
+487,temporal logic,temporal logic,2611
+488,wireless sensor network wsn,wireless sensor network wsn,2601
+489,tabu search,tabu search,2599
+490,discrete wavelet transform,discrete wavelet transform,2597
+491,hierarchical clustering,hierarchical clustering,2596
+492,image reconstruction,image reconstruction,2592
+493,routing algorithms,routing algorithms,2585
+494,classification results,classification results,2585
+495,optimization algorithms,optimization algorithms,2581
+496,virtual world,virtual world,2578
+497,in situ,in situ,2578
+498,channel state information csi,channel state information csi,2567
+499,amino acid,amino acid,2563
+500,natural images,natural images,2560
+501,impulse response,impulse response,2557
+502,power efficiency,power efficiency,2557
+503,network security,network security,2555
+504,speech signal,speech signal,2553
+505,requirements engineering,requirements engineering,2552
+506,reverse engineering,reverse engineering,2532
+507,access network,access network,2524
+508,file system,file system,2514
+509,distributed applications,distributed applications,2513
+510,specification language,specification language,2506
+511,secret key,secret key,2504
+512,spanning tree,spanning tree,2503
+513,game theory,game theory,2503
+514,wireless mesh networks,wireless mesh networks,2494
+515,open source software,open source software,2485
+516,biological systems,biological systems,2484
+517,decision maker,decision maker,2483
+518,lyapunov function,lyapunov function,2480
+519,utility function,utility function,2479
+520,image sequence,image sequence,2477
+521,approximate solution,approximate solution,2476
+522,missing data,missing data,2476
+523,collision avoidance,collision avoidance,2467
+524,iterative method,iterative method,2466
+525,code generation,code generation,2462
+526,em algorithm,em algorithm,2460
+527,project management,project management,2451
+528,reference model,reference model,2450
+529,cluster analysis,cluster analysis,2448
+530,mobile phone,mobile phone,2447
+531,error detection,error detection,2446
+532,side information,side information,2446
+533,important features,important features,2443
+534,motion capture,motion capture,2441
+535,feature points,feature points,2441
+536,detection method,detection method,2436
+537,exact solution,exact solution,2434
+538,expert systems,expert systems,2429
+539,relational databases,relational databases,2428
+540,closed loop,closed loop,2425
+541,personal information,personal information,2414
+542,waiting time,waiting time,2410
+543,gradient descent,gradient descent,2407
+544,differential evolution,differential evolution,2406
+545,convex hull,convex hull,2405
+546,distributed memory,distributed memory,2403
+547,network connectivity,network connectivity,2402
+548,error analysis,error analysis,2400
+549,network capacity,network capacity,2400
+550,operational semantics,operational semantics,2398
+551,large data sets,large data sets,2395
+552,power systems,power systems,2394
+553,control strategies,control strategies,2392
+554,routing protocols,routing protocols,2390
+555,naive bayes,naive bayes,2384
+556,moving object,moving object,2375
+557,response times,response times,2374
+558,linked data,linked data,2363
+559,natural language processing,natural language processing,2360
+560,data integration,data integration,2357
+561,network conditions,network conditions,2354
+562,particle filter,particle filter,2352
+563,maximum degree,maximum degree,2348
+564,pose estimation,pose estimation,2348
+565,planar graphs,planar graphs,2341
+566,features extracted,features extracted,2340
+567,change detection,change detection,2335
+568,motion control,motion control,2334
+569,random variable,random variable,2327
+570,application layer,application layer,2324
+571,sensitive information,sensitive information,2321
+572,risk management,risk management,2317
+573,cognitive radio cr,cognitive radio cr,2311
+574,smart phones,smart phones,2308
+575,pattern classification,pattern classification,2304
+576,resource constraints,resource constraints,2299
+577,recognition rate,recognition rate,2290
+578,network analysis,network analysis,2284
+579,random forest,random forest,2276
+580,empirical study,empirical study,2275
+581,tool support,tool support,2274
+582,supply chains,supply chains,2274
+583,web page,web page,2272
+584,face detection,face detection,2268
+585,circuit design,circuit design,2254
+586,computational burden,computational burden,2249
+587,third party,third party,2245
+588,low computational complexity,low computational complexity,2245
+589,optimal solutions,optimal solutions,2239
+590,product development,product development,2232
+591,functional magnetic resonance imaging,functional magnetic resonance imaging,2232
+592,monte carlo simulations,monte carlo simulations,2232
+593,phase noise,phase noise,2230
+594,quality assessment,quality assessment,2229
+595,online social networks,online social networks,2227
+596,power grid,power grid,2220
+597,convergence analysis,convergence analysis,2211
+598,sentiment analysis,sentiment analysis,2209
+599,source node,source node,2207
+600,incomplete information,incomplete information,2196
+601,independent component analysis ica,independent component analysis ica,2194
+602,compressive sensing,compressive sensing,2194
+603,search algorithms,search algorithms,2191
+604,relay nodes,relay nodes,2189
+605,recommender system,recommender system,2185
+606,video quality,video quality,2184
+607,fully distributed,fully distributed,2182
+608,small size,small size,2180
+609,developing countries,developing countries,2175
+610,question answering,question answering,2175
+611,linear program,linear program,2173
+612,wireless communications,wireless communications,2172
+613,probability density,probability density,2171
+614,process models,process models,2169
+615,segmentation algorithm,segmentation algorithm,2169
+616,path loss,path loss,2167
+617,classification algorithms,classification algorithms,2167
+618,traffic flow,traffic flow,2164
+619,point cloud,point cloud,2156
+620,labeled data,labeled data,2155
+621,event detection,event detection,2150
+622,compression ratio,compression ratio,2145
+623,web pages,web pages,2144
+624,level set,level set,2139
+625,fuzzy clustering,fuzzy clustering,2121
+626,urban areas,urban areas,2121
+627,scheduling problem,scheduling problem,2110
+628,decision problem,decision problem,2109
+629,distance measure,distance measure,2108
+630,tracking algorithm,tracking algorithm,2098
+631,mixture model,mixture model,2093
+632,gaussian process,gaussian process,2092
+633,ordinary differential equations,ordinary differential equations,2090
+634,maximum likelihood ml,maximum likelihood ml,2090
+635,service provider,service provider,2087
+636,belief propagation,belief propagation,2084
+637,unknown parameters,unknown parameters,2084
+638,finite field,finite field,2079
+639,recognition accuracy,recognition accuracy,2070
+640,decision support systems,decision support systems,2064
+641,false positive,false positive,2064
+642,ant colony,ant colony,2059
+643,storage systems,storage systems,2057
+644,differential equation,differential equation,2053
+645,detection rate,detection rate,2051
+646,data warehouse,data warehouse,2047
+647,social interactions,social interactions,2046
+648,web browser,web browser,2045
+649,service discovery,service discovery,2045
+650,asymptotic stability,asymptotic stability,2044
+651,shortest paths,shortest paths,2040
+652,speech signals,speech signals,2027
+653,undirected graph,undirected graph,2025
+654,integrated circuit,integrated circuit,2023
+655,hardware architecture,hardware architecture,2021
+656,rate control,rate control,2020
+657,coding efficiency,coding efficiency,2020
+658,activity recognition,activity recognition,2019
+659,hidden markov model hmm,hidden markov model hmm,2018
+660,primary users,primary users,2018
+661,embedded system,embedded system,2015
+662,artificial neural network ann,artificial neural network ann,2011
+663,fault coverage,fault coverage,2005
+664,singular value decomposition,singular value decomposition,2000
+665,constant factor,constant factor,2000
+666,timing constraints,timing constraints,1999
+667,independent component analysis,independent component analysis,1995
+668,renewable energy,renewable energy,1994
+669,quadratic programming,quadratic programming,1990
+670,image database,image database,1989
+671,benchmark circuits,benchmark circuits,1986
+672,overlay network,overlay network,1986
+673,classification problems,classification problems,1976
+674,input variables,input variables,1975
+675,connected graph,connected graph,1973
+676,digital signal processing,digital signal processing,1972
+677,time series data,time series data,1971
+678,processing elements,processing elements,1967
+679,relevance feedback,relevance feedback,1965
+680,text classification,text classification,1964
+681,obstacle avoidance,obstacle avoidance,1958
+682,blocking probability,blocking probability,1957
+683,recurrent neural networks,recurrent neural networks,1949
+684,total variation,total variation,1945
+685,sensor network,sensor network,1945
+686,classification algorithm,classification algorithm,1942
+687,false alarms,false alarms,1941
+688,optimization model,optimization model,1940
+689,structured data,structured data,1939
+690,approximation ratio,approximation ratio,1937
+691,intelligent systems,intelligent systems,1932
+692,automatic speech recognition,automatic speech recognition,1927
+693,key management,key management,1927
+694,field programmable gate array,field programmable gate array,1918
+695,wavelet transform,wavelet transform,1917
+696,synthetic aperture radar,synthetic aperture radar,1916
+697,filter bank,filter bank,1916
+698,feasible solution,feasible solution,1913
+699,motion compensation,motion compensation,1911
+700,generative model,generative model,1911
+701,image denoising,image denoising,1906
+702,output voltage,output voltage,1904
+703,total power,total power,1899
+704,virtual worlds,virtual worlds,1898
+705,sensitive data,sensitive data,1898
+706,network layer,network layer,1894
+707,task scheduling,task scheduling,1890
+708,input space,input space,1890
+709,unlabeled data,unlabeled data,1888
+710,business model,business model,1886
+711,network congestion,network congestion,1880
+712,packet losses,packet losses,1879
+713,normal form,normal form,1876
+714,synthetic aperture radar sar,synthetic aperture radar sar,1868
+715,training examples,training examples,1867
+716,connected components,connected components,1866
+717,model predictive control,model predictive control,1865
+718,support vector machines svms,support vector machines svms,1864
+719,interface design,interface design,1863
+720,power saving,power saving,1860
+721,ldpc codes,ldpc codes,1860
+722,content delivery,content delivery,1856
+723,image coding,image coding,1855
+724,medical imaging,medical imaging,1855
+725,transfer functions,transfer functions,1849
+726,competitive advantage,competitive advantage,1848
+727,process variations,process variations,1843
+728,gesture recognition,gesture recognition,1842
+729,systems biology,systems biology,1842
+730,error bounds,error bounds,1839
+731,global optimum,global optimum,1839
+732,depth information,depth information,1838
+733,supply chain management,supply chain management,1831
+734,rough set,rough set,1827
+735,computed tomography,computed tomography,1824
+736,performance measure,performance measure,1824
+737,decoding algorithm,decoding algorithm,1821
+738,information theory,information theory,1819
+739,biological processes,biological processes,1818
+740,image restoration,image restoration,1817
+741,output feedback,output feedback,1817
+742,video games,video games,1816
+743,partial differential equation,partial differential equation,1814
+744,recognition performance,recognition performance,1813
+745,complex network,complex network,1811
+746,input signals,input signals,1808
+747,bandwidth allocation,bandwidth allocation,1803
+748,face image,face image,1803
+749,elliptic curve,elliptic curve,1802
+750,service oriented,service oriented,1802
+751,data aggregation,data aggregation,1788
+752,land cover,land cover,1779
+753,motion vectors,motion vectors,1763
+754,color space,color space,1760
+755,rough sets,rough sets,1760
+756,control algorithms,control algorithms,1758
+757,texture features,texture features,1756
+758,point clouds,point clouds,1756
+759,time delays,time delays,1752
+760,rough set theory,rough set theory,1751
+761,constrained optimization,constrained optimization,1750
+762,markov random field,markov random field,1749
+763,packet delay,packet delay,1743
+764,mobile ad hoc networks manets,mobile ad hoc networks manets,1742
+765,global information,global information,1740
+766,network operators,network operators,1736
+767,trajectory tracking,trajectory tracking,1734
+768,segmentation results,segmentation results,1733
+769,color image,color image,1732
+770,time slot,time slot,1732
+771,access point,access point,1731
+772,classification problem,classification problem,1729
+773,access points,access points,1728
+774,embedded software,embedded software,1724
+775,white matter,white matter,1724
+776,line segments,line segments,1722
+777,mobility management,mobility management,1718
+778,fading channel,fading channel,1717
+779,prediction accuracy,prediction accuracy,1715
+780,utility functions,utility functions,1710
+781,gaussian mixture model,gaussian mixture model,1707
+782,decision rules,decision rules,1706
+783,character recognition,character recognition,1704
+784,chip area,chip area,1704
+785,feature sets,feature sets,1702
+786,loss function,loss function,1699
+787,wireless sensor networks wsn,wireless sensor networks wsn,1699
+788,large databases,large databases,1698
+789,multiple antennas,multiple antennas,1698
+790,loosely coupled,loosely coupled,1694
+791,ber performance,ber performance,1694
+792,interconnection networks,interconnection networks,1692
+793,visual tracking,visual tracking,1692
+794,image representation,image representation,1692
+795,high school,high school,1691
+796,low energy,low energy,1691
+797,electric field,electric field,1688
+798,hough transform,hough transform,1687
+799,fuzzy sets,fuzzy sets,1686
+800,virtual environments,virtual environments,1686
+801,biological data,biological data,1686
+802,nash equilibria,nash equilibria,1685
+803,soft computing,soft computing,1684
+804,optical networks,optical networks,1679
+805,decision process,decision process,1675
+806,social sciences,social sciences,1674
+807,forward error correction,forward error correction,1674
+808,benchmark functions,benchmark functions,1672
+809,packet delivery,packet delivery,1671
+810,recurrent neural network,recurrent neural network,1666
+811,decision problems,decision problems,1664
+812,lighting conditions,lighting conditions,1663
+813,analytical expressions,analytical expressions,1661
+814,linear prediction,linear prediction,1658
+815,computational intelligence,computational intelligence,1658
+816,primary user,primary user,1655
+817,power reduction,power reduction,1652
+818,efficient parallel,efficient parallel,1651
+819,singular value decomposition svd,singular value decomposition svd,1649
+820,multiobjective optimization,multiobjective optimization,1649
+821,memory management,memory management,1648
+822,network services,network services,1645
+823,control performance,control performance,1645
+824,hash functions,hash functions,1644
+825,cellular systems,cellular systems,1644
+826,diversity gain,diversity gain,1644
+827,rayleigh fading,rayleigh fading,1641
+828,smart home,smart home,1638
+829,computer games,computer games,1632
+830,target tracking,target tracking,1632
+831,linear discriminant analysis,linear discriminant analysis,1631
+832,image acquisition,image acquisition,1627
+833,model checker,model checker,1627
+834,depth map,depth map,1624
+835,nonlinear programming,nonlinear programming,1623
+836,finite element method,finite element method,1623
+837,numerical solutions,numerical solutions,1619
+838,save energy,save energy,1618
+839,analytical models,analytical models,1612
+840,image content,image content,1612
+841,threshold voltage,threshold voltage,1611
+842,magnetic resonance imaging mri,magnetic resonance imaging mri,1610
+843,vector quantization,vector quantization,1602
+844,file systems,file systems,1600
+845,generalization performance,generalization performance,1600
+846,query results,query results,1597
+847,product design,product design,1595
+848,hash function,hash function,1592
+849,online algorithm,online algorithm,1590
+850,risk assessment,risk assessment,1588
+851,swarm intelligence,swarm intelligence,1587
+852,user profiles,user profiles,1584
+853,destination node,destination node,1583
+854,linear matrix inequalities,linear matrix inequalities,1582
+855,benchmark data sets,benchmark data sets,1582
+856,machine vision,machine vision,1576
+857,video coding,video coding,1576
+858,confidence intervals,confidence intervals,1575
+859,principal components,principal components,1575
+860,output power,output power,1575
+861,business processes,business processes,1575
+862,access networks,access networks,1573
+863,multilayer perceptron,multilayer perceptron,1569
+864,web sites,web sites,1560
+865,software quality,software quality,1559
+866,social network analysis,social network analysis,1559
+867,proposed protocol,proposed protocol,1555
+868,blind source separation,blind source separation,1551
+869,mean square,mean square,1550
+870,traveling salesman problem,traveling salesman problem,1550
+871,classification model,classification model,1550
+872,objective functions,objective functions,1548
+873,relevant features,relevant features,1547
+874,personal data,personal data,1547
+875,finite state machine,finite state machine,1545
+876,virtual reality vr,virtual reality vr,1541
+877,coding schemes,coding schemes,1537
+878,local optima,local optima,1534
+879,fixed points,fixed points,1532
+880,speech enhancement,speech enhancement,1531
+881,random walks,random walks,1531
+882,automatic segmentation,automatic segmentation,1530
+883,content distribution,content distribution,1525
+884,standard model,standard model,1524
+885,motion vector,motion vector,1519
+886,error estimates,error estimates,1517
+887,web site,web site,1514
+888,environmental monitoring,environmental monitoring,1513
+889,fuzzy inference,fuzzy inference,1513
+890,extended kalman filter,extended kalman filter,1513
+891,metric space,metric space,1509
+892,augmented reality ar,augmented reality ar,1507
+893,leakage power,leakage power,1503
+894,transmit antennas,transmit antennas,1502
+895,image enhancement,image enhancement,1500
+896,source coding,source coding,1493
+897,kalman filtering,kalman filtering,1490
+898,medium access control,medium access control,1489
+899,travel time,travel time,1488
+900,electric power,electric power,1486
+901,rayleigh fading channels,rayleigh fading channels,1486
+902,internet of things,internet of things,1483
+903,chromatic number,chromatic number,1482
+904,code division multiple access,code division multiple access,1481
+905,finite automata,finite automata,1480
+906,random graphs,random graphs,1479
+907,curse of dimensionality,curse of dimensionality,1479
+908,matrix factorization,matrix factorization,1478
+909,optimal power allocation,optimal power allocation,1478
+910,retrieval performance,retrieval performance,1474
+911,service oriented architecture,service oriented architecture,1474
+912,filter banks,filter banks,1472
+913,extracted features,extracted features,1471
+914,competitive ratio,competitive ratio,1470
+915,distance learning,distance learning,1467
+916,sliding mode control,sliding mode control,1465
+917,planar graph,planar graph,1464
+918,load balance,load balance,1462
+919,transmission range,transmission range,1462
+920,decision variables,decision variables,1460
+921,membership function,membership function,1460
+922,temporal resolution,temporal resolution,1459
+923,query optimization,query optimization,1459
+924,traffic flows,traffic flows,1457
+925,business intelligence,business intelligence,1456
+926,small scale,small scale,1453
+927,modal logic,modal logic,1452
+928,free energy,free energy,1448
+929,kernel function,kernel function,1448
+930,achievable rate,achievable rate,1448
+931,query expansion,query expansion,1445
+932,information retrieval ir,information retrieval ir,1443
+933,association rule mining,association rule mining,1441
+934,reduced complexity,reduced complexity,1439
+935,random graph,random graph,1438
+936,radio frequency identification,radio frequency identification,1438
+937,facial features,facial features,1436
+938,garbage collection,garbage collection,1435
+939,programming languages,programming languages,1431
+940,domain decomposition,domain decomposition,1430
+941,automatic speech recognition asr,automatic speech recognition asr,1429
+942,background subtraction,background subtraction,1426
+943,regular expressions,regular expressions,1423
+944,generalization ability,generalization ability,1423
+945,intermediate nodes,intermediate nodes,1419
+946,color images,color images,1418
+947,amino acids,amino acids,1417
+948,expert system,expert system,1416
+949,complete graph,complete graph,1415
+950,heterogeneous networks,heterogeneous networks,1414
+951,mobile ad hoc network,mobile ad hoc network,1413
+952,point set,point set,1410
+953,force feedback,force feedback,1409
+954,fault injection,fault injection,1407
+955,distance metric,distance metric,1407
+956,output signal,output signal,1406
+957,duty cycle,duty cycle,1405
+958,training algorithm,training algorithm,1404
+959,digital image,digital image,1403
+960,in vitro,in vitro,1401
+961,finite elements,finite elements,1398
+962,functional units,functional units,1391
+963,relay node,relay node,1389
+964,fuzzy control,fuzzy control,1388
+965,relay selection,relay selection,1387
+966,importance sampling,importance sampling,1386
+967,solved efficiently,solved efficiently,1384
+968,linear discriminant analysis lda,linear discriminant analysis lda,1383
+969,missing values,missing values,1381
+970,embedded devices,embedded devices,1381
+971,spatial multiplexing,spatial multiplexing,1380
+972,joint optimization,joint optimization,1379
+973,embedded applications,embedded applications,1376
+974,control problems,control problems,1376
+975,data centers,data centers,1376
+976,speech synthesis,speech synthesis,1374
+977,detection algorithms,detection algorithms,1373
+978,streaming data,streaming data,1371
+979,node mobility,node mobility,1370
+980,bit error rate ber performance,bit error rate ber performance,1369
+981,smart grids,smart grids,1366
+982,detection methods,detection methods,1365
+983,functional connectivity,functional connectivity,1365
+984,classification methods,classification methods,1361
+985,control laws,control laws,1360
+986,dynamic analysis,dynamic analysis,1360
+987,product line,product line,1357
+988,pid controller,pid controller,1354
+989,power efficient,power efficient,1353
+990,based routing,based routing,1350
+991,user profile,user profile,1349
+992,data compression,data compression,1348
+993,quality of experience qoe,quality of experience qoe,1347
+994,binding sites,binding sites,1345
+995,software testing,software testing,1340
+996,diversity order,diversity order,1340
+997,exponential stability,exponential stability,1339
+998,interconnection network,interconnection network,1337
+999,performance index,performance index,1337
+1000,robust stability,robust stability,1335
+1001,eye tracking,eye tracking,1335
+1002,support vector regression,support vector regression,1335
+1003,description logic,description logic,1332
+1004,configuration space,configuration space,1331
+1005,equilibrium point,equilibrium point,1324
+1006,hidden markov models hmms,hidden markov models hmms,1323
+1007,antenna array,antenna array,1321
+1008,phase transition,phase transition,1320
+1009,domain ontology,domain ontology,1320
+1010,adaptive modulation,adaptive modulation,1317
+1011,flash memory,flash memory,1314
+1012,neighboring nodes,neighboring nodes,1314
+1013,reduce energy consumption,reduce energy consumption,1310
+1014,error bound,error bound,1309
+1015,decoding complexity,decoding complexity,1304
+1016,image sensor,image sensor,1301
+1017,electric vehicles,electric vehicles,1298
+1018,query languages,query languages,1297
+1019,information supplementary data,information supplementary data,1297
+1020,eye movements,eye movements,1296
+1021,parallel programs,parallel programs,1294
+1022,distance function,distance function,1294
+1023,point sets,point sets,1293
+1024,sar data,sar data,1293
+1025,users preferences,users preferences,1292
+1026,massive mimo,massive mimo,1290
+1027,asymptotically stable,asymptotically stable,1288
+1028,genetic programming gp,genetic programming gp,1288
+1029,energy storage,energy storage,1288
+1030,transmission line,transmission line,1287
+1031,binary classification,binary classification,1287
+1032,image databases,image databases,1286
+1033,packet delivery ratio,packet delivery ratio,1286
+1034,boundary condition,boundary condition,1285
+1035,ip address,ip address,1284
+1036,smart phone,smart phone,1284
+1037,spanning trees,spanning trees,1283
+1038,nearest neighbors,nearest neighbors,1283
+1039,cognitive science,cognitive science,1282
+1040,minimum energy,minimum energy,1282
+1041,process variation,process variation,1279
+1042,based clustering,based clustering,1279
+1043,likelihood function,likelihood function,1278
+1044,computer scientists,computer scientists,1277
+1045,parameter estimates,parameter estimates,1276
+1046,resource constrained,resource constrained,1275
+1047,document images,document images,1274
+1048,minimum spanning tree,minimum spanning tree,1272
+1049,convolutional codes,convolutional codes,1271
+1050,energy harvesting,energy harvesting,1271
+1051,reference frame,reference frame,1270
+1052,distance measures,distance measures,1269
+1053,text categorization,text categorization,1267
+1054,associative memory,associative memory,1265
+1055,texture analysis,texture analysis,1262
+1056,process algebra,process algebra,1259
+1057,noisy environments,noisy environments,1256
+1058,web browsers,web browsers,1249
+1059,decision procedure,decision procedure,1247
+1060,convergence rates,convergence rates,1243
+1061,fuzzy model,fuzzy model,1243
+1062,formal concept analysis,formal concept analysis,1240
+1063,let g,let g,1237
+1064,service composition,service composition,1235
+1065,sum rate,sum rate,1235
+1066,gaussian mixture model gmm,gaussian mixture model gmm,1234
+1067,deep neural networks,deep neural networks,1234
+1068,low voltage,low voltage,1233
+1069,smart card,smart card,1231
+1070,random oracle model,random oracle model,1231
+1071,benchmark instances,benchmark instances,1230
+1072,link quality,link quality,1229
+1073,transfer learning,transfer learning,1228
+1074,power savings,power savings,1223
+1075,gene ontology,gene ontology,1223
+1076,metric spaces,metric spaces,1222
+1077,operating frequency,operating frequency,1221
+1078,secondary users sus,secondary users sus,1220
+1079,document retrieval,document retrieval,1219
+1080,control schemes,control schemes,1218
+1081,protein structure,protein structure,1217
+1082,abstract interpretation,abstract interpretation,1212
+1083,receive antennas,receive antennas,1212
+1084,mobile ad hoc networks,mobile ad hoc networks,1211
+1085,source separation,source separation,1210
+1086,false positive rate,false positive rate,1210
+1087,relevant documents,relevant documents,1209
+1088,training sets,training sets,1209
+1089,neural network nn,neural network nn,1205
+1090,markov decision processes,markov decision processes,1204
+1091,support vector,support vector,1203
+1092,markov decision process,markov decision process,1202
+1093,perceived usefulness,perceived usefulness,1200
+1094,speech processing,speech processing,1195
+1095,minimum degree,minimum degree,1195
+1096,target language,target language,1193
+1097,model predictive control mpc,model predictive control mpc,1193
+1098,time synchronization,time synchronization,1191
+1099,random forests,random forests,1186
+1100,finite state machines,finite state machines,1183
+1101,voronoi diagram,voronoi diagram,1180
+1102,linear matrix inequality lmi,linear matrix inequality lmi,1179
+1103,speech quality,speech quality,1178
+1104,image fusion,image fusion,1178
+1105,time slots,time slots,1178
+1106,social influence,social influence,1177
+1107,volume rendering,volume rendering,1176
+1108,moving target,moving target,1174
+1109,dominating set,dominating set,1173
+1110,video game,video game,1169
+1111,link layer,link layer,1168
+1112,fault model,fault model,1168
+1113,description logics,description logics,1164
+1114,selected features,selected features,1163
+1115,overlay networks,overlay networks,1162
+1116,binding site,binding site,1161
+1117,social science,social science,1159
+1118,process modeling,process modeling,1156
+1119,software industry,software industry,1155
+1120,noise ratio,noise ratio,1154
+1121,artificial neural networks anns,artificial neural networks anns,1154
+1122,global search,global search,1152
+1123,dynamic power,dynamic power,1149
+1124,transmission rates,transmission rates,1148
+1125,lossless compression,lossless compression,1146
+1126,document image,document image,1146
+1127,cloud service,cloud service,1146
+1128,small cells,small cells,1142
+1129,illumination conditions,illumination conditions,1140
+1130,ip addresses,ip addresses,1137
+1131,mathematical morphology,mathematical morphology,1134
+1132,optimality conditions,optimality conditions,1133
+1133,mixture models,mixture models,1132
+1134,clinical trials,clinical trials,1128
+1135,packet forwarding,packet forwarding,1127
+1136,limited feedback,limited feedback,1125
+1137,smart cards,smart cards,1123
+1138,finite volume,finite volume,1123
+1139,turbo codes,turbo codes,1121
+1140,heterogeneous network,heterogeneous network,1121
+1141,remotely sensed,remotely sensed,1120
+1142,topic model,topic model,1117
+1143,depth maps,depth maps,1116
+1144,base stations bss,base stations bss,1116
+1145,regular languages,regular languages,1114
+1146,power amplifier,power amplifier,1110
+1147,existing protocols,existing protocols,1110
+1148,data security,data security,1107
+1149,finite fields,finite fields,1106
+1150,mobility model,mobility model,1105
+1151,query execution,query execution,1101
+1152,pso algorithm,pso algorithm,1101
+1153,statistical machine translation,statistical machine translation,1098
+1154,rule base,rule base,1092
+1155,image feature,image feature,1092
+1156,block cipher,block cipher,1088
+1157,radiative transfer,radiative transfer,1084
+1158,software development process,software development process,1083
+1159,cumulative distribution function,cumulative distribution function,1082
+1160,electrical engineering,electrical engineering,1075
+1161,training process,training process,1073
+1162,autonomous robot,autonomous robot,1072
+1163,best effort,best effort,1070
+1164,provably secure,provably secure,1070
+1165,complexity reduction,complexity reduction,1065
+1166,connected component,connected component,1064
+1167,energy conservation,energy conservation,1063
+1168,decision rule,decision rule,1061
+1169,autonomous navigation,autonomous navigation,1059
+1170,incomplete data,incomplete data,1058
+1171,fuzzy rules,fuzzy rules,1058
+1172,key distribution,key distribution,1056
+1173,sensed data,sensed data,1055
+1174,vehicular ad hoc networks vanets,vehicular ad hoc networks vanets,1053
+1175,business process management,business process management,1052
+1176,hand gestures,hand gestures,1042
+1177,mutual authentication,mutual authentication,1042
+1178,artificial intelligence ai,artificial intelligence ai,1041
+1179,boundary value problems,boundary value problems,1039
+1180,urban area,urban area,1038
+1181,input devices,input devices,1037
+1182,activation functions,activation functions,1037
+1183,localization algorithm,localization algorithm,1037
+1184,signature scheme,signature scheme,1035
+1185,electronic health record,electronic health record,1033
+1186,doa estimation,doa estimation,1032
+1187,cluster head,cluster head,1032
+1188,vehicular ad hoc networks,vehicular ad hoc networks,1031
+1189,optical network,optical network,1030
+1190,hot spots,hot spots,1026
+1191,project managers,project managers,1026
+1192,convolutional neural networks,convolutional neural networks,1026
+1193,named entities,named entities,1025
+1194,expression data,expression data,1024
+1195,malicious nodes,malicious nodes,1024
+1196,data envelopment analysis dea,data envelopment analysis dea,1024
+1197,serious games,serious games,1024
+1198,lyapunov functions,lyapunov functions,1022
+1199,pattern mining,pattern mining,1021
+1200,total energy consumption,total energy consumption,1017
+1201,spatial reuse,spatial reuse,1016
+1202,distribution network,distribution network,1014
+1203,limited energy,limited energy,1013
+1204,connected graphs,connected graphs,1011
+1205,secret sharing,secret sharing,1011
+1206,interference alignment,interference alignment,1009
+1207,detection probability,detection probability,1008
+1208,frequent patterns,frequent patterns,1007
+1209,markov random fields,markov random fields,1006
+1210,soil moisture,soil moisture,1005
+1211,quality attributes,quality attributes,1001
+1212,embedded processors,embedded processors,1000
+1213,residual energy,residual energy,999
+1214,conditional random fields,conditional random fields,998
+1215,semantic gap,semantic gap,998
+1216,linear matrix inequality,linear matrix inequality,997
+1217,internet of things iot,internet of things iot,997
+1218,discontinuous galerkin,discontinuous galerkin,996
+1219,maximum likelihood estimation,maximum likelihood estimation,989
+1220,gene regulatory networks,gene regulatory networks,989
+1221,smart city,smart city,987
+1222,premature convergence,premature convergence,987
+1223,demand response,demand response,987
+1224,orthogonal frequency division multiple access ofdma,orthogonal frequency division multiple access ofdma,987
+1225,compression algorithm,compression algorithm,981
+1226,social relationships,social relationships,980
+1227,cloud storage,cloud storage,979
+1228,making decisions,making decisions,978
+1229,user preference,user preference,975
+1230,scheduling problems,scheduling problems,974
+1231,encrypted data,encrypted data,973
+1232,sar images,sar images,971
+1233,vehicle routing problem,vehicle routing problem,969
+1234,transmit diversity,transmit diversity,969
+1235,primary user pu,primary user pu,967
+1236,cellular automaton,cellular automaton,966
+1237,facility location,facility location,966
+1238,activation function,activation function,962
+1239,principal component,principal component,960
+1240,compression performance,compression performance,960
+1241,image search,image search,959
+1242,complete information,complete information,956
+1243,source nodes,source nodes,956
+1244,high priority,high priority,955
+1245,transmission lines,transmission lines,954
+1246,electronic health records,electronic health records,954
+1247,client side,client side,953
+1248,user interface design,user interface design,952
+1249,word error rate,word error rate,950
+1250,noisy speech,noisy speech,950
+1251,software product lines,software product lines,949
+1252,word recognition,word recognition,947
+1253,number of transmit antennas,number of transmit antennas,947
+1254,reduce power consumption,reduce power consumption,947
+1255,image annotation,image annotation,946
+1256,input device,input device,943
+1257,smart cities,smart cities,943
+1258,dynamic load balancing,dynamic load balancing,942
+1259,wireless mesh networks wmns,wireless mesh networks wmns,941
+1260,topic modeling,topic modeling,939
+1261,word sense disambiguation,word sense disambiguation,933
+1262,spectral information,spectral information,933
+1263,regular graphs,regular graphs,932
+1264,waiting times,waiting times,932
+1265,load distribution,load distribution,932
+1266,wind turbine,wind turbine,932
+1267,interference channel,interference channel,930
+1268,generative models,generative models,929
+1269,delivery ratio,delivery ratio,929
+1270,distributed shared memory,distributed shared memory,928
+1271,control overhead,control overhead,928
+1272,route discovery,route discovery,925
+1273,dynamic time warping,dynamic time warping,923
+1274,network service,network service,923
+1275,primary users pus,primary users pus,923
+1276,network structures,network structures,922
+1277,call admission control,call admission control,920
+1278,compressive sensing cs,compressive sensing cs,920
+1279,information overload,information overload,919
+1280,high efficiency video coding,high efficiency video coding,919
+1281,code size,code size,916
+1282,input features,input features,916
+1283,distance education,distance education,915
+1284,developed countries,developed countries,913
+1285,convolutional neural network,convolutional neural network,911
+1286,transmission control protocol,transmission control protocol,910
+1287,total power consumption,total power consumption,910
+1288,saliency map,saliency map,909
+1289,action recognition,action recognition,909
+1290,high power,high power,907
+1291,force field,force field,906
+1292,volume data,volume data,906
+1293,supervised machine learning,supervised machine learning,905
+1294,vocal tract,vocal tract,904
+1295,sliding mode,sliding mode,903
+1296,line segment,line segment,902
+1297,frequent itemsets,frequent itemsets,901
+1298,confidence interval,confidence interval,900
+1299,iris recognition,iris recognition,900
+1300,greedy algorithms,greedy algorithms,899
+1301,fourth order,fourth order,896
+1302,control policy,control policy,895
+1303,location privacy,location privacy,895
+1304,small cell,small cell,893
+1305,regular expression,regular expression,891
+1306,radial basis functions,radial basis functions,890
+1307,secret keys,secret keys,889
+1308,simulated annealing sa,simulated annealing sa,888
+1309,named entity recognition,named entity recognition,888
+1310,high performance computing hpc,high performance computing hpc,888
+1311,speech data,speech data,886
+1312,segmentation algorithms,segmentation algorithms,886
+1313,deep neural network,deep neural network,886
+1314,dynamic spectrum access,dynamic spectrum access,885
+1315,user model,user model,884
+1316,gray matter,gray matter,882
+1317,power optimization,power optimization,878
+1318,level sets,level sets,878
+1319,fault simulation,fault simulation,877
+1320,topic models,topic models,876
+1321,business models,business models,875
+1322,networked control systems,networked control systems,875
+1323,particle swarm,particle swarm,873
+1324,high spatial resolution,high spatial resolution,872
+1325,node density,node density,870
+1326,achievable rates,achievable rates,870
+1327,query image,query image,869
+1328,semantic annotation,semantic annotation,863
+1329,scientific workflows,scientific workflows,862
+1330,radio spectrum,radio spectrum,861
+1331,steiner tree,steiner tree,860
+1332,linear programs,linear programs,859
+1333,elliptic curves,elliptic curves,859
+1334,adaptive fuzzy,adaptive fuzzy,858
+1335,loss functions,loss functions,858
+1336,group decision making,group decision making,855
+1337,mac protocol,mac protocol,854
+1338,support vectors,support vectors,853
+1339,perfect reconstruction,perfect reconstruction,847
+1340,unstructured data,unstructured data,845
+1341,source signals,source signals,842
+1342,motion data,motion data,842
+1343,cluster heads,cluster heads,841
+1344,based segmentation,based segmentation,839
+1345,training sample,training sample,839
+1346,software maintenance,software maintenance,836
+1347,mental models,mental models,835
+1348,neural net,neural net,835
+1349,compression ratios,compression ratios,832
+1350,wireless mesh network,wireless mesh network,832
+1351,stochastic geometry,stochastic geometry,829
+1352,critical infrastructure,critical infrastructure,829
+1353,decision procedures,decision procedures,826
+1354,extreme learning machine,extreme learning machine,826
+1355,domain adaptation,domain adaptation,826
+1356,fault models,fault models,825
+1357,face database,face database,825
+1358,global asymptotic stability,global asymptotic stability,824
+1359,input voltage,input voltage,824
+1360,latent dirichlet allocation,latent dirichlet allocation,824
+1361,saccharomyces cerevisiae,saccharomyces cerevisiae,822
+1362,facial images,facial images,822
+1363,infinite horizon,infinite horizon,819
+1364,depth images,depth images,819
+1365,intuitionistic fuzzy,intuitionistic fuzzy,818
+1366,naive bayes classifier,naive bayes classifier,817
+1367,parkinsons disease,parkinsons disease,816
+1368,server side,server side,815
+1369,linear matrix inequalities lmis,linear matrix inequalities lmis,815
+1370,relay networks,relay networks,815
+1371,banach spaces,banach spaces,814
+1372,artificial neural networks ann,artificial neural networks ann,814
+1373,denotational semantics,denotational semantics,813
+1374,differential evolution de,differential evolution de,813
+1375,neural model,neural model,812
+1376,decoding algorithms,decoding algorithms,812
+1377,computer game,computer game,811
+1378,compressed sensing cs,compressed sensing cs,810
+1379,memetic algorithm,memetic algorithm,808
+1380,electric vehicle,electric vehicle,807
+1381,receptive fields,receptive fields,807
+1382,a machine learning approach,a machine learning approach,806
+1383,line search,line search,804
+1384,retrieval results,retrieval results,803
+1385,support vector regression svr,support vector regression svr,802
+1386,air pollution,air pollution,801
+1387,degrees of freedom dof,degrees of freedom dof,800
+1388,antenna arrays,antenna arrays,799
+1389,singularly perturbed,singularly perturbed,799
+1390,feature point,feature point,799
+1391,power budget,power budget,799
+1392,air quality,air quality,793
+1393,sample sizes,sample sizes,793
+1394,face databases,face databases,792
+1395,transcription factor,transcription factor,790
+1396,resource provisioning,resource provisioning,790
+1397,particle swarm optimization pso algorithm,particle swarm optimization pso algorithm,790
+1398,differential evolution algorithm,differential evolution algorithm,790
+1399,blind source separation bss,blind source separation bss,788
+1400,local optimization,local optimization,787
+1401,serious game,serious game,787
+1402,fitness functions,fitness functions,783
+1403,multilayer perceptron mlp,multilayer perceptron mlp,783
+1404,open loop,open loop,782
+1405,metric learning,metric learning,782
+1406,feature subset,feature subset,781
+1407,mobile apps,mobile apps,777
+1408,rfid tag,rfid tag,776
+1409,feedforward neural networks,feedforward neural networks,775
+1410,back propagation,back propagation,773
+1411,formal specifications,formal specifications,773
+1412,pattern discovery,pattern discovery,773
+1413,product lines,product lines,773
+1414,feature spaces,feature spaces,772
+1415,south africa,south africa,772
+1416,switching activity,switching activity,771
+1417,moving targets,moving targets,771
+1418,transcription factors,transcription factors,771
+1419,speech production,speech production,768
+1420,block ciphers,block ciphers,768
+1421,natural image,natural image,768
+1422,differential privacy,differential privacy,768
+1423,link prediction,link prediction,767
+1424,moderate resolution imaging spectroradiometer,moderate resolution imaging spectroradiometer,766
+1425,background model,background model,765
+1426,power estimation,power estimation,764
+1427,linear quadratic,linear quadratic,762
+1428,complete graphs,complete graphs,759
+1429,agile software development,agile software development,759
+1430,valid inequalities,valid inequalities,758
+1431,normal forms,normal forms,757
+1432,basis function,basis function,757
+1433,active contour,active contour,756
+1434,linear codes,linear codes,754
+1435,hidden layer,hidden layer,754
+1436,united kingdom,united kingdom,753
+1437,critical infrastructures,critical infrastructures,751
+1438,dna microarray,dna microarray,750
+1439,bloom filter,bloom filter,749
+1440,fuzzy controller,fuzzy controller,749
+1441,power analysis,power analysis,748
+1442,fuzzy neural network,fuzzy neural network,747
+1443,session key,session key,747
+1444,nonnegative matrix factorization,nonnegative matrix factorization,746
+1445,limit cycle,limit cycle,745
+1446,sensing data,sensing data,744
+1447,supply voltages,supply voltages,743
+1448,papr reduction,papr reduction,741
+1449,amazon ec2,amazon ec2,741
+1450,deformable model,deformable model,739
+1451,cyclic prefix,cyclic prefix,737
+1452,face model,face model,736
+1453,mobile app,mobile app,735
+1454,wind turbines,wind turbines,735
+1455,outage performance,outage performance,734
+1456,scalable video coding,scalable video coding,734
+1457,initial population,initial population,727
+1458,interesting patterns,interesting patterns,725
+1459,impulse responses,impulse responses,723
+1460,virtual machine vm,virtual machine vm,723
+1461,cellular automata ca,cellular automata ca,721
+1462,error estimate,error estimate,720
+1463,using support vector machines,using support vector machines,719
+1464,software product line,software product line,718
+1465,radial basis function rbf,radial basis function rbf,717
+1466,natural languages,natural languages,716
+1467,web ontology language,web ontology language,715
+1468,extreme learning machine elm,extreme learning machine elm,715
+1469,brightness temperature,brightness temperature,713
+1470,clinical trial,clinical trial,712
+1471,vehicle routing,vehicle routing,712
+1472,power grids,power grids,712
+1473,error probabilities,error probabilities,707
+1474,harvested energy,harvested energy,703
+1475,distance functions,distance functions,702
+1476,satellite imagery,satellite imagery,701
+1477,permanent magnet,permanent magnet,700
+1478,phase transitions,phase transitions,698
+1479,named entity,named entity,698
+1480,technology acceptance model tam,technology acceptance model tam,697
+1481,banach space,banach space,689
+1482,distribution networks,distribution networks,686
+1483,bloom filters,bloom filters,686
+1484,process mining,process mining,686
+1485,tacit knowledge,tacit knowledge,684
+1486,performance guarantee,performance guarantee,684
+1487,requirements elicitation,requirements elicitation,684
+1488,finite element method fem,finite element method fem,684
+1489,neural nets,neural nets,683
+1490,ddos attacks,ddos attacks,683
+1491,wiley periodicals inc syst comp jpn,wiley periodicals inc syst comp jpn,683
+1492,answer set programming,answer set programming,681
+1493,queueing networks,queueing networks,678
+1494,expression levels,expression levels,676
+1495,limit cycles,limit cycles,674
+1496,receptive field,receptive field,673
+1497,web servers,web servers,672
+1498,second life,second life,672
+1499,load imbalance,load imbalance,670
+1500,web search engine,web search engine,670
+1501,wind energy,wind energy,670
+1502,carrier frequency offset cfo,carrier frequency offset cfo,670
+1503,ct scans,ct scans,668
+1504,hot spot,hot spot,668
+1505,opinion mining,opinion mining,666
+1506,program comprehension,program comprehension,664
+1507,regular graph,regular graph,662
+1508,an artificial neural network,an artificial neural network,660
+1509,slotted aloha,slotted aloha,658
+1510,active contour model,active contour model,658
+1511,service selection,service selection,658
+1512,source language,source language,657
+1513,key frames,key frames,652
+1514,queueing network,queueing network,651
+1515,speech recognizer,speech recognizer,651
+1516,secondary user su,secondary user su,651
+1517,mental model,mental model,649
+1518,false negatives,false negatives,649
+1519,feedforward neural network,feedforward neural network,647
+1520,hopf bifurcation,hopf bifurcation,647
+1521,canonical correlation analysis,canonical correlation analysis,646
+1522,regulatory networks,regulatory networks,645
+1523,location management,location management,644
+1524,signature schemes,signature schemes,643
+1525,ldpc code,ldpc code,641
+1526,finite element analysis,finite element analysis,641
+1527,convolutional code,convolutional code,640
+1528,spectrum sensing,spectrum sensing,640
+1529,travel times,travel times,639
+1530,network intrusion detection,network intrusion detection,638
+1531,dynamic programming dp,dynamic programming dp,637
+1532,unequal error protection,unequal error protection,635
+1533,data warehousing,data warehousing,635
+1534,pid control,pid control,634
+1535,user models,user models,632
+1536,scientific workflow,scientific workflow,631
+1537,output layer,output layer,630
+1538,dynamic time warping dtw,dynamic time warping dtw,630
+1539,depth image,depth image,628
+1540,empirical mode decomposition emd,empirical mode decomposition emd,627
+1541,parallel program,parallel program,624
+1542,facial feature,facial feature,623
+1543,resource description framework,resource description framework,622
+1544,motion field,motion field,621
+1545,dynamic resource allocation,dynamic resource allocation,621
+1546,multilayer perceptrons,multilayer perceptrons,619
+1547,traveling salesman problem tsp,traveling salesman problem tsp,619
+1548,watermarked image,watermarked image,619
+1549,approximation factor,approximation factor,617
+1550,regular language,regular language,615
+1551,control packets,control packets,613
+1552,reference frames,reference frames,612
+1553,synthetic aperture radar sar images,synthetic aperture radar sar images,612
+1554,linear temporal logic,linear temporal logic,609
+1555,distributed application,distributed application,608
+1556,hand gesture,hand gesture,606
+1557,computer science education,computer science education,605
+1558,mutual information mi,mutual information mi,602
+1559,expression profiles,expression profiles,598
+1560,gene regulation,gene regulation,598
+1561,inventory model,inventory model,595
+1562,deformable models,deformable models,594
+1563,imperfect csi,imperfect csi,594
+1564,linear code,linear code,593
+1565,eye movement,eye movement,593
+1566,transactional memory,transactional memory,593
+1567,saliency detection,saliency detection,592
+1568,texture feature,texture feature,590
+1569,data gathering,data gathering,590
+1570,large vocabulary,large vocabulary,588
+1571,facial expression recognition,facial expression recognition,588
+1572,processing element,processing element,585
+1573,control chart,control chart,584
+1574,feature models,feature models,584
+1575,code generator,code generator,582
+1576,continuous speech recognition,continuous speech recognition,582
+1577,localization algorithms,localization algorithms,581
+1578,low priority,low priority,580
+1579,iterative learning control,iterative learning control,579
+1580,diffusion tensor imaging dti,diffusion tensor imaging dti,576
+1581,singular perturbation,singular perturbation,575
+1582,primary network,primary network,575
+1583,access rights,access rights,574
+1584,business process modeling,business process modeling,573
+1585,feature subsets,feature subsets,573
+1586,cognitive radio networks crns,cognitive radio networks crns,573
+1587,task graph,task graph,572
+1588,using particle swarm optimization,using particle swarm optimization,570
+1589,online social networks osns,online social networks osns,570
+1590,virtual objects,virtual objects,569
+1591,mode decision,mode decision,569
+1592,relay network,relay network,569
+1593,feature model,feature model,568
+1594,human activity recognition,human activity recognition,564
+1595,gene ontology go,gene ontology go,562
+1596,global exponential stability,global exponential stability,561
+1597,collaborative filtering cf,collaborative filtering cf,561
+1598,similar images,similar images,560
+1599,published online in wiley interscience wwwintersciencewileycom,published online in wiley interscience wwwintersciencewileycom,560
+1600,cell cycle,cell cycle,560
+1601,connection weights,connection weights,559
+1602,interference channels,interference channels,559
+1603,price of anarchy,price of anarchy,558
+1604,pascal voc,pascal voc,558
+1605,linked open data,linked open data,558
+1606,maximum principle,maximum principle,556
+1607,control charts,control charts,556
+1608,nonnegative matrix factorization nmf,nonnegative matrix factorization nmf,553
+1609,allocate resources,allocate resources,552
+1610,measurement matrix,measurement matrix,552
+1611,service level agreement sla,service level agreement sla,551
+1612,adaptive controller,adaptive controller,549
+1613,attribute reduction,attribute reduction,549
+1614,turbo code,turbo code,547
+1615,time series prediction,time series prediction,544
+1616,technology acceptance model,technology acceptance model,544
+1617,vector quantization vq,vector quantization vq,543
+1618,traffic lights,traffic lights,543
+1619,block matching,block matching,540
+1620,task graphs,task graphs,540
+1621,wireless ad hoc network,wireless ad hoc network,540
+1622,normalized difference vegetation index ndvi,normalized difference vegetation index ndvi,540
+1623,mobility models,mobility models,539
+1624,intrusion detection system ids,intrusion detection system ids,538
+1625,scalable video coding svc,scalable video coding svc,538
+1626,synthetic speech,synthetic speech,536
+1627,reference models,reference models,536
+1628,tuning range,tuning range,535
+1629,remotely sensed data,remotely sensed data,534
+1630,modal logics,modal logics,530
+1631,power consumed,power consumed,528
+1632,false negative,false negative,528
+1633,resting state,resting state,526
+1634,decision support system dss,decision support system dss,525
+1635,transmit powers,transmit powers,524
+1636,nand flash memory,nand flash memory,523
+1637,machine learning ml,machine learning ml,522
+1638,human action recognition,human action recognition,522
+1639,concept lattice,concept lattice,521
+1640,load current,load current,521
+1641,data envelopment analysis,data envelopment analysis,518
+1642,cayley graphs,cayley graphs,517
+1643,reward function,reward function,516
+1644,hopfield neural network,hopfield neural network,515
+1645,delay tolerant networks,delay tolerant networks,515
+1646,financial time series,financial time series,513
+1647,differentially expressed genes,differentially expressed genes,513
+1648,time series forecasting,time series forecasting,511
+1649,service iaas,service iaas,511
+1650,kalman filters,kalman filters,510
+1651,schrodinger equation,schrodinger equation,510
+1652,event logs,event logs,510
+1653,neural networks nns,neural networks nns,508
+1654,mobile station ms,mobile station ms,508
+1655,secret sharing scheme,secret sharing scheme,500
+1656,answer set,answer set,496
+1657,sliding mode controller,sliding mode controller,495
+1658,brightness temperatures,brightness temperatures,494
+1659,frequent pattern mining,frequent pattern mining,494
+1660,gene regulatory network,gene regulatory network,494
+1661,guest editorial,guest editorial,494
+1662,functional unit,functional unit,489
+1663,an ad hoc network,an ad hoc network,487
+1664,feature subset selection,feature subset selection,486
+1665,social graph,social graph,486
+1666,hearing aids,hearing aids,484
+1667,outage probabilities,outage probabilities,482
+1668,smart meter,smart meter,482
+1669,voronoi diagrams,voronoi diagrams,480
+1670,terms of linear matrix inequalities lmis,terms of linear matrix inequalities lmis,479
+1671,finite automaton,finite automaton,477
+1672,cyclic prefix cp,cyclic prefix cp,477
+1673,multiple sclerosis,multiple sclerosis,474
+1674,finite volume method,finite volume method,474
+1675,location update,location update,474
+1676,performance and power consumption,performance and power consumption,474
+1677,map building,map building,470
+1678,electric vehicles evs,electric vehicles evs,470
+1679,nand flash,nand flash,468
+1680,image quality assessment,image quality assessment,467
+1681,labeled samples,labeled samples,467
+1682,hidden neurons,hidden neurons,466
+1683,call admission control cac,call admission control cac,464
+1684,empirical mode decomposition,empirical mode decomposition,463
+1685,garbage collector,garbage collector,462
+1686,interference alignment ia,interference alignment ia,462
+1687,opportunistic spectrum access,opportunistic spectrum access,460
+1688,positive examples,positive examples,459
+1689,canonical correlation analysis cca,canonical correlation analysis cca,458
+1690,interference constraints,interference constraints,458
+1691,image sensors,image sensors,455
+1692,multivariate time series,multivariate time series,455
+1693,traffic light,traffic light,450
+1694,local search algorithms,local search algorithms,450
+1695,ann model,ann model,450
+1696,reducing power consumption,reducing power consumption,448
+1697,spectral subtraction,spectral subtraction,445
+1698,content based image retrieval,content based image retrieval,444
+1699,shortest path problem,shortest path problem,443
+1700,frequency synthesizer,frequency synthesizer,441
+1701,hand gesture recognition,hand gesture recognition,441
+1702,imperfect channel state information csi,imperfect channel state information csi,441
+1703,transcription factor binding sites,transcription factor binding sites,440
+1704,time series analysis,time series analysis,440
+1705,d2d communications,d2d communications,437
+1706,force fields,force fields,436
+1707,fixed infrastructure,fixed infrastructure,436
+1708,path planner,path planner,435
+1709,electric fields,electric fields,433
+1710,based access control,based access control,433
+1711,apriori algorithm,apriori algorithm,433
+1712,scalar multiplication,scalar multiplication,432
+1713,resource allocations,resource allocations,432
+1714,full search,full search,431
+1715,sensing performance,sensing performance,431
+1716,line graph,line graph,429
+1717,south african,south african,429
+1718,competitive analysis,competitive analysis,427
+1719,guest editors introduction,guest editors introduction,427
+1720,power amplifier pa,power amplifier pa,427
+1721,recommendation algorithms,recommendation algorithms,426
+1722,negative examples,negative examples,425
+1723,allocating resources,allocating resources,425
+1724,sentiment classification,sentiment classification,424
+1725,d2d communication,d2d communication,423
+1726,steiner tree problem,steiner tree problem,422
+1727,detect anomalies,detect anomalies,422
+1728,rate control algorithm,rate control algorithm,421
+1729,synchronous motor,synchronous motor,419
+1730,randomly deployed,randomly deployed,419
+1731,dominating sets,dominating sets,418
+1732,line graphs,line graphs,417
+1733,fused image,fused image,415
+1734,robust speech recognition,robust speech recognition,414
+1735,conditional random fields crfs,conditional random fields crfs,413
+1736,true positive,true positive,412
+1737,business intelligence bi,business intelligence bi,412
+1738,primary receiver,primary receiver,412
+1739,concept lattices,concept lattices,411
+1740,routing overhead,routing overhead,411
+1741,mobile sink,mobile sink,411
+1742,expression patterns,expression patterns,410
+1743,source domain,source domain,409
+1744,computational thinking,computational thinking,408
+1745,tone mapping,tone mapping,407
+1746,true positive rate,true positive rate,404
+1747,statistical machine translation smt,statistical machine translation smt,403
+1748,embedded system design,embedded system design,402
+1749,process algebras,process algebras,398
+1750,organizational knowledge,organizational knowledge,398
+1751,network processor,network processor,398
+1752,parkinsons disease pd,parkinsons disease pd,397
+1753,smart homes,smart homes,396
+1754,facility location problem,facility location problem,391
+1755,int j imaging syst technol,int j imaging syst technol,389
+1756,power control algorithm,power control algorithm,388
+1757,computer science cs,computer science cs,388
+1758,unlabeled samples,unlabeled samples,388
+1759,machine translation mt,machine translation mt,387
+1760,unequal error protection uep,unequal error protection uep,387
+1761,convex hulls,convex hulls,385
+1762,association rule,association rule,385
+1763,expression recognition,expression recognition,384
+1764,fuzzy clustering algorithm,fuzzy clustering algorithm,383
+1765,symbolic regression,symbolic regression,382
+1766,pid controllers,pid controllers,380
+1767,irrelevant features,irrelevant features,380
+1768,corpus callosum,corpus callosum,377
+1769,pose variations,pose variations,377
+1770,live migration,live migration,377
+1771,automatic image annotation,automatic image annotation,376
+1772,efficient query processing,efficient query processing,373
+1773,differentially private,differentially private,371
+1774,tabu search ts,tabu search ts,368
+1775,public libraries,public libraries,366
+1776,answer set programming asp,answer set programming asp,365
+1777,motion estimation algorithm,motion estimation algorithm,363
+1778,spatial modulation,spatial modulation,363
+1779,power allocation algorithm,power allocation algorithm,362
+1780,web service discovery,web service discovery,359
+1781,network processors,network processors,358
+1782,high dynamic range hdr,high dynamic range hdr,357
+1783,influence maximization,influence maximization,357
+1784,user experience ux,user experience ux,356
+1785,mining association rules,mining association rules,355
+1786,robust face recognition,robust face recognition,355
+1787,sensing coverage,sensing coverage,354
+1788,face detector,face detector,353
+1789,cayley graph,cayley graph,351
+1790,composite web services,composite web services,350
+1791,memetic algorithms,memetic algorithms,349
+1792,hearing aid,hearing aid,348
+1793,viral marketing,viral marketing,348
+1794,node localization,node localization,348
+1795,key frame,key frame,347
+1796,recurrent neural networks rnns,recurrent neural networks rnns,345
+1797,ad hoc routing protocols,ad hoc routing protocols,343
+1798,downlink dl,downlink dl,342
+1799,supply chain management scm,supply chain management scm,340
+1800,feature ranking,feature ranking,339
+1801,gaussian process gp,gaussian process gp,338
+1802,network design problem,network design problem,337
+1803,delay tolerant networks dtns,delay tolerant networks dtns,337
+1804,physical machine,physical machine,335
+1805,intrusion detection systems idss,intrusion detection systems idss,331
+1806,harmful interference,harmful interference,331
+1807,iterative learning control ilc,iterative learning control ilc,329
+1808,fractional anisotropy fa,fractional anisotropy fa,328
+1809,public library,public library,327
+1810,unlicensed users,unlicensed users,327
+1811,intrusion detection systems ids,intrusion detection systems ids,325
+1812,covert channels,covert channels,324
+1813,plane graph,plane graph,323
+1814,question answering qa,question answering qa,323
+1815,redundant features,redundant features,323
+1816,direction of arrival doa estimation,direction of arrival doa estimation,322
+1817,congestion control algorithm,congestion control algorithm,318
+1818,wireless mesh network wmn,wireless mesh network wmn,318
+1819,based image retrieval,based image retrieval,316
+1820,word sense disambiguation wsd,word sense disambiguation wsd,316
+1821,face representation,face representation,314
+1822,motion planner,motion planner,313
+1823,product line engineering,product line engineering,310
+1824,covert channel,covert channel,309
+1825,based face recognition,based face recognition,309
+1826,based feature selection,based feature selection,308
+1827,network coded,network coded,308
+1828,intuitionistic fuzzy sets,intuitionistic fuzzy sets,307
+1829,path planning algorithm,path planning algorithm,306
+1830,ddos attack,ddos attack,301
+1831,distributed power control,distributed power control,300
+1832,software engineering se,software engineering se,300
+1833,equal power allocation,equal power allocation,296
+1834,big data analytics,big data analytics,296
+1835,uplink ul,uplink ul,293
+1836,ad hoc network,ad hoc network,292
+1837,discontinuous galerkin dg,discontinuous galerkin dg,290
+1838,plane graphs,plane graphs,287
+1839,physical machines,physical machines,287
+1840,referencesrnthese references,referencesrnthese references,285
+1841,page by page links to pubmed,page by page links to pubmed,285
+1842,named entity recognition ner,named entity recognition ner,285
+1843,standard pso,standard pso,276
+1844,demand response dr,demand response dr,272
+1845,trained neural network,trained neural network,271
+1846,intrinsic mode functions imfs,intrinsic mode functions imfs,271
+1847,transactional memory tm,transactional memory tm,265
+1848,fast motion estimation,fast motion estimation,258
+1849,spatial modulation sm,spatial modulation sm,253
+1850,multiple sclerosis ms,multiple sclerosis ms,243
+1851,networked control systems ncss,networked control systems ncss,241
+1852,face recognition algorithms,face recognition algorithms,240
+1853,unsupervised feature selection,unsupervised feature selection,240
+1854,composition of web services,composition of web services,239
+1855,feret database,feret database,220
+1856,low phase noise,low phase noise,213
+1857,schrdinger equation,schrdinger equation,200
+1858,multiple access with collision avoidance csmaca,multiple access with collision avoidance csmaca,199
+1859,face recognition algorithm,face recognition algorithm,190
+1860,cognitive radio network crn,cognitive radio network crn,186
+1861,carrier sense,carrier sense,185
