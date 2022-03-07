@@ -1,4 +1,0 @@
-0.9930000000	neural network
-0.2180000000	this paper
-0.1310000000	number of
-0.1100000000	based on
