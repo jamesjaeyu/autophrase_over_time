@@ -72,7 +72,7 @@ The phrasal segmentation results provide information on the identified phrases p
 The network visualization shows the relationship between phrases in the entire DBLP v10 dataset. More frequent phrases are represented by larger nodes. Nodes that have stronger and more frequent connections with each other will be represented by the same color, determined by their modularity. We can see how the purple nodes cover phrases related to machine learning. Phrases are connected to each other based on how frequently they appear with each other in the dataset.
 
 ### Phrase network by Year Range
-[Link to high-resolution, zoomable image](https://i.ibb.co/tY0NcLy/2.png)
+[Link to high-resolution, zoomable image](https://srv2.zoomable.ca/viewer.php?i=img65cd5e0e34c46ac7_Untitled)
 
 ![Yearly network visualization](/autophrase_over_time/assets/network_yearly_small.png)
 
