@@ -60,6 +60,7 @@ This histogram shows the distribution of the number of phrases identified across
 | dynamic programming (8)    | linear programming (19)     | analog computer (58)     | computer graphics (72)    | linear programming (106)  | pattern recognition (192) | user interface (495)          | image processing (827)    | software engineering (1430) | software engineering (3188) | wireless sensor networks (9382) | neural network (11381)           | cloud computing (8373)   |
 | standard model (8)         | sequential circuits (15)    | sequential machine (54)  | dynamic programming (69)  | problem solving (104)     | linear programming (174)  | artificial intelligence (398) | distributed systems (799) | distributed systems (1414)  | genetic algorithm (3115)    | genetic algorithm (8088)        | data mining (11235)              | power consumption (6124) |
 |                            |
+
 </center>
 
 By processing the phrasal segmentation results, we can obtain the counts of each phrase in the input data.  We specifically focused on the most frequent multi-word phrases across each year range in order to identify the most popular Computer Science topics in each period. In the early years, there is a large focus on pattern recognition, as it is in the top 5 in all of the year ranges from 1960-1984. Over time, this changes, with topics such as neural networks and machine learning becoming more prominent.
