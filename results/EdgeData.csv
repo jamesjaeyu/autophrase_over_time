@@ -1,3 +1,3530 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a172b7f7b1fb163fc0ec7139ed3a897d2b85efc07d572406c6a67bc297799aed
-size 148550
+Source,Target, Weight
+numerical method,numerical methods,167
+numerical method,numerical results,324
+numerical method,numerical examples,221
+numerical method,numerical solution,217
+error detection,error correction,257
+standard model,random oracle model,157
+ordinary differential equations,differential equations,244
+ordinary differential equations,partial differential equations,184
+differential equations,differential equation,326
+differential equations,partial differential equations,172
+differential equations,dynamical systems,174
+differential equations,numerical methods,179
+electric field,electric fields,164
+false alarm,detection performance,246
+closed form,analytical results,156
+closed form,probability density function,150
+adaptive control,control law,209
+adaptive control,nonlinear systems,173
+adaptive control,unknown parameters,155
+dynamic programming,linear programming,165
+dynamic programming,optimal solution,411
+dynamic programming,optimal control,566
+dynamic programming,objective function,184
+dynamic programming,dynamic programming dp,198
+maximum likelihood,monte carlo,177
+maximum likelihood,parameter estimation,464
+maximum likelihood,likelihood function,240
+maximum likelihood,computational complexity,280
+maximum likelihood,real data,286
+maximum likelihood,maximum likelihood estimation,171
+problem solving,computer science,214
+problem solving,decision making,236
+problem solving,artificial intelligence,157
+shortest path,routing algorithm,252
+shortest path,shortest paths,680
+shortest path,routing protocol,195
+shortest path,routing algorithms,162
+shortest path,ad hoc,160
+random access,slotted aloha,174
+amino acid,amino acids,519
+amino acid,protein structure,168
+automatic speech recognition,speech recognition,596
+speech recognition,speech synthesis,163
+speech recognition,feature extraction,363
+speech recognition,natural language,263
+speech recognition,machine translation,152
+speech recognition,speech signals,229
+speech recognition,word recognition,192
+speech recognition,maximum likelihood,193
+speech recognition,hidden markov model,246
+speech recognition,continuous speech recognition,236
+speech recognition,robust speech recognition,211
+speech recognition,noisy speech,227
+speech recognition,hidden markov models hmms,156
+speech recognition,noisy environments,243
+speech recognition,automatic speech recognition asr,439
+pattern recognition,image processing,652
+pattern recognition,neural network,792
+pattern recognition,object recognition,171
+pattern recognition,feature vectors,172
+pattern recognition,training data,256
+pattern recognition,feature space,247
+dynamic range,power consumption,267
+dynamic range,high dynamic range hdr,217
+phase transition,phase transitions,202
+line segment,line segments,315
+regular expressions,regular expression,378
+statistical analysis,machine learning,189
+transmission lines,transmission line,276
+random walk,random walks,550
+integrated circuits,power consumption,181
+finite difference,partial differential equations,167
+finite difference,numerical methods,155
+finite difference,numerical solution,263
+finite difference,numerical results,343
+finite difference,numerical examples,202
+finite difference,numerical method,176
+integrated circuit,integrated circuits,210
+iterative method,numerical results,154
+iterative method,numerical examples,150
+loss function,loss functions,233
+feature extraction,pattern recognition,723
+feature extraction,neural network,705
+linear program,linear programming,466
+linear program,optimal solution,174
+linear program,linear programs,150
+electrical engineering,computer science,343
+level set,level sets,251
+level set,image segmentation,414
+virtual machine,operating systems,191
+virtual machine,virtual machines,1190
+virtual machine,cloud computing,722
+random variables,random variable,409
+random variables,mutual information,155
+random variables,monte carlo,152
+sensitivity analysis,numerical examples,178
+partial differential equation,partial differential equations,150
+second order,differential equations,153
+second order,first order,625
+second order,finite difference,229
+parallel programming,parallel programs,201
+parallel programming,message passing,201
+parallel programming,shared memory,279
+parallel programming,parallel computing,260
+partial differential equations,numerical solution,222
+sufficient conditions,differential equations,190
+sufficient conditions,optimal control,185
+sufficient conditions,dynamical systems,184
+sufficient conditions,numerical examples,703
+sufficient conditions,special cases,207
+sufficient conditions,optimization problem,190
+sufficient conditions,sufficient condition,494
+sufficient conditions,linear systems,248
+sufficient conditions,equilibrium point,218
+sufficient conditions,theoretical results,501
+sufficient conditions,neural network,152
+sufficient conditions,activation functions,161
+sufficient conditions,main result,155
+sufficient conditions,asymptotically stable,151
+sufficient conditions,asymptotic stability,315
+sufficient conditions,numerical simulations,310
+sufficient conditions,linear matrix inequalities,341
+sufficient conditions,global asymptotic stability,173
+sufficient conditions,linear matrix inequalities lmis,154
+sufficient conditions,global exponential stability,218
+sufficient conditions,time delays,205
+optimal control,linear quadratic,177
+optimal control,control law,186
+optimal control,numerical results,259
+optimal control,neural network,181
+optimal control,optimality conditions,178
+optimal control,control policy,157
+optimal control,infinite horizon,163
+optimal control,neural networks,150
+real time,feature extraction,221
+real time,pattern recognition,152
+real time,quality of service qos,256
+real time,computer vision,376
+real time,virtual environment,197
+real time,mobile robot,267
+real time,image processing,465
+real time,neural network,465
+real time,decision making,200
+real time,virtual reality,250
+real time,quality of service,204
+real time,resource allocation,156
+real time,wireless communication,178
+real time,embedded systems,195
+real time,augmented reality,209
+real time,kalman filter,160
+real time,control system,209
+real time,cloud computing,168
+real time,big data,179
+neural networks,neural network,6855
+neural networks,machine learning,928
+neural networks,learning algorithm,631
+neural networks,feature extraction,343
+neural networks,training set,274
+neural networks,pattern recognition,683
+neural networks,image processing,221
+neural networks,speech recognition,250
+neural networks,associative memory,181
+neural networks,sufficient conditions,447
+neural networks,supervised learning,278
+neural networks,computer vision,168
+neural networks,adaptive control,258
+neural networks,nonlinear systems,173
+neural networks,multilayer perceptron,374
+neural networks,training data,531
+neural networks,genetic algorithms,628
+neural networks,computational complexity,172
+neural networks,numerical simulations,210
+neural networks,generalization performance,177
+neural networks,theoretical results,282
+neural networks,reinforcement learning,268
+neural networks,decision making,210
+neural networks,gradient descent,155
+neural networks,artificial neural networks anns,230
+neural networks,real time,286
+neural networks,time delay,167
+neural networks,soft computing,204
+neural networks,artificial neural network ann,150
+neural networks,artificial neural network,320
+neural networks,computational intelligence,163
+neural networks,neural network nn,160
+neural networks,global exponential stability,177
+neural networks,particle swarm optimization,166
+radiative transfer,remote sensing,201
+confidence intervals,confidence interval,214
+large scale,real time,229
+large scale,small scale,253
+large scale,ad hoc,150
+large scale,training data,165
+large scale,computational complexity,183
+large scale,computer vision,150
+large scale,social networks,203
+large scale,cloud computing,309
+large scale,big data,270
+lyapunov function,stability analysis,192
+lyapunov function,sufficient condition,158
+lyapunov function,sufficient conditions,322
+resource allocation,optimization problem,753
+resource allocation,objective function,173
+resource allocation,optimal solution,468
+resource allocation,computational complexity,358
+resource allocation,scheduling algorithm,190
+resource allocation,resource sharing,219
+resource allocation,cellular network,286
+resource allocation,admission control,243
+resource allocation,network resources,234
+resource allocation,numerical results,750
+resource allocation,resource utilization,357
+resource allocation,dynamic resource allocation,281
+resource allocation,service providers,186
+resource allocation,allocating resources,151
+resource allocation,nash equilibrium,161
+resource allocation,cloud computing,521
+maximum principle,optimal control,203
+feature selection,pattern recognition,451
+feature selection,feature extraction,627
+feature selection,feature vectors,167
+feature selection,real data,177
+feature selection,computational complexity,190
+feature selection,feature set,625
+feature selection,classification accuracy,597
+feature selection,machine learning,1354
+feature selection,decision trees,164
+feature selection,feature space,498
+feature selection,face recognition,150
+feature selection,neural networks,240
+feature selection,training data,288
+feature selection,neural network,362
+feature selection,supervised learning,224
+feature selection,classification performance,302
+feature selection,relevant features,453
+feature selection,feature subset,552
+feature selection,breast cancer,165
+feature selection,existing methods,174
+feature selection,input features,153
+feature selection,text classification,212
+feature selection,gene expression,339
+feature selection,irrelevant features,226
+feature selection,curse of dimensionality,153
+feature selection,benchmark datasets,173
+feature selection,feature subset selection,216
+feature selection,classification algorithms,205
+feature selection,random forest,188
+feature selection,redundant features,210
+feature selection,feature ranking,188
+feature selection,unsupervised feature selection,178
+operating systems,source code,158
+operating systems,embedded systems,215
+operating systems,operating system,1107
+machine learning,pattern recognition,901
+machine learning,large scale,360
+machine learning,decision making,311
+machine learning,learning algorithm,517
+machine learning,decision trees,633
+machine learning,existing methods,301
+machine learning,empirical results,236
+machine learning,prior knowledge,204
+machine learning,computer science,245
+machine learning,computational complexity,273
+machine learning,neural network,785
+machine learning,classification problem,156
+machine learning,computational cost,187
+machine learning,feature extraction,559
+machine learning,image processing,312
+machine learning,reinforcement learning,372
+machine learning,training examples,224
+machine learning,training data,1109
+machine learning,genetic programming,233
+machine learning,classification accuracy,498
+machine learning,supervised learning,598
+machine learning,feature set,245
+machine learning,optimization problem,213
+machine learning,feature space,372
+machine learning,linear regression,195
+machine learning,breast cancer,204
+machine learning,network traffic,184
+machine learning,machine learning ml,229
+machine learning,classification performance,245
+machine learning,classification algorithms,315
+machine learning,natural language processing,236
+machine learning,speech recognition,162
+machine learning,prediction accuracy,167
+machine learning,intrusion detection,266
+machine learning,anomaly detection,192
+machine learning,time series,278
+machine learning,objective function,241
+machine learning,clustering algorithm,157
+machine learning,image classification,172
+machine learning,binary classification,184
+machine learning,ground truth,153
+machine learning,real time,278
+machine learning,significantly improve,184
+machine learning,successfully applied,176
+machine learning,training samples,210
+machine learning,text mining,207
+machine learning,gene expression,263
+machine learning,synthetic data,171
+machine learning,benchmark datasets,287
+machine learning,labeled data,283
+machine learning,online learning,185
+machine learning,support vector machines svms,238
+machine learning,random forests,234
+machine learning,knowledge discovery,202
+machine learning,social networks,206
+machine learning,information extraction,208
+machine learning,proposed framework,272
+machine learning,random forest,420
+machine learning,sentiment analysis,220
+machine learning,social media,287
+higher education,information technology,164
+machine translation,natural language,309
+natural language,question answering,459
+natural language,natural languages,201
+natural language,information retrieval,392
+natural language,natural language processing,440
+natural language,machine learning,668
+natural language,source code,163
+natural language,wide range,163
+natural language,training data,208
+natural language,text mining,197
+natural language,information extraction,253
+natural language,semantic web,243
+natural language,sentiment analysis,191
+united states,information technology,201
+linear combination,basis functions,243
+nonlinear programming,objective function,177
+dynamical systems,neural networks,174
+two dimensional,three dimensional,256
+search algorithm,optimal solution,184
+search algorithm,computational complexity,198
+search algorithm,optimization problem,199
+search algorithm,search algorithms,363
+search algorithm,search space,221
+search algorithm,objective function,158
+search algorithm,motion estimation,176
+search algorithm,particle swarm optimization,150
+spanning tree,spanning trees,479
+equilibrium point,neural networks,179
+neural network,objective function,208
+neural network,object recognition,170
+neural network,computer vision,226
+neural network,speech recognition,289
+neural network,image processing,334
+neural network,supervised learning,351
+neural network,network architecture,183
+neural network,linear regression,155
+neural network,mobile robot,248
+neural network,training data,701
+neural network,reinforcement learning,320
+neural network,adaptive control,290
+neural network,gradient descent,239
+neural network,feature space,188
+neural network,feature vectors,218
+neural network,training samples,177
+neural network,decision making,243
+neural network,numerical simulations,172
+neural network,artificial neural networks anns,169
+neural network,trained neural network,172
+neural network,soft computing,151
+neural network,training process,154
+neural network,particle swarm optimization,265
+neural network,control system,246
+neural network,proposed model,186
+convolutional code,convolutional codes,200
+finite state machine,finite state machines,177
+linear programming,approximation algorithm,233
+linear programming,integer programming,290
+linear programming,wireless sensor networks,164
+signal processing,pattern recognition,273
+signal processing,image processing,375
+signal processing,feature extraction,267
+signal processing,computational complexity,325
+signal processing,time series,158
+signal processing,neural networks,225
+signal processing,neural network,224
+signal processing,machine learning,455
+signal processing,power consumption,307
+signal processing,real time,262
+query language,data model,386
+cumulative distribution function,probability density function,315
+cumulative distribution function,performance analysis,169
+unsupervised learning,machine learning,226
+unsupervised learning,neural network,196
+unsupervised learning,supervised learning,402
+optimization problem,dynamic programming,368
+optimization problem,objective function,1216
+optimization problem,linear programming,477
+optimization problem,computational complexity,513
+optimization problem,optimal control,334
+optimization problem,optimal solution,1144
+optimization problem,global optimization,279
+optimization problem,combinatorial optimization,213
+optimization problem,iterative algorithm,351
+optimization problem,numerical examples,347
+optimization problem,cost function,488
+optimization problem,large scale,163
+optimization problem,approximation algorithm,232
+optimization problem,neural network,169
+optimization problem,optimization algorithms,198
+optimization problem,optimization algorithm,324
+optimization problem,existing methods,231
+optimization problem,global optimum,166
+optimization problem,constrained optimization,160
+optimization problem,computationally efficient,159
+optimization problem,solved efficiently,150
+optimization problem,evolutionary algorithm,219
+optimization problem,real time,160
+optimization problem,power control,223
+optimization problem,power allocation,522
+optimization problem,particle swarm optimization,292
+optimization problem,proposed framework,150
+decision making,linear programming,174
+decision making,decision support systems,297
+decision making,decision makers,827
+decision making,decision maker,471
+decision making,information technology,232
+decision making,decision process,195
+decision making,reinforcement learning,172
+decision making,genetic algorithm,151
+decision making,supply chain,233
+decision making,group decision making,190
+decision making,proposed framework,168
+numerical examples,special case,181
+numerical examples,special cases,203
+numerical examples,optimal control,280
+numerical examples,objective function,246
+numerical examples,optimal solution,316
+numerical examples,theoretical results,719
+numerical examples,second order,177
+numerical examples,numerical methods,167
+numerical examples,linear programming,165
+numerical examples,numerical solution,387
+numerical examples,linear systems,225
+numerical examples,boundary conditions,236
+numerical examples,sufficient condition,283
+numerical examples,performance analysis,234
+numerical examples,existing methods,167
+numerical examples,analytical results,156
+numerical examples,convergence rate,163
+numerical examples,differential equations,182
+numerical examples,computational cost,162
+numerical examples,theoretical analysis,206
+numerical examples,numerical results,194
+numerical examples,neural network,171
+numerical examples,stability analysis,281
+numerical examples,neural networks,397
+numerical examples,error estimates,173
+numerical examples,time delay,157
+numerical examples,robust stability,205
+numerical examples,supply chain,161
+numerical examples,linear matrix inequality,179
+numerical examples,lyapunov function,168
+numerical examples,linear matrix inequality lmi,168
+numerical examples,linear matrix inequalities,289
+special case,special cases,270
+special case,objective function,157
+special case,computational complexity,179
+special case,sufficient conditions,221
+special case,linear programming,150
+special case,approximation algorithm,350
+special case,main result,184
+special case,optimization problem,193
+special case,numerical results,218
+special case,approximation algorithms,188
+special case,optimal solution,230
+optimal solution,linear programming,610
+optimal solution,objective function,640
+optimal solution,optimal control,270
+optimal solution,iterative algorithm,198
+optimal solution,computational complexity,392
+optimal solution,approximation algorithm,327
+optimal solution,feasible solution,186
+optimal solution,integer programming,242
+optimal solution,numerical results,503
+optimal solution,genetic algorithms,204
+optimal solution,genetic algorithm,502
+optimal solution,neural network,190
+optimal solution,local search,175
+optimal solution,low complexity,156
+optimal solution,base station,204
+optimal solution,transmit power,187
+optimal solution,power allocation,318
+optimal solution,wireless sensor networks,214
+optimal solution,cognitive radio,223
+remote sensing,image processing,366
+remote sensing,synthetic aperture radar,211
+remote sensing,feature extraction,150
+remote sensing,image data,242
+remote sensing,classification accuracy,202
+remote sensing,neural network,172
+remote sensing,synthetic aperture radar sar,200
+remote sensing,spatial resolution,341
+remote sensing,land cover,521
+remote sensing,image classification,191
+remote sensing,soil moisture,193
+remote sensing,normalized difference vegetation index ndvi,161
+remote sensing,spectral information,151
+remote sensing,in situ,299
+fuzzy logic,fuzzy set,235
+fuzzy logic,fuzzy sets,183
+fuzzy logic,membership functions,460
+fuzzy logic,neural networks,504
+fuzzy logic,neural network,426
+fuzzy logic,mobile robot,209
+fuzzy logic,rule base,188
+fuzzy logic,genetic algorithms,275
+fuzzy logic,decision making,283
+fuzzy logic,real time,185
+fuzzy logic,soft computing,257
+fuzzy logic,control system,151
+computer graphics,image processing,232
+computer graphics,computer vision,476
+finite element,partial differential equations,269
+finite element,finite difference,226
+finite element,numerical results,631
+finite element,boundary conditions,332
+finite element,numerical experiments,622
+finite element,theoretical results,198
+finite element,second order,183
+finite element,numerical examples,370
+finite element,basis functions,182
+finite element,numerical solution,284
+finite element,error analysis,162
+finite element,numerical simulation,154
+finite element,finite elements,532
+finite element,error estimate,156
+computational complexity,real time,272
+computational complexity,linear programming,190
+computational complexity,pattern recognition,160
+computational complexity,parameter estimation,150
+computational complexity,dynamic programming,213
+computational complexity,existing methods,319
+computational complexity,numerical examples,191
+computational complexity,image processing,213
+computational complexity,computer vision,200
+computational complexity,feature extraction,224
+computational complexity,performance analysis,180
+computational complexity,neural network,224
+computational complexity,performance degradation,179
+computational complexity,convergence rate,173
+computational complexity,objective function,220
+computational complexity,significantly reduced,301
+computational complexity,reduced complexity,176
+computational complexity,power consumption,234
+computational complexity,spectral efficiency,180
+computational complexity,numerical simulations,171
+computational complexity,power allocation,215
+computational complexity,wireless sensor networks,223
+objective function,quadratic programming,158
+objective function,optimal control,158
+objective function,linear programming,453
+objective function,optimization algorithm,240
+objective function,integer programming,157
+objective function,computational experiments,159
+objective function,particle swarm optimization,229
+mutual information,feature selection,421
+mutual information,image registration,322
+mutual information,mutual information mi,253
+mutual information,information theory,199
+information retrieval,document retrieval,161
+information retrieval,retrieval performance,157
+information retrieval,relevance feedback,184
+information retrieval,natural language processing,213
+information retrieval,relevant documents,265
+information retrieval,search engines,182
+information retrieval,machine learning,360
+information retrieval,web search,325
+information retrieval,search engine,341
+information retrieval,search results,274
+information retrieval,text mining,160
+information retrieval,semantic web,254
+information retrieval,information extraction,180
+distributed systems,load balancing,230
+distributed systems,fault tolerance,316
+distributed systems,petri nets,183
+distributed systems,large scale,153
+distributed systems,access control,155
+distributed systems,web services,200
+distributed systems,cloud computing,178
+higher level,low level,183
+mental model,mental models,179
+social sciences,social science,152
+motion control,mobile robot,163
+source code,programming language,304
+source code,software development,431
+source code,static analysis,357
+source code,embedded systems,173
+source code,machine learning,160
+source code,operating system,187
+source code,open source software,239
+source code,program comprehension,191
+source code,software maintenance,168
+nash equilibria,nash equilibrium,575
+optimization problems,optimization problem,661
+optimization problems,objective function,350
+optimization problems,optimal solution,246
+optimization problems,numerical results,215
+optimization problems,linear programming,160
+optimization problems,global optimization,179
+optimization problems,genetic algorithms,272
+optimization problems,search space,160
+optimization problems,evolutionary algorithms,238
+optimization problems,evolutionary algorithm,160
+optimization problems,particle swarm optimization,152
+decision problems,decision problem,171
+image sensor,image sensors,161
+sufficient condition,theoretical results,157
+fault detection,fault tolerant,155
+fault detection,fault tolerance,220
+fault detection,fault diagnosis,470
+fault detection,neural network,174
+statistical methods,machine learning,159
+air pollution,air quality,196
+computer science,software development,207
+computer science,information technology,377
+digital image,image processing,172
+boundary condition,boundary conditions,313
+question answering,information retrieval,195
+greedy algorithm,optimization problem,160
+greedy algorithm,optimal solution,188
+greedy algorithm,approximation algorithm,158
+greedy algorithm,greedy algorithms,172
+petri net,petri nets,1862
+special cases,optimization problem,152
+formal methods,formal verification,258
+formal methods,formal specification,274
+error probability,performance analysis,169
+least squares,parameter estimation,200
+complete graph,complete graphs,168
+low cost,small size,152
+low cost,real time,357
+low cost,power consumption,199
+low cost,wireless sensor networks,252
+image processing,parallel processing,164
+image processing,feature extraction,491
+image processing,image data,418
+image processing,image quality,362
+image analysis,image segmentation,468
+image analysis,feature extraction,243
+image analysis,pattern recognition,281
+image analysis,image processing,569
+image analysis,computer vision,403
+image analysis,remote sensing,203
+image analysis,image data,247
+image analysis,machine learning,185
+metric space,metric spaces,370
+dimensionality reduction,feature selection,356
+dimensionality reduction,pattern recognition,221
+dimensionality reduction,feature extraction,376
+dimensionality reduction,feature space,233
+dimensionality reduction,face recognition,255
+dimensionality reduction,linear discriminant analysis lda,176
+dimensionality reduction,machine learning,312
+hierarchical clustering,clustering algorithms,188
+hierarchical clustering,clustering algorithm,184
+fault tolerant,fault tolerance,984
+decision support systems,decision support,651
+convex hull,convex hulls,153
+supervised learning,reinforcement learning,161
+supervised learning,training set,206
+discrete cosine transform,discrete wavelet transform,151
+discrete cosine transform,image compression,207
+discrete cosine transform,computational complexity,164
+content analysis,social media,163
+project management,software development,316
+project management,project managers,244
+mean square,sufficient conditions,192
+convex optimization,objective function,243
+convex optimization,optimization problem,492
+convex optimization,optimal solution,254
+convex optimization,numerical examples,171
+convex optimization,power allocation,184
+convex optimization,resource allocation,194
+global optimization,objective function,407
+global optimization,global optimum,210
+global optimization,benchmark functions,231
+global optimization,particle swarm optimization,235
+global optimization,particle swarm optimization pso,163
+user interface,user experience,209
+user interface,user interface design,316
+user interface,user interaction,204
+user interface,augmented reality,162
+user interface,web applications,167
+user interface,user study,235
+edge detection,image processing,435
+edge detection,image segmentation,183
+access control,key management,183
+reinforcement learning,dynamic programming,196
+reinforcement learning,markov decision process,165
+reinforcement learning,optimal control,199
+reinforcement learning,state space,243
+linked data,linked open data,153
+total variation,image restoration,173
+minimum spanning tree,spanning tree,204
+image registration,image processing,220
+image registration,similarity measure,163
+performance improvement,performance degradation,158
+fault tolerance,error detection,169
+fault tolerance,wireless sensor networks,189
+fault tolerance,cloud computing,195
+real world,large scale,334
+real world,computer science,178
+real world,machine learning,506
+real world,mobile robot,221
+real world,computer vision,301
+real world,decision making,296
+real world,objective function,154
+real world,virtual reality,235
+real world,case studies,205
+real world,neural networks,233
+real world,neural network,288
+real world,genetic algorithm,263
+real world,virtual environment,227
+real world,existing methods,173
+real world,social networks,343
+real world,training data,204
+real world,augmented reality,429
+real world,wide range,322
+real world,feature selection,153
+real world,data mining,414
+real world,real time,353
+real world,optimization problem,162
+real world,semantic web,152
+real world,web services,157
+real world,augmented reality ar,179
+real world,wireless sensor networks,185
+real world,proposed framework,152
+real world,social media,163
+control problem,optimal control,377
+image compression,image data,174
+image compression,image processing,211
+image compression,compression ratios,154
+image compression,discrete wavelet transform,151
+computational results,linear programming,281
+computational results,optimal solution,255
+computational results,objective function,214
+computational results,randomly generated,237
+computational results,integer programming,275
+computational results,tabu search,256
+computational results,genetic algorithm,264
+computational results,valid inequalities,178
+computational results,local search,257
+normal form,normal forms,237
+efficient algorithms,computational complexity,152
+expert systems,artificial intelligence,238
+fuzzy sets,fuzzy set,324
+specification language,formal specification,180
+hearing aid,hearing aids,193
+linear prediction,speech signal,162
+vocal tract,speech production,156
+speech signals,speech signal,402
+speech signal,speech recognition,392
+speech signal,speech enhancement,218
+performance evaluation,computational complexity,150
+performance evaluation,petri nets,160
+performance evaluation,numerical results,350
+performance evaluation,performance measures,251
+performance evaluation,resource allocation,206
+performance evaluation,large scale,169
+performance evaluation,load balancing,173
+performance evaluation,packet loss,299
+performance evaluation,performance improvement,177
+performance evaluation,network performance,267
+performance evaluation,theoretical analysis,157
+performance evaluation,ad hoc,381
+performance evaluation,performance degradation,162
+performance evaluation,wide range,277
+performance evaluation,quality of service,211
+performance evaluation,base station,205
+performance evaluation,quality of service qos,346
+performance evaluation,real time,237
+performance evaluation,wireless communication,227
+performance evaluation,cellular networks,171
+performance evaluation,physical layer,163
+performance evaluation,power consumption,201
+performance evaluation,wireless network,173
+performance evaluation,routing protocol,242
+performance evaluation,wireless networks,217
+performance evaluation,response time,223
+performance evaluation,wireless sensor networks,415
+performance evaluation,wireless sensor networks wsns,171
+performance evaluation,cloud computing,237
+performance evaluation,cognitive radio,160
+speech processing,speech recognition,202
+compression ratio,image compression,283
+compression ratio,compression ratios,155
+compression ratio,compression algorithm,155
+input data,neural network,426
+input data,neural networks,279
+input data,machine learning,252
+input data,training data,156
+input data,data mining,203
+source coding,side information,193
+near optimal,optimal solution,167
+performance analysis,performance evaluation,668
+performance analysis,performance measures,310
+performance analysis,numerical results,862
+performance analysis,physical layer,158
+performance analysis,performance improvement,159
+performance analysis,bit error rate,228
+performance analysis,analytical model,494
+performance analysis,closed form,206
+performance analysis,network performance,244
+performance analysis,analytical results,519
+performance analysis,ad hoc,270
+performance analysis,wireless networks,216
+performance analysis,cloud computing,167
+banach space,banach spaces,201
+cellular automaton,cellular automata,479
+intelligent systems,artificial intelligence,178
+distributed computing,distributed systems,429
+distributed computing,load balancing,158
+distributed computing,fault tolerance,154
+distributed computing,cloud computing,298
+approximation algorithm,undirected graph,152
+decision tree,feature selection,236
+decision tree,machine learning,662
+decision tree,decision trees,1220
+decision tree,neural network,268
+decision tree,training data,228
+decision tree,neural networks,167
+decision tree,support vector machine,339
+decision tree,data mining,699
+decision tree,naive bayes,233
+decision tree,random forest,160
+main result,approximation algorithm,161
+code generation,code generator,170
+code generation,embedded systems,169
+image segmentation,feature extraction,218
+image segmentation,pattern recognition,191
+image segmentation,image processing,725
+image segmentation,prior knowledge,150
+image segmentation,object recognition,196
+image segmentation,computer vision,522
+image segmentation,neural network,167
+image segmentation,clustering algorithm,166
+image segmentation,segmentation algorithm,400
+image segmentation,magnetic resonance,191
+image segmentation,objective function,170
+image segmentation,spatial information,182
+image segmentation,ground truth,168
+image segmentation,active contour,156
+image segmentation,based segmentation,158
+image segmentation,remote sensing,185
+image segmentation,segmentation algorithms,221
+network topology,routing algorithm,151
+network topology,routing protocol,316
+network topology,network performance,224
+network topology,network topologies,340
+network topology,ad hoc,602
+network topology,network connectivity,152
+network topology,wireless sensor network,152
+network topology,wireless sensor networks,452
+network topology,wireless networks,176
+combinatorial optimization,objective function,184
+combinatorial optimization,traveling salesman problem,162
+combinatorial optimization,optimal solution,244
+environmental monitoring,wireless sensor networks wsns,154
+temporal logic,model checking,201
+virtual environment,virtual environments,444
+virtual environment,virtual world,317
+virtual environment,virtual reality vr,180
+software quality,software development,294
+operational semantics,denotational semantics,162
+operational semantics,programming language,213
+clinical trial,clinical trials,237
+random graph,random graphs,407
+input device,input devices,179
+virtual machines,operating systems,192
+virtual machines,operating system,195
+virtual machines,resource utilization,194
+virtual machines,resource allocation,201
+virtual machines,cloud computing,1048
+virtual machines,power consumption,168
+virtual machines,live migration,174
+hash function,hash functions,531
+formal verification,formal specification,160
+load balancing,large scale,161
+load balancing,fault tolerance,279
+load balancing,resource allocation,162
+load balancing,dynamic load balancing,433
+load balancing,resource utilization,162
+load balancing,load distribution,209
+load balancing,load imbalance,231
+load balancing,ad hoc,150
+load balancing,response time,246
+load balancing,wireless sensor networks,239
+load balancing,data center,168
+load balancing,cloud computing,272
+united kingdom,united states,164
+synthetic aperture radar,synthetic aperture radar sar,208
+cayley graph,cayley graphs,179
+shared memory,message passing,402
+ct scans,computed tomography,178
+parallel algorithms,parallel algorithm,386
+numerical results,computationally efficient,155
+numerical results,optimization problem,950
+numerical results,numerical solution,470
+numerical results,approximate solution,150
+numerical results,performance measures,254
+numerical results,differential equations,181
+numerical results,objective function,454
+numerical results,performance improvement,166
+numerical results,error probability,162
+numerical results,special cases,202
+numerical results,large scale,181
+numerical results,boundary conditions,342
+numerical results,global optimization,175
+numerical results,convergence rate,206
+numerical results,linear programming,256
+numerical results,dynamic programming,189
+numerical results,closed form,303
+numerical results,monte carlo,272
+numerical results,second order,271
+numerical results,performance degradation,158
+numerical results,fading channels,315
+numerical results,iterative algorithm,263
+numerical results,analytical results,326
+numerical results,numerical methods,229
+numerical results,bit error rate,219
+numerical results,partial differential equations,199
+numerical results,exact solution,171
+numerical results,rayleigh fading,167
+numerical results,blocking probability,196
+numerical results,computational cost,199
+numerical results,numerical simulation,164
+numerical results,computational complexity,531
+numerical results,theoretical analysis,576
+numerical results,existing methods,190
+numerical results,line search,171
+numerical results,mathematical model,224
+numerical results,probability density function,184
+numerical results,degrees of freedom,153
+numerical results,analytical expressions,183
+numerical results,analytical model,351
+numerical results,power control,429
+numerical results,quality of service,171
+numerical results,performance gain,162
+numerical results,bit error rate ber,200
+numerical results,orthogonal frequency division multiplexing,316
+numerical results,error estimates,190
+numerical results,transmission rate,213
+numerical results,power consumption,284
+numerical results,base station,728
+numerical results,physical layer,316
+numerical results,significantly improve,181
+numerical results,convex optimization,265
+numerical results,ad hoc,269
+numerical results,nash equilibrium,165
+numerical results,numerical simulations,165
+numerical results,optimal power allocation,277
+numerical results,power allocation,742
+numerical results,low complexity,249
+numerical results,adaptive modulation,157
+numerical results,wireless networks,397
+numerical results,wireless sensor networks,328
+numerical results,cellular network,243
+numerical results,joint optimization,150
+numerical results,finite element method,159
+numerical results,cognitive radio,919
+numerical results,relay nodes,176
+numerical results,primary user,226
+numerical results,network coding,182
+numerical results,secondary users sus,176
+numerical results,relay node,162
+numerical results,massive mimo,174
+query processing,query language,224
+query processing,query optimization,271
+query processing,query execution,230
+query processing,data management,218
+query processing,efficient query processing,162
+numerical solution,differential equations,222
+numerical solution,numerical methods,197
+numerical solution,optimal control,155
+preliminary results,machine learning,163
+decision makers,decision support,366
+decision makers,group decision making,174
+planar graphs,planar graph,825
+planar graphs,maximum degree,258
+performance measures,performance measure,217
+performance measures,numerical examples,155
+fault coverage,fault detection,152
+fault coverage,fault simulation,175
+fault coverage,benchmark circuits,184
+computer vision,image processing,1265
+computer vision,image data,251
+computer vision,edge detection,179
+computer vision,pattern recognition,912
+computer vision,image registration,151
+computer vision,natural language,155
+computer vision,real images,184
+computer vision,object recognition,731
+computer vision,feature extraction,402
+computer vision,signal processing,152
+computer vision,image sequences,219
+computer vision,real data,208
+computer vision,image features,193
+computer vision,optical flow,318
+computer vision,machine learning,816
+computer vision,image retrieval,205
+computer vision,face recognition,364
+computer vision,augmented reality,223
+computer vision,training data,230
+computer vision,proposed framework,174
+higher order,second order,236
+higher order,first order,216
+reference frame,reference frames,158
+computationally efficient,computational complexity,468
+computationally efficient,computational cost,159
+time series,remote sensing,348
+time series,neural networks,518
+time series,anomaly detection,151
+time series,neural network,557
+time series,feature extraction,165
+time series,financial time series,207
+time series,support vector machine,154
+time series,dynamic time warping,188
+time series,real world,207
+time series,real time,173
+time series,land cover,152
+time series,gene expression,187
+time series,multivariate time series,231
+time series,time series analysis,183
+ad hoc,routing algorithms,212
+ad hoc,routing protocol,1466
+ad hoc,base stations,152
+ad hoc,routing algorithm,293
+ad hoc,quality of service qos,317
+ad hoc,highly dynamic,202
+ad hoc,fully distributed,172
+ad hoc,resource allocation,165
+ad hoc,power control,268
+ad hoc,base station,150
+ad hoc,ad hoc routing protocols,222
+ad hoc,neighboring nodes,186
+ad hoc,network lifetime,236
+ad hoc,packet delivery,274
+ad hoc,mobile ad hoc network,672
+ad hoc,based routing,185
+ad hoc,transmission power,375
+ad hoc,ad hoc network,198
+ad hoc,routing overhead,168
+ad hoc,key management,171
+optical flow,moving objects,204
+optical flow,motion estimation,327
+machine vision,image processing,198
+cost function,dynamic programming,248
+cost function,objective function,184
+cost function,optimal control,370
+cost function,optimal solution,225
+cost function,cost functions,585
+cost function,computational complexity,204
+cost function,neural network,203
+cost function,neural networks,170
+word sense disambiguation,word sense disambiguation wsd,201
+interconnection network,interconnection networks,309
+processing elements,processing element,150
+fixed points,fixed point,389
+data analysis,data mining,463
+data analysis,machine learning,280
+data analysis,gene expression,234
+data analysis,big data,162
+hardware implementation,neural network,196
+hardware implementation,power consumption,178
+hardware implementation,neural networks,154
+hardware implementation,real time,162
+hardware implementation,field programmable gate array,166
+recognition accuracy,speech recognition,320
+recognition accuracy,feature extraction,154
+recognition accuracy,face recognition,185
+decision maker,decision makers,493
+error rate,speech recognition,375
+error rate,error rates,396
+error rate,training data,156
+speech quality,speech enhancement,176
+image data,image segmentation,204
+image data,image retrieval,167
+multiple access,numerical results,241
+multiple access,performance analysis,170
+multiple access,base station,214
+multiple access,spectral efficiency,150
+optimal solutions,optimal solution,312
+existing methods,computer vision,258
+existing methods,image processing,153
+existing methods,feature extraction,176
+existing methods,objective function,172
+existing methods,wide range,188
+existing methods,based method,164
+filter bank,filter banks,578
+filter bank,perfect reconstruction,237
+distance measure,distance measures,261
+embedded systems,timing constraints,180
+embedded systems,space exploration,280
+embedded systems,embedded applications,339
+embedded systems,software development,167
+embedded systems,embedded devices,217
+embedded systems,embedded system,699
+decision support,decision making,843
+decision support,machine learning,202
+decision support,information technology,156
+decision support,data mining,311
+decision support,supply chain,155
+decision support,decision support system dss,269
+decision rule,decision rules,185
+image restoration,image processing,191
+iterative algorithm,objective function,156
+iterative algorithm,power allocation,163
+theoretical results,numerical results,309
+theoretical results,numerical simulations,486
+theoretical results,performance analysis,168
+intrusion detection,ad hoc,171
+intrusion detection,anomaly detection,448
+intrusion detection,false alarm,181
+intrusion detection,network traffic,399
+intrusion detection,network security,336
+intrusion detection,detection rate,212
+intrusion detection,intrusion detection systems idss,207
+intrusion detection,wireless sensor networks,212
+network model,neural network,185
+decision procedure,decision procedures,160
+maximum degree,planar graph,169
+maximum degree,chromatic number,171
+linear programs,linear programming,257
+query languages,query language,410
+queueing networks,queueing network,165
+utility function,resource allocation,225
+utility function,utility functions,346
+regular graphs,regular graph,245
+network layer,physical layer,222
+network layer,application layer,213
+network layer,routing protocol,154
+network layer,ad hoc,196
+approximation algorithms,approximation algorithm,977
+approximation algorithms,optimal solution,187
+approximation algorithms,linear programming,154
+nash equilibrium,price of anarchy,157
+anomaly detection,false alarm,154
+development process,software development,539
+control algorithm,control system,174
+garbage collection,memory management,200
+garbage collection,garbage collector,246
+control algorithms,control algorithm,174
+connected components,connected component,222
+embedded software,embedded systems,434
+saccharomyces cerevisiae,gene expression,168
+motion compensation,motion estimation,364
+motion compensation,video coding,160
+minimum degree,connected graph,161
+user interfaces,user interface,1383
+user interfaces,user interface design,207
+physical layer,link layer,152
+physical layer,base station,161
+physical layer,spectral efficiency,183
+physical layer,resource allocation,190
+physical layer,ad hoc,253
+physical layer,adaptive modulation,159
+physical layer,wireless networks,312
+physical layer,wireless sensor networks,174
+physical layer,orthogonal frequency division multiplexing,168
+physical layer,cognitive radio,207
+message passing,belief propagation,212
+connected graphs,connected graph,314
+network design,network design problem,161
+temporal resolution,spatial resolution,187
+line graph,line graphs,180
+abstract interpretation,static analysis,247
+interface design,user interface,190
+electric vehicles,electric vehicle,256
+electric vehicles,electric vehicles evs,170
+routing algorithm,routing protocol,257
+routing algorithm,wireless sensor networks,306
+molecular dynamics,free energy,253
+code division multiple access,multiple access,162
+distributed memory,shared memory,407
+distributed memory,message passing,214
+linear temporal logic,temporal logic,167
+binding site,binding sites,348
+software development,software industry,222
+power management,power consumption,692
+power management,low power,214
+power management,wireless sensor networks,159
+importance sampling,monte carlo,365
+mixture model,mixture models,292
+principal component analysis,pattern recognition,221
+principal component analysis,neural networks,255
+principal component analysis,dimensionality reduction,580
+principal component analysis,neural network,361
+principal component analysis,principal components,556
+principal component analysis,feature space,230
+principal component analysis,principal component,278
+principal component analysis,feature extraction,668
+principal component analysis,feature vectors,189
+principal component analysis,feature selection,269
+principal component analysis,independent component analysis,172
+principal component analysis,independent component analysis ica,254
+principal component analysis,linear discriminant analysis,186
+principal component analysis,classification accuracy,168
+principal component analysis,face recognition,517
+principal component analysis,face images,219
+principal component analysis,training data,171
+principal component analysis,machine learning,232
+principal component analysis,support vector machine,316
+principal component analysis,linear discriminant analysis lda,286
+packet loss,network performance,271
+packet loss,forward error correction,262
+packet loss,performance analysis,206
+packet loss,packet delay,246
+packet loss,network congestion,219
+packet loss,analytical model,194
+packet loss,quality of service,207
+packet loss,routing protocol,190
+packet loss,numerical results,197
+packet loss,video quality,219
+packet loss,wireless networks,269
+packet loss,real time,157
+packet loss,packet losses,470
+packet loss,network conditions,179
+packet loss,quality of service qos,388
+packet loss,ad hoc,236
+packet loss,wireless sensor networks,325
+packet loss,mobility management,163
+packet loss,video streaming,268
+packet loss,wireless network,200
+hidden markov models,hidden markov model,407
+hidden markov models,speech recognition,322
+hidden markov models,hidden markov model hmm,189
+hidden markov models,hidden markov models hmms,342
+simulated annealing,optimization problems,151
+simulated annealing,objective function,235
+simulated annealing,optimal solution,178
+simulated annealing,global optimization,209
+simulated annealing,combinatorial optimization,240
+simulated annealing,computational results,157
+simulated annealing,cost function,191
+simulated annealing,genetic algorithm,605
+simulated annealing,optimization problem,249
+simulated annealing,tabu search,413
+simulated annealing,genetic algorithms,412
+simulated annealing,local search,315
+simulated annealing,simulated annealing sa,307
+simulated annealing,particle swarm optimization,160
+motion planning,configuration space,304
+motion planning,motion planner,176
+requirements engineering,software development,267
+requirements engineering,software engineering,300
+requirements engineering,requirements elicitation,184
+spectral efficiency,numerical results,491
+spectral efficiency,performance analysis,211
+spectral efficiency,bit error rate,180
+spectral efficiency,base station,430
+spectral efficiency,wireless communication,261
+spectral efficiency,orthogonal frequency division multiplexing,303
+spectral efficiency,cellular networks,310
+spectral efficiency,adaptive modulation,293
+spectral efficiency,spatial multiplexing,166
+spectral efficiency,resource allocation,345
+spectral efficiency,cellular network,151
+linear regression,maximum likelihood,189
+lessons learned,case studies,195
+lessons learned,software development,198
+computational model,computational models,278
+empirical results,data mining,166
+learning algorithm,neural network,859
+learning algorithm,supervised learning,193
+learning algorithm,pattern recognition,152
+learning algorithm,reinforcement learning,258
+search space,optimal solution,162
+search space,optimization problem,160
+logic programming,programming language,204
+parallel programs,parallel program,197
+control scheme,control schemes,197
+control scheme,adaptive control,288
+control scheme,control law,230
+control scheme,neural networks,162
+control scheme,neural network,244
+control scheme,control system,251
+domain knowledge,machine learning,217
+domain knowledge,natural language,165
+domain knowledge,domain experts,171
+autonomous robot,mobile robot,151
+decision trees,neural networks,327
+decision trees,training data,177
+control strategies,control strategy,295
+character recognition,feature extraction,153
+character recognition,neural network,161
+programming language,software development,152
+programming language,computer science,232
+nonlinear systems,sufficient conditions,188
+nonlinear systems,neural network,158
+nonlinear systems,output feedback,166
+data model,data management,207
+data model,query processing,151
+data model,relational databases,152
+loosely coupled,web services,187
+artificial intelligence,natural language,246
+artificial intelligence,machine learning,551
+artificial intelligence,computer science,413
+artificial intelligence,neural networks,379
+artificial intelligence,computer vision,171
+artificial intelligence,pattern recognition,186
+artificial intelligence,neural network,284
+artificial intelligence,decision making,212
+artificial intelligence,fuzzy logic,196
+artificial intelligence,data mining,257
+artificial intelligence,artificial intelligence ai,214
+pattern classification,neural networks,191
+pattern classification,feature extraction,179
+pattern classification,pattern recognition,222
+pattern classification,neural network,257
+pattern classification,machine learning,166
+pattern classification,support vector machine,169
+genetic algorithm,neural networks,490
+genetic algorithm,machine learning,323
+genetic algorithm,computational experiments,195
+genetic algorithm,randomly generated,160
+genetic algorithm,optimization problem,650
+genetic algorithm,genetic algorithms,2811
+genetic algorithm,cost function,171
+genetic algorithm,search space,374
+genetic algorithm,neural network,853
+genetic algorithm,fitness function,877
+genetic algorithm,search algorithm,238
+genetic algorithm,objective function,481
+genetic algorithm,optimization problems,269
+genetic algorithm,local search,528
+genetic algorithm,evolutionary algorithms,464
+genetic algorithm,pattern recognition,153
+genetic algorithm,combinatorial optimization,257
+genetic algorithm,global optimization,261
+genetic algorithm,mathematical model,229
+genetic algorithm,feature selection,429
+genetic algorithm,fuzzy logic,310
+genetic algorithm,evolutionary algorithm,406
+genetic algorithm,numerical results,183
+genetic algorithm,tabu search,279
+genetic algorithm,benchmark problems,205
+genetic algorithm,numerical experiments,179
+genetic algorithm,membership functions,178
+genetic algorithm,fitness functions,153
+genetic algorithm,genetic algorithm ga,1632
+genetic algorithm,real time,159
+genetic algorithm,time series,155
+genetic algorithm,computational complexity,176
+genetic algorithm,artificial neural network,170
+genetic algorithm,initial population,242
+genetic algorithm,global search,155
+genetic algorithm,numerical examples,174
+genetic algorithm,resource allocation,170
+genetic algorithm,particle swarm optimization,464
+genetic algorithm,convergence speed,150
+genetic algorithm,differential evolution,172
+genetic algorithm,an improved,162
+genetic algorithm,wireless sensor networks,155
+genetic algorithm,ant colony,155
+path planning,mobile robot,478
+path planning,motion planning,300
+path planning,shortest path,154
+path planning,collision avoidance,157
+path planning,obstacle avoidance,264
+path planning,configuration space,195
+path planning,path planner,196
+degrees of freedom,finite element,196
+existing algorithms,computational complexity,214
+existing algorithms,wireless sensor networks,161
+case studies,computer science,155
+case studies,software development,298
+case studies,information technology,207
+case studies,machine learning,176
+case studies,decision making,188
+case studies,source code,254
+case studies,embedded systems,152
+practical applications,computational complexity,173
+computational resources,cloud computing,239
+image features,feature extraction,185
+image features,image feature,206
+image features,image retrieval,226
+numerical experiments,theoretical results,588
+numerical experiments,boundary conditions,209
+numerical experiments,second order,276
+numerical experiments,linear systems,266
+numerical experiments,differential equations,162
+numerical experiments,convergence rate,205
+numerical experiments,partial differential equations,183
+numerical experiments,objective function,319
+numerical experiments,computational cost,212
+numerical experiments,domain decomposition,167
+numerical experiments,finite difference,321
+numerical experiments,convergence analysis,171
+numerical experiments,numerical solution,357
+numerical experiments,theoretical analysis,255
+numerical experiments,optimization problem,284
+numerical experiments,numerical methods,202
+numerical experiments,iterative method,153
+numerical experiments,numerical results,230
+numerical experiments,optimal solution,170
+numerical experiments,numerical method,215
+numerical experiments,computational complexity,195
+numerical experiments,error estimates,197
+numerical experiments,discontinuous galerkin,180
+waiting times,waiting time,186
+referencesrnthese references,page by page links to pubmed,285
+efficient parallel,parallel algorithm,151
+user model,user models,155
+target language,machine translation,227
+fault diagnosis,neural network,250
+object recognition,feature extraction,265
+object recognition,image processing,192
+application layer,physical layer,208
+important features,feature selection,190
+computational efficiency,computationally efficient,253
+computational efficiency,computational complexity,212
+software engineering,software development,1534
+software engineering,artificial intelligence,164
+software engineering,software industry,219
+software engineering,project management,234
+software engineering,computer science,732
+software engineering,real world,166
+software engineering,source code,381
+software engineering,lessons learned,252
+software engineering,programming language,179
+software engineering,formal methods,222
+software engineering,software quality,213
+software engineering,development process,373
+software engineering,case studies,323
+software engineering,software architecture,328
+software engineering,wide range,171
+software engineering,empirical studies,238
+software engineering,information technology,150
+software engineering,open source,223
+software engineering,best practices,183
+software engineering,software engineering se,179
+learning algorithms,neural networks,365
+learning algorithms,learning algorithm,597
+learning algorithms,neural network,309
+learning algorithms,supervised learning,152
+learning algorithms,machine learning,608
+application domain,application domains,163
+an empirical study,software development,218
+an empirical study,source code,172
+training set,neural network,366
+training set,classification accuracy,176
+training set,machine learning,526
+training set,training data,577
+training set,training samples,222
+training set,pattern recognition,173
+training set,training sets,261
+training set,feature selection,162
+training set,face recognition,194
+training set,data mining,151
+network performance,network traffic,241
+network performance,numerical results,234
+network performance,analytical model,211
+network performance,resource allocation,167
+network performance,network throughput,319
+network performance,network resources,202
+network performance,routing protocol,262
+network performance,ad hoc,526
+network performance,extensive simulations,190
+network performance,wireless networks,295
+network performance,power consumption,154
+network performance,base station,175
+network performance,wireless sensor networks,391
+network performance,wireless mesh networks,190
+boundary conditions,partial differential equations,228
+boundary conditions,finite difference,251
+boundary conditions,boundary value problems,163
+boundary conditions,numerical solution,225
+resource management,resource allocation,574
+resource management,quality of service,210
+resource management,admission control,151
+resource management,virtual machines,177
+resource management,operating system,152
+resource management,resource utilization,184
+resource management,grid computing,154
+resource management,cloud computing,338
+data management,cloud computing,228
+data management,big data,273
+virtual worlds,real world,157
+virtual worlds,virtual reality,153
+virtual worlds,virtual environment,177
+previously proposed,computational complexity,177
+information technology,competitive advantage,230
+information technology,future research,243
+information technology,business process,150
+information technology,cloud computing,309
+image sequences,optical flow,304
+image sequences,image sequence,589
+image sequences,motion estimation,322
+knowledge base,natural language,162
+process models,process model,669
+process models,business process,384
+exact solution,approximate solution,190
+smart card,smart cards,428
+parameter values,parameter estimation,175
+key distribution,key management,170
+service providers,service provider,517
+service providers,access control,156
+service providers,service discovery,163
+service providers,cloud computing,800
+service providers,cloud service,170
+hough transform,image processing,155
+prior knowledge,neural network,152
+prior knowledge,training data,168
+control method,control system,174
+finite fields,finite field,274
+circuit design,power consumption,179
+circuit design,low power,153
+empirical study,an empirical study,260
+relational database,query language,160
+relational database,data model,173
+relational database,relational databases,472
+analytical model,blocking probability,166
+analytical model,analytical models,196
+analytical model,analytical results,361
+analytical model,performance evaluation,348
+analytical model,ad hoc,218
+analytical model,wireless networks,154
+analytical model,proposed model,155
+cognitive science,artificial intelligence,175
+end users,end user,408
+end users,service providers,231
+end users,cloud computing,230
+mathematical model,neural network,179
+finite automaton,finite automata,151
+control law,trajectory tracking,165
+distributed applications,distributed systems,279
+distributed applications,distributed application,160
+real data,machine learning,309
+real data,pattern recognition,150
+real data,training data,185
+real data,neural network,182
+real data,objective function,174
+real data,simulated data,346
+real data,existing methods,271
+real data,parameter estimation,173
+real data,clustering algorithm,165
+real data,data mining,373
+real data,time series,324
+real data,optimization problem,181
+real data,synthetic data,502
+real data,real time,158
+real data,social networks,173
+software design,software engineering,276
+software design,software development,234
+distributed shared memory,shared memory,259
+exhaustive search,computational complexity,286
+motion capture,motion data,197
+network management,network traffic,204
+fault models,fault model,194
+controller design,control system,150
+optimization algorithm,optimization algorithms,244
+optimization algorithm,genetic algorithm,219
+knowledge management,decision making,160
+knowledge management,information technology,299
+knowledge management,competitive advantage,206
+image sequence,optical flow,201
+image sequence,motion estimation,196
+moving objects,image sequences,210
+moving objects,moving object,885
+moving objects,computer vision,176
+moving objects,real time,198
+moving objects,background subtraction,275
+recent advances,computer vision,160
+recent advances,machine learning,243
+input image,image processing,165
+scheduling problems,scheduling problem,208
+steiner tree,steiner tree problem,187
+back propagation,neural network,311
+back propagation,neural networks,180
+neural nets,neural networks,177
+associative memory,neural network,245
+software architecture,software development,277
+scheduling algorithms,scheduling algorithm,818
+scheduling algorithm,task scheduling,203
+optimization algorithms,optimization problems,150
+optimization algorithms,objective function,151
+control strategy,control law,175
+control strategy,neural network,153
+control strategy,control scheme,219
+control strategy,control system,229
+data security,cloud computing,208
+mobile robot,motion planning,256
+hardware architecture,hardware implementation,177
+digital signal processing,signal processing,264
+computational experiments,randomly generated,176
+computational experiments,linear programming,160
+computational experiments,optimal solution,163
+computational experiments,tabu search,156
+theoretical analysis,optimization problem,172
+theoretical analysis,theoretical results,226
+theoretical analysis,performance analysis,323
+theoretical analysis,computational complexity,250
+theoretical analysis,numerical simulations,363
+theoretical analysis,ad hoc,185
+theoretical analysis,base station,161
+theoretical analysis,wireless sensor networks,403
+theoretical analysis,cognitive radio,211
+adaptive controller,adaptive control,237
+network traffic,performance evaluation,167
+network traffic,network security,186
+network traffic,anomaly detection,292
+control laws,control law,260
+point sets,point set,329
+probability density,probability density function,190
+obstacle avoidance,mobile robot,395
+constrained optimization,objective function,161
+dynamic analysis,static analysis,246
+open loop,closed loop,182
+stability analysis,sufficient conditions,250
+stability analysis,asymptotic stability,154
+trajectory tracking,control scheme,189
+performance index,optimal control,167
+data transmission,wireless sensor networks,322
+tacit knowledge,knowledge management,174
+constant factor,approximation algorithm,253
+membership functions,fuzzy set,165
+membership functions,fuzzy sets,162
+membership functions,fuzzy model,170
+feature vectors,feature extraction,440
+feature vectors,face recognition,190
+feature vectors,machine learning,201
+objective functions,objective function,337
+source language,target language,327
+transfer functions,transfer function,534
+parameter estimates,parameter estimation,302
+high school,computer science,320
+breast cancer,neural network,184
+breast cancer,gene expression,255
+voronoi diagrams,voronoi diagram,219
+routing protocol,routing protocols,865
+routing protocol,base station,186
+routing protocol,load balancing,161
+routing protocol,wireless sensor networks,946
+routing protocol,routing overhead,151
+routing protocol,packet delivery,268
+routing protocol,network lifetime,408
+routing protocol,control overhead,186
+routing protocol,mobile ad hoc networks manets,273
+routing protocol,mobile ad hoc network,291
+routing protocol,wireless sensor network,285
+routing protocol,wireless networks,174
+routing protocol,packet delivery ratio,364
+routing protocol,mobile ad hoc networks,184
+routing protocol,wireless mesh networks,198
+routing protocol,proposed protocol,221
+human brain,magnetic resonance,205
+human brain,white matter,264
+information security,information technology,182
+integer programming,computational experiments,156
+probability density function,random variables,193
+probability density function,performance analysis,297
+probability density function,analytical results,151
+linear codes,linear code,153
+finite element method,finite element,505
+recognition rate,neural network,209
+recognition rate,face recognition,285
+recognition rate,feature extraction,225
+previous studies,machine learning,195
+neural net,neural network,237
+neural net,neural networks,168
+error probabilities,error probability,155
+analytical results,numerical simulations,224
+analytical results,outage probability,415
+analytical results,ad hoc,157
+transcription factor,binding site,166
+transcription factor,binding sites,166
+transcription factor,transcription factors,190
+transcription factor,gene expression,189
+graphical user interface,user interface,267
+knowledge representation,semantic web,291
+routing algorithms,routing algorithm,702
+routing algorithms,routing protocol,170
+routing algorithms,wireless sensor networks,189
+real images,image segmentation,284
+received signal,numerical results,269
+received signal,performance analysis,157
+received signal,noise ratio,181
+received signal,computational complexity,172
+received signal,base station,216
+received signal,cognitive radio,168
+image coding,image compression,306
+based methods,based method,258
+singular value decomposition,singular value decomposition svd,290
+magnetic resonance,white matter,234
+magnetic resonance,magnetic resonance imaging mri,154
+reverse engineering,source code,273
+logistic regression,feature selection,153
+logistic regression,machine learning,385
+logistic regression,neural networks,164
+logistic regression,data mining,181
+logistic regression,support vector machine,205
+key frame,key frames,156
+scalar multiplication,elliptic curve,253
+synchronous motor,permanent magnet,206
+mathematical morphology,image processing,181
+threshold voltage,supply voltage,228
+base station,cellular systems,243
+base station,cellular network,489
+base station,power control,396
+base station,traffic load,161
+base station,optimization problem,329
+base station,cellular networks,890
+base station,performance analysis,269
+base station,resource allocation,628
+base station,quality of service,164
+base station,computational complexity,242
+base station,power allocation,389
+base station,limited feedback,158
+base station,wireless sensor network wsn,159
+base station,mobile station ms,215
+monte carlo simulation,monte carlo,437
+linear discriminant analysis,feature extraction,218
+linear discriminant analysis,face recognition,243
+linear discriminant analysis,linear discriminant analysis lda,210
+fading channels,performance analysis,271
+phase noise,frequency synthesizer,170
+phase noise,low phase noise,157
+client side,server side,229
+social network,social networks,3691
+social network,network structure,266
+social network,social networking,774
+social network,social influence,230
+social network,social network analysis,477
+social network,recommender systems,174
+social network,social relationships,230
+social network,machine learning,158
+social network,real world,280
+social network,data mining,212
+social network,real data,155
+social network,social interactions,238
+social network,social interaction,173
+social network,viral marketing,156
+social network,large scale,156
+social network,online social networks,716
+social network,social graph,193
+social network,personal information,155
+social network,link prediction,162
+social network,social media,714
+social network,extensive experiments,156
+social network,influence maximization,185
+unstructured data,structured data,164
+image quality,image reconstruction,222
+image quality,image compression,333
+image quality,computational complexity,175
+image quality,image quality assessment,217
+urban area,urban areas,164
+active learning,training data,207
+active learning,machine learning,256
+active learning,labeled data,159
+active learning,unlabeled data,162
+data stream,data mining,245
+data stream,streaming data,214
+software development process,software development,350
+path loss,base station,165
+path loss,outage probability,150
+lossless compression,image compression,173
+risk management,risk assessment,176
+multilayer perceptron,neural network,589
+rayleigh fading,outage probability,189
+data fusion,remote sensing,150
+data fusion,wireless sensor networks,203
+virtual world,virtual worlds,644
+virtual world,real world,367
+virtual world,virtual reality,266
+virtual world,second life,294
+elliptic curve,finite field,190
+elliptic curve,elliptic curves,404
+virtual reality,virtual environments,321
+virtual reality,virtual environment,754
+virtual reality,computer graphics,220
+virtual reality,force feedback,151
+virtual reality,augmented reality,250
+virtual reality,virtual reality vr,731
+wide range,ad hoc,241
+wide range,computer science,192
+wide range,large scale,208
+wide range,case studies,230
+wide range,distributed systems,158
+wide range,monte carlo,152
+wide range,existing approaches,168
+wide range,performance analysis,208
+wide range,neural network,279
+wide range,signal processing,286
+wide range,optimization problem,207
+wide range,computer vision,346
+wide range,neural networks,214
+wide range,machine learning,497
+wide range,computational complexity,261
+wide range,decision making,203
+wide range,numerical results,259
+wide range,image processing,230
+wide range,genetic algorithm,187
+wide range,real data,185
+wide range,embedded systems,201
+wide range,operating conditions,256
+wide range,low power,188
+wide range,low cost,186
+wide range,application domains,218
+wide range,extensive simulations,158
+wide range,power consumption,285
+wide range,real time,295
+wide range,data mining,296
+wide range,practical applications,165
+wide range,time series,175
+wide range,wireless communication,166
+wide range,wireless sensor networks,350
+wide range,proposed framework,190
+wide range,cloud computing,186
+numerical simulation,numerical simulations,191
+depth information,depth map,214
+mobile computing,cloud computing,171
+training examples,training data,225
+training examples,training set,162
+training data,learning algorithm,341
+training data,learning algorithms,229
+training data,feature extraction,229
+training data,training samples,322
+training data,speech recognition,374
+training data,maximum likelihood,154
+training data,feature space,286
+training data,existing methods,194
+training data,classification accuracy,273
+training data,supervised learning,394
+training data,face recognition,199
+feature vector,feature vectors,731
+feature vector,feature selection,211
+feature vector,feature space,191
+feature vector,feature extraction,442
+feature vector,neural network,198
+feature vector,face recognition,164
+feature vector,machine learning,172
+feature vector,support vector machine,284
+genetic programming,genetic programming gp,837
+document image,document images,475
+special issue,guest editors introduction,233
+feature space,face recognition,218
+feature space,feature extraction,381
+feature space,feature vectors,210
+feature space,training samples,151
+feature space,image retrieval,156
+genetic algorithms,combinatorial optimization,199
+genetic algorithms,machine learning,232
+genetic algorithms,search space,299
+genetic algorithms,neural network,350
+genetic algorithms,fitness function,452
+genetic algorithms,objective function,238
+genetic algorithms,genetic programming,161
+genetic algorithms,evolutionary algorithms,379
+genetic algorithms,optimization problem,340
+genetic algorithms,global optimization,151
+genetic algorithms,tabu search,201
+genetic algorithms,feature selection,250
+genetic algorithms,evolutionary algorithm,190
+genetic algorithms,membership functions,158
+genetic algorithms,particle swarm optimization,219
+decision variables,objective function,153
+color image,color images,352
+color image,color space,159
+speech recognizer,speech recognition,294
+natural images,computer vision,156
+natural images,image segmentation,176
+natural images,image processing,151
+natural images,natural image,216
+convergence analysis,numerical results,166
+convergence analysis,numerical examples,204
+retrieval performance,relevance feedback,167
+domain decomposition,finite element,231
+fitness function,genetic programming,213
+fitness function,fitness functions,236
+fitness function,evolutionary algorithms,261
+fitness function,particle swarm optimization,166
+image acquisition,image processing,199
+activation function,neural networks,304
+activation function,neural network,308
+computational cost,computational complexity,382
+computational cost,real time,181
+incomplete data,missing values,150
+secret key,secret keys,217
+hidden layer,neural networks,190
+hidden layer,neural network,255
+modal logics,modal logic,194
+source node,destination node,630
+source node,ad hoc,237
+source node,routing protocol,155
+source node,wireless sensor networks,190
+source node,source nodes,151
+source node,relay nodes,217
+network throughput,ad hoc,365
+network throughput,wireless networks,207
+network throughput,network coding,170
+existing approaches,existing methods,196
+existing approaches,machine learning,227
+existing approaches,wireless sensor networks,185
+load balance,load balancing,282
+image database,image retrieval,386
+formal specifications,formal specification,193
+similarity measure,image retrieval,178
+similarity measure,similarity measures,663
+probability distributions,random variables,204
+probability distributions,probability distribution,316
+an artificial neural network,neural network,175
+local search,combinatorial optimization,276
+local search,genetic algorithms,255
+local search,evolutionary algorithms,228
+local search,objective function,208
+local search,tabu search,290
+local search,search algorithm,287
+local search,global optimization,207
+local search,computational experiments,189
+local search,optimization problem,167
+local search,search space,207
+local search,global search,355
+local search,benchmark problems,221
+local search,evolutionary algorithm,246
+local search,local optima,173
+local search,local search algorithms,186
+local search,memetic algorithms,151
+local search,memetic algorithm,299
+local search,benchmark instances,209
+local search,particle swarm optimization,232
+limit cycles,limit cycle,174
+eye movements,eye movement,221
+eye movements,eye tracking,164
+classification accuracy,neural networks,217
+classification accuracy,neural network,363
+classification accuracy,pattern recognition,226
+classification accuracy,feature extraction,400
+classification accuracy,decision tree,229
+classification accuracy,classification performance,321
+classification accuracy,data mining,228
+classification accuracy,image classification,209
+classification accuracy,support vector machine,539
+training samples,feature extraction,167
+gesture recognition,hand gestures,187
+clustering algorithms,clustering algorithm,899
+clustering algorithms,gene expression,199
+clustering algorithms,based clustering,154
+query expansion,information retrieval,273
+sample sizes,sample size,187
+clustering algorithm,fuzzy clustering,197
+clustering algorithm,gene expression,152
+fuzzy clustering,fuzzy clustering algorithm,165
+relevant information,information retrieval,189
+fourth order,second order,180
+feature set,feature extraction,257
+error bound,error bounds,181
+signature schemes,signature scheme,265
+tool support,software development,169
+motion field,motion estimation,194
+fuzzy controller,fuzzy control,226
+fuzzy controller,fuzzy logic,175
+numerical solutions,numerical results,197
+numerical solutions,numerical solution,210
+sliding mode,sliding mode control,331
+robust stability,sufficient conditions,184
+bandwidth allocation,resource allocation,166
+significantly reduce,computational complexity,247
+significantly reduce,power consumption,199
+significantly reduce,wireless sensor networks,153
+quality of service,resource allocation,336
+quality of service,network resources,189
+quality of service,service providers,242
+quality of service,ad hoc,207
+quality of service,web services,211
+quality of service,cloud computing,213
+convergence rates,convergence rate,153
+detection method,detection methods,159
+video game,video games,451
+competitive ratio,online algorithm,442
+competitive ratio,competitive analysis,161
+low complexity,computational complexity,700
+low complexity,resource allocation,221
+low complexity,optimization problem,195
+low complexity,base station,203
+low complexity,spectral efficiency,182
+low complexity,power allocation,150
+discrete wavelet transform,feature extraction,197
+fuzzy control,fuzzy logic,263
+fuzzy inference,fuzzy logic,250
+input variables,neural networks,202
+input variables,neural network,248
+power consumption,power supply,481
+power consumption,supply voltage,839
+power consumption,phase noise,239
+power consumption,input signal,176
+power consumption,chip area,393
+power consumption,optimization problem,271
+power consumption,performance analysis,176
+power consumption,embedded systems,626
+power consumption,switching activity,203
+power consumption,power reduction,570
+power consumption,base station,334
+power consumption,image processing,152
+power consumption,power estimation,273
+power consumption,power savings,374
+power consumption,power efficiency,445
+power consumption,real time,245
+power consumption,performance degradation,203
+power consumption,resource allocation,247
+power consumption,power control,284
+power consumption,operating frequency,162
+power consumption,ad hoc,219
+power consumption,network lifetime,161
+power consumption,total power,271
+power consumption,wireless sensor network,248
+power consumption,reduce power consumption,359
+power consumption,leakage power,255
+power consumption,total power consumption,310
+power consumption,wireless networks,174
+power consumption,power allocation,161
+power consumption,high power,182
+power consumption,duty cycle,150
+power consumption,measurement results,210
+power consumption,cloud computing,309
+power consumption,data centers,167
+power consumption,smart grid,162
+nearest neighbors,nearest neighbor,241
+total cost,supply chain,176
+neural model,neural network,195
+pose estimation,object recognition,152
+pose estimation,computer vision,193
+em algorithm,maximum likelihood,353
+em algorithm,parameter estimation,185
+em algorithm,mixture model,210
+original image,image processing,205
+original image,image quality,204
+original image,watermarked image,158
+filter banks,perfect reconstruction,311
+recurrent neural network,recurrent neural networks,340
+recurrent neural network,neural network,450
+recurrent neural network,neural networks,235
+power dissipation,power consumption,504
+power dissipation,supply voltage,229
+power dissipation,power reduction,173
+motion vectors,motion vector,513
+motion vectors,motion estimation,561
+motion vectors,motion compensation,230
+motion vectors,computational complexity,191
+motion vector,motion estimation,486
+motion vector,motion compensation,174
+motion vector,computational complexity,193
+relational databases,query language,157
+description logic,description logics,344
+description logic,semantic web,249
+motion estimation,video coding,217
+motion estimation,computer vision,162
+motion estimation,computational complexity,444
+motion estimation,fast motion estimation,153
+motion estimation,motion estimation algorithm,259
+motion estimation,full search,186
+product development,product design,195
+process modeling,process model,196
+process modeling,process models,230
+process modeling,business process,164
+visual tracking,computer vision,173
+visual tracking,object tracking,163
+visual tracking,particle filter,168
+decoding algorithm,decoding algorithms,163
+decoding algorithm,ldpc codes,205
+rough set,decision rules,175
+rough set,rough set theory,551
+rough set,rough sets,454
+output signal,input signal,150
+singular perturbation,singularly perturbed,158
+traffic load,load balancing,180
+traffic load,ad hoc,176
+local optimization,global optimization,151
+tracking algorithm,visual tracking,150
+tracking algorithm,object tracking,195
+impulse responses,impulse response,177
+signature scheme,random oracle model,174
+congestion control,packet loss,360
+congestion control,network congestion,267
+congestion control,transmission control protocol,168
+congestion control,congestion control algorithm,163
+secret sharing,secret sharing scheme,228
+spatial information,remote sensing,192
+autonomous navigation,mobile robot,200
+quality of service qos,performance analysis,247
+quality of service qos,quality of service,756
+quality of service qos,resource utilization,175
+quality of service qos,bandwidth allocation,155
+quality of service qos,network resources,309
+quality of service qos,admission control,461
+quality of service qos,network performance,241
+quality of service qos,power consumption,187
+quality of service qos,resource management,261
+quality of service qos,base station,303
+quality of service qos,service providers,314
+quality of service qos,call admission control,189
+quality of service qos,numerical results,381
+quality of service qos,best effort,171
+quality of service qos,routing protocol,190
+quality of service qos,scheduling algorithm,203
+quality of service qos,extensive simulations,169
+quality of service qos,resource allocation,669
+quality of service qos,wireless networks,315
+quality of service qos,optimization problem,258
+quality of service qos,cellular networks,269
+quality of service qos,wireless communication,201
+quality of service qos,power control,173
+quality of service qos,analytical model,171
+quality of service qos,transmit power,162
+quality of service qos,power allocation,164
+quality of service qos,web service,302
+quality of service qos,video streaming,182
+quality of service qos,response time,188
+quality of service qos,web services,378
+quality of service qos,wireless network,184
+quality of service qos,wireless sensor networks,203
+quality of service qos,quality of experience qoe,241
+quality of service qos,cognitive radio,278
+quality of service qos,cloud computing,310
+significantly reduces,computational complexity,224
+low power,low cost,287
+low power,power dissipation,494
+low power,power consumption,2019
+low power,supply voltage,490
+low power,power supply,281
+low power,signal processing,200
+low power,dynamic range,150
+low power,embedded systems,268
+low power,switching activity,171
+low power,power reduction,326
+low power,power saving,154
+low power,real time,171
+low power,wireless communication,201
+low power,power savings,154
+low power,wireless sensor networks,364
+low power,wireless sensor network,175
+low power,dynamic power,153
+local information,global information,239
+regular languages,regular language,246
+markov decision processes,reinforcement learning,168
+input signals,input signal,199
+block matching,motion estimation,191
+business model,business models,223
+business model,cloud computing,158
+kalman filtering,kalman filter,448
+process algebras,process algebra,154
+doa estimation,direction of arrival doa estimation,204
+false positive,true positive,166
+feedforward neural network,neural networks,154
+feedforward neural network,neural network,285
+coding schemes,coding scheme,243
+extended kalman filter,kalman filter,185
+negative examples,positive examples,176
+data compression,compression ratio,154
+data mining,machine learning,2113
+data mining,large databases,302
+data mining,domain knowledge,194
+data mining,natural language,156
+data mining,interesting patterns,192
+data mining,clustering algorithms,331
+data mining,computational complexity,158
+data mining,rough set,194
+data mining,rough set theory,200
+data mining,rough sets,200
+data mining,pattern recognition,471
+data mining,classification algorithms,206
+data mining,decision trees,479
+data mining,time series,443
+data mining,association rule mining,520
+data mining,raw data,195
+data mining,large scale,261
+data mining,business intelligence,161
+data mining,feature selection,712
+data mining,feature extraction,205
+data mining,statistical analysis,346
+data mining,neural networks,387
+data mining,synthetic data,155
+data mining,case studies,191
+data mining,big data,520
+data mining,computer science,199
+data mining,neural network,391
+data mining,text mining,261
+data mining,genetic algorithm,277
+data mining,existing methods,232
+data mining,data warehouse,220
+data mining,decision making,403
+data mining,genetic algorithms,175
+data mining,supervised learning,181
+data mining,intrusion detection,289
+data mining,search space,159
+data mining,large data sets,247
+data mining,learning algorithms,157
+data mining,existing algorithms,153
+data mining,training data,302
+data mining,anomaly detection,223
+data mining,clustering algorithm,395
+data mining,real time,171
+data mining,data management,157
+data mining,pattern discovery,156
+data mining,frequent itemsets,303
+data mining,knowledge discovery,698
+data mining,frequent pattern mining,175
+data mining,gene expression,274
+data mining,real datasets,197
+data mining,cluster analysis,216
+data mining,frequent patterns,316
+data mining,apriori algorithm,176
+data mining,support vector machine,338
+data mining,dimensionality reduction,179
+data mining,time series data,183
+data mining,large data,201
+data mining,application domains,150
+data mining,existing approaches,152
+data mining,information retrieval,313
+data mining,social networks,276
+data mining,social media,187
+data mining,proposed framework,183
+data mining,cloud computing,177
+markov random fields,markov random field,160
+image databases,image database,182
+image databases,image retrieval,218
+recognition performance,speech recognition,293
+recognition performance,face recognition,278
+unknown parameters,parameter estimation,206
+fuzzy rules,fuzzy logic,218
+fuzzy rules,membership functions,178
+hopfield neural network,neural network,153
+video coding,computational complexity,199
+resource constraints,wireless sensor networks,202
+power supply,supply voltage,215
+power supply,output voltage,150
+radial basis function,neural network,789
+radial basis function,radial basis functions,156
+radial basis function,neural networks,635
+radial basis function,radial basis function rbf,165
+computational burden,computational complexity,182
+face detection,computer vision,195
+face detection,face images,162
+face detection,face recognition,331
+training algorithm,neural network,331
+training algorithm,neural networks,235
+activation functions,neural network,289
+activation functions,activation function,183
+activation functions,neural networks,399
+feedforward neural networks,neural network,214
+feedforward neural networks,neural networks,282
+wavelet transform,discrete wavelet transform,150
+face recognition,feature extraction,676
+face recognition,pattern recognition,314
+face recognition,object recognition,157
+face recognition,face images,1304
+face recognition,neural network,194
+face recognition,facial images,226
+face recognition,facial features,292
+face recognition,face model,171
+face recognition,facial expressions,285
+face recognition,face databases,527
+face recognition,training samples,296
+query execution,query optimization,163
+software testing,software development,170
+image representation,image classification,151
+prior information,prior knowledge,171
+membership function,membership functions,352
+membership function,fuzzy logic,189
+membership function,fuzzy set,165
+radio spectrum,cognitive radio,360
+classification problems,neural networks,172
+classification problems,machine learning,194
+classification problems,neural network,163
+classification problems,feature selection,155
+convergence speed,computational complexity,171
+numerical simulations,mathematical model,188
+numerical simulations,optimization problem,156
+numerical simulations,hopf bifurcation,160
+optical network,optical networks,296
+medium access control,physical layer,154
+medium access control,ad hoc,200
+base stations,power control,216
+base stations,cellular network,349
+base stations,base station,1143
+base stations,wireless networks,173
+base stations,resource allocation,255
+base stations,cellular systems,153
+base stations,cellular networks,690
+base stations,wireless network,151
+base stations,numerical results,298
+base stations,power consumption,196
+base stations,spectral efficiency,177
+network nodes,network topology,172
+network nodes,wireless sensor networks,187
+network nodes,ad hoc,236
+business process,business process management,356
+business process,process model,332
+business process,web service,297
+asymptotic stability,lyapunov function,160
+asymptotic stability,numerical examples,167
+approximation ratio,approximation algorithms,378
+approximation ratio,approximation algorithm,786
+approximation ratio,greedy algorithm,162
+functional unit,functional units,172
+generalization performance,neural network,151
+low voltage,low power,162
+low voltage,supply voltage,187
+large vocabulary,speech recognition,220
+force field,molecular dynamics,199
+control design,controller design,168
+control design,control system,162
+adaptive fuzzy,fuzzy logic,213
+performance metrics,performance evaluation,297
+performance metrics,performance analysis,333
+performance metrics,analytical model,153
+performance metrics,ad hoc,153
+performance metrics,numerical results,171
+performance metrics,wireless sensor networks,177
+performance guarantee,approximation algorithm,172
+recurrent neural networks,neural network,312
+recurrent neural networks,neural networks,408
+admission control,quality of service,240
+output layer,neural network,205
+fading channel,fading channels,304
+image enhancement,image processing,220
+multilayer perceptrons,neural networks,161
+receptive fields,receptive field,192
+synthetic speech,speech synthesis,188
+volume data,volume rendering,168
+social networks,network analysis,161
+social networks,semantic web,163
+social networks,recommender systems,195
+social networks,social relationships,251
+social networks,social network analysis,410
+social networks,link prediction,222
+social networks,big data,225
+evolutionary algorithms,search space,226
+evolutionary algorithms,evolutionary algorithm,1022
+evolutionary algorithms,objective function,162
+evolutionary algorithms,neural networks,176
+evolutionary algorithms,combinatorial optimization,150
+evolutionary algorithms,optimization problem,190
+evolutionary algorithms,genetic programming,184
+evolutionary algorithms,differential evolution,310
+evolutionary algorithms,benchmark functions,188
+evolutionary algorithms,benchmark problems,183
+evolutionary algorithms,particle swarm optimization,202
+evolutionary algorithm,search space,191
+evolutionary algorithm,neural network,156
+evolutionary algorithm,objective function,170
+evolutionary algorithm,fitness function,254
+evolutionary algorithm,benchmark problems,153
+coding efficiency,computational complexity,290
+coding efficiency,motion estimation,203
+coding efficiency,video coding,293
+coding efficiency,high efficiency video coding,210
+digital libraries,digital library,1005
+network structure,neural network,219
+network structure,social networks,287
+ip addresses,ip address,252
+speech data,speech recognition,179
+generalization ability,neural networks,186
+generalization ability,neural network,204
+task graph,task graphs,175
+hot spot,hot spots,150
+texture features,texture analysis,193
+texture features,feature extraction,176
+texture features,texture feature,157
+access rights,access control,239
+principal component,principal components,152
+detection probability,false alarm,264
+detection probability,cognitive radio,222
+white matter,gray matter,320
+white matter,corpus callosum,167
+white matter,diffusion tensor imaging dti,259
+white matter,fractional anisotropy fa,190
+white matter,in vivo,156
+spatial reuse,ad hoc,202
+fault injection,fault tolerance,183
+international society for optical engineering downloading,image processing,155
+bit error rate ber,orthogonal frequency division multiplexing,257
+bit error rate ber,performance analysis,213
+bit error rate ber,ber performance,206
+facial expressions,facial expression,1019
+image retrieval,relevance feedback,508
+image retrieval,retrieval performance,254
+image retrieval,feature extraction,227
+image retrieval,content based image retrieval,159
+image retrieval,image classification,159
+distance learning,distance education,150
+vehicle routing problem,vehicle routing,163
+basis function,basis functions,228
+power control,resource allocation,292
+power control,nash equilibrium,150
+power control,spectral efficiency,158
+power control,power allocation,307
+connection weights,neural networks,171
+connection weights,neural network,192
+sar images,synthetic aperture radar sar,200
+sar images,synthetic aperture radar sar images,198
+network capacity,ad hoc,182
+output feedback,sufficient conditions,162
+wiley periodicals inc,int j imaging syst technol,229
+wiley periodicals inc,data mining,170
+augmented reality,virtual objects,157
+ground truth,computer vision,189
+sar data,synthetic aperture radar,187
+sar data,synthetic aperture radar sar,287
+statistical machine translation,machine translation,300
+public libraries,public library,162
+open source,machine learning,153
+open source,open source software,765
+open source,source code,616
+open source,operating system,162
+open source,software development,337
+open source,an empirical study,163
+open source,an open source,432
+open source,cloud computing,185
+wireless communication,low complexity,152
+wireless communication,power consumption,343
+wireless communication,wireless network,285
+wireless communication,performance analysis,270
+wireless communication,ad hoc,294
+wireless communication,base station,319
+wireless communication,numerical results,318
+wireless communication,next generation,155
+wireless communication,signal processing,191
+wireless communication,computational complexity,190
+wireless communication,resource allocation,176
+wireless communication,physical layer,259
+wireless communication,orthogonal frequency division multiplexing,289
+wireless communication,wireless sensor networks,425
+wireless communication,wireless sensor network,193
+wireless communication,wireless networks,291
+wireless communication,cognitive radio,292
+frequency domain,time domain,769
+frequency domain,computational complexity,170
+frequency domain,orthogonal frequency division multiplexing,206
+deep learning,neural networks,218
+deep learning,computer vision,281
+deep learning,machine learning,374
+deep learning,training data,155
+deep learning,image classification,152
+deep learning,neural network,225
+deep learning,deep neural network,158
+high priority,low priority,229
+wireless communications,wireless communication,234
+wireless communications,wireless networks,152
+user experience,user study,182
+social influence,social networks,181
+facial expression,face images,187
+facial expression,face recognition,342
+facial expression,facial features,219
+facial expression,feature extraction,163
+mac protocol,ad hoc,202
+orthogonal frequency division multiplexing,performance analysis,162
+orthogonal frequency division multiplexing,performance degradation,152
+orthogonal frequency division multiplexing,bit error rate,240
+orthogonal frequency division multiplexing,cyclic prefix,190
+orthogonal frequency division multiplexing,low complexity,279
+orthogonal frequency division multiplexing,computational complexity,433
+orthogonal frequency division multiplexing,carrier frequency offset cfo,197
+orthogonal frequency division multiplexing,power allocation,231
+orthogonal frequency division multiplexing,resource allocation,232
+orthogonal frequency division multiplexing,time domain,221
+orthogonal frequency division multiplexing,ber performance,168
+swarm intelligence,particle swarm optimization,216
+channel estimation,numerical results,215
+channel estimation,computational complexity,154
+channel estimation,orthogonal frequency division multiplexing,313
+transactional memory,transactional memory tm,155
+hidden markov model hmm,speech recognition,232
+hidden markov model hmm,hidden markov model,372
+supply chain,supply chains,1457
+supply chain,information technology,217
+collaborative filtering,user preferences,153
+collaborative filtering,recommender systems,880
+collaborative filtering,collaborative filtering cf,310
+collaborative filtering,matrix factorization,262
+ber performance,computational complexity,154
+iris recognition,feature extraction,152
+medical imaging,image processing,158
+the world wide web,search engines,168
+pid control,pid controller,196
+association rule,association rules,180
+association rules,data mining,1015
+association rules,association rule mining,486
+association rules,mining association rules,217
+association rules,frequent itemsets,191
+web pages,web sites,175
+web pages,search engines,201
+web pages,web page,430
+error estimates,finite element,366
+training sample,training samples,193
+block ciphers,block cipher,257
+power optimization,power consumption,238
+naive bayes,data mining,220
+naive bayes,machine learning,485
+naive bayes,decision trees,172
+naive bayes,naive bayes classifier,173
+naive bayes,feature selection,247
+naive bayes,text classification,160
+map building,mobile robot,155
+segmentation results,image segmentation,508
+segmentation results,segmentation algorithm,152
+extensive simulations,analytical results,152
+extensive simulations,analytical model,186
+extensive simulations,ad hoc,352
+extensive simulations,base station,152
+extensive simulations,resource allocation,159
+extensive simulations,wireless sensor networks,559
+extensive simulations,routing protocol,182
+extensive simulations,network lifetime,152
+extensive simulations,theoretical analysis,220
+extensive simulations,wireless networks,217
+extensive simulations,optimization problem,181
+extensive simulations,cognitive radio,155
+operating system,programming language,172
+operating system,real time,164
+operating system,virtual machine,271
+operating system,embedded systems,324
+promising results,neural network,154
+promising results,machine learning,279
+promising results,training data,150
+promising results,computer vision,160
+multiobjective optimization,evolutionary algorithms,151
+remotely sensed,remote sensing,332
+linear matrix inequalities,sufficient condition,168
+network services,network service,151
+event detection,wireless sensor networks,204
+artificial neural networks,neural networks,877
+artificial neural networks,pattern recognition,153
+artificial neural networks,artificial neural networks anns,257
+artificial neural networks,artificial neural network,392
+artificial neural networks,neural network,814
+artificial neural networks,machine learning,260
+artificial neural networks,genetic algorithms,152
+web site,web sites,457
+file system,file systems,690
+file system,operating system,200
+file system,storage systems,158
+open source software,software development,203
+open source software,an open source,169
+iterative learning control,iterative learning control ilc,212
+third party,cloud computing,155
+turbo codes,turbo code,196
+word error rate,speech recognition,396
+object tracking,moving objects,170
+object tracking,computer vision,246
+object tracking,particle filter,166
+genetic algorithm ga,genetic algorithms,309
+genetic algorithm ga,feature selection,162
+genetic algorithm ga,optimization problem,196
+genetic algorithm ga,evolutionary algorithms,153
+genetic algorithm ga,optimal solution,163
+genetic algorithm ga,neural network,174
+genetic algorithm ga,fitness function,234
+genetic algorithm ga,objective function,168
+genetic algorithm ga,particle swarm optimization pso,297
+genetic algorithm ga,simulated annealing sa,169
+genetic algorithm ga,particle swarm optimization,150
+kalman filters,kalman filter,173
+expert system,expert systems,257
+neural networks nns,neural networks,183
+cellular automata ca,cellular automata,490
+complexity reduction,computational complexity,163
+web servers,web server,214
+web browsers,web browser,196
+control problems,optimal control,241
+web search,search engines,487
+web search,search engine,711
+web search,search results,624
+web search,web search engine,285
+search engines,search results,384
+power efficiency,low power,170
+next generation,cloud computing,172
+hand gestures,hand gesture,214
+antenna array,antenna arrays,201
+illumination conditions,face recognition,151
+network connectivity,ad hoc,244
+network connectivity,wireless sensor networks,303
+destination node,ad hoc,175
+destination node,relay nodes,204
+location management,location update,152
+search results,search engine,596
+context information,ubiquitous computing,169
+utility functions,resource allocation,163
+user preferences,recommender systems,245
+user preferences,user preference,197
+power efficient,power consumption,322
+power efficient,power efficiency,160
+electric power,power system,167
+power systems,power system,645
+plane graph,plane graphs,176
+let g,connected graph,203
+network operators,service providers,168
+expression recognition,facial expression,182
+high performance computing,high performance computing hpc,166
+speech enhancement,noise reduction,261
+speech enhancement,speech recognition,167
+cellular networks,power control,254
+cellular networks,performance analysis,175
+cellular networks,cellular network,1098
+cellular networks,cellular systems,191
+cellular networks,transmit power,187
+cellular networks,outage probability,165
+cellular networks,traffic load,153
+cellular networks,resource allocation,494
+cellular networks,numerical results,418
+cellular networks,optimization problem,212
+cellular networks,network performance,166
+cellular networks,power consumption,170
+cellular networks,wireless networks,197
+cellular networks,base stations bss,254
+cellular networks,d2d communication,155
+cellular networks,stochastic geometry,185
+web applications,web application,1312
+web applications,web browser,172
+web applications,cloud computing,156
+feature spaces,feature space,229
+hidden neurons,neural network,180
+retrieval results,image retrieval,154
+project managers,software development,171
+text categorization,feature selection,217
+text categorization,machine learning,151
+image classification,feature extraction,258
+image classification,training data,164
+image classification,computer vision,253
+time delay,sufficient conditions,226
+time delay,time delays,315
+moving targets,moving target,158
+independent component analysis,independent component analysis ica,634
+independent component analysis,blind source separation,192
+independent component analysis ica,blind source separation bss,156
+classification algorithms,classification algorithm,173
+text classification,machine learning,219
+finite volume,finite volume method,154
+spectral subtraction,speech enhancement,167
+large datasets,data mining,296
+large datasets,machine learning,206
+user profiles,user profile,272
+missing data,missing values,272
+data warehouse,data warehousing,201
+feature sets,feature set,355
+feature sets,machine learning,168
+feature sets,feature selection,302
+force fields,force field,175
+significantly outperforms,existing methods,160
+significantly outperforms,extensive experiments,180
+making decisions,decision making,151
+image content,image retrieval,203
+noisy speech,speech enhancement,282
+blind source separation,source separation,199
+blind source separation,source signals,212
+blind source separation,independent component analysis ica,187
+blind source separation,blind source separation bss,325
+depth maps,depth map,455
+social interaction,social interactions,287
+social interaction,social networks,162
+location information,ad hoc,212
+location information,location privacy,179
+location information,wireless sensor networks,342
+query results,query processing,191
+false alarms,false alarm,239
+multilayer perceptron mlp,neural networks,174
+multilayer perceptron mlp,neural network,226
+search engine,search engines,834
+search engine,web search engine,189
+lighting conditions,face recognition,165
+developed countries,developing countries,243
+low computational complexity,computational complexity,347
+wireless networks,base station,268
+wireless networks,quality of service,180
+wireless networks,ad hoc,641
+wireless networks,wireless sensor networks,189
+wireless networks,resource allocation,366
+wireless networks,power control,234
+wireless networks,network coding,340
+wireless networks,relay nodes,161
+wireless networks,video streaming,162
+wireless networks,optimization problem,197
+personal information,personal data,182
+personal information,social networks,158
+extensive experiments,real world,181
+extensive experiments,machine learning,180
+extensive experiments,social networks,201
+extensive experiments,query processing,171
+extensive experiments,real data,187
+extensive experiments,existing approaches,178
+extensive experiments,data mining,182
+extensive experiments,training data,157
+extensive experiments,face recognition,251
+extensive experiments,computer vision,225
+extensive experiments,optimization problem,161
+extensive experiments,existing methods,282
+extensive experiments,real datasets,171
+extensive experiments,proposed framework,170
+extensive experiments,benchmark datasets,171
+approximation factor,approximation algorithm,208
+supply chain management,supply chain,879
+smart city,smart cities,325
+rough set theory,rough sets,388
+rough set theory,attribute reduction,174
+transmit power,power control,509
+transmit power,optimization problem,313
+transmit power,base station,468
+transmit power,resource allocation,329
+transmit power,optimal power allocation,185
+transmit power,power allocation,575
+transmit power,power consumption,215
+transmit power,spectral efficiency,226
+transmit power,numerical results,587
+transmit power,wireless networks,154
+transmit power,cognitive radio,447
+heterogeneous network,heterogeneous networks,159
+web service,service providers,328
+web service,service oriented,203
+sensed data,wireless sensor networks,352
+automatic segmentation,image segmentation,154
+object detection,computer vision,424
+object detection,object recognition,219
+object detection,pascal voc,174
+transmit antennas,transmit diversity,154
+transmit antennas,receive antennas,294
+transmit antennas,number of transmit antennas,178
+health care,information technology,171
+classification performance,neural network,158
+classification performance,feature extraction,216
+classification performance,training data,170
+code size,embedded systems,194
+transcription factors,binding sites,189
+output power,power amplifier,212
+mathematical models,mathematical model,219
+false positives,false positive,245
+false positives,intrusion detection,166
+false positives,false negatives,346
+compression performance,image compression,165
+intermediate nodes,ad hoc,197
+minimum energy,wireless sensor networks,153
+outage probability,power control,241
+outage probability,wireless communication,168
+outage probability,numerical results,833
+outage probability,spectral efficiency,269
+outage probability,base station,282
+outage probability,transmit power,354
+outage probability,fading channels,285
+outage probability,closed form,206
+outage probability,probability density function,313
+outage probability,performance analysis,640
+outage probability,theoretical analysis,200
+outage probability,cumulative distribution function,238
+outage probability,outage probabilities,202
+outage probability,optimal power allocation,206
+outage probability,power allocation,386
+outage probability,analytical expressions,173
+outage probability,diversity order,334
+outage probability,rayleigh fading channels,198
+outage probability,diversity gain,226
+outage probability,relay nodes,157
+outage probability,cognitive radio,295
+outage probability,wireless networks,177
+input space,neural networks,152
+input space,neural network,189
+input space,feature space,205
+face image,face images,587
+face image,face recognition,833
+smart phones,smart phone,315
+method outperforms,existing methods,184
+fuzzy neural network,neural network,172
+active contour model,image segmentation,157
+perceived usefulness,technology acceptance model tam,244
+perceived usefulness,technology acceptance model,170
+provably secure,random oracle model,231
+maximum likelihood ml,maximum likelihood,334
+maximum likelihood ml,computational complexity,181
+face images,facial features,185
+face images,face databases,159
+face images,feature extraction,192
+traffic flows,traffic flow,173
+deformable model,deformable models,165
+packet forwarding,ad hoc,152
+generative model,generative models,184
+quality assessment,image quality,216
+support vector machine,feature selection,897
+support vector machine,radial basis function,159
+support vector machine,neural network,491
+support vector machine,training set,276
+support vector machine,pattern recognition,399
+support vector machine,feature extraction,741
+support vector machine,generalization performance,186
+support vector machine,machine learning,1352
+support vector machine,support vector,238
+support vector machine,neural networks,226
+support vector machine,feature space,318
+support vector machine,classification performance,293
+support vector machine,training data,463
+support vector machine,random forest,206
+support vector machine,naive bayes,285
+support vector machine,artificial neural network,156
+support vector machine,generalization ability,161
+support vector machine,classification algorithms,189
+support vector machine,gene expression,157
+support vector machine,supervised learning,224
+support vector machine,face recognition,177
+support vector machine,benchmark datasets,165
+support vector machine,genetic algorithm,245
+support vector machine,breast cancer,190
+support vector machine,feature vectors,292
+support vector machine,computational complexity,165
+support vector machine,binary classification,163
+support vector machine,training samples,234
+support vector machine,computer vision,169
+support vector machine,remote sensing,165
+support vector machine,classification methods,153
+support vector machine,texture features,163
+support vector machine,feature set,251
+support vector machine,existing methods,174
+support vector machine,image classification,186
+support vector machine,artificial neural network ann,155
+facial feature,facial features,214
+facial features,facial expressions,220
+feature point,feature points,331
+information retrieval ir,information retrieval,373
+power analysis,power consumption,204
+output voltage,input voltage,224
+output voltage,load current,157
+transmission rates,transmission rate,222
+artificial neural networks ann,artificial neural networks,158
+support vector machines,support vector machine,910
+support vector machines,neural network,187
+support vector machines,pattern recognition,281
+support vector machines,feature space,269
+support vector machines,feature extraction,298
+support vector machines,machine learning,1104
+support vector machines,support vector,179
+support vector machines,data mining,256
+support vector machines,neural networks,468
+support vector machines,feature selection,504
+support vector machines,training set,218
+support vector machines,decision trees,266
+support vector machines,training data,356
+support vector machines,support vector machines svms,511
+support vector machines,naive bayes,246
+support vector machines,classification accuracy,279
+support vector machines,supervised learning,183
+support vector machines,support vectors,218
+support vector machines,logistic regression,197
+support vector machines,kernel function,150
+support vector machines,artificial neural networks,173
+support vector machines,using support vector machines,165
+distribution networks,distribution network,189
+change detection,remote sensing,283
+wireless network,resource allocation,194
+wireless network,network performance,221
+wireless network,ad hoc,488
+wireless network,base station,196
+wireless network,wireless networks,1049
+wireless network,physical layer,192
+wireless network,performance analysis,154
+wireless network,wireless sensor networks,180
+wireless network,numerical results,181
+wireless network,network coding,239
+distance functions,distance function,190
+exponential stability,sufficient conditions,368
+exponential stability,neural networks,176
+exponential stability,numerical examples,186
+reference models,reference model,156
+routing protocols,ad hoc,610
+rayleigh fading channels,performance analysis,164
+rayleigh fading channels,numerical results,212
+web services,access control,229
+web services,web applications,336
+web services,web service,4216
+web services,distributed computing,236
+web services,service providers,493
+web services,grid computing,213
+web services,service discovery,470
+web services,service oriented,379
+web services,service selection,175
+web services,composition of web services,179
+web services,business process,504
+web services,web service discovery,260
+web services,cloud computing,263
+power saving,power consumption,589
+embedded system design,embedded systems,155
+artificial neural network,neural network,835
+artificial neural network,artificial neural network ann,432
+inventory model,numerical examples,154
+image denoising,total variation,154
+image denoising,image processing,246
+dominating sets,dominating set,212
+south african,south africa,192
+based image retrieval,image retrieval,174
+functional magnetic resonance imaging,human brain,205
+functional magnetic resonance imaging,functional connectivity,209
+unequal error protection,unequal error protection uep,159
+facility location problem,facility location,165
+artificial neural network ann,neural network,376
+similar images,image retrieval,151
+supply voltages,supply voltage,203
+web application,web services,194
+detection rate,false alarm,276
+rate control algorithm,rate control,269
+decoding complexity,decoding algorithm,155
+traveling salesman problem tsp,traveling salesman problem,204
+vector quantization,vector quantization vq,172
+session key,mutual authentication,150
+embedded processors,embedded systems,191
+energy efficient,power consumption,447
+energy efficient,ad hoc,186
+energy efficient,base station,210
+energy efficient,wireless sensor networks,764
+energy efficient,network lifetime,320
+energy efficient,wireless sensor network,264
+energy efficient,routing protocol,166
+energy efficient,low power,173
+energy efficient,wireless sensor networks wsns,259
+pid controllers,pid controller,150
+based access control,access control,316
+automatic speech recognition asr,automatic speech recognition,234
+point cloud,point clouds,614
+quality attributes,software architecture,174
+power amplifier,power amplifier pa,177
+business process modeling,business process,279
+supply chains,supply chain management,309
+data center,resource allocation,166
+data center,data centers,643
+data center,virtual machine,216
+data center,power consumption,291
+data center,cloud computing,638
+data center,virtual machines,359
+access networks,access network,385
+data integration,semantic web,169
+electronic health record,electronic health records,189
+facial expression recognition,facial expression,311
+facial expression recognition,facial expressions,203
+covert channels,covert channel,158
+systems biology,biological systems,200
+systems biology,gene expression,174
+sliding mode controller,sliding mode control,220
+brightness temperature,brightness temperatures,155
+renewable energy,smart grid,264
+renewable energy,energy storage,194
+agile software development,software development,242
+moderate resolution imaging spectroradiometer,remote sensing,189
+grid computing,distributed computing,302
+grid computing,resource sharing,150
+grid computing,cloud computing,178
+wireless sensor networks,power consumption,663
+wireless sensor networks,traffic load,192
+wireless sensor networks,routing protocols,311
+wireless sensor networks,wireless sensor network,2568
+wireless sensor networks,sensor network,565
+wireless sensor networks,base station,998
+wireless sensor networks,quality of service,156
+wireless sensor networks,medium access control,180
+wireless sensor networks,duty cycle,248
+wireless sensor networks,network lifetime,2028
+wireless sensor networks,analytical results,158
+wireless sensor networks,shortest path,188
+wireless sensor networks,ad hoc,408
+wireless sensor networks,approximation algorithm,168
+wireless sensor networks,packet delivery,220
+wireless sensor networks,resource constrained,169
+wireless sensor networks,existing protocols,168
+wireless sensor networks,environmental monitoring,314
+wireless sensor networks,neighboring nodes,230
+wireless sensor networks,low energy,177
+wireless sensor networks,residual energy,425
+wireless sensor networks,target tracking,233
+wireless sensor networks,save energy,337
+wireless sensor networks,clustering algorithm,201
+wireless sensor networks,optimization problem,299
+wireless sensor networks,key management,257
+wireless sensor networks,network traffic,168
+wireless sensor networks,transmission range,200
+wireless sensor networks,collected data,171
+wireless sensor networks,recent advances,166
+wireless sensor networks,large scale,239
+wireless sensor networks,performance analysis,287
+wireless sensor networks,fully distributed,157
+wireless sensor networks,limited resources,231
+wireless sensor networks,real time,229
+wireless sensor networks,existing schemes,194
+wireless sensor networks,sensing coverage,162
+wireless sensor networks,data aggregation,641
+wireless sensor networks,wireless sensor networks wsn,880
+wireless sensor networks,time synchronization,271
+wireless sensor networks,energy conservation,240
+wireless sensor networks,sensing data,153
+wireless sensor networks,relay nodes,216
+wireless sensor networks,localization algorithm,245
+wireless sensor networks,proposed protocol,207
+bit error rate ber performance,orthogonal frequency division multiplexing,208
+bit error rate ber performance,ber performance,340
+wireless ad hoc network,ad hoc,341
+time series prediction,time series,256
+cognitive radio,spectrum sensing,416
+cognitive radio,primary user,1080
+cognitive radio,power control,319
+cognitive radio,optimal power allocation,166
+cognitive radio,resource allocation,445
+cognitive radio,nash equilibrium,172
+cognitive radio,wireless networks,252
+cognitive radio,spectral efficiency,209
+cognitive radio,computational complexity,207
+cognitive radio,optimization problem,408
+cognitive radio,secondary users sus,873
+cognitive radio,power allocation,494
+cognitive radio,analytical results,180
+cognitive radio,interference constraints,176
+cognitive radio,detection performance,269
+cognitive radio,performance analysis,242
+cognitive radio,base station,310
+cognitive radio,secondary user su,430
+cognitive radio,orthogonal frequency division multiplexing,182
+cognitive radio,ad hoc,392
+cognitive radio,unlicensed users,234
+cognitive radio,false alarm,400
+canonical correlation analysis,canonical correlation analysis cca,182
+service composition,web services,361
+service composition,web service,301
+supply chain management scm,supply chain,194
+multiple users,base station,220
+use cases,use case,199
+service discovery,web service,293
+named entity recognition,named entities,192
+named entity recognition,named entity recognition ner,170
+unlabeled data,labeled data,704
+unlabeled data,supervised learning,181
+unlabeled data,training data,211
+unlabeled data,machine learning,225
+recommender system,collaborative filtering,441
+performance and power consumption,power consumption,165
+network intrusion detection,intrusion detection,260
+cluster heads,cluster head,294
+cluster heads,wireless sensor networks,387
+cluster heads,network lifetime,220
+cluster heads,base station,172
+cluster head,wireless sensor networks,457
+cluster head,wireless sensor network,182
+cluster head,base station,157
+cluster head,network lifetime,212
+wireless sensor network,sensor network,194
+wireless sensor network,base station,327
+wireless sensor network,network lifetime,523
+wireless sensor network,wireless sensor network wsn,564
+wireless sensor network,data aggregation,166
+wireless sensor network,wireless sensor networks wsn,178
+expression data,gene expression,432
+expression profiles,gene expression,305
+response time,response times,465
+response time,web service,168
+response time,web services,241
+response time,resource allocation,151
+response time,real time,154
+response time,power consumption,166
+response time,cloud computing,315
+named entity,named entities,211
+answer set programming,answer set,154
+answer set programming,answer set programming asp,158
+particle swarm optimization pso,benchmark functions,231
+particle swarm optimization pso,particle swarm optimization,1315
+particle swarm optimization pso,particle swarm,154
+particle swarm optimization pso,swarm intelligence,192
+particle swarm optimization pso,optimization problem,200
+particle swarm optimization pso,neural network,152
+social networking,social networks,810
+social networking,social media,489
+social networking,online social networks,197
+biological data,gene expression,156
+labeled data,supervised learning,201
+labeled data,training data,235
+diversity order,performance analysis,191
+travel time,travel times,233
+selected features,feature selection,601
+social interactions,social networks,268
+augmented reality ar,augmented reality,964
+control packets,ad hoc,164
+domain ontology,semantic web,150
+allocate resources,resource allocation,157
+differentially expressed genes,gene expression,225
+based routing,routing protocol,283
+based routing,wireless sensor networks,155
+optimization model,optimization problem,163
+semantic web,web services,874
+semantic web,knowledge management,208
+semantic web,query language,200
+semantic web,resource description framework,214
+semantic web,data model,151
+semantic web,web service,561
+semantic web,domain knowledge,169
+semantic web,description logics,192
+semantic web,linked data,495
+semantic web,service discovery,156
+semantic web,semantic annotation,154
+semantic web,knowledge base,246
+composite web services,web services,233
+composite web services,web service,176
+mobility model,mobility models,178
+mobility model,ad hoc,206
+linear discriminant analysis lda,face recognition,243
+linear discriminant analysis lda,feature extraction,237
+encrypted data,cloud computing,184
+complex networks,complex network,409
+complex networks,social networks,229
+network structures,network structure,169
+depth image,depth images,192
+biological processes,gene expression,262
+expression levels,gene expression,294
+dna microarray,gene expression,316
+joint optimization,optimization problem,179
+gene expression,transcription factors,213
+service oriented architecture,web services,380
+service oriented architecture,service oriented,170
+service oriented architecture,web service,212
+an ad hoc network,ad hoc,365
+content distribution,content delivery,156
+intrusion detection system ids,intrusion detection,333
+resource allocations,resource allocation,168
+power consumed,power consumption,217
+recommender systems,recommender system,979
+recommender systems,users preferences,177
+recommender systems,collaborative filtering cf,219
+recommender systems,recommendation algorithms,175
+recommender systems,information overload,151
+recommender systems,matrix factorization,232
+gene ontology,gene expression,244
+gene ontology,gene ontology go,189
+classification model,machine learning,183
+differential evolution,global optimization,219
+differential evolution,optimization problem,155
+differential evolution,particle swarm optimization,241
+differential evolution,evolutionary algorithm,226
+differential evolution,differential evolution algorithm,327
+best practices,software development,175
+concept lattice,concept lattices,171
+concept lattice,formal concept analysis,257
+concept lattices,formal concept analysis,198
+complete information,incomplete information,173
+model predictive control,model predictive control mpc,503
+model predictive control,optimal control,181
+symbolic regression,genetic programming,227
+access point,access points,297
+service level agreement sla,cloud computing,155
+false negative,false positive,261
+prediction model,neural network,213
+prediction model,machine learning,181
+recurrent neural networks rnns,recurrent neural networks,151
+control overhead,ad hoc,227
+overlay networks,overlay network,381
+benchmark functions,evolutionary algorithm,167
+benchmark functions,particle swarm optimization,322
+benchmark functions,differential evolution,231
+benchmark functions,optimization algorithm,154
+network lifetime,base station,329
+network lifetime,data aggregation,177
+benchmark data sets,machine learning,174
+parkinsons disease,parkinsons disease pd,264
+image annotation,automatic image annotation,202
+organizational knowledge,knowledge management,176
+power budget,power consumption,173
+power allocation,total power,266
+power allocation,resource allocation,706
+power allocation,spectral efficiency,197
+power allocation,power allocation algorithm,221
+dynamic power,power consumption,261
+background model,background subtraction,217
+background model,moving objects,152
+sensitive information,sensitive data,186
+sensitive information,access control,197
+computer scientists,computer science,274
+sensitive data,access control,181
+wind turbine,wind turbines,341
+expression patterns,gene expression,227
+gene regulatory networks,gene expression,287
+intrusion detection systems ids,intrusion detection,185
+reward function,reinforcement learning,161
+wind energy,wind turbine,163
+intuitionistic fuzzy sets,intuitionistic fuzzy,176
+based clustering,clustering algorithm,186
+gaussian mixture model gmm,gaussian mixture model,165
+supervised machine learning,machine learning,199
+transcription factor binding sites,binding sites,152
+regulatory networks,gene expression,160
+product lines,software product lines,181
+product lines,product line,372
+software product lines,product line,291
+particle swarm,particle swarm optimization,282
+tabu search ts,tabu search,173
+machine translation mt,machine translation,192
+premature convergence,genetic algorithm,173
+neural network nn,neural network,508
+transmission power,outage probability,162
+transmission power,base station,247
+transmission power,power consumption,230
+transmission power,power control,479
+transmission power,power allocation,262
+transmission power,optimization problem,198
+transmission power,wireless sensor networks,345
+transmission power,numerical results,271
+transmission power,wireless networks,163
+transmission power,resource allocation,219
+transmission power,cognitive radio,253
+call admission control cac,call admission control,244
+linear matrix inequality lmi,sufficient conditions,188
+linear matrix inequality lmi,sufficient condition,156
+support vectors,support vector machine,301
+schrdinger equation,schrodinger equation,162
+mobile ad hoc networks manets,ad hoc,799
+frequent patterns,frequent pattern mining,220
+dynamic time warping dtw,time series,177
+dynamic time warping dtw,dynamic time warping,157
+outage performance,outage probability,469
+outage performance,numerical results,157
+optimal power allocation,power allocation,651
+detection algorithms,detection algorithm,189
+transmission range,ad hoc,357
+network processor,network processors,151
+computer game,computer games,227
+particle swarm optimization,search space,160
+particle swarm optimization,optimization algorithm,191
+particle swarm optimization,benchmark problems,161
+particle swarm optimization,global search,158
+particle swarm optimization,premature convergence,226
+particle swarm optimization,optimal solution,175
+false positive rate,detection rate,190
+web ontology language,semantic web,218
+power control algorithm,power control,273
+computer science cs,computer science,189
+face representation,face recognition,194
+face database,face recognition,460
+face database,face images,168
+route discovery,ad hoc,391
+route discovery,routing protocol,335
+feature models,feature model,198
+benchmark instances,computational results,191
+control charts,control chart,259
+kernel function,support vector machine,270
+kernel function,feature space,161
+question answering qa,question answering,202
+time series data,time series,969
+face detector,face detection,190
+video streaming,video quality,346
+video streaming,quality of experience qoe,211
+feature subsets,feature selection,370
+ldpc codes,belief propagation,168
+power grid,power grids,256
+power grid,renewable energy,168
+power grid,smart grid,541
+power grid,power system,228
+sum rate,base station,182
+sum rate,power allocation,175
+sum rate,numerical results,185
+sum rate,resource allocation,158
+malicious nodes,ad hoc,228
+product line engineering,product line,172
+scalable video coding,scalable video coding svc,165
+multiple antennas,base station,202
+lyapunov functions,lyapunov function,289
+achievable rate,numerical results,228
+achievable rate,achievable rates,152
+distributed power control,power control,171
+mode decision,computational complexity,159
+node mobility,routing protocol,168
+node mobility,ad hoc,458
+tuning range,phase noise,259
+memetic algorithm,memetic algorithms,151
+pattern mining,data mining,239
+link quality,wireless sensor networks,185
+residual energy,network lifetime,380
+latent dirichlet allocation,topic model,156
+image search,image retrieval,186
+reducing power consumption,power consumption,192
+channel state information csi,transmit power,162
+channel state information csi,base station,289
+channel state information csi,outage probability,152
+channel state information csi,numerical results,276
+channel state information csi,limited feedback,161
+channel state information csi,power allocation,192
+limited energy,wireless sensor networks,358
+limited energy,network lifetime,178
+receive antennas,number of transmit antennas,200
+activity recognition,human activity recognition,247
+hand gesture recognition,hand gestures,179
+based face recognition,face recognition,241
+cyclic prefix cp,orthogonal frequency division multiplexing,163
+feret database,face recognition,166
+robust face recognition,face recognition,272
+finite element method fem,finite element,156
+computer science education,computer science,303
+high spatial resolution,remote sensing,167
+high spatial resolution,spatial resolution,175
+reduce energy consumption,wireless sensor networks,209
+fixed infrastructure,ad hoc,194
+ldpc code,ldpc codes,301
+discontinuous galerkin,finite element,189
+remotely sensed data,remote sensing,193
+gene regulatory network,gene expression,158
+gene regulatory network,gene regulatory networks,189
+pso algorithm,particle swarm optimization pso,377
+pso algorithm,particle swarm optimization,496
+pso algorithm,particle swarm optimization pso algorithm,214
+transmit powers,transmit power,153
+node density,ad hoc,186
+node density,wireless sensor networks,173
+pose variations,face recognition,154
+resource provisioning,cloud computing,245
+path planning algorithm,path planning,193
+time series forecasting,time series,298
+conditional random fields,conditional random fields crfs,163
+process variation,process variations,229
+critical infrastructures,critical infrastructure,153
+bloom filters,bloom filter,304
+random forests,random forest,245
+data centers,cloud computing,296
+energy harvesting,wireless sensor networks,197
+energy harvesting,harvested energy,167
+traffic lights,traffic light,167
+action recognition,human action recognition,230
+tone mapping,dynamic range,201
+delivery ratio,routing protocol,187
+ddos attack,ddos attacks,164
+wiley periodicals inc syst comp jpn,published online in wiley interscience wwwintersciencewileycom,217
+big data,large datasets,160
+big data,machine learning,551
+papr reduction,orthogonal frequency division multiplexing,360
+papr reduction,computational complexity,166
+degrees of freedom dof,degrees of freedom,203
+viral marketing,social networks,165
+finite element analysis,finite element,181
+business processes,business process,595
+interference channel,interference alignment,159
+interference channel,interference channels,154
+sentiment analysis,sentiment classification,180
+web service discovery,web service,192
+mobile phone,mobile phones,699
+statistical machine translation smt,statistical machine translation,168
+control system,control systems,677
+control system,control performance,190
+proposed framework,feature extraction,153
+proposed framework,cloud computing,170
+features extracted,feature extraction,287
+features extracted,support vector machine,167
+classification results,feature selection,190
+classification results,feature extraction,189
+classification results,classification accuracy,166
+classification results,support vector machine,251
+classification results,machine learning,170
+particle swarm optimization pso algorithm,particle swarm optimization,327
+model checking,formal verification,228
+model checking,state space,277
+model checking,model checker,416
+wireless sensor networks wsns,routing protocol,330
+wireless sensor networks wsns,base station,317
+wireless sensor networks wsns,wireless sensor networks,3571
+wireless sensor networks wsns,power consumption,218
+wireless sensor networks wsns,wireless sensor network,434
+wireless sensor networks wsns,network lifetime,718
+wireless sensor networks wsns,data aggregation,258
+wireless sensor networks wsns,residual energy,162
+wireless sensor networks wsns,extensive simulations,219
+wireless sensor networks wsns,network performance,155
+wireless sensor networks wsns,theoretical analysis,153
+network coding,intermediate nodes,176
+a machine learning approach,machine learning,248
+guest editorial,special issue,236
+time slots,time slot,213
+radio frequency identification,rfid tag,150
+second life,virtual worlds,268
+extracted features,feature extraction,404
+transfer learning,machine learning,151
+social media,social networks,725
+social media,real time,154
+social media,sentiment analysis,420
+social media,big data,292
+empirical mode decomposition,empirical mode decomposition emd,212
+cloud computing,sensitive data,209
+cloud computing,access control,317
+cloud computing,resource utilization,333
+cloud computing,web service,160
+cloud computing,big data,701
+opinion mining,sentiment analysis,195
+wireless sensor network wsn,wireless sensor networks,1030
+wireless sensor network wsn,network lifetime,246
+process mining,process models,211
+process mining,process model,152
+process mining,event logs,273
+game theory,nash equilibrium,362
+data envelopment analysis,data envelopment analysis dea,220
+in vivo,in vitro,426
+gene regulation,gene expression,176
+virtual machine vm,virtual machine,218
+virtual machine vm,cloud computing,190
+extreme learning machine elm,extreme learning machine,431
+labeled samples,unlabeled samples,156
+semantic gap,image retrieval,184
+carrier sense,multiple access with collision avoidance csmaca,185
+total energy consumption,wireless sensor networks,158
+relay selection,outage probability,331
+relay selection,numerical results,190
+relay selection,relay nodes,180
+software product line,product line,269
+software product line,software product lines,181
+business intelligence bi,business intelligence,246
+packet delivery ratio,ad hoc,287
+packet delivery ratio,wireless sensor networks,172
+query image,image retrieval,244
+cognitive radio cr,primary users,288
+cognitive radio cr,primary user,231
+cognitive radio cr,primary user pu,276
+cognitive radio cr,cognitive radio,1536
+cognitive radio cr,secondary users sus,265
+cognitive radio cr,transmit power,161
+cognitive radio cr,primary users pus,253
+cognitive radio cr,numerical results,238
+cognitive radio cr,power allocation,168
+primary users,primary user,423
+primary users,cognitive radio,1350
+primary users,numerical results,245
+amazon ec2,cloud computing,273
+model checker,formal verification,193
+localization algorithms,localization algorithm,154
+localization algorithms,wireless sensor networks,152
+data envelopment analysis dea,decision making,260
+mobile ad hoc networks,ad hoc,534
+support vector regression svr,support vector regression,364
+gaussian process gp,gaussian process,169
+online social networks,social networks,680
+online social networks,online social networks osns,268
+online social networks,social media,193
+shortest path problem,shortest path,180
+empirical mode decomposition emd,intrinsic mode functions imfs,186
+convolutional neural network,deep learning,165
+true positive rate,false positive rate,163
+ann model,artificial neural network,158
+ann model,artificial neural network ann,234
+wireless mesh networks,wireless mesh network,329
+serious game,serious games,380
+using particle swarm optimization,particle swarm optimization,184
+randomly deployed,wireless sensor networks,166
+convolutional neural networks,deep learning,174
+topic model,topic modeling,185
+topic model,topic models,287
+wireless mesh networks wmns,wireless mesh networks,617
+networked control systems ncss,networked control systems,168
+nonnegative matrix factorization nmf,nonnegative matrix factorization,337
+face recognition algorithm,face recognition,150
+opportunistic spectrum access,cognitive radio,243
+social graph,social networks,177
+terms of linear matrix inequalities lmis,numerical examples,167
+based feature selection,feature selection,214
+metric learning,distance metric,152
+dynamic spectrum access,cognitive radio,403
+scientific workflow,scientific workflows,299
+multiple sclerosis ms,multiple sclerosis,150
+face recognition algorithms,face recognition,195
+monte carlo simulations,monte carlo,150
+wireless mesh network wmn,wireless mesh networks,152
+primary network,cognitive radio,295
+relay node,relay nodes,308
+relay node,source node,166
+nand flash memory,flash memory,203
+orthogonal frequency division multiple access ofdma,resource allocation,346
+cell cycle,gene expression,152
+nand flash,nand flash memory,176
+satellite imagery,remote sensing,175
+detect anomalies,anomaly detection,191
+fused image,image fusion,247
+standard pso,particle swarm optimization,159
+computational thinking,computer science,159
+physical machine,virtual machines,164
+mobile sink,wireless sensor networks,239
+primary user pu,cognitive radio,609
+primary user pu,secondary users sus,183
+primary user pu,secondary user su,368
+compressive sensing cs,compressive sensing,527
+interference alignment,degrees of freedom dof,154
+interference alignment,degrees of freedom,226
+interference alignment,interference alignment ia,333
+measurement matrix,compressed sensing,154
+user experience ux,user experience,186
+node localization,wireless sensor networks,154
+discontinuous galerkin dg,discontinuous galerkin,188
+smart grid,demand response,349
+smart grid,power system,384
+smart grid,power systems,207
+vehicular ad hoc networks,vehicular ad hoc networks vanets,328
+equal power allocation,power allocation,156
+resting state,functional connectivity,168
+network coded,network coding,185
+harmful interference,cognitive radio,178
+programming languages,programming language,230
+delay tolerant networks,delay tolerant networks dtns,172
+saliency detection,saliency map,180
+uplink ul,downlink dl,181
+imperfect csi,imperfect channel state information csi,193
+primary receiver,cognitive radio,226
+smart meter,smart grid,184
+topic modeling,topic models,186
+information supplementary data,gene expression,179
+primary users pus,cognitive radio,657
+primary users pus,secondary users sus,569
+compressed sensing cs,compressed sensing,529
+cloud storage,cloud computing,214
+relay network,relay networks,152
+data gathering,wireless sensor networks,190
+proposed model,mathematical model,153
+internet of things,internet of things iot,457
+source domain,domain adaptation,166
+big data analytics,big data,163
+differential evolution de,differential evolution,423
+power system,renewable energy,163
+smart grids,smart grid,630
+service iaas,cloud computing,265
+cloud service,cloud computing,558
+demand response dr,demand response,173
+differential privacy,differentially private,286
+mobile apps,mobile app,165
+cognitive radio networks crns,cognitive radio,450
+cognitive radio networks crns,secondary users sus,185
+deep neural networks,deep learning,223
+deep neural networks,deep neural network,175
+cognitive radio network crn,cognitive radio,152
+smart homes,smart home,165
+high efficiency video coding,video coding,175
+high efficiency video coding,computational complexity,191
+physical machines,virtual machines,157
+influence maximization,social networks,196
+sensing performance,cognitive radio,204
+small cells,small cell,387
+massive mimo,base station,372
+massive mimo,spectral efficiency,158
+d2d communications,cellular networks,154
+spatial modulation,spatial modulation sm,203

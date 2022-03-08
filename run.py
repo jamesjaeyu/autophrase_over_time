@@ -7,12 +7,12 @@ Script for running targets
 import sys
 import json
 
-from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requests, process_v10, \
+from src.process_dblp_v10 import download_dblp_v10, process_v10, \
     process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir, \
     extract_phrases_per_paper_one_dir, convert_extract_phrases_per_paper_csv_to_df_pickle
 from src.eda import generate_figures
 from src.model_generation import obtain_phrases, process_seg, baseline_tfidf_model, optimize_model_parameters, \
-    confusion_matrix_analysis
+    confusion_matrix_analysis, generate_model
 from src.phrase_analysis import phrase_tables
 
 def main(targets):
@@ -42,7 +42,7 @@ def main(targets):
         threshold = (threshold[0], threshold[1])
         obtain_phrases(model_cfg['infolder'], threshold)
         process_seg(model_cfg['infolder'])
-        baseline_model(model_cfg['fp'])
+        generate_model(model_cfg['fp'])
 
         # analysis
         analysis_cfg = json.load(open('config/analysis-params.json'))
@@ -53,7 +53,6 @@ def main(targets):
             data_cfg = json.load(open('config/data-params.json'))
 
             #download_dblp_v10(data_cfg['dblp_v10_url'])
-            #download_dblp_v10_using_requests(data_cfg['dblp_v10_url'])
 
             ## Processes DBLP v10 dataset into aggregated .txt files by year
             #year_grouping = True
