@@ -11,7 +11,8 @@ from src.process_dblp_v10 import download_dblp_v10, download_dblp_v10_using_requ
     process_v10_txt, autophrase_one_dir, extract_phrases_one_dir, count_phrase_one_dir, \
     extract_phrases_per_paper_one_dir, convert_extract_phrases_per_paper_csv_to_df_pickle
 from src.eda import generate_figures
-from src.model_generation import obtain_phrases, process_seg, baseline_tfidf_model
+from src.model_generation import obtain_phrases, process_seg, baseline_tfidf_model, optimize_model_parameters, \
+    confusion_matrix_analysis
 from src.phrase_analysis import phrase_tables
 
 def main(targets):
@@ -96,12 +97,21 @@ def main(targets):
 
             # input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
             # output: baseline_lr_model_pkl = "results/autophrase/dblp-v10/grouped/baseline_lr_model.pkl"
-            baseline_tfidf_model(model_cfg['extract_phrases_per_paper_pkl_file'], model_cfg['baseline_lr_model_pkl'])
+            #baseline_tfidf_model(model_cfg['extract_phrases_per_paper_pkl_file'], model_cfg['baseline_lr_model_pkl'])
 
+            # input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+            # output: best_linear_svm_model_pkl = "results/autophrase/dblp-v10/grouped/best_linear_svm_model.pkl"
+            optimize_model_parameters(model_cfg['extract_phrases_per_paper_pkl_file'], model_cfg['best_linear_svm_model_pkl'])
         
         if 'analysis' in targets:
             analysis_cfg = json.load(open('config/analysis-params.json'))
             phrase_tables(analysis_cfg)
+            # input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+            # input: best_linear_svm_model_pkl = "results/autophrase/dblp-v10/grouped/best_linear_svm_model.pkl"
+            # output: confusion_matrix_png_file = "results/figures/best_linear_svm_model_confusion_matrix.png"
+            # output: normalized_confusion_matrix_png_file = "results/figures/best_linear_svm_model_normalized_confusion_matrix.png"
+            confusion_matrix_analysis(analysis_cfg['extract_phrases_per_paper_pkl_file'], analysis_cfg['best_linear_svm_model_pkl'],
+                analysis_cfg['confusion_matrix_png_file'], analysis_cfg['normalized_confusion_matrix_png_file']) 
 
     return
 

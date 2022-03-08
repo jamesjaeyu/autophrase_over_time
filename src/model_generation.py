@@ -43,6 +43,7 @@ import matplotlib.pyplot as plt
 from sklearn.neural_network import MLPClassifier
 from sklearn import svm
 from joblib import dump, load
+from sklearn.metrics import confusion_matrix
 warnings.filterwarnings("ignore")
 
 def obtain_phrases(infolder, threshold=(0.8,0.5)):
@@ -427,3 +428,146 @@ def baseline_tfidf_model(extract_phrases_per_paper_pkl_file, baseline_lr_model_p
         pickle.dump(baseline_clf, baseline_lr_model_pkl_file)
     print(f"baseline_clf has been saved to {baseline_lr_model_pkl}")
 
+#...
+# input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+# output: best_linear_svm_model_pkl = "results/autophrase/dblp-v10/grouped/best_linear_svm_model.pkl"
+def optimize_model_parameters(extract_phrases_per_paper_pkl_file, best_linear_svm_model_pkl):
+    phrases_by_paper = pd.read_pickle(extract_phrases_per_paper_pkl_file)
+
+    # split tran_set and test_set based on the distribution of the column of 'year_bracket_int_encoded'
+    # tran_set and test_set have the same distribution
+    split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    for train_index, test_index in split.split(phrases_by_paper, phrases_by_paper["year_bracket_int_encoded"]):
+        strat_train_set = phrases_by_paper.loc[train_index]
+        strat_test_set = phrases_by_paper.loc[test_index]
+
+    X_train, X_test, y_train, y_test = strat_train_set.loc[:, 'phrases'], strat_test_set.loc[:, 'phrases'], strat_train_set.loc[:, 'year_bracket_int_encoded'], strat_test_set.loc[:, 'year_bracket_int_encoded']
+
+    # Convert X_train into a matrix of TF-IDF features.
+    start = time.time()
+    tfidf_vectorizer = TfidfVectorizer(analyzer = 'word', stop_words = {'english'}, max_features=1000000)
+    X_train_tfidf = tfidf_vectorizer.fit_transform(X_train.values)
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: tfidf_vectorizer.fit_transform {(end - start):.03f} seconds", flush=True)
+
+    start = time.time()
+    parameters = {
+        "estimator__C": [0.1, 10, 15, 20],
+    }
+
+    svc = sklearn.svm.LinearSVC(random_state=42)
+    clf_name = 'svm.LinearSVC'
+    svc_clf = OneVsRestClassifier(svc, n_jobs=32)
+    grid_search_clf = GridSearchCV(svc_clf, param_grid=parameters, cv = 3, verbose = 3, scoring = 'f1_micro', refit = True, return_train_score=True)
+    grid_search_clf.fit(X_train_tfidf, y_train)
+    #   [CV 1/3] END estimator__C=0.1;, score=(train=0.783, test=0.766) total time=   9.0s
+    #   [CV 2/3] END estimator__C=0.1;, score=(train=0.783, test=0.765) total time=   9.1s
+    #   [CV 3/3] END estimator__C=0.1;, score=(train=0.783, test=0.765) total time=   9.0s
+    #   [CV 1/3] END estimator__C=10;, score=(train=0.826, test=0.791) total time= 2.6min
+    #   [CV 2/3] END estimator__C=10;, score=(train=0.827, test=0.790) total time= 2.6min
+    #   [CV 3/3] END estimator__C=10;, score=(train=0.827, test=0.790) total time= 2.6min
+    #   [CV 1/3] END estimator__C=15;, score=(train=0.827, test=0.791) total time= 3.7min
+    #   [CV 2/3] END estimator__C=15;, score=(train=0.828, test=0.790) total time= 3.8min
+    #   [CV 3/3] END estimator__C=15;, score=(train=0.828, test=0.790) total time= 3.7min
+    #   [CV 1/3] END estimator__C=20;, score=(train=0.828, test=0.791) total time= 4.9min
+    #   [CV 2/3] END estimator__C=20;, score=(train=0.828, test=0.790) total time= 5.0min
+    #   [CV 3/3] END estimator__C=20;, score=(train=0.828, test=0.790) total time= 5.3min
+
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: {clf_name} fit {(end - start):.03f} seconds", flush=True)
+
+    print(grid_search_clf.best_params_)
+    print(grid_search_clf.best_estimator_)
+    cvres = grid_search_clf.cv_results_
+    for mean_test_score, params in zip(cvres["mean_test_score"], cvres["params"]):
+        print(mean_test_score, params)
+    #   {'estimator__C': 20}
+    #   OneVsRestClassifier(estimator=LinearSVC(C=20, random_state=42), n_jobs=32)
+    #   0.7654118593516993 {'estimator__C': 0.1}
+    #   0.7903441645082804 {'estimator__C': 10}
+    #   0.7904589514166863 {'estimator__C': 15}
+    #   0.7905183070402636 {'estimator__C': 20}
+
+    # evaluation of the model
+    X_test_tfidf = tfidf_vectorizer.transform(X_test.values)
+    y_test_pred = grid_search_clf.predict(X_test_tfidf)
+    grid_search_clf_f1 = f1_score(y_test, y_test_pred, average="micro")
+    print(f"grid_search_clf_f1={grid_search_clf_f1}")
+    # grid_search_clf_f1=0.7954226602647746
+
+    if os.path.exists(best_linear_svm_model_pkl):
+        os.remove(best_linear_svm_model_pkl)
+    with open(best_linear_svm_model_pkl,'wb') as best_linear_svm_model_pkl_file:
+        pickle.dump(grid_search_clf, best_linear_svm_model_pkl_file)
+    print(f"grid_search_clf has been saved to {best_linear_svm_model_pkl}")
+
+# input: extract_phrases_per_paper_pkl_file = "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl"
+# input: best_linear_svm_model_pkl = "results/autophrase/dblp-v10/grouped/best_linear_svm_model.pkl"
+# output: confusion_matrix_png_file = "results/figures/best_linear_svm_model_confusion_matrix.png"
+# output: normalized_confusion_matrix_png_file = "results/figures/best_linear_svm_model_normalized_confusion_matrix.png"
+def confusion_matrix_analysis(extract_phrases_per_paper_pkl_file, best_linear_svm_model_pkl,
+    confusion_matrix_png_file, normalized_confusion_matrix_png_file):
+    if not os.path.exists(best_linear_svm_model_pkl):
+        print(f"{best_linear_svm_model_pkl} does not exist.")
+        sys.exit()
+
+    if not os.path.exists(extract_phrases_per_paper_pkl_file):
+        print(f"{extract_phrases_per_paper_pkl_file} does not exist.")
+        sys.exit()
+
+    # load best svm LinearSVC model
+    with open(best_linear_svm_model_pkl,'rb') as best_linear_svm_model_pkl_file:
+        grid_search_clf = pickle.load(best_linear_svm_model_pkl_file)
+
+    phrases_by_paper = pd.read_pickle(extract_phrases_per_paper_pkl_file)
+
+    # split tran_set and test_set based on the distribution of the column of 'year_bracket_int_encoded'
+    # tran_set and test_set have the same distribution
+    split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+    for train_index, test_index in split.split(phrases_by_paper, phrases_by_paper["year_bracket_int_encoded"]):
+        strat_train_set = phrases_by_paper.loc[train_index]
+        strat_test_set = phrases_by_paper.loc[test_index]
+
+    X_train, X_test, y_train, y_test = strat_train_set.loc[:, 'phrases'], strat_test_set.loc[:, 'phrases'], strat_train_set.loc[:, 'year_bracket_int_encoded'], strat_test_set.loc[:, 'year_bracket_int_encoded']
+
+    # Convert X_train into a matrix of TF-IDF features.
+    start = time.time()
+    tfidf_vectorizer = TfidfVectorizer(analyzer = 'word', stop_words = {'english'}, max_features=1000000)
+    X_train_tfidf = tfidf_vectorizer.fit_transform(X_train.values)
+    end = time.time()
+    current_datetime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"{current_datetime}: tfidf_vectorizer.fit_transform {(end - start):.03f} seconds", flush=True)
+
+    y_train_pred = grid_search_clf.predict(X_train_tfidf)
+    grid_search_clf_train_f1 = f1_score(y_train, y_train_pred, average="micro")
+    print(f"grid_search_clf_train_f1={grid_search_clf_train_f1}")
+    # grid_search_clf_train_f1=0.8228058040970098
+
+    #   0  ->  1950-1959
+    #   1  ->  1960-1964
+    #   2  ->  1965-1969
+    #   3  ->  1970-1974
+    #   4  ->  1975-1979
+    #   5  ->  1980-1984
+    #   6  ->  1985-1989
+    #   7  ->  1990-1994
+    #   8  ->  1995-1999
+    #   9  ->  2000-2004
+    #   10 ->  2005-2009
+    #   11 ->  2010-2014
+    #   12 ->  2015-2017
+    conf_mx = confusion_matrix(y_train, y_train_pred)
+    print(conf_mx)
+    plt.matshow(conf_mx, cmap=plt.cm.gray)
+    #plt.show()
+    plt.imsave(confusion_matrix_png_file, conf_mx, cmap=plt.cm.gray)
+
+    row_sums = conf_mx.sum(axis=1, keepdims=True)
+    normalized_conf_mx = conf_mx / row_sums
+    np.fill_diagonal(normalized_conf_mx, 0)
+
+    plt.matshow(normalized_conf_mx, cmap=plt.cm.gray)
+    #plt.show()
+    plt.imsave(normalized_confusion_matrix_png_file, normalized_conf_mx, cmap=plt.cm.gray)

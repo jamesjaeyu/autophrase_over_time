@@ -3,5 +3,6 @@
     "dblp_v10_phrases_unique_by_year": "results/dblp-v10-phrases-uniquebyyear.csv",
     "dblp_v10_phrases_unique_all_year": "results/dblp-v10-phrases-unique.csv",
     "extract_phrases_per_paper_pkl_file": "results/autophrase/dblp-v10/grouped/extract_phrases_per_paper.pkl",
-    "baseline_lr_model_pkl": "results/autophrase/dblp-v10/grouped/baseline_lr_model.pkl"
+    "baseline_lr_model_pkl": "results/autophrase/dblp-v10/grouped/baseline_lr_model.pkl",
+    "best_linear_svm_model_pkl": "results/autophrase/dblp-v10/grouped/best_linear_svm_model.pkl"
 }
