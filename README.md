@@ -27,6 +27,6 @@ File & folder descriptions:
 
 - `test` folder: Contains `testdata` and `testresults` for running 'test' target on run.py
 
-- `run.py`: Run file for the project. Targets are 'data', 'eda', 'model'
+- `run.py`: Run file for the project. Targets are 'data', 'eda', 'model', 'analysis'
     - 'all' will run all targets with full dataset
-    - 'test' will run 'data' and 'model' with test data. 'eda' will run the same
+    - 'test' will run 'data', 'model', and 'analysis' with test data. 'eda' will run the same
