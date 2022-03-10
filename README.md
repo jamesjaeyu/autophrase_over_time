@@ -19,8 +19,6 @@ File & folder descriptions:
 
 - `docs` folder: Contains GitHub Pages files for the visual presentation website
 
-- `notebooks` folder: Contains notebooks for preliminary code testing. Finalized code will be moved to src folder in a .py file
-
 - `results` folder: Contains results of EDA figures and AutoPhrase
 
 - `src` folder: Contains .py files for processing datasets, performing EDA, and model generation
