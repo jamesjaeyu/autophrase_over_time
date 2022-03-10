@@ -1,19 +1,16 @@
 # Description of results folder
 
-Note: Some files within this folder require Git LFS (Large File Storage). You can install it [here](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
 
-* `arxiv`
-    * Contains AutoPhrase results for each year in the arxiV dataset (1993-2018)
-    * Years 1993-1999, 2001-2003, 2006, 2008 did not have enough training data for AutoPhrase to run properly
-    * Also contains AutoPhrase results on all years combined (`ALL_YEARS` folder)
 * `dblp-v10-grouped`
     * Contains AutoPhrase results for grouped years in the DBLP-v10 dataset
     * Contains processed phrasal segmentation results in .csv files for each year range
-* `dblp-v10`
-    * Contains AutoPhrase results for each year in the DBLP-v10 dataset (1950-2017)
-    * Also contains AutoPhrase results on all years combined (`ALL_YEARS` folder)
 * `figures`
     * Contains output figures from 'eda' target on run.py
+* `gephi-data`
+    * Contains .csv files for Gephi network visualization
+    * NodeData.csv and EdgeData.csv are for the phrase network on the entire dataset
+    * NodeDataYearly.csv and EdgeDataYearly.csv are for the phrase network by year range
+    * Instructions on how to utilize these files can be found in phrase_analysis.py in the gephi_instructions() function
 
 
 ## For AutoPhrase results folders  
